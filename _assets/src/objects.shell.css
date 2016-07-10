@@ -1,0 +1,32 @@
+
+.shell {
+  /* act like a link */
+  cursor: pointer;
+
+  /* contain block-level elements */
+  display: inline-block;
+
+  /* set larger horizontal tappable area for smaller screens */
+  /* (for header and footer // see page.sides for overwrite) */
+  /*padding: var(--meta-margin) calc(var(--meta-margin) * 2);*/
+  padding: calc(var(--meta-margin) / 2.5);
+  /*background-color: #eee;*/
+}
+
+  @media (--w-640) {
+    .shell {
+      padding: calc(var(--meta-margin) / 1.5);
+    }
+  }
+
+  @media (--w-1600) {
+    .shell {
+      padding: var(--meta-margin);
+    }
+  }
+
+
+.shell span {
+  /* make rotatable */
+  display: inline-block;
+}

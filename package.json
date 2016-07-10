@@ -1,0 +1,29 @@
+{
+  "name": "unccdesign.club",
+  "version": "1.0.0",
+  "description": "design club",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jckfa/designclub.git"
+  },
+  "author": "Jack Halten Fahnestock",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jckfa/designclub/issues"
+  },
+  "homepage": "https://github.com/jckfa/designclub#readme",
+  "devDependencies": {
+    "browser-sync": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-cssnano": "*",
+    "gulp-gzip": "*",
+    "gulp-html-minifier": "*",
+    "gulp-htmlmin": "*",
+    "gulp-postcss": "*",
+    "gulp-shell": "*",
+    "postcss-cssnext": "*",
+    "postcss-import": "*"
+  }
+}

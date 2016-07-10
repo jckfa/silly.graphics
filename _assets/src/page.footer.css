@@ -1,0 +1,27 @@
+
+.site__footer {
+  text-align: right;
+  width: 100%;
+  position: fixed;
+
+  /* no top */
+  /* no top */
+
+  /* center horizontally */
+  /*right:  0;*/
+
+  /* fix relative to bottom */
+  bottom: 0;
+
+  /* center horizontally */
+  /*left:   0;*/
+
+  margin: 0 auto;
+}
+
+
+  .vulf a {
+    color: red;
+    display: inline-block;
+    padding: 0.5em;
+  }

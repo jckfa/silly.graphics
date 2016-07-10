@@ -1,0 +1,54 @@
+
+:root {
+  --text-color:        #111;
+  --meta-color:        green;
+  --bg-color:          #eee;
+
+  --meta-margin: 1em;
+
+  --hover-off-two: 100ms cubic-bezier(0, 0.75, 0.25, 1);
+  --hover-on-two:  100ms cubic-bezier(0.75, 0, 1, 0.25);
+
+  --hover-off: 250ms cubic-bezier(0.1, 1.05, 0.15, 1.1);
+  --hover-on:  250ms cubic-bezier(0.85, -0.1, 0.9, -0.05);
+
+  --border-radius: 0;
+
+  --mono-fallback: "input mono",
+                   "source code pro",
+                   "roboto mono",
+                   Menlo,
+                   monospace;
+
+  --mono:          "menoe_grotesque_std_regularRg",
+                   var(--mono-fallback);
+
+  --sans-fallback: "-apple-system",
+                   BlinkMacSystemFont,
+                   "helvetica neue",
+                   "roboto",
+                   helvetica,
+                   arial,
+                   sans-serif;
+
+  --sans:          "coupeur carve",
+                   "bluu next",
+                   "bagnard",
+                   "beirut trial",
+                   "sangbleu king trial",
+                   "riviera trial",
+                   "Gerbera Light",
+                   "Apercu",
+                   var(--sans-fallback);
+}
+
+@custom-media --w-480  screen and (width >= 480px);
+@custom-media --w-640  screen and (width >= 640px);
+@custom-media --w-800  screen and (width >= 800px);
+@custom-media --w-960  screen and (width >= 960px);
+@custom-media --w-1120 screen and (width >= 1120px);
+@custom-media --w-1280 screen and (width >= 1280px);
+@custom-media --w-1440 screen and (width >= 1440px);
+@custom-media --w-1600 screen and (width >= 1600px);
+
+@custom-media --w-l-800  screen and (width < 800px);

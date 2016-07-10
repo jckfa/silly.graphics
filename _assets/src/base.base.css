@@ -1,0 +1,103 @@
+
+html {
+  color:      var(--text-color);
+  background: var(--bg-color);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "liga", "hist";
+  overflow-x: hidden;
+}
+
+body, .meta {
+  font-size:   2.2rem;
+  line-height: 2.8rem;
+  transition: var(--hover-off);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.meta {
+  font-family: var(--mono);
+  text-transform: lowercase;
+  color: var(--meta-color);
+}
+
+@media (--w-480) {
+  body {
+    font-size:   2.8rem;
+    line-height: 3.4rem;
+  }
+}
+
+@media (--w-640) {
+  body {
+    font-size:   3.4rem;
+    line-height: 4.0rem;
+  }
+
+  .meta {
+    font-size:   2.4rem;
+    line-height: 3.0rem;
+  }
+}
+
+@media (--w-800) {
+  body {
+    font-size:   4.0rem;
+    line-height: 4.6rem;
+  }
+}
+
+@media (--w-960) {
+  body {
+    font-size:   4.6rem;
+    line-height: 5.2rem;
+  }
+
+  .meta {
+    font-size:   2.6rem;
+    line-height: 3.2rem;
+  }
+}
+
+@media (--w-1120) {
+  body {
+    font-size:   5.2rem;
+    line-height: 5.8rem;
+  }
+}
+
+@media (--w-1280) {
+  body {
+    font-size:   5.8rem;
+    line-height: 6.4rem;
+  }
+
+  .meta {
+    font-size:   2.8rem;
+    line-height: 3.4rem;
+  }
+}
+
+@media (--w-1440) {
+  body {
+    font-size:   6.4rem;
+    line-height: 7.0rem;
+  }
+}
+
+@media (--w-1600) {
+  body {
+    font-size:   7.0rem;
+    line-height: 7.6rem;
+  }
+
+  .meta {
+    font-size:   3.0rem;
+    line-height: 3.6rem;
+  }
+}

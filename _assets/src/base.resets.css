@@ -1,0 +1,20 @@
+
+* {
+  margin:  0;
+  padding: 0;
+  border:  0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+input, button, textarea {
+  font: inherit;
+  color: inherit;
+  outline: 0;
+}
+
+/* sets font-size to 10px, line-height to 10px */
+/*( 62.5% of 16 = 10 )*/
+html {
+  font: 62.5%/1 var(--sans);
+}

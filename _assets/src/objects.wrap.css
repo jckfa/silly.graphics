@@ -1,0 +1,8 @@
+
+.wrap {
+  max-width: 20em;
+  /*background-color: #aaa;*/
+
+  /* allows text-align to work on .wrap */
+  display: inline-block;
+}

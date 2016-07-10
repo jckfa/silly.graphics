@@ -1,0 +1,27 @@
+# IF YOU MODIFY THIS FILE, RESTART THE SERVER
+# IF YOU MODIFY THIS FILE, RESTART THE SERVER
+# IF YOU MODIFY THIS FILE, RESTART THE SERVER
+
+# Site settings
+name: "silly graphics"
+email: buttface@jackf.me
+description: rabbit hole
+url: "https://silly.graphics"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+exclude:
+  - node_modules
+  - gulpfile.js
+  - package.json
+  - README.md
+  - Gemfile
+
+assets:
+  digest: true
+  cache: false
+  sources:
+    - "_assets/css"
+    - "_assets/js"
