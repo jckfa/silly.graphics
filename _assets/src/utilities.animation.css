@@ -1,0 +1,21 @@
+
+@keyframes on-off {
+   0%  {opacity: 1;}
+  49%  {opacity: 1;}
+  50%  {opacity: 0;}
+  99%  {opacity: 0;}
+}
+
+.on-off {
+  animation-name: on-off;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+  .on-off:nth-of-type(2) {
+    animation-delay: 100ms;
+  }
+
+  .on-off:nth-of-type(3) {
+    animation-delay: 200ms;
+  }

@@ -3,10 +3,10 @@
 # IF YOU MODIFY THIS FILE, RESTART THE SERVER
 
 # Site settings
-name: "silly graphics"
-email: buttface@jackf.me
-description: rabbit hole
-url: "https://silly.graphics"
+name:        silly graphics
+email:       buttface@jackf.me
+description: a little collection of links generally related to graphic design
+url:         https://silly.graphics
 
 # Build settings
 markdown: kramdown
@@ -18,6 +18,7 @@ exclude:
   - package.json
   - README.md
   - Gemfile
+  - static
 
 assets:
   digest: true

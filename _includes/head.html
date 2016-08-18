@@ -1,8 +1,8 @@
 
 <head>
   <title>
-    {% if page.full-title %}
-      {{ page.full-title | downcase }}
+    {% if page.title %}
+      {{ site.name | downcase }} | {{ page.title | downcase }}
     {% else %}
       {{ site.name | downcase }}
     {% endif %}
@@ -21,6 +21,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
 
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="description" content="{{ site.description }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
 </head>

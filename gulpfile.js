@@ -5,7 +5,7 @@ var gulp         = require('gulp'),
     cssnext      = require('postcss-cssnext'),
     cssnano      = require('gulp-cssnano'),
     autoprefixer = require('gulp-autoprefixer'),
-    htmlmin      = require('gulp-html-minifier'),
+    htmlmin      = require('gulp-htmlmin'),
   /*svgmin       = require('gulp-svgmin'),*/
     gzip         = require('gulp-gzip'),
     browserSync  = require('browser-sync').create(),
@@ -28,6 +28,7 @@ var processors = [
   })
 ];
 
+// styles
 gulp.task('styles', function() {
   return gulp.src('_assets/src/style.css')
     .pipe(postcss(processors))
@@ -35,39 +36,55 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('_assets/css'));
 });
 
-gulp.task('jekyllBuildWatch',
-  shell.task('bundle exec jekyll build --watch'));
+// styles > buildWatch
+gulp.task('buildWatch', ['styles'], shell.task(
+  'bundle exec jekyll build --watch'
+));
 
-gulp.task('jekyllBuild',
-  shell.task('bundle exec jekyll build'));
-
-gulp.task('minify', ['jekyllBuild'], function() {
-  return gulp.src('_site/**/*.html')
-    .pipe(htmlmin({
-      collapseWhiteSpace: true,
-      lint: true,
-      minifyJS: true
-    }))
-    .pipe(gulp.dest('_site'));
-});
-
-// gulp.task('svgs', function() {
-//     return gulp.src('_assets/imagessrc/*.svg')
-//         .pipe(svgmin())
-//         .pipe(gulp.dest('_assets/images'));
-// });
-
+// serve
 gulp.task('serve', function() {
-  browserSync.init({ server: { baseDir: '_site/' }, notify: false });
+  browserSync.init({
+    server: {
+      baseDir: '_site/'
+    },
+    notify: false
+  });
   gulp.watch('_assets/src/*.css', ['styles']);
   gulp.watch('_assets/css/style.css').on('change', reload);
   gulp.watch('_site/**/*.*').on('change', reload);
 });
 
-gulp.task('default', ['jekyllBuildWatch', 'serve', 'styles',]);
+// styles > buildWatch, serve
+gulp.task('default', ['buildWatch', 'serve']);
 
-gulp.task('compress', ['styles', 'minify'], function () {
-  return gulp.src('_site/**/*.html')
+
+// PRODUCTION TASKS / PRODUCTION TASKS / PRODUCTION TASKS / PRODUCTION TASKS /
+// TASKS / PRODUCTION TASKS / PRODUCTION TASKS / PRODUCTION TASKS / PRODUCTION
+// PRODUCTION TASKS / PRODUCTION TASKS / PRODUCTION TASKS / PRODUCTION TASKS /
+// TASKS / PRODUCTION TASKS / PRODUCTION TASKS / PRODUCTION TASKS / PRODUCTION
+
+
+var path = '_site';
+
+// styles > build
+gulp.task('build', ['styles'], shell.task(
+  // 'bundle exec jekyll build --destination ' + path
+  'bundle exec jekyll build'
+));
+
+// styles > build > minify
+gulp.task('minify', ['build'], function() {
+  return gulp.src(path + '/**/*.html')
+    .pipe(htmlmin({
+      collapseWhitespace: true,
+      minifyJS: true
+    }))
+    .pipe(gulp.dest(path));
+});
+
+// styles > build > minify > compress
+gulp.task('compress', ['minify'], function () {
+  return gulp.src(path + '/**/*.html')
     .pipe(gzip())
-    .pipe(gulp.dest('_site'));
+    .pipe(gulp.dest(path));
 });

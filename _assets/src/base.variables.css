@@ -1,47 +1,57 @@
 
 :root {
-  --text-color:        #111;
-  --meta-color:        green;
-  --bg-color:          #eee;
+  --text-color:     blue;
+  --meta-color:     var(--text-color);
+  --bg-color:       #98e6ff;
 
-  --meta-margin: 1em;
+  --gutter:         0.5em;
 
-  --hover-off-two: 100ms cubic-bezier(0, 0.75, 0.25, 1);
-  --hover-on-two:  100ms cubic-bezier(0.75, 0, 1, 0.25);
+  --hover-off:      250ms cubic-bezier(0.1, 1.05, 0.15, 1.1);
+  --hover-on:       250ms cubic-bezier(0.85, -0.1, 0.9, -0.05);
+  --hover-off-two:  100ms cubic-bezier(0, 0.75, 0.25, 1);
+  --hover-on-two:   100ms cubic-bezier(0.75, 0, 1, 0.25);
 
-  --hover-off: 250ms cubic-bezier(0.1, 1.05, 0.15, 1.1);
-  --hover-on:  250ms cubic-bezier(0.85, -0.1, 0.9, -0.05);
+  --body-fs:        2.2rem;
+  --body-lh:        2.8rem;
+  --h1-fs:          3.2rem;
+  --h1-lh:          3.4rem;
 
-  --border-radius: 0;
+  --mono-fallback:  "input mono",
+                    "source code pro",
+                    "roboto mono",
+                    Menlo,
+                    monospace;
 
-  --mono-fallback: "input mono",
-                   "source code pro",
-                   "roboto mono",
-                   Menlo,
-                   monospace;
+  --mono:           "menoe_grotesque_std_regularRg",
+                    var(--mono-fallback);
 
-  --mono:          "menoe_grotesque_std_regularRg",
-                   var(--mono-fallback);
+  --sans-fallback:  "-apple-system",
+                    BlinkMacSystemFont,
+                    "helvetica neue",
+                    "roboto",
+                    helvetica,
+                    arial,
+                    sans-serif;
 
-  --sans-fallback: "-apple-system",
-                   BlinkMacSystemFont,
-                   "helvetica neue",
-                   "roboto",
-                   helvetica,
-                   arial,
-                   sans-serif;
+  --sans:           "coupeur carve",
+                    "bluu next",
+                    "bagnard",
+                    "beirut trial",
+                    "sangbleu king trial",
+                    "riviera trial",
+                    "Gerbera Light",
+                    "Apercu",
+                    var(--sans-fallback);
 
-  --sans:          "coupeur carve",
-                   "bluu next",
-                   "bagnard",
-                   "beirut trial",
-                   "sangbleu king trial",
-                   "riviera trial",
-                   "Gerbera Light",
-                   "Apercu",
-                   var(--sans-fallback);
+  --serif-fallback: "georgia",
+                    "times",
+                    serif;
+
+  --serif:          "beirut trial",
+                    var(--serif-fallback);
 }
 
+@custom-media --w-320  screen and (width >= 320px);
 @custom-media --w-480  screen and (width >= 480px);
 @custom-media --w-640  screen and (width >= 640px);
 @custom-media --w-800  screen and (width >= 800px);
@@ -51,4 +61,7 @@
 @custom-media --w-1440 screen and (width >= 1440px);
 @custom-media --w-1600 screen and (width >= 1600px);
 
-@custom-media --w-l-800  screen and (width < 800px);
+@custom-media --w-l-800 screen and (width < 800px);
+
+@custom-media --w-l-580 screen and (width < 580px);
+@custom-media --wrapper screen and (width >= 580px) and (width < 800px);

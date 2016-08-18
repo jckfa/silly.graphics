@@ -1,23 +1,24 @@
 ---
-layout: page
+layout: default
 ---
 
 {% for list in site.data.lists %}
   {% unless list[1].hidden %}
-  <div class="list-container">
-    <h2 class="wall-heading">{{ list[1].heading }}</h2>
-    <ul class="wall-list">
+  <section class="list">
+    <ul class="no-bullets">
       {% assign list-items = list[1].list-items | sort: "name" %}
       {% for item in list-items %}
         {% unless item.hidden %}
         <li>
-          <a href="{{ item.website | prepend: "//" }}" data-url="{{ item.website }}" target="_blank" >
+          <h2>
+          <a href="{{ item.website | prepend: '//' }}" target="_blank" >
             <span>{{ item.name }}</span>
           </a>
+          </h2>
         </li>
         {% endunless %}
       {% endfor %}
     </ul>
-  </div>
+  </section>
   {% endunless %}
 {% endfor %}

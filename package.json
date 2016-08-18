@@ -1,18 +1,18 @@
 {
-  "name": "unccdesign.club",
+  "name": "silly.graphics",
   "version": "1.0.0",
-  "description": "design club",
+  "description": "a little collection of links generally related to graphic design",
   "main": "gulpfile.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jckfa/designclub.git"
+    "url": "git+https://github.com/jckfa/sillygraphics.git"
   },
   "author": "Jack Halten Fahnestock",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jckfa/designclub/issues"
+    "url": "https://github.com/jckfa/sillygraphics/issues"
   },
-  "homepage": "https://github.com/jckfa/designclub#readme",
+  "homepage": "https://github.com/jckfa/sillygraphics#readme",
   "devDependencies": {
     "browser-sync": "*",
     "gulp": "*",

@@ -3,18 +3,14 @@
 @import "base.variables.css";
 @import "base.resets.css";
 @import "base.base.css";
-@import "base.type.css";
-
-@import "objects.wrap.css";
-@import "objects.flex.css";
-@import "objects.shell.css";
-@import "objects.rotate.css";
 
 @import "page.header.css";
-@import "page.sides.css";
 @import "page.content.css";
-@import "page.images.css";
 @import "page.footer.css";
 
+@import "utilities.flex.css";
+@import "utilities.wrap.css";
 @import "utilities.display.css";
-@import "utilities.spacing.css";
+@import "utilities.dividing.css";
+@import "utilities.text.css";
+@import "utilities.animation.css";

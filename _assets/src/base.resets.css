@@ -13,8 +13,53 @@ input, button, textarea {
   outline: 0;
 }
 
+ul, ol {
+  padding-left: 1em;
+}
+
+.no-bullets {
+  /* overwrite ul/ol defaults */
+  padding-left: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+  a:hover {
+    cursor: pointer;
+  }
+
+html, body {
+  overflow-x: hidden;
+}
+
 /* sets font-size to 10px, line-height to 10px */
-/*( 62.5% of 16 = 10 )*/
+/* ( 62.5% of 16 = 10 ) */
 html {
   font: 62.5%/1 var(--sans);
+  color: var(--text-color);
+  background: var(--bg-color);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "liga", "hist";
+}
+
+/* can't do ::-moz-selection, ::selection {...} for some stupid reason */
+::-moz-selection {
+  color: var(--bg-color);
+  background-color: var(--text-color);
+}
+
+::selection {
+  color: var(--bg-color);
+  background-color: var(--text-color);
 }

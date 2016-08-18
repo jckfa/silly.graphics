@@ -1,0 +1,46 @@
+
+.gutters {
+  padding-right: calc(var(--gutter) / 2);
+  padding-left:  calc(var(--gutter) / 2);
+}
+
+.pt {
+  padding-top: var(--gutter);
+}
+
+.pt1 {
+  padding-top: calc(var(--gutter) * 2);
+}
+
+.pt2 {
+  padding-top: calc(var(--gutter) * 4);
+}
+
+.pt4 {
+  padding-top: calc(var(--gutter) * 8);
+}
+
+.pt8 {
+  padding-top: calc(var(--gutter) * 16);
+}
+
+
+.mb {
+  margin-bottom: var(--gutter);
+}
+
+.mb1 {
+  margin-bottom: calc(var(--gutter) * 2);
+}
+
+.mb2 {
+  margin-bottom: calc(var(--gutter) * 4);
+}
+
+.mb4 {
+  margin-bottom: calc(var(--gutter) * 8);
+}
+
+.mb8 {
+  margin-bottom: calc(var(--gutter) * 16);
+}
