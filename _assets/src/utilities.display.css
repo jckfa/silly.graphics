@@ -1,8 +1,4 @@
 
-.list + .list {
-  margin-top: calc(var(--gutter) * 4);
-}
-
 .row {
   vertical-align: top;
 }

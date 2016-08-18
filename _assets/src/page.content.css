@@ -2,3 +2,14 @@
 /*.list {
   width: 200%;
 }*/
+
+.list + .list {
+  margin-top: calc(var(--gutter) * 4);
+}
+
+@media (--w-l-800) {
+  .list-title {
+    border-top: 0.1em solid currentColor;
+    padding-top: var(--gutter);
+  }
+}
