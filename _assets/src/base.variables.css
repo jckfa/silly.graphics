@@ -2,7 +2,7 @@
 :root {
   --text-color:     blue;
   --meta-color:     var(--text-color);
-  --bg-color:       #98e6ff;
+  --bg-color:       #c8f2ff; /* #98e6ff */
 
   --gutter:         0.5em;
 

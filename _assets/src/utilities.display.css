@@ -1,0 +1,37 @@
+
+.list + .list {
+  margin-top: calc(var(--gutter) * 4);
+}
+
+.row {
+  vertical-align: top;
+}
+
+  @media (--w-l-800) {
+    .row + .row {
+      margin-top: var(--gutter);
+    }
+  }
+
+  @media (--w-800) {
+    .row {
+      /* WARNING | fixed for two langs; needs to be smarter */
+      width: 50%;
+      display: inline-block;
+      padding-right: var(--gutter);
+    }
+
+    .row + .row {
+      padding-right: 0;
+      padding-left:  var(--gutter);
+    }
+  }
+
+
+/*.row {
+  background: #eee;
+}
+
+.row + .row {
+  background: #ddd;
+}*/

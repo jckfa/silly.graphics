@@ -5,16 +5,18 @@ layout: default
 {% for list in site.data.lists %}
   {% unless list[1].hidden %}
   <section class="list">
-    <ul class="no-bullets">
+    <ul class="no-bullets row list-title">
+      <li>{{ list[1].heading }}</li>
+    </ul><!--
+
+ --><ul class="no-bullets row list-content">
       {% assign list-items = list[1].list-items | sort: "name" %}
       {% for item in list-items %}
         {% unless item.hidden %}
         <li>
-          <h2>
           <a href="{{ item.website | prepend: '//' }}" target="_blank" >
             <span>{{ item.name }}</span>
           </a>
-          </h2>
         </li>
         {% endunless %}
       {% endfor %}

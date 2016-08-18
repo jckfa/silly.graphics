@@ -43,9 +43,9 @@ html, body {
 /* sets font-size to 10px, line-height to 10px */
 /* ( 62.5% of 16 = 10 ) */
 html {
-  font: 62.5%/1 var(--sans);
-  color: var(--text-color);
-  background: var(--bg-color);
+  font: 62.5%/1 var(--mono);
+  color:        var(--text-color);
+  background:   var(--bg-color);
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -55,11 +55,11 @@ html {
 
 /* can't do ::-moz-selection, ::selection {...} for some stupid reason */
 ::-moz-selection {
-  color: var(--bg-color);
+  color:            var(--bg-color);
   background-color: var(--text-color);
 }
 
 ::selection {
-  color: var(--bg-color);
+  color:            var(--bg-color);
   background-color: var(--text-color);
 }
