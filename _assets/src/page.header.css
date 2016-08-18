@@ -1,8 +1,6 @@
 
 .site__header {
-  color: var(--text-color);
-
-  position: relative;
+  position: fixed;
 
   /* fix relative to top*/
   top: 0;
@@ -17,7 +15,4 @@
   left:   0;
 
   z-index: 1;
-
-  padding-top:     1em;
-  padding-bottom:  1em;
 }

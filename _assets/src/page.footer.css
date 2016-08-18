@@ -1,20 +1,18 @@
 
 .site__footer {
-  text-align: right;
-  width: 100%;
   position: fixed;
 
   /* no top */
   /* no top */
 
   /* center horizontally */
-  /*right:  0;*/
+  right:  0;
 
   /* fix relative to bottom */
   bottom: 0;
 
   /* center horizontally */
-  /*left:   0;*/
+  left:   0;
 
-  margin: 0 auto;
+  z-index: 1;
 }
