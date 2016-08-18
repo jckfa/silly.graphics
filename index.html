@@ -14,9 +14,9 @@ layout: default
       {% for item in list-items %}
         {% unless item.hidden %}
         <li>
-          <a href="{{ item.website | prepend: '//' }}" target="_blank" >
-            <span>{{ item.name | downcase }}</span>
-          </a>
+          <a href="{{ item.website | prepend: '//' }}" target="_blank" ><!--
+         --><span>{{ item.name | downcase }}</span><!--
+       --></a>
         </li>
         {% endunless %}
       {% endfor %}
