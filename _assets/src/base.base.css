@@ -1,21 +1,11 @@
 
-body, h5, h6, .meta {
+body, h1, h6, .meta {
   font-size:        var(--body-fs);
   line-height:      var(--body-lh);
 }
 
-  h1, h2, h3, h4 {
+  h1 {
     font-family: var(--sans);
-  }
-
-  h1, h2 {
-    font-size:   var(--h1-fs);
-    line-height: var(--h1-lh);
-  }
-
-  h3, h4 {
-    font-size:   calc(var(--h1-fs) - 0.4rem);
-    line-height: calc(var(--h1-lh) - 0.4rem);
   }
 
   h6, .meta {
@@ -24,46 +14,16 @@ body, h5, h6, .meta {
   }
 
   @media (--w-480) {
-    body {
+    body, h1 {
       font-size:   calc(var(--body-fs) + 0.2rem);
       line-height: calc(var(--body-lh) + 0.2rem);
-    }
-
-    h1, h2 {
-      font-size:   calc(var(--h1-fs) + 0.8rem);
-      line-height: calc(var(--h1-lh) + 0.8rem);
-    }
-
-    h3, h4 {
-      font-size:   var(--h1-fs);
-      line-height: var(--h1-lh);
-    }
-
-    h5 {
-      font-size:   calc(var(--body-fs) + 1.2rem);
-      line-height: calc(var(--body-lh) + 1.2rem);
     }
   }
 
   @media (--w-640) {
-    body {
+    body, h1 {
       font-size:   calc(var(--body-fs) + 0.4rem);
       line-height: calc(var(--body-lh) + 0.4rem);
-    }
-
-    h1, h2 {
-      font-size:   calc(var(--h1-fs) + 1.6rem);
-      line-height: calc(var(--h1-lh) + 1.6rem);
-    }
-
-    h3, h4 {
-      font-size:   calc(var(--h1-fs) + 0.4rem);
-      line-height: calc(var(--h1-lh) + 0.4rem);
-    }
-
-    h5 {
-      font-size:   calc(var(--body-fs) + 1.8rem);
-      line-height: calc(var(--body-lh) + 1.8rem);
     }
 
     h6, .meta {
@@ -73,46 +33,16 @@ body, h5, h6, .meta {
   }
 
   @media (--w-800) {
-    body {
+    body, h1 {
       font-size:   calc(var(--body-fs) + 0.6rem);
       line-height: calc(var(--body-lh) + 0.6rem);
-    }
-
-    h1, h2 {
-      font-size:   calc(var(--h1-fs) + 2.4rem);
-      line-height: calc(var(--h1-lh) + 2.4rem);
-    }
-
-    h3, h4 {
-      font-size:   calc(var(--h1-fs) + 0.8rem);
-      line-height: calc(var(--h1-lh) + 0.8rem);
-    }
-
-    h5 {
-      font-size:   calc(var(--body-fs) + 2.4rem);
-      line-height: calc(var(--body-lh) + 2.4rem);
     }
   }
 
   @media (--w-960) {
-    body {
+    body, h1 {
       font-size:   calc(var(--body-fs) + 0.8rem);
       line-height: calc(var(--body-lh) + 0.8rem);
-    }
-
-    h1, h2 {
-      font-size:   calc(var(--h1-fs) + 3.2rem);
-      line-height: calc(var(--h1-lh) + 3.2rem);
-    }
-
-    h3, h4 {
-      font-size:   calc(var(--h1-fs) + 1.2rem);
-      line-height: calc(var(--h1-lh) + 1.2rem);
-    }
-
-    h5 {
-      font-size:   calc(var(--body-fs) + 3.0rem);
-      line-height: calc(var(--body-lh) + 3.0rem);
     }
 
     h6, .meta {
@@ -122,46 +52,16 @@ body, h5, h6, .meta {
   }
 
   @media (--w-1120) {
-    body {
+    body, h1 {
       font-size:   calc(var(--body-fs) + 1.0rem);
       line-height: calc(var(--body-lh) + 1.0rem);
-    }
-
-    h1, h2 {
-      font-size:   calc(var(--h1-fs) + 4.0rem);
-      line-height: calc(var(--h1-lh) + 4.0rem);
-    }
-
-    h3, h4 {
-      font-size:   calc(var(--h1-fs) + 1.6rem);
-      line-height: calc(var(--h1-lh) + 1.6rem);
-    }
-
-    h5 {
-      font-size:   calc(var(--body-fs) + 3.6rem);
-      line-height: calc(var(--body-lh) + 3.6rem);
     }
   }
 
   @media (--w-1280) {
-    body {
+    body, h1 {
       font-size:   calc(var(--body-fs) + 1.2rem);
       line-height: calc(var(--body-lh) + 1.2rem);
-    }
-
-    h1, h2 {
-      font-size:   calc(var(--h1-fs) + 4.8rem);
-      line-height: calc(var(--h1-lh) + 4.8rem);
-    }
-
-    h3, h4 {
-      font-size:   calc(var(--h1-fs) + 2.0rem);
-      line-height: calc(var(--h1-lh) + 2.0rem);
-    }
-
-    h5 {
-      font-size:   calc(var(--body-fs) + 4.2rem);
-      line-height: calc(var(--body-lh) + 4.2rem);
     }
 
     h6, .meta {
@@ -171,46 +71,16 @@ body, h5, h6, .meta {
   }
 
   @media (--w-1440) {
-    body {
+    body, h1 {
       font-size:   calc(var(--body-fs) + 1.4rem);
       line-height: calc(var(--body-lh) + 1.4rem);
-    }
-
-    h1, h2 {
-      font-size:   calc(var(--h1-fs) + 5.6rem);
-      line-height: calc(var(--h1-lh) + 5.6rem);
-    }
-
-    h3, h4 {
-      font-size:   calc(var(--h1-fs) + 2.4rem);
-      line-height: calc(var(--h1-lh) + 2.4rem);
-    }
-
-    h5 {
-      font-size:   calc(var(--body-fs) + 4.8rem);
-      line-height: calc(var(--body-lh) + 4.8rem);
     }
   }
 
   @media (--w-1600) {
-    body {
+    body, h1 {
       font-size:   calc(var(--body-fs) + 1.6rem);
       line-height: calc(var(--body-lh) + 1.6rem);
-    }
-
-    h1, h2 {
-      font-size:   calc(var(--h1-fs) + 6.4rem);
-      line-height: calc(var(--h1-lh) + 6.4rem);
-    }
-
-    h3, h4 {
-      font-size:   calc(var(--h1-fs) + 2.8rem);
-      line-height: calc(var(--h1-lh) + 2.8rem);
-    }
-
-    h5 {
-      font-size:   calc(var(--body-fs) + 5.4rem);
-      line-height: calc(var(--body-lh) + 5.4rem);
     }
 
     h6, .meta {
