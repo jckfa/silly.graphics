@@ -20,7 +20,6 @@ body, h5, h6, .meta {
 
   h6, .meta {
     font-family: var(--mono);
-    text-transform: uppercase;
     color: var(--meta-color);
   }
 
