@@ -31,3 +31,16 @@
 .row + .row {
   background: #ddd;
 }*/
+
+
+@media (--w-l-800) {
+  .hide-l-800 {
+    display: none;
+  }
+}
+
+@media (--w-800) {
+  .hide-800 {
+    display: none;
+  }
+}
