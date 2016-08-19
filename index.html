@@ -20,7 +20,7 @@ layout: default
         {% unless item.hidden %}
         <li>
           <a href="{{ item.website | prepend: '//' }}" target="_blank" ><!--
-         --><span>{{ item.name | downcase }}</span><!--
+         --><span>{{ item.name | downcase | truncate: 24 }}</span><!--
        --></a>
         </li>
         {% endunless %}
