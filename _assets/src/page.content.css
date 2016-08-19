@@ -14,6 +14,7 @@
 
 @media (--w-l-800) {
   .list-title {
+    text-align: right;
     border-top: 0.1em solid currentColor;
     padding-top: var(--gutter);
   }
