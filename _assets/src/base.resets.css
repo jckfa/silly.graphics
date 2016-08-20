@@ -14,6 +14,10 @@ input, button, textarea {
   background: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 ul, ol {
   padding-left: 1em;
 }
