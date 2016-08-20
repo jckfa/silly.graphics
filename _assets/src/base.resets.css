@@ -11,6 +11,7 @@ input, button, textarea {
   font: inherit;
   color: inherit;
   outline: 0;
+  background: none;
 }
 
 ul, ol {
