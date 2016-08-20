@@ -22,7 +22,7 @@
 
 @media (--w-800) {
   .list-content a:hover {
-    transform: rotate(180deg);
+    transform: rotatex(180deg);
   }
 
     .list-content a:hover::before,
