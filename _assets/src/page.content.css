@@ -1,16 +1,16 @@
 
-/*.list {
-  width: 200%;
-}*/
-
 .list + .list {
   margin-top: calc(var(--gutter) * 4);
 }
 
-.list-content a {
-  /* enable rotation */
-  display: inline-block;
+.list-content {
+  white-space: nowrap;
 }
+
+  .list-content a {
+    /* enable rotation */
+    display: inline-block;
+  }
 
 @media (--w-l-800) {
   .list-title {
