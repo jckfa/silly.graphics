@@ -14,7 +14,7 @@ input, button, textarea {
   background: none;
 }
 
-button {
+button, .button {
   cursor: pointer;
 }
 
