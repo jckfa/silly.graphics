@@ -1,4 +1,4 @@
 
 .rotate-z-180 {
-  transform: rotate(180deg); /* reveiving element should be block-level */
+  transform: rotateZ(180deg); /* reveiving element should be block-level */
 }
