@@ -1,4 +1,6 @@
 
+/* receiving elements should be block-level */
+
 .rotate-z-180 {
-  transform: rotateZ(180deg); /* reveiving element should be block-level */
+  transform: rotateZ(180deg);
 }
