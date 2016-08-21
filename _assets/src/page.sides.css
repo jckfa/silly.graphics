@@ -2,8 +2,8 @@
   .site__left-side li,
   .site__right-side li {
     display: inline-block;
-    padding-right: calc(var(--gutter) * 2);
-    padding-left:  calc(var(--gutter) * 2);
+    padding-right: calc(var(--gutter) / 2);
+    padding-left:  calc(var(--gutter) / 2);
   }
 
   .site__left-side ul {
@@ -31,7 +31,7 @@
     transform-origin: top left;
     transform: rotate(90deg);
     margin-left: 100%;
-    left: -25%;
+    left: 0;
   }
 
   .bottom-left {
@@ -39,5 +39,5 @@
     transform-origin: top right;
     transform: rotate(-90deg);
     margin-right: 100%;
-    right: -25%;
+    right: 0;
   }
