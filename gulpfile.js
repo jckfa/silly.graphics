@@ -89,3 +89,8 @@ gulp.task('compress', ['minify'], function () {
     .pipe(gzip())
     .pipe(gulp.dest(path));
 });
+
+// styles > build > minify > compress > deploy
+gulp.task('deploy', ['compress'], shell.task(
+  'cd _site; git add -A; git commit -S -m "Deploy"; git push live master'
+));
