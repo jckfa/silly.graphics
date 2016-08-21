@@ -10,4 +10,6 @@
 - sharing is cool
 
 ### to do
-Add .travis.yml
+- ~~Add deploy task~~
+- Add .travis.yml
+- 
