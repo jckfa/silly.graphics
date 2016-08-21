@@ -12,4 +12,3 @@
 ### to do
 - ~~Add deploy task~~
 - Add .travis.yml
-- 
