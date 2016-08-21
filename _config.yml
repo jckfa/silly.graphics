@@ -18,7 +18,6 @@ exclude:
   - package.json
   - README.md
   - Gemfile
-  - static
 
 assets:
   digest: true

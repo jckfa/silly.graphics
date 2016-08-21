@@ -5,7 +5,7 @@
 
   // note to self: change the file name if you add/remove webfonts
   // so that the cache will reset
-  var css_href = '/static/webfonts/fonts.css';
+  var css_href = '/static/webfonts/menoe.css';
   // a simple event handler wrapper
   function on(el, ev, callback) {
     if (el.addEventListener) {

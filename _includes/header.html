@@ -1,6 +1,15 @@
 
-<header class="site__header meta gutters pt">
-  <ul class="list-flex">
+<header class="site__header meta">
+  <div class="site-description-container hide-800 button gutters" onclick="toggleDescription()">
+    <ul class="no-bullets list-flex">
+      <li>?</li>
+      <li>?</li>
+      <li>?</li>
+    </ul>
+    <p class="site-description">{{ site.description }}</p>
+  </div>
+
+  <ul class="list-flex hide-l-800 gutters pt">
     <li>a</li>
     <li>little</li>
     <li>collection</li>

@@ -10,7 +10,7 @@ body, h1, h6, .meta {
 
   h6, .meta {
     font-family: var(--mono);
-    color: var(--meta-color);
+    /*color: var(--meta-color);*/
   }
 
   @media (--w-480) {

@@ -46,3 +46,15 @@
       right: -0.75em;
     }
 }
+
+.site-description-container {
+  text-align: justify;
+  padding-top:    var(--gutter);
+  padding-bottom: var(--gutter);
+  transition: var(--hover-off);
+}
+
+.invert {
+  color: var(--bg-color);
+  background-color: var(--text-color);
+}
