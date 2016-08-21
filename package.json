@@ -5,14 +5,14 @@
   "main": "gulpfile.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jckfa/sillygraphics.git"
+    "url": "git+https://github.com/jckfa/silly.graphics.git"
   },
   "author": "Jack Halten Fahnestock",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jckfa/sillygraphics/issues"
+    "url": "https://github.com/jckfa/silly.graphics/issues"
   },
-  "homepage": "https://github.com/jckfa/sillygraphics#readme",
+  "homepage": "https://github.com/jckfa/silly.graphics#readme",
   "devDependencies": {
     "browser-sync": "*",
     "gulp": "*",
