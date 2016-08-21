@@ -1,4 +1,8 @@
 
+.ib {
+  display: inline-block;
+}
+
 .row {
   vertical-align: top;
 }

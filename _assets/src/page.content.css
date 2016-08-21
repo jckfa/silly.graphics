@@ -61,8 +61,10 @@ p + p {
   transition: var(--hover-off);
 }
 
-.invert {
-  color: var(--bg-color);
-  background-color: var(--text-color);
+
+/* added by js */
+.bring-to-front {
+  background-color: var(--bg-color);
+  box-shadow: 0 0 10px -4px black;
   transform: translateY(calc(-1em + -var(--gutter)));
 }

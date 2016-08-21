@@ -8,5 +8,5 @@ function hideDescription() {
 
 function toggleDescription() {
   description[0].classList.toggle("hiding");
-  container[0].classList.toggle("invert");
+  container[0].classList.toggle("bring-to-front");
 }
