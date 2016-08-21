@@ -1,5 +1,8 @@
 
 .site__header {
+}
+
+.fix-top {
   position: fixed;
 
   /* fix relative to top*/

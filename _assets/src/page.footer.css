@@ -1,5 +1,8 @@
 
 .site__footer {
+}
+
+.fix-bottom {
   position: fixed;
 
   /* no top */
