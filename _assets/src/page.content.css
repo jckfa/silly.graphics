@@ -28,6 +28,9 @@ p + p {
 @media (--w-800) {
   .list-content a:hover {
     /*transition: var(--hover-on);*/
+    animation-name: on-off;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
   }
 
   .list-content a::after {
