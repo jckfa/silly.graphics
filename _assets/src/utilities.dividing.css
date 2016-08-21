@@ -44,3 +44,8 @@
 .mb8 {
   margin-bottom: calc(var(--gutter) * 16);
 }
+
+.top-bar {
+  border-top: 0.1rem solid currentColor;
+  padding-top: var(--gutter);
+}
