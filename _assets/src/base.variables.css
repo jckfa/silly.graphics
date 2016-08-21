@@ -20,15 +20,15 @@
   --h1-lh:          3.4rem;
 
   --mono-fallback:  "input mono",
-                    "source code pro",
                     "roboto mono",
+                    "source code pro",
                     Menlo,
                     monospace;
 
   --mono:           "menoe_grotesque_std_regularRg",
                     var(--mono-fallback);
 
-  --sans-fallback:  "-apple-system",
+  /*--sans-fallback:  "-apple-system",
                     BlinkMacSystemFont,
                     "helvetica neue",
                     "roboto",
@@ -51,7 +51,7 @@
                     serif;
 
   --serif:          "beirut trial",
-                    var(--serif-fallback);
+                    var(--serif-fallback);*/
 }
 
 @custom-media --w-320  screen and (width >= 320px);
