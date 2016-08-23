@@ -1,10 +1,7 @@
 
 :root {
-  --text-color:     blue;
-  --meta-color:     var(--text-color);
-  --bg-color:       #c8f2ff;
-
   --text-color:     green;
+  --meta-color:     var(--text-color);
   --bg-color:       #efffc8;
 
   --gutter:         0.5em;
@@ -68,3 +65,46 @@
 
 @custom-media --w-l-580 screen and (width < 580px);
 @custom-media --wrapper screen and (width >= 580px) and (width < 800px);
+
+
+
+/* COLOR SCHEMES (added via js) */
+
+:root.red,
+:root.orange,
+:root.gold,
+:root.green,
+:root.blue,
+:root.black {
+  --meta-color: var(--text-color);
+}
+
+:root.red {
+  --text-color: red;
+  --bg-color:   #ffc8c8;
+}
+
+:root.orange {
+  --text-color: #ff7a00;
+  --bg-color:   #ffe6cf;
+}
+
+:root.gold {
+  --text-color: #d2a400;
+  --bg-color:   #fff2c6;
+}
+
+:root.green {
+  --text-color: green;
+  --bg-color:   #efffc8;
+}
+
+:root.blue {
+  --text-color: blue;
+  --bg-color:   #c8f2ff;
+}
+
+:root.black {
+  --text-color: #f5ffcf;
+  --bg-color:   #1c1d18;
+}
