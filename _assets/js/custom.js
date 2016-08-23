@@ -13,7 +13,7 @@ function toggleDescription() {
 }
 
 
-function changeColorScheme() {
+function cchangeColorScheme() {
   var d = new Date().getDay();
 
   // Monday
@@ -26,11 +26,11 @@ function changeColorScheme() {
 
   // Wednesday
   } else if (d == 3) {
-    html.classList.add("gold");
+    html.classList.add("clay");
 
   // Thursday
   } else if (d == 4) {
-    html.classList.add("green");
+    html.classList.add("olive");
 
   // Friday
   } else if (d == 5) {

@@ -1,8 +1,8 @@
 
 :root {
-  --text-color:     green;
+  --text-color:     #111;
   --meta-color:     var(--text-color);
-  --bg-color:       #efffc8;
+  --bg-color:       #eee;
 
   --gutter:         0.5em;
 
@@ -70,47 +70,44 @@
 
 /* COLOR SCHEMES (added via js) */
 
-:root.red,
-:root.orange,
-:root.gold,
-:root.green,
-:root.blue,
-:root.magenta,
-:root.black {
-  --meta-color: var(--text-color);
-}
-
 :root.red {
   --text-color: red;
-  --bg-color:   #ffc8c8;
+  --meta-color: #bb00ff;
+  --bg-color:   #ecdbdb;
 }
 
 :root.orange {
-  --text-color: #ff7a00;
-  --bg-color:   #ffe6cf;
+  --text-color: #222;
+  --meta-color: var(--text-color);
+  --bg-color:   #ff5400;
 }
 
-:root.gold {
-  --text-color: #d2a400;
-  --bg-color:   #fff2c6;
+:root.clay {
+  --text-color: #aa5d48;
+  --meta-color: #00bb12;
+  --bg-color:   #e9e4d3;
 }
 
-:root.green {
-  --text-color: green;
-  --bg-color:   #efffc8;
+:root.olive {
+  --text-color: #5a7520;
+  --meta-color: var(--text-color);
+  --bg-color:   #eef6da;
 }
 
 :root.blue {
-  --text-color: blue;
+  --text-color: #1f5dc6;
+  --meta-color: blue;
   --bg-color:   #c8f2ff;
 }
 
 :root.magenta {
-  --text-color: #ff0091;
-  --bg-color:   #ffdef1;
+  --text-color: #ffe6cc;
+  --meta-color: var(--text-color);
+  --bg-color:   #ff0063;
 }
 
 :root.black {
-  --text-color: #f5ffcf;
-  --bg-color:   #1c1d18;
+  --text-color: #eee;
+  --meta-color: #ff7a00;
+  --bg-color:   #111;
 }
