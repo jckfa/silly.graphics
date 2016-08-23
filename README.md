@@ -13,7 +13,7 @@
 - built with [Jekyll](https://jekyllrb.com/)
 - automated with [Gulp](http://gulpjs.com/) ([see gulpfile](https://github.com/jckfa/silly.graphics/blob/master/gulpfile.js))
 - styled with [cssnext](http://cssnext.io/)
-- run on [Nginx](http://nginx.org/) ([see configuration](https://github.com/jckfa/nginx-config/blob/master/sites-available/silly.graphics))
+- running on [Nginx](http://nginx.org/) ([see configuration](https://github.com/jckfa/nginx-config/blob/master/sites-available/silly.graphics))
 - hosted on [Digital Ocean](https://www.digitalocean.com/)
 - Encrypted with [Let's Encrypt](https://letsencrypt.org/)
 
