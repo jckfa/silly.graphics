@@ -75,6 +75,7 @@
 :root.gold,
 :root.green,
 :root.blue,
+:root.magenta,
 :root.black {
   --meta-color: var(--text-color);
 }
@@ -102,6 +103,11 @@
 :root.blue {
   --text-color: blue;
   --bg-color:   #c8f2ff;
+}
+
+:root.magenta {
+  --text-color: #ff0091;
+  --bg-color:   #ffdef1;
 }
 
 :root.black {
