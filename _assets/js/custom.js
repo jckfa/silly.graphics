@@ -13,7 +13,7 @@ function toggleDescription() {
 }
 
 
-function cchangeColorScheme() {
+function changeColorScheme() {
   var d = new Date().getDay();
 
   // Monday
