@@ -1,6 +1,6 @@
 
 :root {
-  --text-color:     #111;
+  --text-color:     #333;
   --meta-color:     var(--text-color);
   --bg-color:       #eee;
 
@@ -82,10 +82,10 @@
   --bg-color:   #ff5400;
 }
 
-:root.clay {
-  --text-color: #aa5d48;
+:root.banana {
+  --text-color: #ffd600;
   --meta-color: #00bb12;
-  --bg-color:   #e9e4d3;
+  --bg-color:   #44391b;
 }
 
 :root.olive {

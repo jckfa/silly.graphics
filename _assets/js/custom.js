@@ -26,7 +26,7 @@ function changeColorScheme() {
 
   // Wednesday
   } else if (d == 3) {
-    html.classList.add("clay");
+    html.classList.add("banana");
 
   // Thursday
   } else if (d == 4) {
