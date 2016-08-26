@@ -6,7 +6,7 @@ layout: default
   {% unless list[1].hidden %}
   <section class="list">
     <ul class="no-bullets row list-title caps">
-      {% assign list-items = list[1].list-items | sort: "name" %}
+      {% assign list-items = list[1].list-items | uniq | sort: "name" %}
       {% for item in list-items %}
         {% unless item.hidden %}
         <li class="hide-l-800">{{ list[1].heading }}</li>
