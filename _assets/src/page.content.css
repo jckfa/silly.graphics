@@ -14,7 +14,18 @@ p + p {
   .list-content a {
     /* enable rotation */
     display: inline-block;
+    
     /*transition: var(--hover-off);*/
+  }
+
+  .list-title li,
+  .list-content a {
+    /* stretch type vertically by 1.5 */
+    transform: scale(1, 1.5);
+
+    /* adjust spacing for the stretching */
+    margin-top: calc(var(--gutter) / 5);
+    margin-bottom: calc(var(--gutter) / 5);
   }
 
 @media (--w-l-800) {
