@@ -1,28 +1,28 @@
-heading: Books
+heading: books
 list-items:
-  - name:    Punch
+  - name:    punch
     website: p-u-n-c-h.ro
 
-  - name:    Group Object
+  - name:    group object
     website: groupobject.com
 
-  - name:    Counter-Print
+  - name:    counter-print
     website: counter-print.co.uk
 
-  - name:    Soda Books
+  - name:    soda books
     website: sodabooks.com
 
-  - name:    Edition Patrick Frey
+  - name:    edition patrick frey
     website: editionpatrickfrey.com
 
-  - name:    Draw Down
+  - name:    draw down
     website: draw-down.com
 
-  - name:    Unit Editions
+  - name:    unit editions
     website: uniteditions.com/shop
 
-  - name:    Sternberg Press
-    website: sternberg-press.com/?pageId=3
+  - name:    sternberg press
+    website: sternberg-press.com/?pageid=3
 
-  - name:    Standards Manual
+  - name:    standards manual
     website: standardsmanual.com

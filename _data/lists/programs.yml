@@ -1,19 +1,19 @@
-heading: Programs
+heading: programs
 list-items:
-  - name:    Goldsmiths
+  - name:    goldsmiths
     website: gold.ac.uk
 
-  - name:    Type and media
+  - name:    type and media
     website: typemedia.org
 
-  - name:    Type@Paris
+  - name:    type@paris
     website: typeparis.com
 
-  - name:    Type@Cooper
+  - name:    type@cooper
     website: coopertype.org
 
-  - name:    ISIA Urbino Type Design Week
+  - name:    isia urbino type design week
     website: isiaurbino.net/typeweek
 
-  - name:    Werkplaats Typografie
+  - name:    werkplaats typografie
     website: werkplaatstypografie.org

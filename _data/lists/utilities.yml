@@ -1,30 +1,30 @@
-heading: Utilities
+heading: utilities
 list-items:
-  - name:    FontForge
+  - name:    fontforge
     website: fontforge.github.io
 
-  - name:    Glyphs
+  - name:    glyphs
     website: glyphsapp.com
 
-  - name:    Robofont
+  - name:    robofont
     website: robofont.com
 
-  - name:    Prototypo
+  - name:    prototypo
     website: prototypo.io
 
-  - name:    Figma
+  - name:    figma
     website: figma.com
 
-  - name:    Fontstand
+  - name:    fontstand
     website: fontstand.com
 
-  - name:    DrawBot
+  - name:    drawbot
     website: drawbot.com
 
-  - name:    Noun Project
+  - name:    noun project
     website: thenounproject.com
 
-  - name:    Sketch
+  - name:    sketch
     website: sketchapp.com
 
   - name:    ofont
