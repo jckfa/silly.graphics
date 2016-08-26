@@ -2,7 +2,7 @@
 :root {
   --text-color:     #333;
   --meta-color:     var(--text-color);
-  --bg-color:       #eee;
+  --bg-color:       #ccc;
 
   --gutter:         0.5em;
 
@@ -65,49 +65,3 @@
 
 @custom-media --w-l-580 screen and (width < 580px);
 @custom-media --wrapper screen and (width >= 580px) and (width < 800px);
-
-
-
-/* COLOR SCHEMES (added via js) */
-
-:root.red {
-  --text-color: red;
-  --meta-color: #bb00ff;
-  --bg-color:   #ecdbdb;
-}
-
-:root.orange {
-  --text-color: #222;
-  --meta-color: var(--text-color);
-  --bg-color:   #ff5400;
-}
-
-:root.banana {
-  --text-color: #ffd600;
-  --meta-color: #00bb12;
-  --bg-color:   #44391b;
-}
-
-:root.olive {
-  --text-color: #5a7520;
-  --meta-color: var(--text-color);
-  --bg-color:   #eef6da;
-}
-
-:root.blue {
-  --text-color: #1f5dc6;
-  --meta-color: blue;
-  --bg-color:   #c8f2ff;
-}
-
-:root.magenta {
-  --text-color: #ffe6cc;
-  --meta-color: var(--text-color);
-  --bg-color:   #ff0063;
-}
-
-:root.black {
-  --text-color: #ff0063;
-  --meta-color: #ff7a00;
-  --bg-color:   #111;
-}
