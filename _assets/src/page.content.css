@@ -25,6 +25,10 @@ p + p {
     /* stretch horizontally */
     transform: scale(1.5, 1);
     transform-origin: right center;
+
+    animation-name: on-off;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
   }
 
   .list-content {
