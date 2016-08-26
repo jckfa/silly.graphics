@@ -10,4 +10,6 @@
 .invert {
   color: var(--bg-color);
   background-color: var(--text-color);
+  padding-right: calc(var(--gutter) / 5);
+  padding-left:  calc(var(--gutter) / 5);
 }
