@@ -14,26 +14,36 @@ p + p {
   .list-content a {
     /* enable rotation */
     display: inline-block;
-    
+
     /*transition: var(--hover-off);*/
-  }
-
-  .list-title li,
-  .list-content a {
-    /* stretch type vertically by 1.5 */
-    transform: scale(1, 1.5);
-
-    /* adjust spacing for the stretching */
-    margin-top: calc(var(--gutter) / 5);
-    margin-bottom: calc(var(--gutter) / 5);
   }
 
 @media (--w-l-800) {
   .list-title {
     text-align: right;
-    border-top: 0.1em solid currentColor;
-    padding-top: var(--gutter);
+
+    /* stretch horizontally */
+    transform: scale(1.5, 1);
+    transform-origin: right center;
   }
+
+  .list-content {
+    border-top: 0.1rem solid currentColor;
+    border-bottom: 0.1rem solid currentColor;
+    /*padding-top: var(--gutter);*/
+  }
+
+    .list-content li + li {
+      border-top: 0.1rem solid currentColor;
+    }
+
+      .list-content a {
+        /* expand entire screen width for larger tappable area */
+        display: block;
+
+        padding-top: var(--gutter);
+        padding-bottom: var(--gutter);
+      }
 }
 
 @media (--w-800) {
