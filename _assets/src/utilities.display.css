@@ -38,13 +38,13 @@
 
 
 @media (--w-l-800) {
-  .hide-l-800 {
+  .hiding-below-800 {
     display: none;
   }
 }
 
 @media (--w-800) {
-  .hide-800 {
+  .hiding-above-800 {
     display: none;
   }
 }

@@ -9,17 +9,17 @@ layout: default
       {% assign list-items = list[1].list-items | uniq | sort: "name" %}
       {% for item in list-items %}
         {% unless item.hidden %}
-        <li class="hide-l-800">{{ list[1].heading }}</li>
+        <li class="hiding-below-800">{{ list[1].heading }}</li>
         {% endunless %}
       {% endfor %}
-      <li class="hide-800 ib invert">{{ list[1].heading }}</li>
+      <li class="hiding-above-800 ib invert">{{ list[1].heading }}</li>
     </ul><!--
 
  --><ul class="no-bullets row list-content">
       {% for item in list-items %}
         {% unless item.hidden %}
         <li>
-          <a href="{{ item.website | prepend: 'http://' }}" target="_blank" ><!--
+          <a href="{{ item.website | prepend: 'http://' }}" target="_blank"><!--
          --><span>{{ item.name | downcase }}</span><!--
        --></a>
         </li>
