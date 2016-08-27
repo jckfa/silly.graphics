@@ -3,12 +3,12 @@
   text-align: center;
 }
 
-.upcase {
+.uppercase {
   text-transform: uppercase;
 }
 
-.downcase {
-  text-transform: uppercase;
+.lowercase {
+  text-transform: lowercase;
 }
 
 .invert {
