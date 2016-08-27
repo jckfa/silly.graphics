@@ -11,12 +11,27 @@ p + p {
   white-space: nowrap;
 }
 
-  .list-content a {
-    /* enable rotation */
-    display: inline-block;
+  .list-content li::after {
+    content: "↗";
 
-    /*transition: var(--hover-off);*/
+    /*background-color: red;*/
+
+    height: 100%;
+
+    position: absolute;
+
+    top:    0;
+    right:  0;
+    /*bottom: 0;*/
+    /*left:     0;*/
   }
+
+    .list-content a {
+      /* enable rotation */
+      display: inline-block;
+
+      /*transition: var(--hover-off);*/
+    }
 
 @media (--w-l-800) {
   .list-title {
@@ -39,21 +54,6 @@ p + p {
 
         padding-top: var(--gutter);
         padding-bottom: var(--gutter);
-      }
-
-      .list-content li::after {
-        content: "↗";
-
-        /*background-color: red;*/
-
-        height: 100%;
-
-        position: absolute;
-
-        top:    0;
-        right:  0;
-        /*bottom: 0;*/
-        /*left:     0;*/
       }
 }
 
