@@ -25,4 +25,12 @@
   padding-top:    var(--gutter);
   padding-bottom: var(--gutter);
   transition: var(--hover-off);
+
+  background-color: var(--bg-color);
+  box-shadow: 0 0 10px -4px black;
+}
+
+/* added by js */
+.bring-to-front {
+  transform: translateY(calc(-1em + -var(--gutter)));
 }
