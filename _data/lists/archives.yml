@@ -9,9 +9,8 @@ list-items:
   - name:    mintneverhinged
     website: instagram.com/mintneverhinged
 
-  - name:    logoarchive
-    website: instagram.com/logoarchive
-    hidden:  true
+# - name:    logoarchive
+#   website: instagram.com/logoarchive
 
   - name:    matchbloc
     website: instagram.com/matchbloc
