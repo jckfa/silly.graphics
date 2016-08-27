@@ -1,4 +1,12 @@
 
+@media (--w-800) {
+  a:hover {
+    animation-name: on-off;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+}
+
 body, h6, .meta {
   font-size:        var(--body-fs);
   line-height:      var(--body-lh);
