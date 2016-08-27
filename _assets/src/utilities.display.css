@@ -9,11 +9,11 @@
   /* act like row (displaying block by default) */
 }
 
-  /*@media (--w-l-800) {
+  @media (--w-l-800) {
     .row + .row {
-      margin-top: var(--gutter);
+      margin-top: calc(var(--gutter) * 4);
     }
-  }*/
+  }
 
   @media (--w-800) {
     .row {
