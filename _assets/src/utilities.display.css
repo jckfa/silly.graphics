@@ -5,6 +5,8 @@
 
 .row {
   vertical-align: top;
+
+  /* act like row (displaying block by default) */
 }
 
   /*@media (--w-l-800) {
@@ -17,7 +19,10 @@
     .row {
       /* WARNING | fixed for two langs; needs to be smarter */
       width: 50%;
+
+      /* act like column */
       display: inline-block;
+
       /*padding-right: var(--gutter);*/
     }
 
