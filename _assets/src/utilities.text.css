@@ -3,7 +3,11 @@
   text-align: center;
 }
 
-.caps {
+.upcase {
+  text-transform: uppercase;
+}
+
+.downcase {
   text-transform: uppercase;
 }
 
