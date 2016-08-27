@@ -64,26 +64,6 @@ p + p {
     animation-duration: 1s;
     animation-iteration-count: infinite;
   }
-
-  .list-content a::after {
-    content: "↗";
-
-    position: absolute;
-
-    /*top:    0;*/
-    /*right:  0;*/
-    /*bottom: 0;*/
-    left:     0;
-
-    transition: var(--hover-off-100);
-    opacity: 0;
-  }
-
-    .list-content a:hover::after {
-      left:     -1em;
-      transition: var(--hover-off-100);
-      opacity: 1;
-    }
 }
 
 .site-description-container {
