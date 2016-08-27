@@ -40,6 +40,17 @@ p + p {
         padding-top: var(--gutter);
         padding-bottom: var(--gutter);
       }
+
+      .list-content a::after {
+        content: "↗";
+
+        position: absolute;
+
+        /*top:    0;*/
+        right:  0;
+        /*bottom: 0;*/
+        /*left:     0;*/
+      }
 }
 
 @media (--w-800) {
