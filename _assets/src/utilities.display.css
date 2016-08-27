@@ -7,11 +7,11 @@
   vertical-align: top;
 }
 
-  @media (--w-l-800) {
+  /*@media (--w-l-800) {
     .row + .row {
       margin-top: var(--gutter);
     }
-  }
+  }*/
 
   @media (--w-800) {
     .row {
