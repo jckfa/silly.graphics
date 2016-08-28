@@ -4,13 +4,14 @@ layout: default
 
 {% for list in site.data.lists %}
   {% unless list[1].hidden %}
+  {% assign list-items = list[1].list-items | uniq | sort: "name" %}
   <section class="list">
     <ul class="no-bullets row uppercase">
-      {% assign list-items = list[1].list-items | uniq | sort: "name" %}
+
       {% for item in list-items %}
-        <li class="hiding-below-800">
-          {{ list[1].heading }}
-        </li>
+      <li class="hiding-below-800">
+        {{ list[1].heading }}
+      </li>
       {% endfor %}
 
       <li class="hiding-above-800 list-title">
