@@ -1,22 +1,5 @@
 
 .site__footer {
   text-transform: lowercase;
-}
-
-.fix-bottom {
-  position: fixed;
-
-  /* no top */
-  /* no top */
-
-  /* center horizontally */
-  right:  0;
-
-  /* fix relative to bottom */
-  bottom: 0;
-
-  /* center horizontally */
-  left:   0;
-
-  z-index: 1;
+  white-space: nowrap;
 }

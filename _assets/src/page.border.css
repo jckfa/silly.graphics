@@ -1,4 +1,44 @@
 
+.site__border {}
+
+.fix-top {
+  position: fixed;
+
+  /* fix relative to top*/
+  top: 0;
+
+  /* center horizontally */
+  right:  0;
+
+  /* no bottom */
+  /* no bottom */
+
+  /* center horizontally */
+  left:   0;
+
+  z-index: 1;
+}
+
+.fix-bottom {
+  position: fixed;
+
+  /* no top */
+  /* no top */
+
+  /* center horizontally */
+  right:  0;
+
+  /* fix relative to bottom */
+  bottom: 0;
+
+  /* center horizontally */
+  left:   0;
+
+  z-index: 1;
+}
+
+
+
 .top-right,
 .bottom-left {
   width: 100vh;

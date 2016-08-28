@@ -2,24 +2,6 @@
 .site__header {
 }
 
-.fix-top {
-  position: fixed;
-
-  /* fix relative to top*/
-  top: 0;
-
-  /* center horizontally */
-  right:  0;
-
-  /* no bottom */
-  /* no bottom */
-
-  /* center horizontally */
-  left:   0;
-
-  z-index: 1;
-}
-
 .site-description-container {
   text-align: justify;
   padding-top:    var(--gutter);
