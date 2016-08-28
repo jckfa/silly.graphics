@@ -45,11 +45,6 @@
   margin-bottom: calc(var(--gutter) * 16);
 }
 
-.top-bar {
-  border-top: 0.1rem solid currentColor;
-  padding-top: var(--gutter);
-}
-
 /* adjust for less vertical space on mobile */
 @media (--w-l-800) {
   .pt4 {
@@ -66,5 +61,13 @@
 
   .mb8 {
     margin-bottom: calc(var(--gutter) * 8);
+  }
+}
+
+
+@media (--w-800) {
+  .divider {
+    border-top: 0.1rem solid currentColor;
+    padding-top: var(--gutter);
   }
 }

@@ -5,7 +5,7 @@ layout: default
 {% for list in site.data.lists %}
   {% unless list[1].hidden %}
   {% assign list-items = list[1].list-items | uniq | sort: "name" %}
-  <section class="list">
+  <section class="list divider">
     <ul class="no-bullets row uppercase">
 
       {% for item in list-items %}
