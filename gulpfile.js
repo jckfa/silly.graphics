@@ -92,5 +92,5 @@ gulp.task('compress', ['minify'], function () {
 
 // styles > build > minify > compress > deploy
 gulp.task('deploy', ['compress'], shell.task(
-  'cd _site; git add -A; git commit -S -m "Deploy"; git push live master'
+  'cd _site; rm -rf assets; git add -A; git commit -S -m "Deploy"; git push live master'
 ));
