@@ -19,7 +19,12 @@
          {% assign list-items = list[1].list-items %}
          {% for item in list-items %}
           <li>
-            <a href="{{ item.href | prepend: 'http://' }}" target="_blank">
+            <a {% if item.no-http %}
+                href="{{ item.href }}"
+              {% else %}
+                href="{{ item.href | prepend: 'http://' }}"
+              {% endif %}
+            target="_blank">
               {{ item.key }}<span class="hiding-below-800">{{ item.value | prepend: " → " }}</span>
             </a>
           </li>

@@ -3,6 +3,7 @@ list-items:
   - key:   email
     value: buttface@jackf.me
     href:  mailto:buttface@jackf.me
+    no-http: true
 
   - key:   twitter
     value: '@jckfa'
