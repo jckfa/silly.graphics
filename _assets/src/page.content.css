@@ -1,4 +1,16 @@
 
+main {
+  padding-bottom: calc(var(--gutter) * 8);
+  box-shadow: 0 0 10px -4px black;
+}
+
+@media (--w-800) {
+  main {
+    margin-bottom: calc(var(--gutter) * 4);
+    box-shadow: none;
+  }
+}
+
 p + p {
   margin-top: var(--gutter);
 }

@@ -2,10 +2,19 @@
 .site__footer {
   text-transform: lowercase;
   white-space: nowrap;
+
   padding-bottom: calc(var(--gutter) * 16);
-  /*color: var(--bg-color);
-  background-color: var(--text-color);*/
 }
+
+  @media (--w-l-800) {
+    .site__footer {
+      background-color: rgba(0, 0, 0, 0.075);
+      padding-top: calc(var(--gutter) * 2);
+
+      /* adjust for less vertical space on mobile */
+      padding-bottom: calc(var(--gutter) * 8);
+    }
+  }
 
   @media (--w-800) {
     .site__footer .list-title {
