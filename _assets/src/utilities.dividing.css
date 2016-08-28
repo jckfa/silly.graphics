@@ -49,3 +49,22 @@
   border-top: 0.1rem solid currentColor;
   padding-top: var(--gutter);
 }
+
+/* adjust for less vertical space on mobile */
+@media (--w-l-800) {
+  .pt4 {
+    padding-top: calc(var(--gutter) * 4);
+  }
+
+  .pt8 {
+    padding-top: calc(var(--gutter) * 8);
+  }
+
+  .mb4 {
+    margin-bottom: calc(var(--gutter) * 4);
+  }
+
+  .mb8 {
+    margin-bottom: calc(var(--gutter) * 8);
+  }
+}
