@@ -1,13 +1,13 @@
 heading: institutions
 list-items:
-  - name:    strelka
-    website: strelka.com
+  - name: strelka
+    href: strelka.com
 
-  - name:    yale university school of art
-    website: art.yale.edu
+  - name: yale university school of art
+    href: art.yale.edu
 
-  - name:    écal
-    website: ecal.ch
+  - name: écal
+    href: ecal.ch
 
-  - name:    royal academy of art the hague
-    website: kabk.nl
+  - name: royal academy of art the hague
+    href: kabk.nl

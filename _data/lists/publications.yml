@@ -1,7 +1,7 @@
 heading: publications
 list-items:
-  - name:    ligature.ch
-    website: ligature.ch
+  - name: ligature.ch
+    href: ligature.ch
 
-  - name:    print program
-    website: print-program.ch
+  - name: print program
+    href: print-program.ch

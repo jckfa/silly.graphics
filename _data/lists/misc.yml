@@ -1,8 +1,8 @@
 heading: misc
 hidden: true
 list-items:
-  - name:    matthew ray field
-    website: matthewrayfield.com
+  - name: matthew ray field
+    href: matthewrayfield.com
 
-  - name:    on the grid
-    website: http://www.onthegrid.city/
+  - name: on the grid
+    href: http://www.onthegrid.city/

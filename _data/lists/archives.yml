@@ -1,22 +1,22 @@
 heading: archives
 list-items:
-  - name:    fruit_stickers
-    website: instagram.com/fruit_stickers
+  - name: fruit_stickers
+    href: instagram.com/fruit_stickers
 
-  - name:    graphilately
-    website: instagram.com/graphilately
+  - name: graphilately
+    href: instagram.com/graphilately
 
-  - name:    mintneverhinged
-    website: instagram.com/mintneverhinged
+  - name: mintneverhinged
+    href: instagram.com/mintneverhinged
 
-# - name:    logoarchive
-#   website: instagram.com/logoarchive
+# - name: logoarchive
+#   href: instagram.com/logoarchive
 
-  - name:    matchbloc
-    website: instagram.com/matchbloc
+  - name: matchbloc
+    href: instagram.com/matchbloc
 
-  - name:    collectandcatalogue
-    website: instagram.com/collectandcatalogue
+  - name: collectandcatalogue
+    href: instagram.com/collectandcatalogue
 
-  - name:    longlostlabel
-    website: instagram.com/longlostlabel
+  - name: longlostlabel
+    href: instagram.com/longlostlabel

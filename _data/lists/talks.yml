@@ -1,7 +1,7 @@
 heading: talks
 list-items:
-  - name:    elana schlenker
-    website: vimeo.com/147862776
+  - name: elana schlenker
+    href: vimeo.com/147862776
 
-  - name:    metahaven
-    website: vimeo.com/search?q=metahaven
+  - name: metahaven
+    href: vimeo.com/search?q=metahaven

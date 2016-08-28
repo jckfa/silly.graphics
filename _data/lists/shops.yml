@@ -1,5 +1,5 @@
 heading: shops
 hidden: true
 list-items:
-  - name:    present and correct
-    website: presentandcorrect.com
+  - name: present and correct
+    href: presentandcorrect.com
