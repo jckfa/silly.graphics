@@ -17,7 +17,7 @@
 
   @media (--w-800) {
     .row {
-      /* WARNING | fixed for two langs; needs to be smarter */
+      /* fixed for two columns */
       width: 50%;
 
       /* act like column */
