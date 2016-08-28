@@ -8,6 +8,12 @@
 
 .on-off {
   animation-name: on-off;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
+}
+
+@media (--w-800) {
+  .on-off:hover {
+    animation: none;
+  }
 }
