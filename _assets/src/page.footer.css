@@ -2,4 +2,13 @@
 .site__footer {
   text-transform: lowercase;
   white-space: nowrap;
+  padding-bottom: calc(var(--gutter) * 16);
+  /*color: var(--bg-color);
+  background-color: var(--text-color);*/
 }
+
+  @media (--w-800) {
+    .site__footer .list-title {
+      margin-bottom: var(--gutter);
+    }
+  }

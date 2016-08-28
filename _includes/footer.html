@@ -1,58 +1,35 @@
 
 <footer class="site__footer meta gutters">
-  <div class="list">
 
-    <ul class="no-bullets row contact">
+<!--
+{% for list in site.data.footer %}
+  {% unless list[1].hidden %}
+ --><div class="row">
+      <ul class="no-bullets uppercase">
+        <li>
+          <ul class="no-bullets">
+            <li class="list-title">
+              {{ list[1].heading }}
+            </li>
+          </ul>
+        </li>
+      </ul><!--
 
-      <li>
-        <a href="mailto:buttface@jackf.me" target="_blank">
-          Email<span class="hiding-below-800"> → buttface@jackf.me</span>
-        </a>
-      </li>
+   --><ul class="no-bullets list-content">
+         {% assign list-items = list[1].list-items %}
+         {% for item in list-items %}
+          <li>
+            <a href="{{ item.href | prepend: 'http://' }}" target="_blank">
+              {{ item.key }}<span class="hiding-below-800">{{ item.value | prepend: " → " }}</span>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div><!--
+  {% endunless %}
+{% endfor %}
+-->
 
-      <li>
-        <a href="//twitter.com/jckfa" target="_blank">
-          Twitter<span class="hiding-below-800"> → @jckfa</span>
-        </a>
-      </li>
-
-    </ul><!--
-
- --><ul class="no-bullets row colophon">
-
-      <li>
-        <a href="//jackf.me" target="_blank">
-          Author<span class="hiding-below-800"> → Jack Halten Fahnestock</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="//github.com/jckfa/sillygraphics" target="_blank">
-          Code<span class="hiding-below-800"> → GitHub</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="//en.wikipedia.org/wiki/ISC_license" target="_blank">
-          License<span class="hiding-below-800"> → ISC</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="//hungarumlaut.com/typefaces/menoe.html" target="_blank">
-          Font<span class="hiding-below-800"> → Menoe Grotesque</span>
-        </a>
-      </li>
-
-      <li>
-        <a href="//www.colorpicker.com/ccc8c0" target="_blank">
-          Page Color<span class="hiding-below-800"> → #ccc8c0</span>
-        </a>
-      </li>
-
-    </ul>
-
-  </div>
 </footer>
 
 {% include scripts.html %}

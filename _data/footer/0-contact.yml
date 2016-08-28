@@ -1,0 +1,9 @@
+heading: contact
+list-items:
+  - key:   email
+    value: buttface@jackf.me
+    href:  mailto:buttface@jackf.me
+
+  - key:   twitter
+    value: '@jckfa'
+    href:  twitter.com/jckfa
