@@ -10,6 +10,7 @@
 @import "page.footer.css";
 
 @import "utilities.flex.css";
+@import "utilities.fix.css";
 @import "utilities.wrap.css";
 @import "utilities.display.css";
 @import "utilities.dividing.css";
