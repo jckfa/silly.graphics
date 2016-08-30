@@ -1,4 +1,9 @@
 
+.absolute {
+  position: absolute;
+  top: 0;
+}
+
 .fix-top {
   position: fixed;
 
