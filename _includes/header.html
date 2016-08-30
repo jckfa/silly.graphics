@@ -1,16 +1,16 @@
 
 <header class="site__header meta">
-  <div class="fix-top">
 
-    <div class="site-description-container hiding-above-800 button gutters" onclick="toggleDescription()">
-      <ul class="no-bullets list-flex">
-        <li>info</li>
-        <li>+</li>
+    <section class="info hiding-above-800 button gutters" onclick="toggleInfo()">
+      <ul class="no-bullets info-content">
+        <li>
+          <p>{{ site.description }}</p>
+        </li>
       </ul>
-      <div class="site-description">
-        <p>{{ site.description }}</p>
-      </div>
-    </div>
+      <ul class="no-bullets list-flex info-label">
+        <li>info</li>
+        <li class="info-icon">-</li>
+      </ul>
+    </section>
 
-  </div>
 </header>
