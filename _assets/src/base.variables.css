@@ -2,7 +2,8 @@
 :root {
   --text-color:     #322f2c;
   --meta-color:     var(--text-color);
-  --bg-color:       #ccc8c0;
+  /*--bg-color:       #ccc8c0;*/
+  --bg-color:       #d6d0c3;
 
   --gutter:         1rem;
   --margin:         12rem;
