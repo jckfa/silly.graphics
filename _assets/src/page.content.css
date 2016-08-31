@@ -69,6 +69,11 @@ p + p {
   }
 
   @media (--w-800) {
+    /* fix bug in chrome */
+    .list-content li::after {
+      animation: initial;
+    }
+
     /* animate arrow on hover */
     .list-content li:hover::after {
       animation-name: on-off;
