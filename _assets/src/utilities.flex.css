@@ -21,9 +21,3 @@
   .list-flex a {
     color: inherit;
   }
-
-@media (--w-l-800) {
-  .space-around {
-    justify-content: space-around;
-  }
-}
