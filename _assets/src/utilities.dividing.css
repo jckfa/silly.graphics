@@ -4,6 +4,32 @@
   padding-left:  calc(var(--gutter) / 2);
 }
 
+  @media (--w-800) {
+    .gutters {
+      padding-right: var(--gutter);
+      padding-left:  var(--gutter);
+    }
+  }
+
+  @media (--w-1600) {
+    .gutters {
+      padding-right: calc(var(--gutter) * 2);
+      padding-left:  calc(var(--gutter) * 2);
+    }
+  }
+
+.margin {
+  margin: calc(var(--margin) / 2);
+  background-color: rgb(255, 224, 13);
+}
+
+  @media (--w-1280) {
+    .margin {
+      margin: var(--margin);
+    }
+  }
+
+
 .pt {
   padding-top: var(--gutter);
 }

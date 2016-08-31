@@ -1,5 +1,8 @@
 
-.site__border {}
+.site__border {
+  /* puts behind lists */
+  z-index: 0;
+}
 
 .top-right,
 .bottom-left {
