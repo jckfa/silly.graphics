@@ -1,10 +1,21 @@
 
-<header class="site__header meta">
+<header class="site__header meta uppercase">
+
+    <section class="hiding-below-800 gutters data-info">
+      <ul class="no-bullets row uppercase">
+        <li>Last Updated →</li>
+      </ul><!--
+
+   --><ul class="no-bullets row uppercase">
+        <li>{{ site.time | date: "%c" }}</li>
+      </ul>
+    </section>
 
     <section class="info hiding-above-800 button gutters" onclick="toggleInfo()">
       <ul class="no-bullets info-content">
         <li>
-          <p>{{ site.description }}</p>
+          <p class="wrap-26">{{ site.description }}</p>
+          <p>Last Updated: <br>{{ site.time | date: "%b %-d %X %Y" }}</p>
         </li>
       </ul>
       <ul class="no-bullets list-flex info-label">

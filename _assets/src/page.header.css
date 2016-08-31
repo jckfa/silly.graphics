@@ -3,6 +3,10 @@
   z-index: 1;
 }
 
+.info {
+  width: 100%;
+}
+
   .info::before {
     content: "";
 

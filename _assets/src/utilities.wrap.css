@@ -2,3 +2,7 @@
 .no-wrap {
   white-space: nowrap;
 }
+
+.wrap-26 {
+  max-width: 26em;
+}
