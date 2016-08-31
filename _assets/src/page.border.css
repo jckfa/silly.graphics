@@ -37,3 +37,15 @@
 .site__right-side ul {
   justify-content: space-around;
 }
+
+
+.margin {
+  margin: calc(var(--margin) / 2);
+  background-color: rgb(255, 224, 13);
+}
+
+  @media (--w-1280) {
+    .margin {
+      margin: var(--margin);
+    }
+  }
