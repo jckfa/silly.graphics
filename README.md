@@ -16,7 +16,7 @@
 - running on [Nginx][5] ([see configuration][6])
 - hosted on [Digital Ocean][7]
 - encrypted with [Let's Encrypt][9] ([A+ SSL Labs score][8])
-- ([see 100/100 PageSpeed score][10])
+- ([see PageSpeed score][10])
 
 
 ### deploying
