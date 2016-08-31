@@ -1,7 +1,7 @@
 
 .site__border {
   /* puts behind lists */
-  z-index: 0;
+  z-index: -1;
 }
 
 .top-right,
