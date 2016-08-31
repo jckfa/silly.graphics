@@ -2,39 +2,39 @@
 <footer class="site__footer meta gutters">
 
 <div class="divider">
-<!--
-{% for list in site.data.footer %}
-  {% unless list[1].hidden %}
- --><div class="row">
-      <ul class="no-bullets uppercase">
-        <li>
-          <ul class="no-bullets">
-            <li class="list-title">
-              {{ list[1].heading }}
-            </li>
-          </ul>
-        </li>
-      </ul><!--
-
-   --><ul class="no-bullets list-content">
-         {% assign list-items = list[1].list-items %}
-         {% for item in list-items %}
+  <!--
+  {% for list in site.data.footer %}
+    {% unless list[1].hidden %}
+   --><div class="row">
+        <ul class="no-bullets uppercase">
           <li>
-            <a {% if item.no-http %}
-                href="{{ item.href }}"
-              {% else %}
-                href="{{ item.href | prepend: 'http://' }}"
-              {% endif %}
-            target="_blank">
-              {{ item.key }} <span class="hiding-below-800">{{ item.value | prepend: "→ " }}</span>
-            </a>
+            <ul class="no-bullets">
+              <li class="list-title">
+                {{ list[1].heading }}
+              </li>
+            </ul>
           </li>
-        {% endfor %}
-      </ul>
-    </div><!--
-  {% endunless %}
-{% endfor %}
--->
+        </ul><!--
+
+     --><ul class="no-bullets list-content">
+           {% assign list-items = list[1].list-items %}
+           {% for item in list-items %}
+            <li>
+              <a {% if item.no-http %}
+                  href="{{ item.href }}"
+                {% else %}
+                  href="{{ item.href | prepend: 'http://' }}"
+                {% endif %}
+              target="_blank">
+                {{ item.key }} <span class="hiding-below-800">{{ item.value | prepend: "→ " }}</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div><!--
+    {% endunless %}
+  {% endfor %}
+  -->
 </div>
 
 </footer>
