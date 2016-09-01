@@ -1,6 +1,5 @@
 
 .site__footer {
-  text-transform: lowercase;
   white-space: nowrap;
 
   padding-bottom: calc(var(--gutter) * 16);
