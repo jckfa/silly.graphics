@@ -1,5 +1,6 @@
 
 .site__border {
+  color: var(--border-color);
   font-family: var(--serif);
   letter-spacing: 0.1em;
 

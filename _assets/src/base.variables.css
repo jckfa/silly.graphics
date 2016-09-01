@@ -1,9 +1,10 @@
 
 :root {
-  --text-color:     #322f2c;
+  --text-color:     white;
   --meta-color:     var(--text-color);
-  /*--bg-color:       #ccc8c0;*/
-  --bg-color:       #d6d0c3;
+  --border-color:   var(--text-color);
+  --bg-color:       black;
+  --shadow:         0 2px 6px currentColor;
 
   --gutter:         1rem;
   --margin:         12rem;

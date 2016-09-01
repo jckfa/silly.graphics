@@ -17,3 +17,18 @@
     animation: initial;
   }
 }
+
+@keyframes change-color {
+   0%  {color: white;}
+  20%  {color: orange;}
+  40%  {color: red;}
+  60%  {color: rgb(27, 145, 255);}
+  80%  {color: rgb(49, 208, 2);}
+ 100%  {color: white;}
+}
+
+.change-color {
+  animation-name: change-color;
+  animation-duration: 300s;
+  animation-iteration-count: infinite;
+}

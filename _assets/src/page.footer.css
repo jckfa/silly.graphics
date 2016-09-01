@@ -7,7 +7,7 @@
 
   @media (--w-l-800) {
     .site__footer {
-      background-color: rgba(0, 0, 0, 0.075);
+      /*background-color: rgba(0, 0, 0, 0.075);*/
       padding-top: calc(var(--gutter) * 2);
 
       /* adjust for less vertical space on mobile */

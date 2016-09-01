@@ -16,6 +16,6 @@ list-items:
     value: menoe grotesque
     href:  hungarumlaut.com/typefaces/menoe.html
 
-  - key:   page color
-    value: '#d6d0c3'
-    href:  www.colorpicker.com/ccc8c0
+  # - key:   page color
+  #   value: '#d6d0c3'
+  #   href:  www.colorpicker.com/ccc8c0
