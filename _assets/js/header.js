@@ -1,6 +1,7 @@
 
 var info   = document.getElementsByClassName("info");
 var icon   = document.getElementsByClassName("info-icon");
+var close  = document.getElementsByClassName("close-area");
 var hiding = "hiding-info";
 
 function hideInfo() {
@@ -27,4 +28,7 @@ function toggleInfo() {
   } else {
     icon[0].innerHTML = "-";
   }
+
+  // toggle close-area button
+  close[0].classList.toggle("hiding");
 }

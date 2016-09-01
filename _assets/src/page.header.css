@@ -54,6 +54,12 @@
   }
 }
 
+/* added by js */
 .trans {
   transition: var(--hover-off);
+}
+
+.close-area {
+  width: 100vw;
+  height: 100vh;
 }
