@@ -41,14 +41,14 @@
                     "riviera trial",
                     "Gerbera Light",
                     "Apercu",
-                    var(--sans-fallback);
+                    var(--sans-fallback);*/
 
-  --serif-fallback: "georgia",
-                    "times",
+  --serif-fallback: "times new roman",
+                    times,
                     serif;
 
-  --serif:          "beirut trial",
-                    var(--serif-fallback);*/
+  --serif:          georgia,
+                    var(--serif-fallback);
 }
 
 @custom-media --w-320  screen and (width >= 320px);

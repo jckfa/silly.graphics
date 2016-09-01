@@ -1,8 +1,16 @@
 
 .site__border {
+  font-family: var(--serif);
+  letter-spacing: 0.1em;
+
   /* puts behind lists */
   z-index: -1;
 }
+
+  .site__border li {
+    transform: scale(1, 2);
+    transform-origin: top;
+  }
 
 .top-right,
 .bottom-left {
