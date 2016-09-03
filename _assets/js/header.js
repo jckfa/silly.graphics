@@ -12,7 +12,7 @@ function hideInfo() {
   info[0].classList.add(hidingInfo);
 
   // add show icon
-  icon[0].innerHTML = "+";
+  icon[0].innerHTML = "↓";
 }
 
 function toggleInfo() {
@@ -24,9 +24,9 @@ function toggleInfo() {
 
   // if hiding, use show icon(+); else, use hide icon(-)
   if (info[0].classList.contains(hidingInfo)) {
-    icon[0].innerHTML = "+";
+    icon[0].innerHTML = "↓";
   } else {
-    icon[0].innerHTML = "-";
+    icon[0].innerHTML = "↑";
   }
 
   // toggle close-area button
