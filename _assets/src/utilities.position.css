@@ -1,7 +1,12 @@
 
-.absolute {
+.absolute-top {
   position: absolute;
   top: 0;
+}
+
+.absolute-bottom {
+  position: absolute;
+  bottom: 0;
 }
 
 .fix-top {
