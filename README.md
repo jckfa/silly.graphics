@@ -14,7 +14,7 @@
 - automated with [Gulp][2] ([see gulpfile][3])
 - styled with [cssnext][4]
 - running on [Nginx][5] ([see configuration][6])
-- hosted on [Digital Ocean][7]
+- hosted on [Digital Ocean][7] [referral link]
 - encrypted with [Let's Encrypt][9] ([A+ SSL Labs score][8])
 - ([see PageSpeed score][10])
 
