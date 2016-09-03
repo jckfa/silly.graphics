@@ -27,8 +27,24 @@
  100%  {color: white;}
 }
 
-.change-color {
-  animation-name: change-color;
+@keyframes change-bg-color {
+   0%  {background-color: white;}
+  20%  {background-color: orange;}
+  40%  {background-color: red;}
+  60%  {background-color: rgb(27, 145, 255);}
+  80%  {background-color: rgb(49, 208, 2);}
+ 100%  {background-color: white;}
+}
+
+.change-color, .change-bg-color {
   animation-duration: 300s;
   animation-iteration-count: infinite;
+}
+
+.change-color {
+  animation-name: change-color;
+}
+
+.change-bg-color {
+  animation-name: change-bg-color;
 }

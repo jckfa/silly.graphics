@@ -17,3 +17,15 @@
   padding-right: calc(var(--gutter) / 5);
   padding-left:  calc(var(--gutter) / 5);
 }
+
+.circle-button {
+  text-align: center;
+  line-height: 6rem;
+
+  width:  6.6rem;
+  height: 6.6rem;
+  display: block;
+
+  border: 0.1rem solid currentColor;
+  border-radius: 50%;
+}
