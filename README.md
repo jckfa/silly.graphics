@@ -1,15 +1,15 @@
-# about
+# ABOUT
 
-### what
-- an ever-growing list of things I'm saving for later reference
-- all generally related to graphic design
+### WHAT
+- a growing collection of links I'm saving for later reference
+- all links are generally related to graphic design
 
-### why
-- it's much more readable and organized in the format of a website as opposed to a raw markdown doc
+### WHY
 - sharing is cool
+- using data files with Jekyll makes it super easy to keep everything organized
 
 
-# summary
+# SUMMARY
 - built with [Jekyll][1]
 - automated with [Gulp][2] ([see gulpfile][3])
 - styled with [cssnext][4]
@@ -19,10 +19,10 @@
 - ([see PageSpeed score][10])
 
 
-### deploying
+### DEPLOYING
 Instead of pushing source files to my server and building there, I build on my development machine and push from `_site`. And I have a gulp task (deploy) to automate this.
 
-### compatibility
+### COMPATIBILITY
 - show/hide functionality on mobile requires [classList][11]
 - relies on [vh][12] and [flexbox][13] for the text bordering the window
 - only uses [woff][14] and [woff2][15] for webfonts
@@ -35,7 +35,7 @@ Instead of pushing source files to my server and building there, I build on my d
 [4]: http://cssnext.io
 [5]: http://nginx.org
 [6]: https://github.com/jckfa/nginx-config/blob/master/sites-available/silly.graphics
-[7]: https://www.digitalocean.com
+[7]: https://m.do.co/c/b09c1fce4b40
 [8]: https://www.ssllabs.com/ssltest/analyze.html?d=silly.graphics&latest
 [9]: https://letsencrypt.org
 [10]: https://developers.google.com/speed/pagespeed/insights/?url=silly.graphics&tab=mobile
