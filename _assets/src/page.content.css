@@ -62,8 +62,8 @@ p + p {
       }
 
         .list-content a, .list-title {
-          padding-top: var(--gutter);
-          padding-bottom: var(--gutter);
+          padding-top:    var(--target-area);
+          padding-bottom: var(--target-area);
         }
   }
 

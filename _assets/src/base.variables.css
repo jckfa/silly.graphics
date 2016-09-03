@@ -7,6 +7,7 @@
   --shadow:         0 2px 6px currentColor;
 
   --gutter:         1rem;
+  --target-area:    calc(var(--gutter) * 1.5);
   --margin:         12rem;
 
   --hover-off:      250ms cubic-bezier(0.1, 1.05, 0.15, 1.1);

@@ -40,8 +40,8 @@
     }
 
     .info-label {
-      padding-top:    var(--gutter);
-      padding-bottom: var(--gutter);
+      padding-top:    var(--target-area);
+      padding-bottom: var(--target-area);
       /*background-color: yellow;*/
     }
 
@@ -49,13 +49,13 @@
 /* added by js */
 
 .collapsed {
-  transform: translateY(calc(-100% + 2.8rem + var(--gutter) * 2));
+  transform: translateY(calc(-100% + 2.8rem + var(--target-area) * 2));
 }
 
 @media (--w-640) {
   /* adjust for font size increase */
   .collapsed {
-    transform: translateY(calc(-100% + 3.0rem + var(--gutter) * 2));
+    transform: translateY(calc(-100% + 3.0rem + var(--target-area) * 2));
   }
 }
 
