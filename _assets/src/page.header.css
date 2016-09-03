@@ -48,13 +48,13 @@
 
 /* added by js */
 
-.hiding-info {
+.collapsed {
   transform: translateY(calc(-100% + 2.8rem + var(--gutter) * 2));
 }
 
 @media (--w-640) {
   /* adjust for font size increase */
-  .hiding-info {
+  .collapsed {
     transform: translateY(calc(-100% + 3.0rem + var(--gutter) * 2));
   }
 }
@@ -64,10 +64,12 @@
   transition: var(--hover-off);
 }
 
-.close-area {
-  width: 100vw;
-  height: 100vh;
+@media (--w-l-800) {
+  .close-area {
+    width: 100vw;
+    height: 100vh;
 
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
 }
