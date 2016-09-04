@@ -56,9 +56,9 @@
   margin-bottom: calc(var(--gutter) * 8);
 }*/
 
-/*.mb16 {
+.mb16 {
   margin-bottom: calc(var(--gutter) * 16);
-}*/
+}
 
 /* adjust for less vertical space on mobile */
 @media (--w-l-800) {
@@ -74,9 +74,9 @@
     margin-bottom: calc(var(--gutter) * 4);
   }*/
 
-  /*.mb16 {
+  .mb16 {
     margin-bottom: calc(var(--gutter) * 8);
-  }*/
+  }
 }
 
 
