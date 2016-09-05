@@ -6,7 +6,7 @@ var collapsed  = "collapsed";
 
 function hideInfo() {
   // position absolute to overlay content
-  info[0].classList.add("absolute-top");
+  // info[0].classList.add("absolute-top");
 
   // hide info
   info[0].classList.add(collapsed);

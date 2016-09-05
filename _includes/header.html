@@ -1,6 +1,8 @@
 
 <header class="site__header meta uppercase pt1">
 
+    <div class="close-area hiding fix-top button" onclick="toggleInfo()"></div>
+
     <section class="over-800 gutters data-info">
       <ul class="no-bullets row uppercase">
         <li>Last Updated →</li>
@@ -11,7 +13,7 @@
       </ul>
     </section>
 
-    <section class="info under-800 button gutters" onclick="toggleInfo()">
+    <section class="info under-800 button gutters fix-top" onclick="toggleInfo()">
       <ul class="no-bullets info-content">
         <li>
           <p class="wrap-26">{{ site.description }}</p>
@@ -23,8 +25,6 @@
         <li class="info-icon">•</li>
       </ul>
     </section>
-
-    <div class="close-area hiding fix-top button" onclick="toggleInfo()"></div>
 
 </header>
 
