@@ -8,6 +8,9 @@ function hideInfo() {
   // position absolute to overlay content
   // info[0].classList.add("absolute-top");
 
+  // position fixed to overlay content
+  info[0].classList.add("fix-top");
+
   // hide info
   info[0].classList.add(collapsed);
 
