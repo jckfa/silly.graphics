@@ -64,6 +64,3 @@
 @custom-media --w-1600 screen and (width >= 1600px);
 
 @custom-media --w-l-800 screen and (width < 800px);
-
-@custom-media --w-l-580 screen and (width < 580px);
-@custom-media --wrapper screen and (width >= 580px) and (width < 800px);
