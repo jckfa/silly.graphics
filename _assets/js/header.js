@@ -1,8 +1,9 @@
 
-var info       = document.getElementsByClassName("info");
-var icon       = document.getElementsByClassName("info-icon");
-var close      = document.getElementsByClassName("close-area");
-var collapsed  = "collapsed";
+var info      = document.getElementsByClassName("info");
+var icon      = document.getElementsByClassName("info-icon");
+var label     = document.getElementsByClassName("info-label");
+var close     = document.getElementsByClassName("close-area");
+var collapsed = "collapsed";
 
 function hideInfo() {
   // position absolute to overlay content
@@ -13,6 +14,14 @@ function hideInfo() {
 
   // hide info
   info[0].classList.add(collapsed);
+
+  // add bottom border
+  info[0].classList.add("border-bottom");
+
+  // show all dropdown labels
+  for (i = 0; i < label.length; i++) {
+    label[i].classList.remove("hiding");
+  }
 
   // add show icon
   icon[0].innerHTML = "↓";

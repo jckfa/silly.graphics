@@ -26,7 +26,6 @@
 
     background-color: var(--bg-color);
     /*box-shadow: var(--shadow);*/
-    border-bottom: 0.1rem solid currentColor;
   }
 
     .info-content {
@@ -61,6 +60,10 @@
 /* added by js */
 .trans {
   transition: var(--hover-off);
+}
+
+.border-bottom {
+  border-bottom: 0.1rem solid currentColor;
 }
 
 @media (--w-l-800) {
