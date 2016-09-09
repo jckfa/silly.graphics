@@ -4,3 +4,11 @@
 .rotate-z-180 {
   transform: rotateZ(180deg);
 }
+
+.rotate-z-45r {
+  transform: rotateZ(45deg);
+}
+
+.rotate-z-45l {
+  transform: rotateZ(-45deg);
+}
