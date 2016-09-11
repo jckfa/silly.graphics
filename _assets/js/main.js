@@ -1,7 +1,6 @@
 
 var mainListContent = document.getElementsByClassName("main-list-content"),
-    mainListIcon    = document.getElementsByClassName("main-list-icon"),
-    listTitle       = document.getElementsByClassName("list-title");
+    mainListIcon    = document.getElementsByClassName("main-list-icon");
 
 function closeMainLists() {
   for (i = 0; i < mainListContent.length; i++) {
