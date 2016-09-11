@@ -20,19 +20,19 @@
 
 @keyframes change-color {
    0%  {color: white;}
-  20%  {color: orange;}
+  20%  {color: yellow;}
   40%  {color: red;}
-  60%  {color: rgb(27, 145, 255);}
-  80%  {color: rgb(49, 208, 2);}
+  60%  {color: dodgerblue;}
+  80%  {color: limegreen;}
  100%  {color: white;}
 }
 
 @keyframes change-bg-color {
    0%  {background-color: white;}
-  20%  {background-color: orange;}
+  20%  {background-color: yellow;}
   40%  {background-color: red;}
-  60%  {background-color: rgb(27, 145, 255);}
-  80%  {background-color: rgb(49, 208, 2);}
+  60%  {background-color: dodgerblue;}
+  80%  {background-color: limegreen;}
  100%  {background-color: white;}
 }
 
