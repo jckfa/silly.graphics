@@ -3,7 +3,11 @@
 
   {% include head.html %}
 
-  <body onload="initHeaderDropdown(); initMainDropdown(); closeLists(); initFooterDropdown();" class="change-color">
+  <body onload="initHeaderDropdown();
+                closeMainLists();
+                closeFooterLists();
+                initFooterDropdown()"
+        class="change-color">
 
     {% include header.html %}
 

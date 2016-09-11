@@ -23,14 +23,14 @@ layout: cover
             {{ list[1].heading }} ({{ list-items | size }})
           </li><!--
        --><li>
-            <span class="list-icon">•</span>
+            <span class="main-list-icon">•</span>
           </li>
         </ul>
       </li>
 
     </ul><!--
 
- --><ul class="no-bullets row list-content child-container">
+ --><ul class="no-bullets row list-content main-list-content child-container">
       {% for item in list-items %}
       <li>
         <a href="{{ item.href | prepend: 'http://' }}" target="_blank" data-size="{{ forloop.index }}"><!--

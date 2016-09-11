@@ -1,38 +1,31 @@
 
-var ListContent = document.getElementsByClassName("list-content"),
-    listIcon    = document.getElementsByClassName("list-icon"),
-    listTitle   = document.getElementsByClassName("list-title");
+var mainListContent = document.getElementsByClassName("main-list-content"),
+    mainListIcon    = document.getElementsByClassName("main-list-icon"),
+    listTitle       = document.getElementsByClassName("list-title");
 
-function initMainDropdown() {
-  // add open icon
-  for (i = 0; i < listIcon.length; i++) {
-    listIcon[i].innerHTML = "+";
+function closeMainLists() {
+  for (i = 0; i < mainListContent.length; i++) {
+    // close all index lists
+    mainListContent[i].classList.add("over-800");
+    // add open icon to all index lists
+    mainListIcon[i].innerHTML = "+";
   }
 }
 
-// hide all list items
-function closeLists() {
-  for (i = 0; i < ListContent.length; i++) {
-    ListContent[i].classList.add("over-800");
-  }
-}
-
-// show/hide list items
+// open/close index list
 function toggleMainList(index) {
-  // if selected item is hiding
-  if (ListContent[index].classList.contains("over-800")) {
-    // hide all items
-    closeLists();
-    // and only show selected item
-    ListContent[index].classList.remove("over-800");
-
-    // add close icon
-    listIcon[index].innerHTML = "-";
+  // if selected list is closed
+  if (mainListContent[index].classList.contains("over-800")) {
+    // close all index lists
+    closeMainLists();
+    // only open selected list
+    mainListContent[index].classList.remove("over-800");
+    // only add close icon to selected list
+    mainListIcon[index].innerHTML = "-";
   } else {
-    // hide selected item
-    ListContent[index].classList.add("over-800");
-
-    // add open icon
-    listIcon[index].innerHTML = "+";
+    // only close selected list
+    mainListContent[index].classList.add("over-800");
+    // only add open icon to selected list
+    mainListIcon[index].innerHTML = "+";
   }
 }

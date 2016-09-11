@@ -17,11 +17,14 @@
   {% for list in site.data.footer %}
   --><div class="row parent">
         <ul class="no-bullets uppercase">
-          <li>
-            <ul class="no-bullets">
-              <li class="list-title button"
-                  onclick='toggleFooterList({{ forloop.index0}})'>
+          <li class="list-title button"
+              onclick='toggleFooterList({{ forloop.index0}})'>
+            <ul class="no-bullets list-flex">
+              <li>
                 {{ list[1].heading }}
+              </li><!--
+           --><li>
+                <span class="footer-list-icon">•</span>
               </li>
             </ul>
           </li>
