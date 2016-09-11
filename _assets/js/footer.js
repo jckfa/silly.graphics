@@ -14,8 +14,8 @@ function initFooterDropdown() {
   // add top border
   footerDropdown[0].classList.add("border-top");
 
-  // add show icon
-  icon[1].innerHTML = "↑";
+  // add open icon
+  dropdownIcon[1].innerHTML = "↑";
 
   // open contact list
   footerListContent[0].classList.remove("over-800");
@@ -25,14 +25,14 @@ function toggleFooterDropdown() {
   // apply animation
   footerDropdown[0].classList.add("trans");
 
-  // toggle showing/hiding info
+  // toggle dropdown position
   footerDropdown[0].classList.toggle(movedDown);
 
-  // if hiding, use show icon; if not hiding, use hide icon
+  // if closed, use open icon; if open, use close icon
   if (footerDropdown[0].classList.contains(movedDown)) {
-    icon[1].innerHTML = "↑";
+    dropdownIcon[1].innerHTML = "↑";
   } else {
-    icon[1].innerHTML = "↓";
+    dropdownIcon[1].innerHTML = "↓";
   }
 
   // toggle close-area button

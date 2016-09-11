@@ -1,6 +1,6 @@
 
 var headerDropdown = document.getElementsByClassName("header-dropdown"),
-    icon           = document.getElementsByClassName("dropdown-icon"),
+    dropdownIcon   = document.getElementsByClassName("dropdown-icon"),
     label          = document.getElementsByClassName("dropdown-label"),
     close          = document.getElementsByClassName("close-area"),
     movedUp        = "moved-up";
@@ -20,22 +20,22 @@ function initHeaderDropdown() {
     label[i].classList.remove("hiding");
   }
 
-  // add show icon
-  icon[0].innerHTML = "↓";
+  // add open icon
+  dropdownIcon[0].innerHTML = "↓";
 }
 
 function toggleHeaderDropdown() {
   // apply animation
   headerDropdown[0].classList.add("trans");
 
-  // toggle showing/hiding info
+  // toggle dropdown position
   headerDropdown[0].classList.toggle(movedUp);
 
-  // if hiding, use show icon; if not hiding, use hide icon
+  // if closed, use open icon; if open, use close icon
   if (headerDropdown[0].classList.contains(movedUp)) {
-    icon[0].innerHTML = "↓";
+    dropdownIcon[0].innerHTML = "↓";
   } else {
-    icon[0].innerHTML = "↑";
+    dropdownIcon[0].innerHTML = "↑";
   }
 
   // toggle close-area button
