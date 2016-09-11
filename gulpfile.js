@@ -38,7 +38,7 @@ gulp.task('styles', function() {
 
 // styles > buildWatch
 gulp.task('buildWatch', ['styles'], shell.task(
-  'bundle exec jekyll build --watch'
+  'JEKYLL_ENV=development bundle exec jekyll build --watch'
 ));
 
 // serve
@@ -69,7 +69,7 @@ var path = '_site';
 // styles > build
 gulp.task('build', ['styles'], shell.task(
   // 'bundle exec jekyll build --destination ' + path
-  'bundle exec jekyll build'
+  'JEKYLL_ENV=production bundle exec jekyll build'
 ));
 
 // styles > build > minify

@@ -54,7 +54,7 @@
   {% endfor %}
   -->
   </div>
-  
+
 </div>
 
 </footer>
@@ -64,6 +64,8 @@
   {% asset 'footer.js' %}
 </script>
 
+{% if jekyll.environment == "production" %}
 <script type="text/javascript">
   {% asset 'analytics.js' %}
 </script>
+{% endif %}
