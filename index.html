@@ -20,11 +20,10 @@ layout: cover
           onclick='toggleMainList({{ forloop.index0 }})'>
         <ul class="no-bullets list-flex">
           <li>
-            {{ list[1].heading }}
+            {{ list[1].heading }} ({{ list-items | size }})
           </li><!--
        --><li>
-            <span class="list-size">{{ list-items | size }}</span><!--
-         --><span class="list-icon">•</span>
+            <span class="list-icon">•</span>
           </li>
         </ul>
       </li>
