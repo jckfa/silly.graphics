@@ -80,6 +80,16 @@
 }
 
 
+@media (--w-l-800) {
+  .border-top {
+    border-top: 0.1rem solid currentColor;
+  }
+
+  .border-bottom {
+    border-bottom: 0.1rem solid currentColor;
+  }
+}
+
 @media (--w-800) {
   .divider {
     border-top: 0.1rem solid currentColor;
