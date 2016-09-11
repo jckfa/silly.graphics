@@ -17,7 +17,7 @@
 
   @media (--w-800) {
     .site__footer .list-title {
-      margin-bottom: var(--gutter);
+      margin-bottom: calc(var(--gutter) * 4);
     }
   }
 
@@ -82,7 +82,7 @@
     }
 
       .child-container li::before {
-        content: "↑";
+        content: "•";
 
         /*background-color: red;*/
 
