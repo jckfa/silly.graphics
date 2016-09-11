@@ -1,7 +1,7 @@
 
 <header class="site__header meta uppercase pt1">
 
-  <div class="close-area hiding fix-top button" onclick="toggleInfo()"></div>
+  <div class="close-area hiding fix-top button" onclick="toggleHeaderDropdown()"></div>
 
   <section class="over-800 gutters data-info">
     <ul class="no-bullets row uppercase">
@@ -13,16 +13,16 @@
     </ul>
   </section>
 
-  <section class="info under-800 button gutters" onclick="toggleInfo()">
+  <section class="header-dropdown under-800 gutters">
     <ul class="no-bullets info-content">
       <li>
         <p class="wrap-26">{{ site.description }}</p>
         <p>Last Updated ↓<br>{{ site.time | date: "%b %-d %X %Y" }}</p>
       </li>
     </ul>
-    <ul class="no-bullets list-flex info-label hiding">
+    <ul class="no-bullets list-flex button dropdown-label hiding" onclick="toggleHeaderDropdown()">
       <li>info</li>
-      <li class="info-icon">•</li>
+      <li class="dropdown-icon">•</li>
     </ul>
   </section>
 

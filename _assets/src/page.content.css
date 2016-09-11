@@ -3,11 +3,6 @@ p + p {
   margin-top: var(--gutter);
 }
 
-/* add space between lists */
-.list + .list {
-  margin-top: calc(var(--gutter) * 4);
-}
-
 .list-content {
   white-space: nowrap;
 }
@@ -40,22 +35,19 @@ p + p {
       margin-top: 0;
     }
 
-    .list-content {
-      border-top: 0.1rem solid currentColor;
-      border-bottom: 0.1rem solid currentColor;
-    }
-
-      .list-content li + li {
-        border-top: 0.1rem solid currentColor;
+      .list-content a, .list-title {
+        padding-top:    var(--target-area);
+        padding-bottom: var(--target-area);
+        /*background-color: red;*/
       }
-
-        .list-content a, .list-title {
-          padding-top:    var(--target-area);
-          padding-bottom: var(--target-area);
-        }
   }
 
   @media (--w-800) {
+    /* add space between lists */
+    .list + .list {
+      margin-top: calc(var(--gutter) * 4);
+    }
+
     /* fix bug in chrome */
     .list-content li::after {
       animation: initial;

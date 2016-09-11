@@ -2,10 +2,12 @@
 layout: cover
 ---
 
+<div class="parent-container">
+
 {% for list in site.data.lists %}
-  {% unless list[1].hidden %}
   {% assign list-items = list[1].list-items | uniq | sort: "name" %}
-  <section class="list divider">
+  {% assign var = forloop.length %}
+  <section class="list divider parent">
     <ul class="no-bullets row" id="{{ list[1].heading }}">
 
       {% for item in list-items %}
@@ -14,11 +16,10 @@ layout: cover
       </li>
       {% endfor %}
 
-      <li class="under-800 list-title">
+      <li class="under-800 list-title button"
+          onclick='toggleList({{ forloop.index0 }})'>
         <ul class="no-bullets list-flex">
           <li>
-            {{ list[1].heading }}<br>
-            {{ list[1].heading }}<br>
             {{ list[1].heading }}
           </li><!--
        --><li>
@@ -29,7 +30,7 @@ layout: cover
 
     </ul><!--
 
- --><ul class="no-bullets row list-content">
+ --><ul class="no-bullets row list-content child-container">
       {% for item in list-items %}
       <li>
         <a href="{{ item.href | prepend: 'http://' }}" target="_blank" data-size="{{ forloop.index }}"><!--
@@ -39,5 +40,11 @@ layout: cover
       {% endfor %}
     </ul>
   </section>
-  {% endunless %}
 {% endfor %}
+
+</div>
+
+
+<script type="text/javascript">
+  {% asset 'main.js' %}
+</script>

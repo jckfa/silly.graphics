@@ -1,24 +1,35 @@
 
 <footer class="site__footer meta gutters uppercase">
 
-<div class="divider">
+<div class="footer-close-area hiding fix-top button" onclick="toggleFooterDropdown()"></div>
+
+<div class="divider footer-dropdown">
+
+  <section class="under-800 button" onclick="toggleFooterDropdown()">
+    <ul class="no-bullets list-flex dropdown-label hiding">
+      <li>more info</li>
+      <li class="dropdown-icon">•</li>
+    </ul>
+  </section>
+
+  <div class="parent-container">
   <!--
   {% for list in site.data.footer %}
-    {% unless list[1].hidden %}
-   --><div class="row">
+  --><div class="row parent">
         <ul class="no-bullets uppercase">
           <li>
             <ul class="no-bullets">
-              <li class="list-title">
+              <li class="list-title button"
+                  onclick='toggleFooterList({{ forloop.index0}})'>
                 {{ list[1].heading }}
               </li>
             </ul>
           </li>
         </ul><!--
 
-     --><ul class="no-bullets list-content">
-           {% assign list-items = list[1].list-items %}
-           {% for item in list-items %}
+     --><ul class="no-bullets list-content footer-list-content child-container">
+          {% assign list-items = list[1].list-items %}
+          {% for item in list-items %}
             <li>
               <a {% if item.no-http %}
                   href="{{ item.href }}"
@@ -32,13 +43,17 @@
           {% endfor %}
         </ul>
       </div><!--
-    {% endunless %}
   {% endfor %}
   -->
+  </div>
 </div>
 
 </footer>
 
+
+<script type="text/javascript">
+  {% asset 'footer.js' %}
+</script>
 
 <script type="text/javascript">
   {% asset 'analytics.js' %}
