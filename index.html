@@ -17,13 +17,14 @@ layout: cover
       {% endfor %}
 
       <li class="under-800 list-title button"
-          onclick='toggleList({{ forloop.index0 }})'>
+          onclick='toggleMainList({{ forloop.index0 }})'>
         <ul class="no-bullets list-flex">
           <li>
             {{ list[1].heading }}
           </li><!--
        --><li>
-            {{ list-items | size }}
+            <span class="list-size">{{ list-items | size }}</span><!--
+         --><span class="list-icon">•</span>
           </li>
         </ul>
       </li>
