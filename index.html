@@ -19,12 +19,8 @@ layout: cover
       <li class="under-800 list-title button"
           onclick='toggleMainList({{ forloop.index0 }})'>
         <ul class="no-bullets list-flex">
-          <li>
-            {{ list[1].heading }} ({{ list-items | size }})
-          </li><!--
-       --><li>
-            <span class="main-list-icon">•</span>
-          </li>
+          <li>{{ list[1].heading }} ({{ list-items | size }})</li><!--
+       --><li><span class="main-list-icon">•</span></li>
         </ul>
       </li>
 
