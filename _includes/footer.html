@@ -15,40 +15,46 @@
   <div class="parent-container">
   <!--
   {% for list in site.data.footer %}
-  --><div class="row parent">
-        <ul class="no-bullets uppercase">
-          <li class="list-title button"
-              onclick='toggleFooterList({{ forloop.index0}})'>
-            <ul class="no-bullets list-flex">
-              <li>
-                {{ list[1].heading }}
-              </li><!--
-           --><li>
-                <span class="footer-list-icon">•</span>
-              </li>
-            </ul>
-          </li>
-        </ul><!--
+ --><div class="row parent">
+      <ul class="no-bullets uppercase">
 
-     --><ul class="no-bullets list-content footer-list-content child-container">
-          {% assign list-items = list[1].list-items %}
-          {% for item in list-items %}
+        <li class="over-800 list-title">
+          {{ list[1].heading }}
+        </li>
+
+        <li class="under-800 list-title button"
+            onclick='toggleFooterList({{ forloop.index0}})'>
+          <ul class="no-bullets list-flex">
             <li>
-              <a {% if item.no-http %}
-                  href="{{ item.href }}"
-                {% else %}
-                  href="{{ item.href | prepend: 'http://' }}"
-                {% endif %}
-              target="_blank">
-                {{ item.key }} <span class="over-800">{{ item.value | prepend: "→ " }}</span>
-              </a>
+              {{ list[1].heading }}
+            </li><!--
+         --><li>
+              <span class="footer-list-icon">•</span>
             </li>
-          {% endfor %}
-        </ul>
-      </div><!--
+          </ul>
+        </li>
+      </ul><!--
+
+   --><ul class="no-bullets list-content footer-list-content child-container">
+        {% assign list-items = list[1].list-items %}
+        {% for item in list-items %}
+          <li>
+            <a {% if item.no-http %}
+                href="{{ item.href }}"
+              {% else %}
+                href="{{ item.href | prepend: 'http://' }}"
+              {% endif %}
+            target="_blank">
+              {{ item.key }} <span class="over-800">{{ item.value | prepend: "→ " }}</span>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div><!--
   {% endfor %}
   -->
   </div>
+  
 </div>
 
 </footer>
