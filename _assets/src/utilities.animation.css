@@ -48,3 +48,8 @@
 .change-bg-color {
   animation-name: change-bg-color;
 }
+
+/* added by js */
+.trans {
+  transition: var(--hover-off);
+}
