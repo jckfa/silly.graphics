@@ -4,11 +4,12 @@ var footerListContent = document.getElementsByClassName("footer-list-content"),
     footerDropdown    = document.getElementsByClassName("footer-dropdown"),
     footerClose       = document.getElementsByClassName("footer-close-area"),
     movedDown         = "moved-down";
+    // over800class is defined in main.js
 
 function closeFooterLists() {
   for (i = 0; i < footerListContent.length; i++) {
     // close all footer lists
-    footerListContent[i].classList.add("over-800");
+    footerListContent[i].classList.add(over800class);
     // add open icon to all footer lists
     footerListIcon[i].innerHTML = "+";
   }
@@ -16,7 +17,7 @@ function closeFooterLists() {
 
 // open contact list
 function openContactList() {
-  footerListContent[0].classList.remove("over-800");
+  footerListContent[0].classList.remove(over800class);
   footerListIcon[0].innerHTML = "-";
 }
 
@@ -53,16 +54,16 @@ function toggleFooterDropdown() {
 // open/close footer list
 function toggleFooterList(index) {
   // if selected list is closed
-  if (footerListContent[index].classList.contains("over-800")) {
+  if (footerListContent[index].classList.contains(over800class)) {
     // close all footer lists
     closeFooterLists();
     // only open selected list
-    footerListContent[index].classList.remove("over-800");
+    footerListContent[index].classList.remove(over800class);
     // only add close icon to selected list
     footerListIcon[index].innerHTML = "-";
   } else {
     // only close selected list
-    footerListContent[index].classList.add("over-800");
+    footerListContent[index].classList.add(over800class);
     // only add open icon to selected list
     footerListIcon[index].innerHTML = "+";
   }
