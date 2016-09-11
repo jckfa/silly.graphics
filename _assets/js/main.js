@@ -6,7 +6,7 @@ var ListContent = document.getElementsByClassName("list-content"),
 function initMainDropdown() {
   // add open icon
   for (i = 0; i < listIcon.length; i++) {
-    listIcon[i].innerHTML = "+";
+    listIcon[i].innerHTML = " +";
   }
 }
 
@@ -27,12 +27,12 @@ function toggleMainList(index) {
     ListContent[index].classList.remove("over-800");
 
     // add close icon
-    listIcon[index].innerHTML = "-";
+    listIcon[index].innerHTML = " -";
   } else {
     // hide selected item
     ListContent[index].classList.add("over-800");
 
     // add open icon
-    listIcon[index].innerHTML = "+";
+    listIcon[index].innerHTML = " +";
   }
 }
