@@ -1,8 +1,8 @@
 
-var yo             = document.getElementsByClassName("yo"),
-    mainListIcon   = document.getElementsByClassName("main-list-icon"),
-    childContainer = document.getElementsByClassName("child-container"),
-    over800class   = "height0";
+var yo           = document.getElementsByClassName("yo"),
+    mainListCont = document.getElementsByClassName("main-list-content"),
+    mainListIcon = document.getElementsByClassName("main-list-icon"),
+    over800class = "height0";
 
 
 function closeMainLists() {
@@ -12,7 +12,7 @@ function closeMainLists() {
     // add open icon to all index lists
     mainListIcon[i].innerHTML = "+";
     // unindent lists and set opacity to 0
-    childContainer[i].classList.add("unindented");
+    mainListCont[i].classList.add("unindented");
     // hide with inline height
     yo[i].style.height = "0";
   }
@@ -32,7 +32,7 @@ function toggleMainList(index, size) {
     // only add close icon to selected list
     mainListIcon[index].innerHTML = "-";
     // indent selected list and set opacity to 1
-    childContainer[index].classList.remove("unindented");
+    mainListCont[index].classList.remove("unindented");
 
     // top, bottom padding: 1.5rem + 1.5rem = 3rem
     // text: 1em
@@ -48,7 +48,7 @@ function toggleMainList(index, size) {
     // only add open icon to selected list
     mainListIcon[index].innerHTML = "+";
     // unindent selected list and set opacity to 0
-    childContainer[index].classList.add("unindented");
+    mainListCont[index].classList.add("unindented");
 
     // hide with inline height
     yo[index].style.height = "0";
