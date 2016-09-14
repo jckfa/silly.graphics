@@ -50,6 +50,13 @@
   .over-800 {
     display: none;
   }
+
+  .height0 {
+    height: 0;
+    overflow-y: hidden;
+
+    transition: 200ms ease;
+  }
 }
 
 @media (--w-800) {

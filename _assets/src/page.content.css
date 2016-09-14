@@ -38,7 +38,7 @@ p + p {
       .list-content a, .list-title {
         padding-top:    var(--target-area);
         padding-bottom: var(--target-area);
-        /*background-color: red;*/
+        /*background-color: #333;*/
       }
   }
 
@@ -98,12 +98,16 @@ p + p {
     margin-top: calc(var(--gutter) * 2);
   }
 
-    .child-container li {
+    .child-container {
       margin-left: 1em;
+      opacity: 1;
+
+      transition: 200ms ease;
     }
 
       .child-container li::before {
-        content: "•";
+        /*content: "•";*/
+        content: "";
 
         /*background-color: red;*/
 
@@ -130,4 +134,15 @@ p + p {
   .child-container, .child-container li + li {
     border-color: limegreen;
   }*/
+
+  /* added via js */
+  .unindented {
+    /*margin-left: 0;*/
+    opacity: 0;
+  }
+
+  .yo {
+    transition: 200ms ease;
+    overflow: hidden;
+  }
 }

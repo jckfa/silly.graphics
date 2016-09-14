@@ -17,7 +17,7 @@ layout: cover
       {% endfor %}
 
       <li class="under-800 list-title button"
-          onclick='toggleMainList({{ forloop.index0 }})'>
+          onclick='toggleMainList({{ forloop.index0 }}, {{ list-items | size }})'>
         <ul class="no-bullets list-flex">
           <li>{{ list[1].heading }}—{{ list-items | size }}</li><!--
        --><li><span class="main-list-icon">•</span></li>
@@ -26,15 +26,19 @@ layout: cover
 
     </ul><!--
 
- --><ul class="no-bullets row list-content main-list-content child-container">
-      {% for item in list-items %}
-      <li>
-        <a href="{{ item.href | prepend: 'http://' }}" target="_blank" data-size="{{ forloop.index }}"><!--
-       --><span>{{ item.name | downcase }}</span><!--
-     --></a>
-      </li>
-      {% endfor %}
-    </ul>
+ --><div class="row yo">
+
+      <ul class="no-bullets list-content main-list-content child-container">
+        {% for item in list-items %}
+        <li>
+          <a href="{{ item.href | prepend: 'http://' }}" target="_blank" data-size="{{ forloop.index }}"><!--
+         --><span>{{ item.name | downcase }}</span><!--
+       --></a>
+        </li>
+        {% endfor %}
+      </ul>
+
+    </div>
   </section>
 {% endfor %}
 
