@@ -6,7 +6,6 @@ layout: cover
 
 {% for list in site.data.lists %}
   {% assign list-items = list[1].list-items | uniq | sort: "name" %}
-  {% assign var = forloop.length %}
   <section class="list divider parent">
     <ul class="no-bullets row" id="{{ list[1].heading }}">
 
