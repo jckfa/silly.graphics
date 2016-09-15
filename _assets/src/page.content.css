@@ -85,7 +85,7 @@ p + p {
       }
 
     /* overwrite inline styling added via js */
-    .yo, .yoo {
+    .main-list-content-container, .footer-list-content-container {
       height: auto !important;
     }
   }
@@ -146,7 +146,7 @@ p + p {
     opacity: 0;
   }
 
-  .yo, .yoo {
+  .main-list-content-container, .footer-list-content-container {
     transition: 200ms ease;
     overflow: hidden;
   }
