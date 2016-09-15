@@ -56,7 +56,7 @@
     height: 0 !important;
     overflow-y: hidden;
 
-    transition: 200ms ease;
+    /*transition: var(--hover-on);*/
   }
 }
 

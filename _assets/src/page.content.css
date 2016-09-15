@@ -107,7 +107,7 @@ p + p {
       margin-left: 1em;
       opacity: 1;
 
-      transition: 200ms ease;
+      transition: var(--hover-off-500);
     }
 
       .child-container li::before {
@@ -147,7 +147,6 @@ p + p {
   }
 
   .main-list-content-container, .footer-list-content-container {
-    transition: 200ms ease;
-    overflow: hidden;
+    transition: var(--hover-off-500);
   }
 }
