@@ -52,7 +52,8 @@
   }
 
   .height0 {
-    height: 0;
+    /* !important to overwrite inline styling */
+    height: 0 !important;
     overflow-y: hidden;
 
     transition: 200ms ease;

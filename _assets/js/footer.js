@@ -1,25 +1,29 @@
 
-var footerListContent = document.getElementsByClassName("footer-list-content"),
-    footerListIcon    = document.getElementsByClassName("footer-list-icon"),
-    footerDropdown    = document.getElementsByClassName("footer-dropdown"),
-    footerClose       = document.getElementsByClassName("footer-close-area"),
-    movedDown         = "moved-down";
-    // over800class is defined in main.js
+var yoo            = document.getElementsByClassName("yoo"),
+    footerListCont = document.getElementsByClassName("footer-list-content"),
+    footerListIcon = document.getElementsByClassName("footer-list-icon"),
+    footerDropdown = document.getElementsByClassName("footer-dropdown"),
+    footerClose    = document.getElementsByClassName("footer-close-area"),
+    movedDown      = "moved-down";
+    // over800class defined in main.js
 
 function closeFooterLists() {
-  for (i = 0; i < footerListContent.length; i++) {
+  for (i = 0; i < yoo.length; i++) {
     // close all footer lists
-    footerListContent[i].classList.add(over800class);
+    yoo[i].classList.add(over800class);
     // add open icon to all footer lists
     footerListIcon[i].innerHTML = "+";
+    // unindent lists and set opacity to 0
+    footerListCont[i].classList.add("unindented");
   }
 }
 
 // open contact list
-function openContactList() {
-  footerListContent[0].classList.remove(over800class);
-  footerListIcon[0].innerHTML = "-";
-}
+// function openContactList() {
+//   yoo[0].classList.remove(over800class);
+//   footerListIcon[0].innerHTML = "-";
+//   // yoo[0].style.height = "calc(" + size + " * (1em + 6px + (var(--target-area) * 2) + 0.1rem))";
+// }
 
 function initFooterDropdown() {
   // position fixed to overlay content
@@ -31,7 +35,7 @@ function initFooterDropdown() {
   // add open icon
   dropdownIcon[1].innerHTML = "↑";
   // open contact list
-  openContactList();
+  // openContactList();
 }
 
 function toggleFooterDropdown() {
@@ -52,19 +56,25 @@ function toggleFooterDropdown() {
 }
 
 // open/close footer list
-function toggleFooterList(index) {
+function toggleFooterList(index, size) {
   // if selected list is closed
-  if (footerListContent[index].classList.contains(over800class)) {
+  if (yoo[index].classList.contains(over800class)) {
     // close all footer lists
     closeFooterLists();
     // only open selected list
-    footerListContent[index].classList.remove(over800class);
+    yoo[index].classList.remove(over800class);
     // only add close icon to selected list
     footerListIcon[index].innerHTML = "-";
+    // indent selected list and set opacity to 1
+    footerListCont[index].classList.remove("unindented");
+    //
+    yoo[index].style.height = "calc(" + size + " * (1em + 6px + (var(--target-area) * 2) + 0.1rem))";
   } else {
     // only close selected list
-    footerListContent[index].classList.add(over800class);
+    yoo[index].classList.add(over800class);
     // only add open icon to selected list
     footerListIcon[index].innerHTML = "+";
+    // unindent selected list and set opacity to 0
+    footerListCont[index].classList.add("unindented");
   }
 }

@@ -15,6 +15,7 @@
   <div class="parent-container">
   <!--
   {% for list in site.data.footer %}
+  {% assign list-items = list[1].list-items %}
  --><div class="row parent">
       <ul class="no-bullets uppercase">
 
@@ -23,7 +24,7 @@
         </li>
 
         <li class="under-800 list-title button"
-            onclick='toggleFooterList({{ forloop.index0}})'>
+            onclick='toggleFooterList({{ forloop.index0 }}, {{ list-items | size }})'>
           <ul class="no-bullets list-flex">
             <li>
               {{ list[1].heading }}
@@ -35,21 +36,24 @@
         </li>
       </ul><!--
 
-   --><ul class="no-bullets list-content footer-list-content child-container">
-        {% assign list-items = list[1].list-items %}
-        {% for item in list-items %}
-          <li>
-            <a {% if item.no-http %}
-                href="{{ item.href }}"
-              {% else %}
-                href="{{ item.href | prepend: 'http://' }}"
-              {% endif %}
-            target="_blank">
-              {{ item.key }} <span class="over-800">{{ item.value | prepend: "→ " }}</span>
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
+   --><div class="yoo">
+
+        <ul class="no-bullets list-content footer-list-content child-container">
+          {% for item in list-items %}
+            <li>
+              <a {% if item.no-http %}
+                  href="{{ item.href }}"
+                {% else %}
+                  href="{{ item.href | prepend: 'http://' }}"
+                {% endif %}
+              target="_blank">
+                {{ item.key }} <span class="over-800">{{ item.value | prepend: "→ " }}</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+
+      </div>
     </div><!--
   {% endfor %}
   -->

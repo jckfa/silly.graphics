@@ -13,8 +13,6 @@ function closeMainLists() {
     mainListIcon[i].innerHTML = "+";
     // unindent lists and set opacity to 0
     mainListCont[i].classList.add("unindented");
-    // hide with inline height
-    yo[i].style.height = "0";
   }
 }
 
@@ -49,8 +47,5 @@ function toggleMainList(index, size) {
     mainListIcon[index].innerHTML = "+";
     // unindent selected list and set opacity to 0
     mainListCont[index].classList.add("unindented");
-
-    // hide with inline height
-    yo[index].style.height = "0";
   }
 }

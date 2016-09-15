@@ -83,6 +83,11 @@ p + p {
         transition: var(--hover-off-100);
         opacity: 1;
       }
+
+    /* overwrite inline styling added via js */
+    .yo, .yoo {
+      height: auto !important;
+    }
   }
 
 @media (--w-l-800) {
@@ -137,11 +142,11 @@ p + p {
 
   /* added via js */
   .unindented {
-    /*margin-left: 0;*/
+    margin-left: 0;
     opacity: 0;
   }
 
-  .yo {
+  .yo, .yoo {
     transition: 200ms ease;
     overflow: hidden;
   }
