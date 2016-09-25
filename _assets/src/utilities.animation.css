@@ -7,9 +7,7 @@
 }
 
 .on-off {
-  animation-name: on-off;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
+  animation: on-off 1s linear infinite;
 }
 
 @media (--w-800) {
