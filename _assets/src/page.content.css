@@ -142,8 +142,8 @@ p + p {
 
   /* added via js */
   .unindented {
-    margin-left: 0;
-    opacity: 0;
+    /*margin-left: 0;*/
+    /*opacity: 0;*/
   }
 
   .main-list-content-container, .footer-list-content-container {
