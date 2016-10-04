@@ -47,7 +47,7 @@
                   href="{{ item.href | prepend: 'http://' }}"
                 {% endif %}
               target="_blank">
-                {{ item.key }} <span class="over-800">{{ item.value | prepend: "→ " }}</span>
+                <span class="over-800">{{ item.key }}</span> {{ item.value | prepend: "→ " }}
               </a>
             </li>
           {% endfor %}
