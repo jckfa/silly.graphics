@@ -35,17 +35,11 @@
                     "roboto",
                     helvetica,
                     arial,
-                    sans-serif;
+                    sans-serif;*/
 
-  --sans:           "coupeur carve",
-                    "bluu next",
-                    "bagnard",
-                    "beirut trial",
-                    "sangbleu king trial",
-                    "riviera trial",
-                    "Gerbera Light",
-                    "Apercu",
-                    var(--sans-fallback);*/
+  --sans:           arial,
+                    helvetica,
+                    sans-serif;
 
   --serif-fallback: "times new roman",
                     times,

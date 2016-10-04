@@ -1,7 +1,7 @@
 
 .site__border {
   /*color: var(--border-color);*/
-  font-family: var(--serif);
+  font-family: var(--sans);
   letter-spacing: 0.1em;
 
   /* puts behind lists */
