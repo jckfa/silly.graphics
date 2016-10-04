@@ -6,11 +6,17 @@ list-items:
   - name: metahaven
     href: mthvn.tumblr.com
 
-  - name: print.pm
-    href: print.pm
+  # - name: print.pm
+  #   href: print.pm
 
   - name: pure typography
     href: puretypography.com
 
   - name: hldfst
     href: hldfst.tumblr.com
+
+  - name: designeverywhere
+    href: designeverywhere.tumblr.com
+
+  - name: n--p
+    href: n--p.tumblr.com

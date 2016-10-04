@@ -21,8 +21,14 @@ list-items:
   - name: unit editions
     href: uniteditions.com/shop
 
-  - name: sternberg press
-    href: sternberg-press.com/?pageid=3
+  # - name: sternberg press
+  #   href: sternberg-press.com/?pageid=3
 
   - name: standards manual
     href: standardsmanual.com
+
+  - name: antenne books
+    href: antennebooks.com
+
+  - name: kiosk
+    href: shop.k-i-o-s-k.com
