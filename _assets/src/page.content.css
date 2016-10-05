@@ -103,9 +103,6 @@ p + p {
 
     .child-container {
       margin-left: 1em;
-      opacity: 1;
-
-      transition: var(--hover-off-500);
     }
 
       .child-container li::before {
@@ -137,14 +134,4 @@ p + p {
   .child-container, .child-container li + li {
     border-color: limegreen;
   }*/
-
-  /* added via js */
-  .unindented {
-    /*margin-left: 0;*/
-    /*opacity: 0;*/
-  }
-
-  .main-list-content-container, .footer-list-content-container {
-    transition: var(--hover-off-500);
-  }
 }

@@ -22,7 +22,7 @@ function initHeaderDropdown() {
 
 function toggleHeaderDropdown() {
   // apply animation
-  headerDropdown[0].classList.add("trans");
+  // headerDropdown[0].classList.add("trans");
   // toggle dropdown position
   headerDropdown[0].classList.toggle(movedUp);
   // if closed, use open icon; if open, use close icon

@@ -13,17 +13,8 @@ function closeFooterLists() {
     footerListContContainer[i].classList.add(over800class);
     // add open icon to all footer lists
     footerListIcon[i].innerHTML = "+";
-    // unindent lists and set opacity to 0
-    footerListCont[i].classList.add("unindented");
   }
 }
-
-// open contact list
-// function openContactList() {
-//   footerListContContainer[0].classList.remove(over800class);
-//   footerListIcon[0].innerHTML = "-";
-//   // footerListContContainer[0].style.height = "calc(" + size + " * (1em + 6px + (var(--target-area) * 2) + 0.1rem))";
-// }
 
 function initFooterDropdown() {
   // position fixed to overlay content
@@ -40,7 +31,7 @@ function initFooterDropdown() {
 
 function toggleFooterDropdown() {
   // apply animation
-  footerDropdown[0].classList.add("trans");
+  // footerDropdown[0].classList.add("trans");
   // toggle dropdown position
   footerDropdown[0].classList.toggle(movedDown);
   // if closed, use open icon; if open, use close icon
@@ -65,8 +56,6 @@ function toggleFooterList(index, size) {
     footerListContContainer[index].classList.remove(over800class);
     // only add close icon to selected list
     footerListIcon[index].innerHTML = "-";
-    // indent selected list and set opacity to 1
-    footerListCont[index].classList.remove("unindented");
     //
     footerListContContainer[index].style.height = "calc(" + size + " * (1em + 6px + (var(--target-area) * 2) + 0.1rem))";
   } else {
@@ -74,7 +63,5 @@ function toggleFooterList(index, size) {
     footerListContContainer[index].classList.add(over800class);
     // only add open icon to selected list
     footerListIcon[index].innerHTML = "+";
-    // unindent selected list and set opacity to 0
-    footerListCont[index].classList.add("unindented");
   }
 }
