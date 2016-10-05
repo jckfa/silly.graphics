@@ -48,6 +48,10 @@ p + p {
       margin-top: calc(var(--gutter) * 4);
     }
 
+    .list-content li:hover {
+      animation: change-color-hard 5s linear infinite;
+    }
+
     /* fix bug in chrome */
     .list-content li::after {
       animation: initial;

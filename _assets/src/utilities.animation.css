@@ -16,35 +16,22 @@
   }
 }
 
-@keyframes change-color {
+@keyframes change-color-hard {
    0%  {color: white;}
+  19%  {color: white;}
   20%  {color: yellow;}
+  39%  {color: yellow;}
   40%  {color: red;}
+  59%  {color: red;}
   60%  {color: dodgerblue;}
+  79%  {color: dodgerblue;}
   80%  {color: limegreen;}
+  99%  {color: limegreen;}
  100%  {color: white;}
 }
 
-@keyframes change-bg-color {
-   0%  {background-color: white;}
-  20%  {background-color: yellow;}
-  40%  {background-color: red;}
-  60%  {background-color: dodgerblue;}
-  80%  {background-color: limegreen;}
- 100%  {background-color: white;}
-}
-
-.change-color, .change-bg-color {
-  animation-duration: 300s;
-  animation-iteration-count: infinite;
-}
-
 .change-color {
-  animation-name: change-color;
-}
-
-.change-bg-color {
-  animation-name: change-bg-color;
+  animation: change-color-hard 5s linear infinite;
 }
 
 /* added by js */
