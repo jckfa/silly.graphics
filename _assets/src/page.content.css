@@ -74,13 +74,11 @@ p + p {
       /*bottom: 0;*/
       left:   0;
 
-      transition: var(--hover-off-100);
       opacity: 0;
     }
 
       .list-content a:hover::after {
         left: -3em;
-        transition: var(--hover-off-100);
         opacity: 1;
       }
 
