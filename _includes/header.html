@@ -5,11 +5,20 @@
 
   <section class="over-800 gutters data-info">
     <ul class="no-bullets row uppercase">
-      <li>Updated →</li>
+      <li>
+        <p>
+          Updated ↓<br>
+          {{ site.time | date: "%c" }}
+        </p>
+      </li>
     </ul><!--
 
  --><ul class="no-bullets row uppercase">
-      <li>{{ site.time | date: "%c" }}</li>
+      <li>
+        <p class="wrap-26">
+          {{ site.description }}
+        </p>
+      </li>
     </ul>
   </section>
 
