@@ -1,4 +1,4 @@
-heading: studios/people
+heading: studios+people
 list-items:
   - name: ok-rm
     href: ok-rm.co.uk
@@ -204,3 +204,15 @@ list-items:
   - name: etienne ozeray
   # - name: étienne ozeray
     href: etienneozeray.fr
+
+  - name: building paris
+    href: buildingparis.fr
+
+  - name: wrong studio
+    href: wrongstudio.net
+
+  - name: isabel seiffert
+    href: isabelseiffert.net
+
+  - name: anne büttner
+    href: buettneranne.com
