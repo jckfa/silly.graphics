@@ -48,10 +48,10 @@ p + p {
     }
 
     .list-content li:hover {
-      animation: change-color-hard 5s linear infinite;
+      color: var(--spot-color);
     }
 
-    /* fix bug in chrome */
+    /* fix chrome issue */
     .list-content li::after {
       animation: initial;
     }

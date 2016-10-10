@@ -7,26 +7,31 @@
   display: inline-block;
 }
 
-.row {
+.col {
+  width: 50%;
   vertical-align: top;
+  display: inline-block;
+  padding-right: var(--gutter);
 }
 
-  @media (--w-800) {
-    .row {
-      /* fixed for two columns */
-      width: 50%;
+.col + .col {
+  padding-right: 0;
+  padding-left:  var(--gutter);
+}
 
-      /* act like column */
-      display: inline-block;
-
-      padding-right: var(--gutter);
-    }
-
-    .row + .row {
-      padding-right: 0;
-      padding-left:  var(--gutter);
-    }
+@media (--w-800) {
+  .row {
+    width: 50%;
+    vertical-align: top;
+    display: inline-block;
+    padding-right: var(--gutter);
   }
+
+  .row + .row {
+    padding-right: 0;
+    padding-left:  var(--gutter);
+  }
+}
 
 
 /*.row {

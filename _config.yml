@@ -7,6 +7,7 @@ name:        silly graphics
 email:       buttface@jackf.me
 description: A graphic designer's porn stash.
 url:         https://silly.graphics
+version:     2.0.0
 
 # Build settings
 markdown: kramdown
