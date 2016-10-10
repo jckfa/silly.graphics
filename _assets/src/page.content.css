@@ -34,8 +34,16 @@
 }
 
 .frag:hover {
-  animation: on-off 1s linear infinite;
+  color: transparent;
 }
+
+  .frag:hover::before {
+    content: "↑";
+    position: absolute;
+    left:  0;
+    right: 0;
+    color: var(--text-color);
+  }
 
   /* new tab arrow */
   .list-content li::after {
