@@ -7,7 +7,7 @@ p + p {
   white-space: nowrap;
 }
 
-  /* arrow indicating hyperlink */
+  /* new tab arrow */
   .list-content li::after {
     content: "↗";
 
@@ -30,11 +30,6 @@ p + p {
     }
 
   @media (--w-l-800) {
-    .list .row + .row {
-      /* overwrite display styling */
-      margin-top: 0;
-    }
-
       .list-content a, .list-title {
         padding-top:    var(--target-area);
         padding-bottom: var(--target-area);
@@ -100,9 +95,6 @@ p + p {
 
   .parent-container {
     border-bottom: 0.1rem solid currentColor;
-
-    /* separate lists from label */
-    margin-top: calc(var(--gutter) * 2);
   }
 
     .child-container {
