@@ -19,13 +19,13 @@ button, .button {
 }
 
 ul, ol {
-  padding-left: 1em;
-}
-
-.no-bullets {
-  /* overwrite ul/ol defaults */
   padding-left: 0;
   list-style: none;
+}
+
+.bullets {
+  padding-left: 1em;
+  list-style: circle;
 }
 
 h1, h2, h3, h4, h5, h6 {

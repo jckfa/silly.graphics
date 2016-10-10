@@ -1,5 +1,5 @@
 
-<header class="site__header meta uppercase pt1">
+<header class="site__header meta">
 
   <div class="close-area hiding fix-top button" onclick="toggleHeaderDropdown()"></div>
 
@@ -8,20 +8,20 @@
   {% assign date_format = "%b %-d %H:%M %Y %Z" %}
   <section class="under-800 header-dropdown">
     <div class="mb1">
-      <ul class="no-bullets col">
+      <ul class="col">
         <li>Updated ↓</li>
         <li>{{ site.time | date: date_format }}</li>
         <li>{{ site.version }}</li>
       </ul><!--
 
-   --><ul class="no-bullets col">
+   --><ul class="col">
         <li class="wrap-26">
           {{ site.description }}
         </li>
       </ul>
     </div>
 
-    <ul class="no-bullets list-flex button dropdown-label hiding"
+    <ul class="list-flex button dropdown-label hiding"
         onclick="toggleHeaderDropdown()">
       <li>info</li>
       <li class="dropdown-icon">•</li>
@@ -33,13 +33,13 @@
 
 
   <section class="over-800">
-    <ul class="no-bullets row">
+    <ul class="row">
       <li>Updated ↓</li>
       <li>{{ site.time | date: date_format }}</li>
       <li>{{ site.version }}</li>
     </ul><!--
 
- --><ul class="no-bullets row">
+ --><ul class="row">
       <li class="wrap-26">
         {{ site.description }}
       </li>
