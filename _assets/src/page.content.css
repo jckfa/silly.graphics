@@ -1,6 +1,36 @@
 
-p + p {
-  margin-top: var(--gutter);
+@media (--w-l-800) {
+  .parent-container, .parent + .parent,
+  .child-container, .child-container li + li {
+    border-top: 1px solid currentColor;
+  }
+
+  .parent-container {
+    border-bottom: 1px solid currentColor;
+  }
+
+    .child-container {
+      margin-left: 10vw;
+    }
+
+      .child-container li::before {
+        /*content: "•";*/
+        content: "";
+        height: 100%;
+        position: absolute;
+        /*top:    0;*/
+        /*right:  0;*/
+        /*bottom: 0;*/
+        left:     -1em;
+        padding-top: var(--target-area);
+      }
+
+  /*
+  .parent-container {border-color: magenta;}
+  .parent + .parent {border-color: red;}
+  .child-container,
+  .child-container li + li {border-color: limegreen;}
+  */
 }
 
 .frag:hover {
@@ -14,122 +44,75 @@ p + p {
   /* new tab arrow */
   .list-content li::after {
     content: "↗";
-
-    /*background-color: red;*/
-
     height: 100%;
-
     position: absolute;
-
     top:    0;
     right:  0;
     /*bottom: 0;*/
-    /*left:     0;*/
+    /*left:   0;*/
   }
 
     .list-content a {
       /* target area spans length of screen width */
       display: block;
-      /*background-color: red;*/
     }
 
-  @media (--w-l-800) {
-      .list-content a, .list-title {
+    @media (--w-l-800) {
+      .list-content a, .list-heading {
         padding-top:    var(--target-area);
         padding-bottom: var(--target-area);
-        /*background-color: #333;*/
       }
+    }
+
+@media (--w-800) {
+  /* separate lists */
+  .list + .list {
+    margin-top: calc(var(--gutter) * 4);
   }
 
-  @media (--w-800) {
-    /* add space between lists */
-    .list + .list {
-      margin-top: calc(var(--gutter) * 4);
+    .list-content li {
+      color: var(--bg-color);
+      background-color: var(--text-color);
     }
 
-    .list-content li:hover {
-      color: var(--spot-color);
-    }
-
-    /* fix chrome issue */
-    .list-content li::after {
-      animation: initial;
-    }
-
-    /* animate arrow on hover */
-    .list-content li:hover::after {
-      animation: on-off 1s linear infinite;
-    }
-
-    .list-content a::after {
-      content: attr(data-size);
-
-      text-align: right;
-      min-width: 2em;
-      /*background-color: red;*/
-
-      position: absolute;
-
-      /*top:    0;*/
-      /*right:  0;*/
-      /*bottom: 0;*/
-      left:   0;
-
-      opacity: 0;
-    }
-
-      .list-content a:hover::after {
-        left: -3em;
-        opacity: 1;
+      .list-content li:hover {
+        color: var(--spot-color);
       }
 
-    /* overwrite inline styling added via js */
-    .main-list-content-container, .footer-list-content-container {
-      height: auto !important;
-    }
-  }
-
-@media (--w-l-800) {
-  .parent-container, .parent + .parent,
-  .child-container, .child-container li + li {
-    border-top: 0.1rem solid currentColor;
-  }
-
-  .parent-container {
-    border-bottom: 0.1rem solid currentColor;
-  }
-
-    .child-container {
-      margin-left: 10vw;
-    }
-
-      .child-container li::before {
-        /*content: "•";*/
-        content: "";
-
-        /*background-color: red;*/
-
-        height: 100%;
-
-        position: absolute;
-
-        /*top:    0;*/
-        /*right:  0;*/
-        /*bottom: 0;*/
-        left:     -1em;
-
-        padding-top: var(--target-area);
+      /* fix chrome issue */
+      .list-content li::after {
+        animation: initial;
       }
 
-  /*.parent-container {
-    border-color: magenta;
-  }
+        /* animate arrow on hover */
+        .list-content li:hover::after {
+          animation: on-off 1s linear infinite;
+        }
 
-  .parent + .parent {
-    border-color: red;
-  }
+        /* separate list items */
+        .list-content a, .list-heading {
+          margin-bottom: 2px;
+        }
 
-  .child-container, .child-container li + li {
-    border-color: limegreen;
-  }*/
+          .list-content a::after {
+            content: attr(data-pos);
+            text-align: right;
+            min-width: 2em;
+            position: absolute;
+            /*top:    0;*/
+            /*right:  0;*/
+            /*bottom: 0;*/
+            left:   0;
+            opacity: 0;
+          }
+
+            .list-content a:hover::after {
+              left: -3em;
+              opacity: 1;
+            }
+
+  /* overwrite inline styling added via js */
+  .main-list-content-container, .footer-list-content-container {
+    height: auto !important;
+  }
 }

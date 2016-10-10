@@ -1,24 +1,4 @@
 
-/*.gutters {
-  padding-right: calc(var(--gutter) / 2);
-  padding-left:  calc(var(--gutter) / 2);
-}
-
-  @media (--w-800) {
-    .gutters {
-      padding-right: var(--gutter);
-      padding-left:  var(--gutter);
-    }
-  }
-
-  @media (--w-1600) {
-    .gutters {
-      padding-right: calc(var(--gutter) * 2);
-      padding-left:  calc(var(--gutter) * 2);
-    }
-  }*/
-
-
 .pt1 {
   padding-top: var(--gutter);
 }
@@ -82,17 +62,16 @@
 
 @media (--w-l-800) {
   .border-top {
-    border-top: 0.1rem solid currentColor;
+    border-top: 1px solid currentColor;
   }
 
   .border-bottom {
-    border-bottom: 0.1rem solid currentColor;
+    border-bottom: 1px solid currentColor;
   }
 }
 
 @media (--w-800) {
   .divider {
-    border-top: 0.1rem solid currentColor;
-    padding-top: var(--gutter);
+    border-top: 1px solid currentColor;
   }
 }

@@ -29,7 +29,7 @@ layout: cover
 
 
       {% for item in list-items %}
-      <li class="over-800">
+      <li class="over-800 list-heading">
         {{ list[1].heading }}
         {% if forloop.index0 == 0 %}
         <a href="#{{ list[1].heading }}" class="frag">#</a>
@@ -38,7 +38,7 @@ layout: cover
       {% endfor %}
 
 
-      <li class="under-800 list-title button"
+      <li class="under-800 list-heading button"
           onclick='toggleMainList({{ forloop.index0 }}, {{ list-items | size }})'>
         <ul class="no-bullets list-flex">
           <li>{{ list[1].heading }}—{{ list-items | size }}</li><!--
@@ -58,7 +58,7 @@ layout: cover
 
         {% for item in list-items %}
         <li>
-          <a href="{{ item.href | prepend: 'http://' }}" target="_blank" data-size="{{ forloop.index }}"><!--
+          <a href="{{ item.href | prepend: 'http://' }}" target="_blank" data-pos="{{ forloop.index }}"><!--
          --><span>{{ item.name | downcase }}</span><!--
        --></a>
         </li>
