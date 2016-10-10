@@ -44,9 +44,6 @@
 
     /* center horizontally */
     left:   0;
-
-    padding-right: calc(var(--gutter) / 2);
-    padding-left:  calc(var(--gutter) / 2);
   }
 
   /* footer bg */

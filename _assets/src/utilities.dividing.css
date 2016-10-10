@@ -1,5 +1,5 @@
 
-.gutters {
+/*.gutters {
   padding-right: calc(var(--gutter) / 2);
   padding-left:  calc(var(--gutter) / 2);
 }
@@ -16,7 +16,7 @@
       padding-right: calc(var(--gutter) * 2);
       padding-left:  calc(var(--gutter) * 2);
     }
-  }
+  }*/
 
 
 .pt1 {
@@ -48,9 +48,9 @@
   margin-bottom: calc(var(--gutter) * 2);
 }*/
 
-.mb4 {
+/*.mb4 {
   margin-bottom: calc(var(--gutter) * 4);
-}
+}*/
 
 /*.mb8 {
   margin-bottom: calc(var(--gutter) * 8);
