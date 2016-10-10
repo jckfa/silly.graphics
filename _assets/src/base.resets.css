@@ -61,12 +61,10 @@ html {
 /* can't do ::-moz-selection, ::selection {...} for some stupid reason */
 ::-moz-selection {
   color:            var(--bg-color);
-  /*background-color: var(--text-color);*/
-  background-color: white;
+  background-color: var(--text-color);
 }
 
 ::selection {
   color:            var(--bg-color);
-  /*background-color: var(--text-color);*/
-  background-color: white;
+  background-color: var(--text-color);
 }

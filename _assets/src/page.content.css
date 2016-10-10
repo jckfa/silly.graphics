@@ -37,10 +37,6 @@
   animation: on-off 1s linear infinite;
 }
 
-.list-content {
-  white-space: nowrap;
-}
-
   /* new tab arrow */
   .list-content li::after {
     content: "↗";

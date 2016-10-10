@@ -1,43 +1,17 @@
 
-/*.absolute-top {
-  position: absolute;
-  top: 0;
-}*/
-
-/*.absolute-bottom {
-  position: absolute;
-  bottom: 0;
-}*/
-
 .fix-top, .fix-bottom {
   position: fixed;
   z-index: 2;
 }
 
 .fix-top {
-  /* fix relative to top*/
-  top: 0;
-
-  /* center horizontally */
+  top:    0;
   right:  0;
-
-  /* no bottom */
-  /* no bottom */
-
-  /* center horizontally */
   left:   0;
 }
 
 .fix-bottom {
-  /* no top */
-  /* no top */
-
-  /* center horizontally */
   right:  0;
-
-  /* fix relative to bottom */
   bottom: 0;
-
-  /* center horizontally */
   left:   0;
 }

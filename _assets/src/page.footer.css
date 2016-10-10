@@ -1,15 +1,11 @@
 
 .site__footer {
-  white-space: nowrap;
-
   padding-bottom: calc(var(--gutter) * 16);
 }
 
   @media (--w-l-800) {
     .site__footer {
-      /*background-color: rgba(0, 0, 0, 0.075);*/
       padding-top: calc(var(--gutter) * 2);
-
       /* adjust for less vertical space on mobile */
       padding-bottom: calc(var(--gutter) * 8);
     }
@@ -21,7 +17,7 @@
   }
 
   @media (--w-800) {
-    .site__footer .list-title {
+    .site__footer .list-heading {
       margin-bottom: calc(var(--gutter) * 4);
     }
   }
@@ -32,37 +28,21 @@
   .fix-bottom-under-800 {
     position: fixed;
     z-index: 1;
-
-    /* no top */
-    /* no top */
-
-    /* center horizontally */
     right:  0;
-
-    /* fix relative to bottom */
     bottom: 0;
-
-    /* center horizontally */
     left:   0;
   }
 
   /* footer bg */
   .footer-dropdown::before {
     content: "";
-
     width: 100%;
     height: 110%;
-    /*height: calc(2.8rem + var(--gutter) * 2);*/
-
     position: absolute;
-
     top:    0;
     right:  0;
-    /*bottom: 0;*/
     left:   0;
-
     background-color: var(--bg-color);
-    /*box-shadow: var(--shadow);*/
   }
 }
 

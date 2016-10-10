@@ -1,38 +1,36 @@
 
-.center {
+/*.center {
   text-align: center;
-}
+}*/
 
 .uppercase {
   text-transform: uppercase;
 }
 
-.lowercase {
+/*.lowercase {
   text-transform: lowercase;
-}
+}*/
 
 .invert {
   color: var(--bg-color);
   background-color: var(--text-color);
-  padding-right: calc(var(--gutter) / 5);
-  padding-left:  calc(var(--gutter) / 5);
 }
 
-.circle-button, .diamond-button {
+/*.circle-button,*/ .diamond-button {
   text-align: center;
   display: block;
 
   border: 0.15rem solid currentColor;
 }
 
-.circle-button {
+/*.circle-button {
   line-height: 6.0rem;
 
   width:  6.6rem;
   height: 6.6rem;
 
   border-radius: 50%;
-}
+}*/
 
 .diamond-button {
   line-height: 5.6rem;
@@ -44,7 +42,7 @@
 }
 
   @media (--w-l-800) {
-    .circle-button, .diamond-button {
+    /*.circle-button,*/ .diamond-button {
       font-size: 3.0rem;
     }
   }

@@ -1,5 +1,5 @@
 
-<footer class="site__footer meta">
+<footer class="site__footer meta no-wrap">
 
 <div class="footer-close-area hiding fix-top button" onclick="toggleFooterDropdown()"></div>
 
@@ -19,11 +19,11 @@
  --><div class="row parent">
       <ul>
 
-        <li class="over-800 list-title">
+        <li class="over-800 list-heading">
           {{ list[1].heading }}
         </li>
 
-        <li class="under-800 list-title button"
+        <li class="under-800 list-heading button"
             onclick='toggleFooterList({{ forloop.index0 }}, {{ list-items | size }})'>
           <ul class="list-flex">
             <li>
