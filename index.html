@@ -9,24 +9,31 @@ layout: cover
     {% increment list_items_total %}
   {% endfor %}
 {% endfor %} -->
-
 <ul class="no-bullets list-flex">
    <li class="row">{{ lists_total }}</li><!--
 --><li class="row">{{ list_items_total }}</li>
 </ul>
 
-<div class="parent-container">
 
+
+
+
+
+<div class="parent-container">
   {% for list in site.data.lists %}
   {% assign list-items = list[1].list-items | uniq | sort: "name" %}
   <section class="list divider parent">
     <ul class="no-bullets row" id="{{ list[1].heading }}">
+
+
+
 
       {% for item in list-items %}
       <li class="over-800">
         #{{ list[1].heading }}
       </li>
       {% endfor %}
+
 
       <li class="under-800 list-title button"
           onclick='toggleMainList({{ forloop.index0 }}, {{ list-items | size }})'>
@@ -36,11 +43,16 @@ layout: cover
         </ul>
       </li>
 
+
+
+
     </ul><!--
-
  --><div class="row main-list-content-container">
-
       <ul class="no-bullets list-content main-list-content child-container">
+
+
+
+
         {% for item in list-items %}
         <li>
           <a href="{{ item.href | prepend: 'http://' }}" target="_blank" data-size="{{ forloop.index }}"><!--
@@ -48,12 +60,14 @@ layout: cover
        --></a>
         </li>
         {% endfor %}
-      </ul>
 
+
+
+
+      </ul>
     </div>
   </section>
   {% endfor %}
-
 </div>
 
 
