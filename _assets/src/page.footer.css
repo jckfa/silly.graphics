@@ -9,11 +9,6 @@
       /* adjust for less vertical space on mobile */
       padding-bottom: calc(var(--gutter) * 8);
     }
-
-    /* hide footer dropdown on scroll-down */
-    .site__footer .headroom--unpinned {
-      transform: translateY(100%);
-    }
   }
 
   @media (--w-800) {
