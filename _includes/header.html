@@ -7,17 +7,19 @@
 
   {% assign date_format = "%b %-d %H:%M %Y %Z" %}
   <section class="under-800 gutters header-dropdown">
-    <ul class="no-bullets col">
-      <li>Updated ↓</li>
-      <li>{{ site.time | date: date_format }}</li>
-      <li>{{ site.version }}</li>
-    </ul><!--
+    <div class="mb1">
+      <ul class="no-bullets col">
+        <li>Updated ↓</li>
+        <li>{{ site.time | date: date_format }}</li>
+        <li>{{ site.version }}</li>
+      </ul><!--
 
- --><ul class="no-bullets col">
-      <li class="wrap-26">
-        {{ site.description }}
-      </li>
-    </ul>
+   --><ul class="no-bullets col">
+        <li class="wrap-26">
+          {{ site.description }}
+        </li>
+      </ul>
+    </div>
 
     <ul class="no-bullets list-flex button dropdown-label hiding"
         onclick="toggleHeaderDropdown()">

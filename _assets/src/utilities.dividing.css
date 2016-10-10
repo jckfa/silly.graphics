@@ -40,9 +40,9 @@
 }
 
 
-/*.mb1 {
+.mb1 {
   margin-bottom: var(--gutter);
-}*/
+}
 
 /*.mb2 {
   margin-bottom: calc(var(--gutter) * 2);
