@@ -16,8 +16,6 @@ function closeMainLists() {
 
 // open/close index list
 function toggleMainList(index, size) {
-  // bleh = window.getComputedStyle(mainListContContainer[0], null).getPropertyValue("font-size");
-  // label[0].innerHTML = bleh;
 
   // if selected list is closed
   if (mainListContContainer[index].classList.contains(over800class)) {

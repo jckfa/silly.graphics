@@ -1,0 +1,12 @@
+
+{% include footer.html %}
+
+<!-- <script type="text/javascript">
+  {% asset 'last' %}
+</script> -->
+
+{% if jekyll.environment == "production" %}
+<script type="text/javascript">
+  {% asset 'analytics.js' %}
+</script>
+{% endif %}

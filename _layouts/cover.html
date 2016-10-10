@@ -3,19 +3,15 @@
 
   {% include head.html %}
 
-  <body class="uppercase"
-        onload="initHeaderDropdown();
-                closeMainLists();
-                closeFooterLists();
-                initFooterDropdown()">
+  <body class="uppercase" onload="closeMainLists();" id="top">
 
-    {% include header.html %}
+    {% include first.html %}
 
     <main class="pt16 mb16 uppercase">
       {{ content }}
     </main>
 
-    {% include footer.html %}
+    {% include last.html %}
 
   </body>
 

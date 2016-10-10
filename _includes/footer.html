@@ -1,75 +1,17 @@
 
-<footer class="site__footer meta no-wrap">
+<footer class="site__footer meta">
 
-<div class="footer-close-area hiding fix-top button" onclick="toggleFooterDropdown()"></div>
+    {% for list in site.data.footer %}<!--
+ --><ul class="row list-flex">
+      {% for item in list[1] %}
+      <li>
+        <a href="{{ item.href }}" target="_blank">
+          {{ item.key }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul><!--
+ -->{% endfor %}
 
-<div class="divider footer-dropdown">
-
-  <section class="under-800 button" onclick="toggleFooterDropdown()">
-    <ul class="list-flex dropdown-label hiding">
-      <li>more info</li>
-      <li class="dropdown-icon">•</li>
-    </ul>
-  </section>
-
-  <div class="parent-container">
-  <!--
-  {% for list in site.data.footer %}
-  {% assign list-items = list[1].list-items %}
- --><div class="row parent">
-      <ul>
-
-        <li class="over-800 list-heading">
-          {{ list[1].heading }}
-        </li>
-
-        <li class="under-800 list-heading button"
-            onclick='toggleFooterList({{ forloop.index0 }}, {{ list-items | size }})'>
-          <ul class="list-flex">
-            <li>
-              {{ list[1].heading }}
-            </li><!--
-         --><li>
-              <span class="footer-list-icon">•</span>
-            </li>
-          </ul>
-        </li>
-      </ul><!--
-
-   --><div class="footer-list-content-container">
-
-        <ul class="list-content footer-list-content child-container">
-          {% for item in list-items %}
-            <li>
-              <a {% if item.no-http %}
-                  href="{{ item.href }}"
-                {% else %}
-                  href="{{ item.href | prepend: 'http://' }}"
-                {% endif %}
-              target="_blank">
-                <span class="over-800">{{ item.key }}</span> {{ item.value | prepend: "→ " }}
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
-
-      </div>
-    </div><!--
-  {% endfor %}
-  -->
-  </div>
-
-</div>
 
 </footer>
-
-
-<script type="text/javascript">
-  {% asset 'footer.js' %}
-</script>
-
-{% if jekyll.environment == "production" %}
-<script type="text/javascript">
-  {% asset 'analytics.js' %}
-</script>
-{% endif %}
