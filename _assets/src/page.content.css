@@ -3,6 +3,10 @@ p + p {
   margin-top: var(--gutter);
 }
 
+.frag:hover {
+  animation: on-off 1s linear infinite;
+}
+
 .list-content {
   white-space: nowrap;
 }
@@ -54,9 +58,7 @@ p + p {
 
     /* animate arrow on hover */
     .list-content li:hover::after {
-      animation-name: on-off;
-      animation-duration: 1s;
-      animation-iteration-count: infinite;
+      animation: on-off 1s linear infinite;
     }
 
     .list-content a::after {
