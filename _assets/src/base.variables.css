@@ -1,8 +1,8 @@
 
 :root {
-  --text-color:     #999;
+  --text-color:     white;
   --meta-color:     var(--text-color);
-  --border-color:   var(--text-color);
+  --spot-color:     blueViolet;
   --bg-color:       black;
 
   --gutter:         1rem;

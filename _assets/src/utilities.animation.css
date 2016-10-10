@@ -16,24 +16,6 @@
   }
 }
 
-@keyframes change-color-hard {
-   0%  {color: white;}
-  19%  {color: white;}
-  20%  {color: yellow;}
-  39%  {color: yellow;}
-  40%  {color: red;}
-  59%  {color: red;}
-  60%  {color: dodgerblue;}
-  79%  {color: dodgerblue;}
-  80%  {color: limegreen;}
-  99%  {color: limegreen;}
- 100%  {color: white;}
-}
-
-.change-color {
-  animation: change-color-hard 5s linear infinite;
-}
-
 /* added by js */
 .trans {
   transition: var(--hover-off);
