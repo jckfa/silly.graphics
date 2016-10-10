@@ -34,16 +34,9 @@
 }
 
 .frag:hover {
-  color: transparent;
+  color: var(--bg-color);
+  background-color: var(--text-color);
 }
-
-  .frag:hover::before {
-    content: "↑";
-    position: absolute;
-    left:  0;
-    right: 0;
-    color: var(--text-color);
-  }
 
   /* new tab arrow */
   .list-content li::after {
