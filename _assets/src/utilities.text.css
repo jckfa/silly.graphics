@@ -20,33 +20,21 @@
   color: transparent;
 }
 
-/*.circle-button,*/ .diamond-button {
+.diamond-btn {
   text-align: center;
-  display: block;
-
-  border: 0.15rem solid currentColor;
-}
-
-/*.circle-button {
-  line-height: 6.0rem;
-
-  width:  6.6rem;
-  height: 6.6rem;
-
-  border-radius: 50%;
-}*/
-
-.diamond-button {
   line-height: 5.6rem;
-
   width:  6.0rem;
   height: 6.0rem;
-
-  margin-left: 1rem;
+  border: 0.15rem solid currentColor;
+  margin: 0 auto;
 }
 
+  .diamond-btn:hover {
+    animation: initial;
+  }
+
   @media (--w-l-800) {
-    /*.circle-button,*/ .diamond-button {
+    .diamond-button {
       font-size: 3.0rem;
     }
   }

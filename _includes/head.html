@@ -1,7 +1,9 @@
 
 <head>
   <title>
-    {% if page.title %}
+    {% if page.error %}
+      {{ page.title | upcase }}
+    {% elsif page.title %}
       {{ site.name | downcase }} | {{ page.title | downcase }}
     {% else %}
       {{ site.name | downcase }}
