@@ -1,12 +1,34 @@
 
-.site__footer {}
+.site__footer a::after {
+  content: "↗";
+}
 
-.site__footer a:hover {
-  background-color: var(--spot-color);
+@media (--w-l-800) {
+  .site__footer .col li {
+    display: block;
+  }
+
+  .site__footer li a {
+    padding-top:    var(--target-area);
+    padding-bottom: var(--target-area);
+  }
 }
 
 @media (--w-800) {
+  .site__footer a::after {
+    position: absolute;
+    top:    -1em;
+    bottom: 0;
+    right:  0;
+  }
+
+    .site__footer a:hover::after {
+      animation: on-off 1s linear infinite;
+    }
+}
+
+@media (--w-1120) {
   .site__footer li + li::before {
-    content: "•";
+    content: "• ";
   }
 }

@@ -2,6 +2,10 @@
 col-1:
   - key:  buttface@jackf.me
     href: mailto:buttface@jackf.me
+    br:   buttface@<br>jackf.me
+
+  - key:  pgp
+    href: /static/key.asc
 
 col-2:
   - key:  Source
