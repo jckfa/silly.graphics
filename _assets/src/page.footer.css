@@ -29,6 +29,8 @@
 
 @media (--w-1120) {
   .site__footer li + li::before {
-    content: "• ";
+    content: "•";
+    padding-left:  0.25em;
+    padding-right: 0.25em;
   }
 }
