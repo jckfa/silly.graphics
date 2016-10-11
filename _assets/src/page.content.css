@@ -113,7 +113,7 @@
             }
 
   /* overwrite inline styling added via js */
-  .main-list-content-container {
+  .main-container {
     height: auto !important;
   }
 }
