@@ -27,26 +27,31 @@ layout: cover
 
 
 
-
-      {% for item in list-items %}
-      <li class="over-800 list-heading">
-        {{ list[1].heading }}
-        {% if forloop.index0 == 0 %}
-        <a href="#{{ list[1].heading }}" class="frag">#</a>
-        <a href="#top" class="frag">↑</a>
-        {% endif %}
-      </li>
-      {% endfor %}
-
-
-      <li class="under-800 list-heading btn"
-          onclick='toggleMainList({{ forloop.index0 }}, {{ list-items | size }})'>
-        <ul class="list-flex">
-          <li>{{ list[1].heading }}—{{ list-items | size }}</li><!--
-       --><li><span class="main-list-icon"></span></li>
+      <li class="over-800">
+        <ul class="list-heading">
+          {% for item in list-items %}
+          <li>
+            {{ list[1].heading }}
+            {% if forloop.index0 == 0 %}
+            <a href="#{{ list[1].heading }}" class="frag">#</a>
+            <a href="#top" class="frag">↑</a>
+            {% endif %}
+          </li>
+          {% endfor %}
         </ul>
       </li>
 
+
+      <li class="under-800">
+        <ul class="list-heading list-flex btn"
+            onclick='toggleMainList({{ forloop.index0 }},
+                                    {{ list-items | size }})'>
+          <li>
+            {{ list[1].heading }}—{{ list-items | size }}
+          </li><!--
+       --><li class="main-list-icon"></li>
+        </ul>
+      </li>
 
 
 
@@ -59,9 +64,9 @@ layout: cover
 
         {% for item in list-items %}
         <li>
-          <a href="{{ item.href | prepend: 'http://' }}" target="_blank" data-pos="{{ forloop.index }}"><!--
-         --><span>{{ item.name | downcase }}</span><!--
-       --></a>
+          <a href="{{ item.href | prepend: 'http://' }}" target="_blank" data-pos="{{ forloop.index }}">
+            {{ item.name | downcase }}
+          </a>
         </li>
         {% endfor %}
 

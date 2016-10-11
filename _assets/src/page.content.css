@@ -91,7 +91,7 @@
         }
 
         /* separate list items */
-        .list-content a, .list-heading {
+        .list-content a, .list-heading li {
           margin-bottom: 2px;
         }
 
