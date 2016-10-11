@@ -3,14 +3,24 @@
 
 
     <ul class="col">
-      <li>Updated ↓</li>
-      <li>{{ site.time | date: "%b %-d %H:%M %Y %Z" }}</li>
-      <li>{{ site.version }}</li>
+      <li class="over-800">
+        ↑{{ site.time | date: "%b %-d %H:%M %Y %Z" }}
+      </li>
+
+      <li class="under-800">
+        ↑{{ site.time | date: "%b %-d" }}<br>
+        <span class="transparent">0</span><!--
+     -->{{ site.time | date: "%Y %Z" }}
+      </li>
+
+      <li>
+        <span class="lowercase">v</span>{{ site.version }}
+      </li>
     </ul><!--
 
  --><ul class="col">
       <li class="wrap-26">
-        {{ site.description }}
+        {{ site.description.br }}
       </li>
     </ul>
 

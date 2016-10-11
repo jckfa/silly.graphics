@@ -7,13 +7,17 @@
   text-transform: uppercase;
 }
 
-/*.lowercase {
+.lowercase {
   text-transform: lowercase;
-}*/
+}
 
 .invert {
   color: var(--bg-color);
   background-color: var(--text-color);
+}
+
+.transparent {
+  color: transparent;
 }
 
 /*.circle-button,*/ .diamond-button {
