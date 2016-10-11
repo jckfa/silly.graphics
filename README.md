@@ -1,8 +1,8 @@
 # ABOUT
 
 ### WHAT
-- a growing collection of links I'm saving for later reference
-- all links are generally related to graphic design
+- a public display of my hoarding problem
+- all links (generally) related to graphic design
 
 ### WHY
 - sharing is cool
@@ -24,7 +24,7 @@ Instead of pushing source files to my server and building there, I build on my d
 
 ### COMPATIBILITY
 - show/hide functionality on mobile requires [classList][11]
-- relies on [vh][12] and [flexbox][13] for the text bordering the window
+- relies on [vw, vh][12] and [flexbox][13]
 - only uses [woff][14] and [woff2][15] for webfonts
 - exclusively [TLSv1.2][16] (>IE10, Android 4.3)
 
