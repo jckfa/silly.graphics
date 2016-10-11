@@ -2,11 +2,11 @@
 @media (--w-l-800) {
   .parent-container, .parent + .parent,
   .child-container, .child-container li + li {
-    border-top: 1px solid currentColor;
+    border-top: 1px dotted currentColor;
   }
 
   .parent-container {
-    border-bottom: 1px solid currentColor;
+    border-bottom: 1px dotted currentColor;
   }
 
     .child-container {
@@ -33,9 +33,13 @@
   */
 }
 
+.frag {
+  display: inline-block;
+}
+
 .frag:hover {
-  color: var(--bg-color);
-  background-color: var(--text-color);
+  transform: translateY(-3px);
+  transition: var(--hover-off);
 }
 
   /* new tab arrow */
@@ -109,7 +113,7 @@
             }
 
   /* overwrite inline styling added via js */
-  .main-list-content-container, .footer-list-content-container {
+  .main-list-content-container {
     height: auto !important;
   }
 }

@@ -40,8 +40,6 @@
     /* !important to overwrite inline styling */
     height: 0 !important;
     overflow-y: hidden;
-
-    /*transition: var(--hover-on);*/
   }
 }
 
