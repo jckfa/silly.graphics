@@ -4,7 +4,7 @@ col-1:
     href: mailto:buttface@jackf.me
     br:   buttface@<br>jackf.me
 
-  - key:  pgp
+  - key:  PGP
     href: /static/key.asc
 
 col-2:
@@ -17,5 +17,5 @@ col-2:
   - key:  Legal
     href: https://en.wikipedia.org/wiki/ISC_license
 
-  - key:  Privacy
-    href: '#'
+  # - key:  Privacy
+  #   href: '/privacy/'
