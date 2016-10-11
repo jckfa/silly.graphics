@@ -22,13 +22,13 @@ layout: cover
 <div class="parent-container">
   {% for list in site.data.lists %}
   {% assign list-items = list[1].list-items | uniq | sort: "name" %}
-  <section class="list divider parent">
+  <section class="list parent">
     <ul class="row" id="{{ list[1].heading }}">
 
 
 
       <li class="over-800">
-        <ul class="list-heading">
+        <ul class="list-heading divider">
           {% for item in list-items %}
           <li>
             {{ list[1].heading }}
