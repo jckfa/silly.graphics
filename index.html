@@ -30,13 +30,13 @@ layout: cover
       <li class="over-800">
         <ul class="list-heading divider">
           {% for item in list-items %}
-          <li>
-            {{ list[1].heading }}
+          <li><!--
+         -->{{ list[1].heading }}<!--
             {% if forloop.index0 == 0 %}
-            <a href="#{{ list[1].heading }}" class="frag">#</a>
-            <a href="#top" class="frag">↑</a>
+         --><a href="#{{ list[1].heading }}" class="frag">#</a><!--
+         --><a href="#top" class="frag">↑</a><!--
             {% endif %}
-          </li>
+       --></li>
           {% endfor %}
         </ul>
       </li>

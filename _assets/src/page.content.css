@@ -35,7 +35,13 @@
 
 .frag {
   display: inline-block;
+  padding-left: calc(var(--gutter) * 1);
 }
+
+  /*.frag::before {
+    color: transparent;
+    content: "_";
+  }*/
 
 .frag:hover {
   transform: translateY(-3px);
