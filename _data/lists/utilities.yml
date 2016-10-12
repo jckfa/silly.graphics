@@ -1,31 +1,31 @@
 heading: utilities
 list-items:
   - name: fontforge
-    href: fontforge.github.io
+    href: http://fontforge.github.io
 
   - name: glyphs
-    href: glyphsapp.com
+    href: http://glyphsapp.com
 
   - name: robofont
-    href: robofont.com
+    href: http://robofont.com
 
   - name: prototypo
-    href: prototypo.io
+    href: http://prototypo.io
 
   - name: figma
-    href: figma.com
+    href: http://figma.com
 
   - name: fontstand
-    href: fontstand.com
+    href: http://fontstand.com
 
   - name: drawbot
-    href: www.drawbot.com
+    href: http://www.drawbot.com
 
   - name: noun project
-    href: thenounproject.com
+    href: http://thenounproject.com
 
   - name: sketch
-    href: sketchapp.com
+    href: http://sketchapp.com
 
   - name: ofont
-    href: ofont.net
+    href: http://ofont.net

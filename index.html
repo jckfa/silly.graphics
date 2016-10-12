@@ -64,7 +64,7 @@ layout: cover
 
         {% for item in list-items %}
         <li>
-          <a href="{{ item.href | prepend: 'http://' }}" target="_blank" data-pos="{{ forloop.index }}">
+          <a href="{{ item.href }}" target="_blank" data-pos="{{ forloop.index }}">
             {{ item.name | downcase }}
           </a>
         </li>
