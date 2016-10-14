@@ -1,13 +1,9 @@
 
 .totals {
-  font-size: 10vw;
+  margin-bottom: 0.5em;
 }
 
 @media (--w-l-800) {
-  .totals {
-    margin-bottom: 0.5em;
-  }
-
   .parent-container, .parent + .parent,
   .child-container, .child-container li + li {
     border-top: 1px dotted currentColor;
@@ -81,7 +77,7 @@
 
 @media (--w-800) {
   .totals {
-    line-height: 1em;
+    margin-bottom: 1em;
   }
 
   /* separate lists */
