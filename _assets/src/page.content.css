@@ -1,5 +1,13 @@
 
+.totals {
+  font-size: 10vw;
+}
+
 @media (--w-l-800) {
+  .totals {
+    margin-bottom: 0.5em;
+  }
+
   .parent-container, .parent + .parent,
   .child-container, .child-container li + li {
     border-top: 1px dotted currentColor;
@@ -73,17 +81,14 @@
 
 @media (--w-800) {
   .totals {
-    margin-bottom: 1em;
-  }
-
-  .list {
-    padding-bottom: var(--gutter);
+    line-height: 1em;
   }
 
   /* separate lists */
   .list + .list {
     border-top: 1px dotted currentColor;
     padding-top: var(--gutter);
+    margin-top: var(--gutter);
   }
 
     .list-content li {
