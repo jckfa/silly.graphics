@@ -9,7 +9,7 @@ layout: cover
     {% increment list_items_total %}
   {% endfor %}
 {% endfor %} -->
-<ul class="list-flex">
+<ul class="list-flex totals">
    <li class="row">{{ lists_total }}</li><!--
 --><li class="row">{{ list_items_total }}</li>
 </ul>
@@ -28,7 +28,7 @@ layout: cover
 
 
       <li class="over-800">
-        <ul class="list-heading divider">
+        <ul class="list-heading">
           {% for item in list-items %}
           <li><!--
          -->{{ list[1].heading }}<!--
@@ -64,7 +64,7 @@ layout: cover
 
         {% for item in list-items %}
         <li>
-          <a href="{{ item.href }}" target="_blank" data-pos="{{ forloop.index }}">
+          <a href="{{ item.href }}" target="_blank">
             {{ item.name | downcase }}
           </a>
         </li>

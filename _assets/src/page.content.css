@@ -72,18 +72,24 @@
     }
 
 @media (--w-800) {
+  .totals {
+    margin-bottom: 1em;
+  }
+
+  .list {
+    padding-bottom: var(--gutter);
+  }
+
   /* separate lists */
   .list + .list {
-    margin-top: calc(var(--gutter) * 4);
+    border-top: 1px dotted currentColor;
+    padding-top: var(--gutter);
   }
 
     .list-content li {
-      color: var(--bg-color);
-      background-color: var(--text-color);
     }
 
       .list-content li:hover {
-        color: var(--spot-color);
       }
 
       /* fix chrome issue */
@@ -96,15 +102,10 @@
           animation: on-off 1s linear infinite;
         }
 
-        /* separate list items */
-        .list-content a, .list-heading li {
-          margin-bottom: 2px;
-        }
-
           .list-content a::after {
-            content: attr(data-pos);
+            content: "→";
             text-align: right;
-            min-width: 2em;
+            min-width: 2.5em;
             position: absolute;
             /*top:    0;*/
             /*right:  0;*/

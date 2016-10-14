@@ -1,11 +1,7 @@
 
-/*body {
-  border: 0.1rem solid currentColor;
-}*/
-
 body, h6, .meta {
-  font-size:        var(--body-fs);
-  line-height:      var(--body-lh);
+  font-size:   var(--body-fs);
+  line-height: var(--body-lh);
 }
 
   h6, .meta {
