@@ -1,4 +1,8 @@
 
+.site__footer {
+  padding-bottom: 0.25em;
+}
+
 .site__footer a::after {
   content: "↗";
 }
@@ -18,7 +22,7 @@
   .site__footer li + li {
     padding-left: calc(var(--gutter) * 1.5);
   }
-  
+
   .site__footer a::after {
     position: absolute;
     top:    -1em;
