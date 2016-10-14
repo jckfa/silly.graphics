@@ -46,9 +46,9 @@ layout: cover
         <ul class="list-heading list-flex btn"
             onclick='toggleMainList({{ forloop.index0 }},
                                     {{ list-items | size }})'>
-          <li>
-            {{ list[1].heading }}—{{ list-items | size }}
-          </li><!--
+          <li><!--
+         -->{{ list[1].heading }}—{{ list-items | size }}<!--
+       --></li><!--
        --><li class="main-list-icon"></li>
         </ul>
       </li>
