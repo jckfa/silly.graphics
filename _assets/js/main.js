@@ -27,7 +27,7 @@ function toggleMainList(index, size) {
     mainListIcon[index].innerHTML = "-";
 
     main_container[index].style.height =
-    "calc(" + size + " * (1em + 6px + (var(--target-area) * 2) + 0.1rem))";
+    "calc(" + size + " * (1em + (var(--target-area) * 2) + 1px))";
   } else {
     // only close selected list
     main_container[index].classList.add(over800class);
