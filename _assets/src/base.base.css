@@ -4,9 +4,8 @@ body, h6, .meta {
   line-height: var(--body-lh);
 }
 
-  h6, .meta {
-    /*font-family: var(--mono);*/
-    /*color: var(--meta-color);*/
+  .meta {
+    color: var(--meta-color);
   }
 
   @media (--w-480) {
