@@ -9,7 +9,7 @@ description:
   full: A graphic designer's porn stash.
   br:   A graphic designer's<br> porn stash.
 url:         https://silly.graphics
-version:     2.1.00
+version:     2.1.01
 
 # Build settings
 markdown: kramdown
