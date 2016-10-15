@@ -25,4 +25,25 @@
     </ul>
 
 
+    <ul class="index col-flex over-800">
+
+      <li>
+        <a href="#top">↑↑↑</a>
+      </li>
+
+      {% for list in site.data.lists %}
+      <li>
+        <a href="#{{ list[1].heading }}">
+          {{ list[1].heading | truncate: 3, "" }}
+        </a>
+      </li>
+      {% endfor %}
+
+      <li>
+        <a href="#bottom">↓↓↓</a>
+      </li>
+
+    </ul>
+
+
 </header>

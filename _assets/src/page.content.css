@@ -100,23 +100,6 @@
           animation: on-off 1s linear infinite;
         }
 
-          .list-content a::after {
-            content: "→";
-            text-align: right;
-            min-width: 2.5em;
-            position: absolute;
-            /*top:    0;*/
-            /*right:  0;*/
-            /*bottom: 0;*/
-            left:   0;
-            opacity: 0;
-          }
-
-            .list-content a:hover::after {
-              left: -3em;
-              opacity: 1;
-            }
-
   /* overwrite inline styling added via js */
   .main-container {
     height: auto !important;

@@ -9,7 +9,7 @@ layout: cover
     {% increment list_items_total %}
   {% endfor %}
 {% endfor %} -->
-<ul class="list-flex meta totals">
+<ul class="row-flex meta totals">
    <li class="row">{{ lists_total }}</li><!--
 --><li class="row">{{ list_items_total }}</li>
 </ul>
@@ -46,7 +46,7 @@ layout: cover
 
 
       <li class="under-800">
-        <ul class="list-heading list-flex btn"
+        <ul class="list-heading row-flex btn"
             onclick='toggleMainList({{ forloop.index0 }},
                                     {{ list-items | size }})'>
           <li><!--

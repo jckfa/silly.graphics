@@ -2,3 +2,27 @@
 .site__header {
   padding-top: 0.25em;
 }
+
+.index {
+  text-align: right;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 50%;
+  padding-top:    0.25em;
+  padding-bottom: 0.25em;
+
+  /*background-color: #222;*/
+  z-index: 5;
+}
+
+  .index a {
+    padding-right: 0.5em;
+  }
+
+    .index a:hover::before {
+      content: "#";
+      text-align: right;
+      position: absolute;
+      right: 100%;
+    }
