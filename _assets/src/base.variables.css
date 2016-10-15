@@ -1,9 +1,7 @@
 
 :root {
   --text-color:     white;
-  /*--meta-color:     #aaa;*/
   --meta-color:     var(--spot-color);
-  /*--spot-color:     blueViolet;*/
   --spot-color:     rgb(255, 107, 0);
   --bg-color:       black;
 
