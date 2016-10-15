@@ -36,13 +36,8 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('_assets/css'));
 });
 
-// styles > buildWatch
-gulp.task('buildWatch', ['styles'], shell.task(
-  'JEKYLL_ENV=development bundle exec jekyll build --watch'
-));
-
-// serve
-gulp.task('serve', function() {
+// styles > serve
+gulp.task('serve', ['styles'], function() {
   browserSync.init({
     server: {
       baseDir: '_site/'
@@ -54,9 +49,10 @@ gulp.task('serve', function() {
   gulp.watch('_site/**/*.*').on('change', reload);
 });
 
-// styles > buildWatch, serve
-gulp.task('default', ['buildWatch', 'serve']);
-
+// styles > serve > default(buildWatch)
+gulp.task('default', ['serve'], shell.task(
+  'JEKYLL_ENV=development bundle exec jekyll build --watch'
+));
 
 // PRODUCTION TASKS / PRODUCTION TASKS / PRODUCTION TASKS / PRODUCTION TASKS /
 // TASKS / PRODUCTION TASKS / PRODUCTION TASKS / PRODUCTION TASKS / PRODUCTION
