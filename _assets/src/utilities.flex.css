@@ -6,10 +6,6 @@
 
   /* edge to edge */
   justify-content: space-between;
-
-  /* overwrite ul/ol defaults */
-  padding-left: 0;
-  list-style: none;
 }
 
   .list-flex li, .list-flex a {
