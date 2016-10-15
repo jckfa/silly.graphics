@@ -40,7 +40,7 @@
 .frag {
   color: var(--meta-color);
   display: inline-block;
-  padding-left: calc(var(--gutter) * 1);
+  /*padding-left: calc(var(--gutter) * 1);*/
 }
 
   /*.frag::before {

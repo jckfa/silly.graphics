@@ -28,17 +28,21 @@ layout: cover
 
 
       <li class="over-800">
-        <ul class="list-heading">
+        <ul class="list-heading"><!--
           {% for item in list-items %}
-          <li><!--
-         -->{{ list[1].heading }}<!--
+          {% assign item_size = list[1].heading | size %}
+          {% assign minus_two = item_size | minus: 2 %}
+       --><li>
             {% if forloop.index0 == 0 %}
+            {{ list[1].heading | truncate: minus_two, "" }}<!--
          --><a href="#{{ list[1].heading }}" class="frag">#</a><!--
-         --><a href="#top" class="frag">↑</a><!--
+         --><a href="#top" class="frag">↑</a>
+            {% else %}
+            {{ list[1].heading }}
             {% endif %}
-       --></li>
+          </li><!--
           {% endfor %}
-        </ul>
+     --></ul>
       </li>
 
 
