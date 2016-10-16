@@ -6,7 +6,6 @@ var gulp         = require('gulp'),
     cssnano      = require('gulp-cssnano'),
     autoprefixer = require('gulp-autoprefixer'),
     htmlmin      = require('gulp-htmlmin'),
-  /*svgmin       = require('gulp-svgmin'),*/
     gzip         = require('gulp-gzip'),
     browserSync  = require('browser-sync').create(),
     reload       = browserSync.reload;
@@ -51,7 +50,7 @@ gulp.task('serve', ['styles'], function() {
 
 // styles > serve > default(buildWatch)
 gulp.task('default', ['serve'], shell.task(
-  'JEKYLL_ENV=development bundle exec jekyll build --watch'
+  'JEKYLL_ENV=development bundle exec jekyll build --incremental --watch'
 ));
 
 // PRODUCTION TASKS / PRODUCTION TASKS / PRODUCTION TASKS / PRODUCTION TASKS /
