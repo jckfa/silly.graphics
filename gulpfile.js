@@ -50,7 +50,7 @@ gulp.task('serve', ['styles'], function() {
 
 // styles > serve > default(buildWatch)
 gulp.task('default', ['serve'], shell.task(
-  'JEKYLL_ENV=development bundle exec jekyll build --incremental --watch'
+  'JEKYLL_ENV=development bundle exec jekyll build --watch'
 ));
 
 // PRODUCTION TASKS / PRODUCTION TASKS / PRODUCTION TASKS / PRODUCTION TASKS /
