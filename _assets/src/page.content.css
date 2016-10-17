@@ -99,7 +99,7 @@
       }
 
   /* overwrite inline styling added via js */
-  .main-container {
+  .main-shell {
     height: auto !important;
   }
 }

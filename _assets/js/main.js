@@ -1,16 +1,15 @@
 
-var main_container = document.getElementsByClassName("main-container"),
-    mainListCont   = document.getElementsByClassName("main-list-content"),
-    mainListIcon   = document.getElementsByClassName("main-list-icon"),
-    over800class   = "height0";
+var main_shell = document.getElementsByClassName("main-shell"),
+    list_icon  = document.getElementsByClassName("list-icon"),
+    height0    = "height0";
 
 
 function closeMainLists() {
-  for (i = 0; i < main_container.length; i++) {
+  for (i = 0; i < main_shell.length; i++) {
     // close all index lists
-    main_container[i].classList.add(over800class);
+    main_shell[i].classList.add(height0);
     // add open icon to all index lists
-    mainListIcon[i].innerHTML = "+";
+    list_icon[i].innerHTML = "+";
   }
 }
 
@@ -18,20 +17,20 @@ function closeMainLists() {
 function toggleMainList(index, size) {
 
   // if selected list is closed
-  if (main_container[index].classList.contains(over800class)) {
+  if (main_shell[index].classList.contains(height0)) {
     // close all index lists
     closeMainLists();
     // only open selected list
-    main_container[index].classList.remove(over800class);
+    main_shell[index].classList.remove(height0);
     // only add close icon to selected list
-    mainListIcon[index].innerHTML = "-";
+    list_icon[index].innerHTML = "-";
 
-    main_container[index].style.height =
+    main_shell[index].style.height =
     "calc(" + size + " * (1em + (var(--target-area) * 2) + 1px))";
   } else {
     // only close selected list
-    main_container[index].classList.add(over800class);
+    main_shell[index].classList.add(height0);
     // only add open icon to selected list
-    mainListIcon[index].innerHTML = "+";
+    list_icon[index].innerHTML = "+";
   }
 }
