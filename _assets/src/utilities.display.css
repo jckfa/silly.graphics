@@ -3,13 +3,13 @@
   display: inline-block;
 }
 
-.width50 {
+.w50 {
   width: 50%;
   vertical-align: top;
 }
 
 @media (--w-800) {
-  .width50-desktop {
+  .w50-desktop {
     width: 50%;
     vertical-align: top;
   }
@@ -23,13 +23,13 @@
     overflow-y: hidden;
   }
 
-  .over-800 {
+  .over-800, .desktop {
     display: none;
   }
 }
 
 @media (--w-800) {
-  .under-800 {
+  .under-800, .mobile {
     display: none;
   }
 }
