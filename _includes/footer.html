@@ -1,22 +1,22 @@
 
-<footer class="site__footer meta" id="bottom">
+<footer class="site__footer meta flex-x" id="bottom">
 
-    {% for list in site.data.footer %}<!--
- --><ul class="col row-flex"><!--
+    {% for list in site.data.footer %}
+    <ul class="width50 flex-x">
       {% for item in list[1] %}
-   --><li><!--
-     --><a href="{{ item.href }}" target="_blank"><!--
+      <li class="flex-x">
+        <a href="{{ item.href }}" target="_blank" class="flex-x">
           {% if item.br %}
-       --><span class="under-800">{{ item.br }}</span><!--
-       --><span class="over-800">{{ item.key }}</span><!--
+          <span class="under-800">{{ item.br }}</span>
+          <span class="over-800">{{ item.key }}</span>
           {% else %}
-         -->{{ item.key }}<!--
+          {{ item.key }}
           {% endif %}
-     --></a><!--
-   --></li><!--
+        </a>
+      </li>
       {% endfor %}
- --></ul><!--
- -->{% endfor %}
+    </ul>
+    {% endfor %}
 
 
 </footer>

@@ -1,31 +1,33 @@
 
-<header class="site__header meta">
+<header class="site__header meta flex-x">
 
 
-    <ul class="col">
+    <ul class="width50">
       <li class="over-800">
         ↑{{ site.time | date: "%b %-d %H:%M %Y %Z" }}
       </li>
 
       <li class="under-800">
-        ↑{{ site.time | date: "%b %-d" }}<br>
-        <span class="transparent">0</span><!--
-     -->{{ site.time | date: "%Y %Z" }}
+        <span>↑{{ site.time | date: "%b %-d" }}</span><br>
+        <div class="flex-x">
+          <span class="ib transparent">0</span>
+          <span class="ib">{{ site.time | date: "%Y %Z" }}</span>
+        </div>
       </li>
 
       <li>
         <span class="lowercase">v</span>{{ site.version }}
       </li>
-    </ul><!--
+    </ul>
 
- --><ul class="col">
+    <ul class="width50">
       <li class="wrap-26">
         {{ site.description.br }}
       </li>
     </ul>
 
 
-    <ul class="index col-flex over-800">
+    <ul class="index flex-y flex-justify over-800">
 
       <li>
         <a href="#top">↑↑↑</a>

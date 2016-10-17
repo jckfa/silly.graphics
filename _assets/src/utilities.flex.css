@@ -1,4 +1,23 @@
 
+.flex-x, .flex-y {
+  display: flex;
+}
+
+.flex-y {
+  flex-direction: column;
+}
+
+.flex-justify {
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+
 .row-flex, .col-flex {
   display: flex;
   /* edge to edge */

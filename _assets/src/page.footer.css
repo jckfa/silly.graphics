@@ -8,8 +8,8 @@
 }
 
 @media (--w-l-800) {
-  .site__footer .col li {
-    display: block;
+  .site__footer > .flex-x {
+    flex-direction: column;
   }
 
   .site__footer li a {
@@ -23,16 +23,16 @@
     padding-left: calc(var(--gutter) * 1.5);
   }
 
-  .site__footer a::after {
-    position: absolute;
-    top:    -1em;
-    bottom: 0;
-    right:  0;
-  }
-
-    .site__footer a:hover::after {
-      animation: on-off 1s linear infinite;
+    .site__footer a::after {
+      position: absolute;
+      top:    -1em;
+      bottom: 0;
+      right:  0;
     }
+
+      .site__footer a:hover::after {
+        animation: on-off 1s linear infinite;
+      }
 }
 
 @media (--w-1120) {

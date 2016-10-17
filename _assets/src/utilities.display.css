@@ -7,6 +7,18 @@
   display: inline-block;
 }
 
+.width50 {
+  width: 50%;
+  vertical-align: top;
+}
+
+@media (--w-800) {
+  .width50-desktop {
+    width: 50%;
+    vertical-align: top;
+  }
+}
+
 .col {
   width: 50%;
   vertical-align: top;

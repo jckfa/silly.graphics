@@ -2,16 +2,18 @@
 layout: cover
 ---
 
-<!-- {% for list in site.data.lists %}
+<!--
+{% for list in site.data.lists %}
   {% assign list-items = list[1].list-items | uniq | sort: "name" %}
-    {% increment lists_total %}
+  {% increment lists_total %}
   {% for item in list-items %}
     {% increment list_items_total %}
   {% endfor %}
-{% endfor %} -->
-<ul class="row-flex meta totals">
-   <li class="row">{{ lists_total }}</li><!--
---><li class="row">{{ list_items_total }}</li>
+{% endfor %}
+-->
+<ul class="flex-x flex-justify meta totals">
+  <li class="width50-desktop">{{ lists_total }}</li>
+  <li class="width50-desktop">{{ list_items_total }}</li>
 </ul>
 
 
@@ -22,44 +24,44 @@ layout: cover
 <div class="parent-container">
   {% for list in site.data.lists %}
   {% assign list-items = list[1].list-items | uniq | sort: "name" %}
-  <section class="list parent">
-    <ul class="row" id="{{ list[1].heading }}">
+  <section class="list parent flex-x flex-justify">
+    <ul class="width50-desktop" id="{{ list[1].heading }}">
 
 
 
       <li class="over-800">
-        <ul class="list-heading"><!--
+        <ul class="list-heading">
           {% for item in list-items %}
           {% assign item_size = list[1].heading | size %}
           {% assign frag_slot = item_size | minus: 1 %}
-       --><li>
+          <li class="flex-x">
             {% if forloop.index0 == 0 %}
-            {{ list[1].heading | truncate: frag_slot, "" }}<!--
-         --><a href="#{{ list[1].heading }}" class="frag">#</a>
+            {{ list[1].heading | truncate: frag_slot, "" }}
+            <a href="#{{ list[1].heading }}" class="frag">#</a>
             {% else %}
             {{ list[1].heading }}
             {% endif %}
-          </li><!--
+          </li>
           {% endfor %}
-     --></ul>
+        </ul>
       </li>
 
 
       <li class="under-800">
-        <ul class="list-heading row-flex btn"
+        <ul class="list-heading flex-x flex-justify btn"
             onclick='toggleMainList({{ forloop.index0 }},
                                     {{ list-items | size }})'>
-          <li><!--
-         -->{{ list[1].heading }}—{{ list-items | size }}<!--
-       --></li><!--
-       --><li class="main-list-icon"></li>
+          <li>
+            {{ list[1].heading }}—{{ list-items | size }}
+          </li>
+          <li class="main-list-icon"></li>
         </ul>
       </li>
 
 
 
-    </ul><!--
- --><div class="row main-container">
+    </ul>
+    <div class="width50-desktop main-container">
       <ul class="list-content main-list-content child-container no-wrap">
 
 

@@ -1,17 +1,13 @@
-# IF YOU MODIFY THIS FILE, RESTART THE SERVER
-# IF YOU MODIFY THIS FILE, RESTART THE SERVER
-# IF YOU MODIFY THIS FILE, RESTART THE SERVER
 
-# Site settings
 name:        silly.graphics
 email:       buttface@jackf.me
 description:
   full: A graphic designer's porn stash.
   br:   A graphic designer's<br> porn stash.
 url:         https://silly.graphics
-version:     2.2.00
+version:     2.2.01
 
-# Build settings
+
 markdown: kramdown
 permalink: pretty
 

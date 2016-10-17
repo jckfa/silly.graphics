@@ -36,6 +36,10 @@
   .child-container,
   .child-container li + li {border-color: limegreen;}
   */
+
+    .list {
+      flex-direction: column;
+    }
 }
 
 .frag {
@@ -84,22 +88,16 @@
     margin-top: var(--gutter);
   }
 
-    .list-content li {
+    /* fix chrome issue */
+    .list-content li::after {
+      animation: initial;
     }
 
-      .list-content li:hover {
+      /* animate arrow on hover */
+      .list-content li:hover::after {
+        color: var(--text-color);
+        animation: on-off 1s linear infinite;
       }
-
-      /* fix chrome issue */
-      .list-content li::after {
-        animation: initial;
-      }
-
-        /* animate arrow on hover */
-        .list-content li:hover::after {
-          color: var(--text-color);
-          animation: on-off 1s linear infinite;
-        }
 
   /* overwrite inline styling added via js */
   .main-container {
