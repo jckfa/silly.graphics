@@ -15,8 +15,3 @@
     animation: initial;
   }
 }
-
-/* added by js */
-.trans {
-  transition: var(--hover-off);
-}

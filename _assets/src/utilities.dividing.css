@@ -16,8 +16,4 @@
   .mb8-16 {
     margin-bottom: calc(var(--gutter) * 16);
   }
-
-  .divider {
-    border-top: 1px dotted currentColor;
-  }
 }

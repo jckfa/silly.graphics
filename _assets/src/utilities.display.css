@@ -1,8 +1,4 @@
 
-.z3 {
-  z-index: 3;
-}
-
 .ib {
   display: inline-block;
 }
@@ -19,39 +15,16 @@
   }
 }
 
-.col {
-  width: 50%;
-  vertical-align: top;
-  display: inline-block;
-}
-
-@media (--w-800) {
-  .row {
-    width: 50%;
-    vertical-align: top;
-    display: inline-block;
-  }
-}
-
-
-/*.row {
-  background: #eee;
-}
-
-.row + .row {
-  background: #ddd;
-}*/
-
 
 @media (--w-l-800) {
-  .over-800 {
-    display: none;
-  }
-
   .height0 {
     /* !important to overwrite inline styling */
     height: 0 !important;
     overflow-y: hidden;
+  }
+
+  .over-800 {
+    display: none;
   }
 }
 

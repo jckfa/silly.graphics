@@ -10,38 +10,3 @@
 .flex-justify {
   justify-content: space-between;
 }
-
-
-
-
-
-
-
-
-.row-flex, .col-flex {
-  display: flex;
-  /* edge to edge */
-  justify-content: space-between;
-}
-
-.row-flex {
-  flex-flow: row nowrap;
-}
-
-  .row-flex li, .row-flex a {
-    /* li: flexbox fallback styling */
-    /* a:  contain block-level elements */
-    display: inline-block;
-  }
-
-  .row-flex a {
-    color: inherit;
-  }
-
-.col-flex {
-  flex-flow: column nowrap;
-}
-
-  .col-flex li {
-    display: block;
-  }
