@@ -1,13 +1,11 @@
 # ABOUT
 
 ### WHAT
-- a public display of my hoarding problem
-- all links (generally) related to graphic design
+- a public display of a hoarding problem
 
 ### WHY
 - sharing is cool
 - using data files with Jekyll makes it super easy to keep everything organized
-
 
 # SUMMARY
 - built with [Jekyll][1]
@@ -16,17 +14,18 @@
 - running on [Nginx][5] ([see configuration][6])
 - hosted on [Digital Ocean][7] [referral link]
 - encrypted with [Let's Encrypt][9] ([A+ SSL Labs score][8])
-- ([see PageSpeed score][10])
-
+- [see PageSpeed score][10]
 
 ### DEPLOYING
 Instead of pushing source files to my server and building there, I build on my development machine and push from `_site`. And I have a gulp task (deploy) to automate this.
 
-### COMPATIBILITY
-- show/hide functionality on mobile requires [classList][11]
+### SUPPORT
+- js uses [classList][11]
 - relies on [vw, vh][12] and [flexbox][13]
 - only uses [woff][14] and [woff2][15] for webfonts
 - exclusively [TLSv1.2][16] (>IE10, Android 4.3)
+
+unless you're running some old browser, everything should render fine.
 
 
 [1]: https://jekyllrb.com
