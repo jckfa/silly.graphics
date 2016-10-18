@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 group :jekyll_plugins do
   gem "jekyll-sitemap"
-  gem "jekyll-haml"
+  # gem "jekyll-haml"
 end
 
 gem "jekyll"
