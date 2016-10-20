@@ -8,7 +8,11 @@
 }
 
 @media (--w-l-800) {
-  .site__footer > .flex-x {
+  .footer-list, .footer-list li, .footer-list a {
+    width: 100%;
+  }
+
+  .footer-list {
     flex-direction: column;
   }
 
