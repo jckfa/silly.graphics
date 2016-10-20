@@ -2,7 +2,7 @@
 :root {
   --text-color:     white;
   --meta-color:     var(--spot-color);
-  --spot-color:     rgb(255, 107, 0);
+  --spot-color:     #00ffb8;
   --bg-color:       black;
 
   --gutter:         1rem;
