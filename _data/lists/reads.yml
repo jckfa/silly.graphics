@@ -1,5 +1,5 @@
 # heading: books
-heading: literature
+heading: reads
 list-items:
   - name: punch
     href: http://p-u-n-c-h.ro
@@ -39,3 +39,9 @@ list-items:
 
   - name: slanted
     href: https://www.slanted.de/shop
+
+  - name: txtbooks
+    href: http://www.txtbooks.us/
+
+  - name: nonporous
+    href: http://shop.non-poro.us/
