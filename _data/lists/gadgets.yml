@@ -1,4 +1,6 @@
-heading: utilities
+# heading: Utilities
+# heading: Thingamajigs
+heading: Gadgets
 list-items:
   - name: fontforge
     href: http://fontforge.github.io

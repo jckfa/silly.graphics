@@ -1,4 +1,5 @@
-heading: studios+people
+# heading: studios+people
+heading: nerds
 list-items:
   - name: ok-rm
     href: http://ok-rm.co.uk
@@ -243,3 +244,6 @@ list-items:
 
   - name: bráulio amado
     href: http://braulioamado.net/
+
+  - name: experimental jetset
+    href: http://www.experimentaljetset.nl/

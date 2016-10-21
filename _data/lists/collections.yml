@@ -1,4 +1,5 @@
-heading: archives
+# heading: archives
+heading: collections
 list-items:
   - name: fruit_stickers
     href: http://instagram.com/fruit_stickers
@@ -15,8 +16,8 @@ list-items:
   - name: matchbloc
     href: http://instagram.com/matchbloc
 
-  - name: collectandcatalogue
-    href: http://instagram.com/collectandcatalogue
+  # - name: collectandcatalogue
+  #   href: http://instagram.com/collectandcatalogue
 
   - name: longlostlabel
     href: http://instagram.com/longlostlabel

@@ -2,11 +2,12 @@
 
 ### WHAT
 - a public display of a hoarding problem
-- not a brand, just a public journal
+- not a brand, just an open journal
+- heavy swiss interests
 
 ### WHY
 - sharing is cool
-- using data files with Jekyll makes it super easy to keep everything organized
+- Jekyll data files allow easy organization
 
 # SUMMARY
 - built with [Jekyll][1]
