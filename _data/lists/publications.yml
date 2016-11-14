@@ -3,5 +3,11 @@ list-items:
   - name: ligature.ch
     href: http://ligature.ch
 
-  - name: print program
-    href: http://print-program.ch
+  - name: slanted
+    href: https://www.slanted.de
+
+  # - name: print program
+    # href: http://print-program.ch
+
+  - name: it's nice that
+    href: http://www.itsnicethat.com
