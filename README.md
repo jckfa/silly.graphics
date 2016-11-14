@@ -4,6 +4,7 @@
 - a public display of a hoarding problem
 - not a brand, just an open journal
 - heavy swiss interests
+- lists aren't meant to be exhaustive
 
 ### WHY
 - sharing is cool
