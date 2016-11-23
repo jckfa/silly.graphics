@@ -2,11 +2,10 @@
 name:        silly graphics
 email:       buttface@jackf.me
 description:
-  full: A graphic designer's porn stash.
-  br:   A graphic designer's<br> porn stash.
+  full:      A graphic designer's porn stash.
+  br:        A graphic designer's<br> porn stash.
 url:         https://silly.graphics
 version:     2.2.07
-
 
 markdown: kramdown
 permalink: pretty
