@@ -1,6 +1,9 @@
 
 .site__header {
-  padding-top: 0.25em;
+  color: var(--bg-color);
+  background-color: var(--spot-color);
+  padding-top:    0.25em;
+  padding-bottom: 0.25em;
 }
 
 .index {
@@ -12,7 +15,7 @@
   padding-top:    0.25em;
   padding-bottom: 0.25em;
 
-  /*background-color: #222;*/
+  color: var(--text-color);
   z-index: 5;
 }
 
