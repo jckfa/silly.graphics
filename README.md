@@ -5,6 +5,7 @@
 - not a brand, just an open journal
 - heavy swiss interests
 - lists aren't meant to be exhaustive
+- includes experimental features
 
 ### WHY
 - sharing is cool
@@ -41,7 +42,6 @@ unless you're running some old browser, everything should render fine.
 [8]: https://www.ssllabs.com/ssltest/analyze.html?d=silly.graphics&latest
 [9]: https://letsencrypt.org
 [10]: https://developers.google.com/speed/pagespeed/insights/?url=silly.graphics&tab=mobile
-
 [11]: http://caniuse.com/#search=classlist
 [12]: http://caniuse.com/#search=vh
 [13]: http://caniuse.com/#search=flex
