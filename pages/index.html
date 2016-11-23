@@ -1,5 +1,5 @@
 ---
-layout: cover
+layout: default
 permalink: /
 ---
 
@@ -32,7 +32,7 @@ permalink: /
 
 
       <li class="desktop">
-        <ul class="list-heading">
+        <ul class="list-title">
           {% for item in list-items %}
           {% assign item_size = list[1].heading | size %}
           {% assign frag_slot = item_size | minus: 1 %}
@@ -50,20 +50,16 @@ permalink: /
 
 
       <li class="mobile">
-        <ul class="list-heading flex-x flex-jus btn"
-            onclick='toggleMainList({{ forloop.index0 }},
-                                    {{ list-items | size }})'>
-          <li>
-            {{ list[1].heading }}—{{ list-items | size }}
-          </li>
-          <li class="list-icon"></li>
-        </ul>
+        <div class="list-title btn"
+             onclick='toggle_list({{ forloop.index0 }})'>
+          {{ list[1].heading }}—{{ list-items | size }}
+        </div>
       </li>
 
 
 
     </ul>
-    <div class="w50-desktop main-shell">
+    <div class="w50-desktop content-shell">
       <ul class="list-content child-container no-wrap">
 
 

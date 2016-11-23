@@ -1,36 +1,20 @@
 
-var main_shell = document.getElementsByClassName("main-shell"),
-    list_icon  = document.getElementsByClassName("list-icon"),
-    height0    = "height0";
+var list        = document.getElementsByClassName("list"),
+    hiding_list = "hiding_list";
 
 
-function closeMainLists() {
-  for (i = 0; i < main_shell.length; i++) {
-    // close all index lists
-    main_shell[i].classList.add(height0);
-    // add open icon to all index lists
-    list_icon[i].innerHTML = "+";
+function close_lists() {
+  for (i = 0; i < list.length; i++) {
+    list[i].classList.add(hiding_list);
   }
 }
 
-// open/close index list
-function toggleMainList(index, size) {
+function toggle_list(index) {
 
-  // if selected list is closed
-  if (main_shell[index].classList.contains(height0)) {
-    // close all index lists
-    closeMainLists();
-    // only open selected list
-    main_shell[index].classList.remove(height0);
-    // only add close icon to selected list
-    list_icon[index].innerHTML = "-";
-
-    main_shell[index].style.height =
-    "calc(" + size + " * (1em + (var(--target-area) * 2) + 1px))";
+  if (list[index].classList.contains(hiding_list)) {
+    close_lists();
+    list[index].classList.remove(hiding_list);
   } else {
-    // only close selected list
-    main_shell[index].classList.add(height0);
-    // only add open icon to selected list
-    list_icon[index].innerHTML = "+";
+    list[index].classList.add(hiding_list);
   }
 }

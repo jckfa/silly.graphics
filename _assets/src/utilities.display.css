@@ -17,13 +17,21 @@
 
 
 @media (--w-l-800) {
-  .height0 {
-    /* !important to overwrite inline styling */
-    height: 0 !important;
-    overflow-y: hidden;
+  .over-800, .desktop {
+    display: none;
   }
 
-  .over-800, .desktop {
+
+  /*.height0 {
+    height: 0 !important;
+    overflow-y: hidden;
+  }*/
+
+  .hiding_list .list-title::after {
+    transform: rotateZ(0deg);
+  }
+
+  .hiding_list .list-content {
     display: none;
   }
 }
@@ -32,9 +40,4 @@
   .under-800, .mobile {
     display: none;
   }
-}
-
-/* added by js */
-.hiding {
-  display: none;
 }
