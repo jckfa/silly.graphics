@@ -27,7 +27,7 @@ permalink: /
   {% for list in site.data.lists %}
   {% assign list-items = list[1].list-items | uniq | sort: "name" %}
   <section class="list parent flex-x flex-jus">
-    <ul class="w50-desktop" id="{{ list[1].heading }}">
+    <ul class="w50-desktop" id='{{ list[1].heading | downcase }}'>
 
 
 
@@ -50,10 +50,12 @@ permalink: /
 
 
       <li class="mobile">
-        <div class="list-title btn"
-             onclick='toggle_list({{ forloop.index0 }})'>
-          {{ list[1].heading }}—{{ list-items | size }}
-        </div>
+        <a href='#{{ list[1].heading | downcase }}'>
+          <div class="list-title btn"
+               onclick='toggle_list({{ forloop.index0 }})'>
+            {{ list[1].heading }}—{{ list-items | size }}
+          </div>
+        </a>
       </li>
 
 
