@@ -21,12 +21,6 @@
     display: none;
   }
 
-
-  /*.height0 {
-    height: 0 !important;
-    overflow-y: hidden;
-  }*/
-
   .hiding_list .list-title::after {
     transform: rotateZ(0deg);
   }
