@@ -6,11 +6,11 @@
 @media (--w-l-800) {
   .parent-container, .parent + .parent,
   .child-container, .child-container li + li {
-    border-top: 1px dotted var(--meta-color);
+    border-top: 1px dotted var(--text-color);
   }
 
   .parent-container {
-    border-bottom: 1px dotted var(--meta-color);
+    border-bottom: 1px dotted var(--text-color);
   }
 
     .child-container {
@@ -35,7 +35,7 @@
 }
 
 .frag {
-  color: var(--meta-color);
+  /*color: var(--meta-color);*/
   display: inline-block;
 }
 
@@ -46,7 +46,7 @@
 
   /* new tab arrow */
   .list-content li::after {
-    color: var(--meta-color);
+    color: var(--text-color);
     content: "↗";
     height: 100%;
     position: absolute;
@@ -81,10 +81,15 @@
 
   /* separate lists */
   .list + .list {
-    border-top: 1px dotted var(--meta-color);
+    border-top: 1px dotted var(--text-color);
     padding-top: var(--gutter);
     margin-top: var(--gutter);
   }
+
+    .list-content li:hover {
+      color: var(--bg-color);
+      background-color: var(--text-color);
+    }
 
     /* fix chrome issue */
     .list-content li::after {
@@ -93,7 +98,7 @@
 
       /* animate arrow on hover */
       .list-content li:hover::after {
-        color: var(--text-color);
+        color: var(--bg-color);
         animation: on-off 1s linear infinite;
       }
 }
