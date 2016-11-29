@@ -31,7 +31,7 @@ permalink: /
 
 
 
-      <li class="desktop">
+      <li class="desktop gutters">
         <ul class="list-title">
           {% for item in list-items %}
           {% assign item_size = list[1].heading | size %}
@@ -49,7 +49,7 @@ permalink: /
       </li>
 
 
-      <li class="mobile">
+      <li class="mobile gutters">
         <a href='#{{ list[1].heading | downcase }}'>
           <div class="list-title btn"
                onclick='toggle_list({{ forloop.index0 }})'>
@@ -68,7 +68,7 @@ permalink: /
 
 
         {% for item in list-items %}
-        <li>
+        <li class="gutters">
           <a href="{{ item.href }}" target="_blank">
             {{ item.name | downcase }}
           </a>

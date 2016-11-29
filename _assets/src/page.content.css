@@ -44,8 +44,13 @@
   transition: var(--hover-off);
 }*/
 
+  /* overwrite .gutters */
+  .list-content li {
+    padding-left: 0;
+  }
+
   /* new tab arrow */
-  .list-content li::after {
+  .list-content a::after {
     color: var(--text-color);
     content: "↗";
     height: 100%;
