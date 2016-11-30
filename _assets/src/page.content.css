@@ -51,7 +51,6 @@
 
   /* new tab arrow */
   .list-content a::after {
-    color: var(--text-color);
     content: "↗";
     height: 100%;
     position: absolute;
@@ -91,7 +90,7 @@
     margin-top: var(--gutter);
   }
 
-    .list-content li:hover {
+    .list-content a:hover {
       color: var(--bg-color);
       background-color: var(--text-color);
     }
@@ -102,8 +101,7 @@
     }
 
       /* animate arrow on hover */
-      .list-content li:hover::after {
-        color: var(--bg-color);
+      .list-content a:hover::after {
         animation: on-off 1s linear infinite;
       }
 }
