@@ -1,9 +1,9 @@
 
 :root {
-  --text-color:     white;
-  --meta-color:     var(--spot-color);
-  --spot-color:     red;
-  --bg-color:       black;
+  --text-color:     #333;
+  --meta-color:     #777;
+  --spot-color:     white;
+  --bg-color:       #eee;
 
   --gutter:         1rem;
   --target-area:    0.8em;

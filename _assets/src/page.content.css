@@ -44,13 +44,22 @@
   transition: var(--hover-off);
 }*/
 
+  .list-content, .list-content li + li {
+    border-top:    2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+  }
+
+  .list-content li + li {
+    border-bottom: none;
+  }
+
   /* overwrite .gutters */
   .list-content li {
     padding-left: 0;
   }
 
   /* new tab arrow */
-  .list-content a::after {
+  .list-content a::before {
     content: "↗";
     height: 100%;
     position: absolute;
@@ -61,6 +70,10 @@
     .list-content a {
       /* target area spans length of screen width */
       display: block;
+      padding-top:    0.4em;
+      padding-bottom: 0.4em;
+      transition: ease-in-out 100ms;
+      transition: var(--hover-off);
     }
 
     @media (--w-l-800) {
@@ -74,7 +87,7 @@
         position: absolute;
         right: 0;
         transform: rotateZ(-45deg);
-        transition: ease 100ms;
+        transition: ease-in-out 100ms;
       }
     }
 
@@ -85,23 +98,47 @@
 
   /* separate lists */
   .list + .list {
-    border-top: 1px dotted var(--text-color);
-    padding-top: var(--gutter);
-    margin-top: var(--gutter);
+    /*border-top: 1px dotted var(--text-color);*/
+    /*padding-top: var(--gutter);*/
+    /*margin-top: var(--gutter);*/
+    padding-top: calc(var(--gutter) * 8);
   }
 
-    .list-content a:hover {
-      color: var(--bg-color);
-      background-color: var(--text-color);
+    .list-content li:hover {
+      background-color: white;
+      background-color: rgba(255, 255, 255, 0.75);
+      background-color: rgba(0, 0, 0, 0.05);
     }
+
+      .list-content a:hover {
+        padding-left: 0.4em;
+      }
 
     /* fix chrome issue */
     .list-content li::after {
       animation: initial;
     }
 
-      /* animate arrow on hover */
-      .list-content a:hover::after {
+      /* animate ↗ on hover */
+      .list-content a:hover::before {
         animation: on-off 1s linear infinite;
       }
+
+      .list-content li {
+        transition: var(--hover-off);
+      }
+
+      .list-content a::after {
+        content: attr(href);
+        color: var(--meta-color);
+        font-size: 0.6em;
+        display: block;
+        opacity: 0;
+        transition: 250ms cubic-bezier(0.1, 1, 0.15, 1);
+      }
+
+        .list-content a:hover::after {
+          /*transition-delay: 100ms;*/
+          opacity: 1;
+        }
 }

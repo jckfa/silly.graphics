@@ -1,6 +1,6 @@
 
 .site__header {
-  color: var(--bg-color);
+  color: var(--text-color);
   background-color: var(--spot-color);
   padding-top:    0.25em;
   padding-bottom: 0.25em;
