@@ -23,10 +23,10 @@ permalink: /
 
 
 
-<div class="parent-container">
+<div class="list-container">
   {% for list in site.data.lists %}
   {% assign list-items = list[1].list-items | uniq | sort: "name" %}
-  <section class="list parent flex-x flex-jus">
+  <section class="list flex-x flex-jus">
     <ul class="w50-desktop" id='{{ list[1].heading | downcase }}'>
 
 
@@ -62,7 +62,7 @@ permalink: /
 
     </ul>
     <div class="w50-desktop content-shell">
-      <ul class="list-content child-container no-wrap">
+      <ul class="list-content no-wrap">
 
 
 
