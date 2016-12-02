@@ -4,11 +4,11 @@
 }
 
 .list-content a {
-  /* target area spans length of screen width */
   display: block;
   padding-top:    0.4em;
   padding-bottom: 0.4em;
   transition: var(--hover-off);
+  position: relative;
 }
 
   /* new tab arrow */
@@ -28,8 +28,15 @@
       padding-right: calc(var(--gutter) / 2);
     }
 
+    .list-title,
+    .list-content a {
+      padding-top:    var(--target-area);
+      padding-bottom: var(--target-area);
+    }
+
     .list-title {
       padding-left: 2.5em;
+      position: relative;
     }
 
       .list-title::before {
@@ -39,30 +46,29 @@
         opacity: 0.5;
       }
 
-    .list-content {
-      padding-left: 2.5em;
-    }
-
-      .list-content li::before {
-        content: "";
-        height: 100%;
+      .list-title::after {
+        content: "+";
         position: absolute;
-        left:     -1em;
-        padding-top: var(--target-area);
+        right: 0;
+        transform: rotateZ(-45deg);
+        transition: ease-in-out 100ms;
       }
 
-        .list-title,
-        .list-content a {
-          padding-top:    var(--target-area);
-          padding-bottom: var(--target-area);
-        }
+    .list-content {
+      padding-left: 2.5em;
+      position: relative;
+    }
 
-        .list-title::after {
-          content: "+";
+      .list-content li {
+        position: relative;
+      }
+
+        .list-content li::before {
+          content: "";
+          height: 100%;
           position: absolute;
-          right: 0;
-          transform: rotateZ(-45deg);
-          transition: ease-in-out 100ms;
+          left:     -1em;
+          padding-top: var(--target-area);
         }
 
   /* ADDED VIA JS */
@@ -73,10 +79,6 @@
 }
 
 @media (--w-800) {
-  .list-container {
-    padding-top: var(--target-area);
-  }
-
   /* separate lists */
   .list + .list {
     padding-top: calc(var(--gutter) * 8);
@@ -87,12 +89,10 @@
     }
 
     .list-title {
-      /*border: 2px solid var(--text-color);*/
-      /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
       font-family: var(--sans);
       letter-spacing: 0.05em;
       display: inline-block;
-      padding: var(--target-area);
+      padding-top: calc(var(--target-area) * 2);
       margin-bottom: 1em;
     }
 

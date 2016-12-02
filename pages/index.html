@@ -24,6 +24,20 @@ permalink: /
 
 
 <div class="list-container">
+
+  <nav class="site__nav w50 desktop">
+    <ul>
+      {% for list in site.data.lists %}
+      {% assign list-items = list[1].list-items | uniq | sort: "name" %}
+      <li class="nav-item">
+        <a href='#{{ list[1].heading | downcase }}'>
+          {{ list[1].heading }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+
   {% for list in site.data.lists %}
   {% assign list-items = list[1].list-items | uniq | sort: "name" %}
   <section class="list flex-x flex-jus">

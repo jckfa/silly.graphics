@@ -27,6 +27,10 @@
     padding-left: calc(var(--gutter) * 1.5);
   }
 
+    .site__footer a {
+      position: relative;
+    }
+
     .site__footer a::after {
       position: absolute;
       top:    -1em;

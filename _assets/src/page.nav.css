@@ -1,0 +1,31 @@
+
+.list-container {
+  position: relative;
+}
+
+.site__nav {
+  font-family: var(--sans);
+  letter-spacing: 0.05em;
+  position: absolute;
+  z-index: 1;
+  padding-top:  calc(var(--target-area) * 2);
+  padding-left: calc(var(--gutter) / 2);
+}
+
+  .nav-item {
+    opacity: 0.5;
+  }
+
+
+/* ADDED VIA JS */
+.fix {
+  padding-top:  calc(var(--target-area) * 2);
+  position: fixed;
+  top: 0;
+}
+
+/* ADDED VIA JS */
+.current {
+  /*color: red;*/
+  opacity: 1;
+}

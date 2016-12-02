@@ -17,7 +17,7 @@
 
 
 @media (--w-l-800) {
-  .over-800, .desktop {
+  .desktop {
     display: none;
   }
 
