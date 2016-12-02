@@ -1,92 +1,80 @@
 
-.totals {
-  margin-bottom: 0.5em;
+.list-title {
+  display: block;
 }
 
-.list-content, .list-content li + li {
-  border-top: 2px solid var(--text-color);
+.list-content a {
+  /* target area spans length of screen width */
+  display: block;
+  padding-top:    0.4em;
+  padding-bottom: 0.4em;
+  transition: var(--hover-off);
 }
-
-@media (--w-l-800) {
-  .list-container, .list + .list {
-    border-top: 2px solid var(--text-color);
-  }
-
-  .list-container {
-    border-bottom: 2px solid var(--text-color);
-  }
-
-    .list {
-      flex-direction: column;
-    }
-
-    .list-content {
-      margin-left: 10vw;
-    }
-
-      .list-content li::before {
-        /*content: "•";*/
-        content: "";
-        height: 100%;
-        position: absolute;
-        /*top:    0;*/
-        /*right:  0;*/
-        /*bottom: 0;*/
-        left:     -1em;
-        padding-top: var(--target-area);
-      }
-}
-
-.frag {
-  /*color: var(--meta-color);*/
-  display: inline-block;
-}
-
-  /* overwrite .gutters */
-  .list-content li {
-    padding-left: 0;
-  }
 
   /* new tab arrow */
   .list-content a::before {
     content: "↗";
-    height: 100%;
     position: absolute;
-    top:    0;
     right:  0;
   }
 
-    .list-content a {
-      /* target area spans length of screen width */
-      display: block;
-      padding-top:    0.4em;
-      padding-bottom: 0.4em;
-      transition: ease-in-out 100ms;
-      transition: var(--hover-off);
-    }
-
-    @media (--w-l-800) {
-      .list-content a, .list-title {
-        padding-top:    var(--target-area);
-        padding-bottom: var(--target-area);
-      }
-
-      .list-title::after {
-        content: "+";
-        position: absolute;
-        right: 0;
-        transform: rotateZ(-45deg);
-        transition: ease-in-out 100ms;
-      }
-    }
-
-@media (--w-800) {
-  .list-content {
-    border-bottom: 2px solid var(--text-color);
+@media (--w-l-800) {
+  .list {
+    flex-direction: column;
   }
 
-  .totals {
-    margin-bottom: 1em;
+    .list-title-shell {
+      padding-left:  calc(var(--gutter) / 2);
+      padding-right: calc(var(--gutter) / 2);
+    }
+
+    .list-title {
+      padding-left: 2.5em;
+    }
+
+      .list-title::before {
+        content: attr(data-size);
+        position: absolute;
+        left: 0;
+        opacity: 0.5;
+      }
+
+    .list-content {
+      padding-left: 2.5em;
+    }
+
+      .list-content li::before {
+        content: "";
+        height: 100%;
+        position: absolute;
+        left:     -1em;
+        padding-top: var(--target-area);
+      }
+
+        .list-title,
+        .list-content a {
+          padding-top:    var(--target-area);
+          padding-bottom: var(--target-area);
+        }
+
+        .list-title::after {
+          content: "+";
+          position: absolute;
+          right: 0;
+          transform: rotateZ(-45deg);
+          transition: ease-in-out 100ms;
+        }
+
+  /* ADDED VIA JS */
+  /*.selected .list-title-shell,*/
+  .selected .list-content {
+    background-color: var(--bg2-color);
+  }
+}
+
+@media (--w-800) {
+  .list-container {
+    padding-top: var(--target-area);
   }
 
   /* separate lists */
@@ -94,41 +82,54 @@
     padding-top: calc(var(--gutter) * 8);
   }
 
-    .list-content li:hover {
-      background-color: white;
-      background-color: rgba(255, 255, 255, 0.75);
-      background-color: rgba(0, 0, 0, 0.05);
+    .list-title-shell {
+      text-align: center;
     }
 
-      .list-content a:hover {
-        padding-left: 0.4em;
-      }
-
-    /* fix chrome issue */
-    .list-content li::after {
-      animation: initial;
+    .list-title {
+      /*border: 2px solid var(--text-color);*/
+      /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
+      font-family: var(--sans);
+      letter-spacing: 0.05em;
+      display: inline-block;
+      padding: var(--target-area);
+      margin-bottom: 1em;
     }
 
-      /* animate ↗ on hover */
-      .list-content a:hover::before {
-        animation: on-off 1s linear infinite;
+    .list-content li {
+      padding-left: 0;
+      transition: var(--hover-off);
+    }
+
+      .list-content li:hover {
+        background-color: var(--spot-color);
       }
 
-      .list-content li {
-        transition: var(--hover-off);
+      /* fix chrome issue */
+      .list-content li::after {
+        animation: initial;
       }
 
-      .list-content a::after {
-        content: attr(href);
-        color: var(--meta-color);
-        font-size: 0.6em;
-        display: block;
-        opacity: 0;
-        transition: 250ms cubic-bezier(0.1, 1, 0.15, 1);
-      }
-
-        .list-content a:hover::after {
-          /*transition-delay: 100ms;*/
-          opacity: 1;
+        .list-content a:hover {
+          padding-left: 0.4em;
         }
+
+          /* animate ↗ on hover */
+          .list-content a:hover::before {
+            animation: on-off 1s linear infinite;
+          }
+
+        .list-content a::after {
+          content: attr(href);
+          color: var(--meta-color);
+          font-size: 0.6em;
+          display: block;
+          opacity: 0;
+          transition: 250ms cubic-bezier(0.1, 1, 0.15, 1);
+        }
+
+          .list-content a:hover::after {
+            /*transition-delay: 100ms;*/
+            opacity: 1;
+          }
 }

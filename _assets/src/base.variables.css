@@ -4,6 +4,7 @@
   --meta-color:     #777;
   --spot-color:     white;
   --bg-color:       #eee;
+  --bg2-color:      rgb(225, 225, 225);
 
   --gutter:         1rem;
   --target-area:    0.8em;
@@ -24,19 +25,15 @@
   --mono:           "menoe_grotesque_std_regularRg",
                     var(--mono-fallback);
 
-  /*--sans-fallback:  "-apple-system",
-                    BlinkMacSystemFont,
-                    "helvetica neue",
+  --sans-fallback:  -apple-system,
                     "roboto",
-                    helvetica,
                     arial,
                     sans-serif;
 
-  --sans:           arial,
-                    helvetica,
-                    sans-serif;
+  --sans:           BlinkMacSystemFont,
+                    var(--sans-fallback);
 
-  --serif-fallback: "times new roman",
+  /*--serif-fallback: "times new roman",
                     times,
                     serif;
 

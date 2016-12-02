@@ -2,30 +2,30 @@
 .site__header {
   color: var(--text-color);
   background-color: var(--spot-color);
-  padding-top:    0.25em;
-  padding-bottom: 0.25em;
 }
 
-.index {
-  text-align: right;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  right: 50%;
-  padding-top:    0.25em;
-  padding-bottom: 0.25em;
-
-  color: var(--text-color);
-  z-index: 5;
-}
-
-  .index a {
-    padding-right: 0.5em;
+  .header-bar {
+    border-bottom: 2px solid var(--bg-color);
+    padding-top:    0.25em;
+    padding-bottom: 0.25em;
   }
 
-    .index a:hover::before {
-      content: "#";
-      text-align: right;
-      position: absolute;
-      right: 100%;
+
+  .other-content {
+    color: rgb(36, 255, 0);
+    padding-top:    2em;
+    padding-bottom: 2em;
+  }
+
+    .other-content p {
+      font-family: var(--sans);
+      letter-spacing: 0.05em;
+      font-size: 1.5em;
+      line-height: 1;
     }
+
+@media (--w-800) {
+  .other-content p {
+    font-size: 2em;
+  }
+}

@@ -13,10 +13,10 @@ permalink: /
   {% endfor %}
 {% endfor %}
 -->
-<ul class="flex-x flex-jus meta totals center">
+<!-- <ul class="flex-x flex-jus meta totals center">
   <li class="w50-desktop">{{ lists_total }}</li>
   <li class="w50-desktop">{{ list_items_total }}</li>
-</ul>
+</ul> -->
 
 
 
@@ -27,44 +27,23 @@ permalink: /
   {% for list in site.data.lists %}
   {% assign list-items = list[1].list-items | uniq | sort: "name" %}
   <section class="list flex-x flex-jus">
-    <ul class="w50-desktop" id='{{ list[1].heading | downcase }}'>
 
-
-
-      <li class="desktop gutters">
-        <ul class="list-title">
-          {% for item in list-items %}
-          {% assign item_size = list[1].heading | size %}
-          {% assign frag_slot = item_size | minus: 1 %}
-          <li class="flex-x">
-            {% if forloop.index0 == 0 %}
-            {{ list[1].heading | truncate: frag_slot, "" }}
-            <a href="#{{ list[1].heading }}" class="frag">#</a>
-            {% else %}
-            {{ list[1].heading }}
-            {% endif %}
-          </li>
-          {% endfor %}
-        </ul>
-      </li>
-
-
-      <li class="mobile gutters">
-        <a href='#{{ list[1].heading | downcase }}'>
-          <div class="list-title btn"
-               onclick='toggle_list({{ forloop.index0 }})'>
-            {{ list[1].heading }}—{{ list-items | size }}
-          </div>
-        </a>
-      </li>
-
-
-
+    <ul class="w50-desktop">
     </ul>
+
     <div class="w50-desktop content-shell">
+
+      <div class="list-title-shell">
+        <a href='#{{ list[1].heading | downcase }}'
+           class="list-title btn"
+           id='{{ list[1].heading | downcase | replace: " ", "-" }}'
+           onclick='toggle_list({{ forloop.index0 }})'
+           data-size='{{ list-items | size }}'>
+          {{ list[1].heading }}
+        </a>
+      </div>
+
       <ul class="list-content no-wrap">
-
-
 
 
         {% for item in list-items %}
@@ -74,8 +53,6 @@ permalink: /
           </a>
         </li>
         {% endfor %}
-
-
 
 
       </ul>
