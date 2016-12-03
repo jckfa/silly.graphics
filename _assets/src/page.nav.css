@@ -9,7 +9,7 @@
   position: absolute;
   z-index: 1;
   padding-top:  calc(var(--target-area) * 2);
-  padding-left: calc(var(--gutter) / 2);
+  padding-left: var(--gutter);
 }
 
 /* ADDED VIA JS */

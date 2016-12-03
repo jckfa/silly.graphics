@@ -4,8 +4,9 @@ permalink: /
 ---
 
 
+{% assign lists = site.data.lists %}
 <!--
-{% for list in site.data.lists %}
+{% for list in lists %}
   {% assign list-items = list[1].list-items | uniq | sort: "name" %}
   {% increment lists_total %}
   {% for item in list-items %}
@@ -23,7 +24,7 @@ permalink: /
 
   <nav class="site__nav w50 desktop">
     <ul>
-      {% for list in site.data.lists %}
+      {% for list in lists %}
       {% assign list-items = list[1].list-items | uniq | sort: "name" %}
       <li class="nav-item">
         <a href='#{{ list[1].heading | downcase }}'>
@@ -34,7 +35,7 @@ permalink: /
     </ul>
   </nav>
 
-  {% for list in site.data.lists %}
+  {% for list in lists %}
   {% assign list-items = list[1].list-items | uniq | sort: "name" %}
   <section class="list flex-x flex-jus">
 
@@ -49,7 +50,7 @@ permalink: /
            class="list-title btn"
            onclick='toggle_list({{ forloop.index0 }})'
            data-size='{{ list-items | size }}'>
-          {{ list[1].heading }}
+          {{ list[1].heading }}—{{ list-items | size }}
         </a>
       </div>
 
@@ -57,7 +58,7 @@ permalink: /
 
 
         {% for item in list-items %}
-        <li class="gutters">
+        <li>
           <a href="{{ item.href }}" target="_blank">
             {{ item.name | downcase }}
           </a>

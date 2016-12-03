@@ -6,8 +6,8 @@
 
   .header-bar {
     border-bottom: 2px solid var(--bg-color);
-    padding-top:    0.25em;
-    padding-bottom: 0.25em;
+    padding-top:    var(--gutter);
+    padding-bottom: var(--gutter);
   }
 
 

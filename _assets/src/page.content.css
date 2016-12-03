@@ -23,7 +23,9 @@
     flex-direction: column;
   }
 
-    .list-title-shell {
+    /* gutters */
+    .list-title-shell,
+    .list-content {
       padding-left:  calc(var(--gutter) / 2);
       padding-right: calc(var(--gutter) / 2);
     }
@@ -55,9 +57,12 @@
       }
 
     .list-content {
-      padding-left: 2.5em;
       position: relative;
     }
+
+      .list-content li {
+        padding-left: 2.5em;
+      }
 
       /*.list-content li {
         position: relative;
@@ -80,6 +85,12 @@
 }
 
 @media (--w-800) {
+  /* gutters */
+  .list {
+    padding-left:  var(--gutter);
+    padding-right: var(--gutter);
+  }
+
   /* separate lists */
   .list + .list {
     padding-top: calc(var(--gutter) * 8);
@@ -99,13 +110,16 @@
 
     .list-content li {
       padding-left: 0;
-      transition: var(--hover-off);
+      transition: ease-in-out 100ms;
     }
 
       .list-content li:hover {
         background-color: var(--spot-color);
-        /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);*/
       }
+
+        .list-content li:hover a {
+          overflow-x: hidden;
+        }
 
       /* fix chrome issue */
       .list-content li::after {
@@ -116,8 +130,16 @@
           padding-left: 0.4em;
         }
 
+          /* new tab arrow */
+          .list-content a::before {
+            color: var(--meta-color);
+            transition: var(--hover-off);
+          }
+
           /* animate ↗ on hover */
           .list-content a:hover::before {
+            color: var(--text-color);
+            padding-right: 0.4em;
             animation: on-off 1s linear infinite;
           }
 
@@ -200,7 +222,7 @@
 
 /* ADDED VIA JS */
 .showing-frag {
-  margin-left: calc(var(--gutter) / 2);
+  margin-left: var(--gutter);
   /* leave room for footer */
   margin-bottom: calc(var(--gutter) * 4);
   transition: var(--hover-off);
