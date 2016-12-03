@@ -1,5 +1,6 @@
 
 .site__footer {
+  color: var(--meta-color);
   padding-bottom: 0.25em;
 }
 
@@ -38,9 +39,14 @@
       right:  0;
     }
 
-      .site__footer a:hover::after {
-        animation: on-off 1s linear infinite;
+      .site__footer a:hover {
+        color: var(--text-color);
+        transition: ease-in-out 100ms;
       }
+
+        .site__footer a:hover::after {
+          animation: on-off 1s linear infinite;
+        }
 }
 
 @media (--w-1120) {

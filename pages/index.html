@@ -19,10 +19,6 @@ permalink: /
 </ul> -->
 
 
-
-
-
-
 <div class="list-container">
 
   <nav class="site__nav w50 desktop">
@@ -45,12 +41,12 @@ permalink: /
     <ul class="w50-desktop">
     </ul>
 
-    <div class="w50-desktop content-shell">
+    <div class="w50-desktop content-shell"
+         id='{{ list[1].heading | downcase | replace: " ", "-" }}'>
 
-      <div class="list-title-shell">
+      <div class="list-title-shell meta">
         <a href='#{{ list[1].heading | downcase }}'
            class="list-title btn"
-           id='{{ list[1].heading | downcase | replace: " ", "-" }}'
            onclick='toggle_list({{ forloop.index0 }})'
            data-size='{{ list-items | size }}'>
           {{ list[1].heading }}
@@ -75,6 +71,10 @@ permalink: /
   {% endfor %}
 </div>
 
+
+<div class="top-frag desktop">
+  <a href="#top">↑</a>
+</div>
 
 <script type="text/javascript">
   {% asset 'main.js' %}

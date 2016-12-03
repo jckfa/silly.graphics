@@ -1,7 +1,7 @@
 
 :root {
   --text-color:     #333;
-  --meta-color:     #777;
+  --meta-color:     rgba(0, 0, 0, 0.3);
   --spot-color:     white;
   --bg-color:       #eee;
   --bg2-color:      rgb(225, 225, 225);

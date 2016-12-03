@@ -12,11 +12,6 @@
   padding-left: calc(var(--gutter) / 2);
 }
 
-  .nav-item {
-    opacity: 0.5;
-  }
-
-
 /* ADDED VIA JS */
 .fix {
   padding-top:  calc(var(--target-area) * 2);
@@ -24,8 +19,11 @@
   top: 0;
 }
 
-/* ADDED VIA JS */
-.current {
-  /*color: red;*/
-  opacity: 1;
-}
+  .nav-item {
+    color: var(--meta-color);
+  }
+
+  /* ADDED VIA JS */
+  .current {
+    color: var(--text-color);
+  }

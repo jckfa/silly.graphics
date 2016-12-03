@@ -3,7 +3,8 @@ var list        = document.getElementsByClassName("list"),
     container   = document.getElementsByClassName('list-container')[0],
     nav         = document.getElementsByClassName('site__nav')[0],
     nav_item    = document.getElementsByClassName('nav-item'),
-    list_title  = document.getElementsByClassName('list-title'),
+    list_title  = document.getElementsByClassName('content-shell'),
+    top_frag    = document.getElementsByClassName('top-frag')[0],
     hiding_list = "hiding_list";
     selected    = "selected";
 
@@ -37,16 +38,18 @@ function smart_nav() {
       nav_pos    = container.offsetTop;
   lime.innerHTML = nav_pos + " " + scroll_pos;
 
+  // fix nav
   if (scroll_pos >= nav_pos) {
     nav.classList.add("fix");
+    top_frag.classList.add("showing-frag");
   } else {
     nav.classList.remove("fix");
+    top_frag.classList.remove("showing-frag");
   }
 
 
   for (i = 0; i < list.length; i++ ) {
     var list_pos = list_title[i].offsetTop;
-    // list_title[i].innerHTML = list_title[i].offsetTop + nav_pos;
 
     // -1 compensates for frag rounding bug
     if (scroll_pos >= nav_pos + list_pos - 1) {
