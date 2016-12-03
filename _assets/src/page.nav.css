@@ -21,6 +21,7 @@
 
   .nav-item {
     color: var(--meta-color);
+    transition: ease-in-out 100ms;
   }
 
   /* ADDED VIA JS */
