@@ -78,9 +78,7 @@
     }
 
     .list + .list .list-title .shell {
-      /*color: rgba(0, 0, 0, 0.2);*/
-      /*border-top: 0.1em solid currentColor;*/
-      border-top: 0.1em solid rgba(0, 0, 0, 0.15);
+      border-top: 0.1em solid var(--meta-color);
       padding-top: calc(var(--gutter) * 1);
     }
 
@@ -92,6 +90,9 @@
 
       .list-content li:hover {
         background-color: var(--spot-color);
+        background-color: var(--bg2-color);
+        border-radius: 2px;
+        /*box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);*/
       }
 
       .list-content li::before {

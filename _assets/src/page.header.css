@@ -1,18 +1,19 @@
 
 .site__header {
   color: var(--text-color);
-  background-color: var(--spot-color);
+  background-color: var(--bg2-color);
 }
 
   .header-bar {
-    border-bottom: 2px solid var(--bg-color);
+    /*border-bottom: 2px solid var(--bg-color);*/
+    background-color: var(--bg2-color);
     padding-top:    var(--gutter);
     padding-bottom: var(--gutter);
   }
 
 
   .other-content {
-    color: rgb(36, 255, 0);
+    color: var(--text-color);
     padding-top:    2em;
     padding-bottom: 2em;
   }

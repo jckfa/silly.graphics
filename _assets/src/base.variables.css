@@ -1,10 +1,13 @@
 
 :root {
-  --text-color:     rgba(0, 0, 0, 0.7);
-  --meta-color:     rgba(0, 0, 0, 0.2);
+  /*--text-color:     rgba(0, 0, 0, 0.7);*/
+  --text-color:     rgb(34, 140, 80);
+  /*--meta-color:     rgba(0, 0, 0, 0.2);*/
+  --meta-color:     rgba(34, 140, 80, 0.3);
   --spot-color:     white;
-  --bg-color:       #f5f5f5;
-  --bg2-color:      rgba(0, 0, 0, 0.05);
+  --bg-color:       white;
+  /*--bg2-color:      rgba(0, 0, 0, 0.05);*/
+  --bg2-color:      rgba(34, 140, 80, 0.05);
 
   --gutter:         1rem;
   --target-area:    0.8em;

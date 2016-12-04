@@ -30,6 +30,7 @@
 
     .site__footer a {
       position: relative;
+      transition: color var(--simple-fade);
     }
 
     .site__footer a::after {
@@ -41,7 +42,6 @@
 
       .site__footer a:hover {
         color: var(--text-color);
-        transition: ease-in-out 100ms;
       }
 
         .site__footer a:hover::after {
