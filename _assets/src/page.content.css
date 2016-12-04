@@ -25,6 +25,7 @@
     }
 
     .list-title {
+      text-transform: uppercase;
       cursor: pointer;
     }
 
@@ -65,7 +66,7 @@
 
   /* separate lists */
   .list + .list {
-    padding-top: calc(var(--gutter) * 8);
+    padding-top: calc(var(--gutter) * 4);
   }
 
     .list-title {
@@ -74,6 +75,13 @@
       letter-spacing: 0.05em;
       padding-top: calc(var(--gutter) * 4);
       margin-bottom: 1em;
+    }
+
+    .list + .list .list-title .shell {
+      /*color: rgba(0, 0, 0, 0.2);*/
+      /*border-top: 0.1em solid currentColor;*/
+      border-top: 0.1em solid rgba(0, 0, 0, 0.15);
+      padding-top: calc(var(--gutter) * 1);
     }
 
     .list-content li {
@@ -141,10 +149,11 @@
 
         /* list-item urls */
         .list-content a::after {
-          content: attr(href);
           color: transparent;
+          content: attr(href);
           font-size: 0.6em;
           line-height: 1;
+          padding-top: calc(var(--target-area) / 4);
           display: block;
           transition: var(--simple-fade);
         }
