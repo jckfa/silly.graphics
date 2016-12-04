@@ -60,10 +60,14 @@
     vertical-align: middle;
     border-radius: 50%;
     transition: ease-in-out 100ms;
+
+    color: var(--text-color);
+    background-color: var(--spot-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   }
 
     .top-frag a:hover {
-      color: var(--text-color);
-      background-color: var(--spot-color);
-      /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);*/
+      /*color: var(--text-color);*/
+      /*background-color: var(--spot-color);*/
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     }
