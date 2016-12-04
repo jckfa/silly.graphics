@@ -41,33 +41,29 @@
   position: fixed;
   bottom: 0;
   left: 0;
+  margin-left: var(--gutter);
   margin-bottom: -2em;
-  transition: var(--hover-on);
+  transition: margin-bottom var(--hover-on);
+  z-index: 1;
 }
 
 /* ADDED VIA JS */
 .showing-frag {
-  margin-left: var(--gutter);
-  /* leave room for footer */
   margin-bottom: calc(var(--gutter) * 4);
-  transition: var(--hover-off);
+  transition: margin-bottom var(--hover-off);
 }
 
   .top-frag a {
-    color: var(--meta-color);
+    color: var(--text-color);
     text-align: center;
     display: table-cell;
     vertical-align: middle;
-    border-radius: 50%;
-    transition: ease-in-out 100ms;
-
-    color: var(--text-color);
-    background-color: var(--spot-color);
+    background-color: var(--bg-color);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    transition: box-shadow var(--simple-fade);
   }
 
     .top-frag a:hover {
-      /*color: var(--text-color);*/
-      /*background-color: var(--spot-color);*/
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     }
