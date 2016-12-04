@@ -1,86 +1,58 @@
 
-.list-title {
-  display: block;
-}
-
 .list-content a {
   display: block;
-  padding-top:    0.4em;
-  padding-bottom: 0.4em;
-  transition: var(--hover-off);
-  position: relative;
 }
 
-  /* new tab arrow */
-  .list-content a::before {
-    content: "↗";
-    position: absolute;
-    right:  0;
+  .shell {
+    position: relative;
   }
+
+    /* new tab arrow */
+    .list-content .shell::before {
+      content: "↗";
+      position: absolute;
+      right:  0;
+    }
 
 @media (--w-l-800) {
   .list {
     flex-direction: column;
   }
 
-    /* gutters */
-    .list-title-shell,
-    .list-content {
-      padding-left:  calc(var(--gutter) / 2);
-      padding-right: calc(var(--gutter) / 2);
-    }
-
     .list-title,
     .list-content a {
-      padding-top:    var(--target-area);
-      padding-bottom: var(--target-area);
+      padding: var(--target-area) calc(var(--gutter) / 2);
     }
 
     .list-title {
-      padding-left: 2.5em;
-      position: relative;
+      cursor: pointer;
     }
 
-      .list-title::before {
-        content: attr(data-size);
-        position: absolute;
-        left: 0;
-        opacity: 0.5;
-      }
-
-      .list-title::after {
+      .list-title .shell::after {
         content: "+";
         position: absolute;
         right: 0;
         transform: rotateZ(-45deg);
-        transition: ease-in-out 100ms;
+        transition: var(--simple-fade);
       }
 
-    .list-content {
-      position: relative;
-    }
-
-      .list-content li {
-        padding-left: 2.5em;
+      /* ADDED VIA JS */
+      .hiding_list .shell::after {
+        transform: rotateZ(0);
       }
 
-      /*.list-content li {
-        position: relative;
+      .list-size {
+        color: var(--meta-color);
       }
-
-        .list-content li::before {
-          content: "$";
-          color: red;
-          height: 100%;
-          position: absolute;
-          left:     -1em;
-          padding-top: var(--target-area);
-        }*/
 
   /* ADDED VIA JS */
-  /*.selected .list-title-shell,*/
   .selected .list-content {
     background-color: var(--bg2-color);
+  }
+
+  /* ADDED VIA JS */
+  .hiding_list .list-content {
+    display: none;
   }
 }
 
@@ -96,29 +68,42 @@
     padding-top: calc(var(--gutter) * 8);
   }
 
-    .list-title-shell {
-      color: var(--meta-color);
-    }
-
     .list-title {
+      color: var(--meta-color);
       font-family: var(--sans);
       letter-spacing: 0.05em;
-      display: inline-block;
-      padding-top: calc(var(--target-area) * 2);
+      padding-top: calc(var(--gutter) * 4);
       margin-bottom: 1em;
     }
 
     .list-content li {
-      padding-left: 0;
-      transition: ease-in-out 100ms;
+      position: relative;
+      transition: var(--simple-fade);
+      counter-increment: i;
     }
 
       .list-content li:hover {
         background-color: var(--spot-color);
       }
 
-        .list-content li:hover a {
-          overflow-x: hidden;
+      .list-content li::before {
+        color: transparent;
+        font-size: 0.8em;
+        line-height: 1;
+        content: counter(i, decimal-leading-zero);
+        text-align: right;
+        position: absolute;
+        right: 100%;
+        transform: rotateZ(-90deg);
+        transform-origin: 100% 0 0;
+        margin-right: 1.2em;
+        transition: var(--simple-fade);
+        transition-delay: 50ms;
+        z-index: -10;
+      }
+
+        .list-content li:hover::before {
+          color: var(--meta-color);
         }
 
       /* fix chrome issue */
@@ -126,18 +111,29 @@
         animation: initial;
       }
 
+      .list-content li:hover a {
+        overflow-x: hidden;
+      }
+
+        .list-content a {
+          padding-top:    calc(var(--target-area) / 2);
+          padding-bottom: calc(var(--target-area) / 2);
+          transition: var(--hover-off);
+          position: relative;
+        }
+
         .list-content a:hover {
           padding-left: 0.4em;
         }
 
           /* new tab arrow */
-          .list-content a::before {
+          .list-content .shell::before {
             color: var(--meta-color);
             transition: var(--hover-off);
           }
 
           /* animate ↗ on hover */
-          .list-content a:hover::before {
+          .list-content a:hover .shell::before {
             color: var(--text-color);
             padding-right: 0.4em;
             animation: on-off 1s linear infinite;
@@ -146,99 +142,14 @@
         /* list-item urls */
         .list-content a::after {
           content: attr(href);
-          color: var(--meta-color);
+          color: transparent;
           font-size: 0.6em;
           line-height: 1;
           display: block;
-          opacity: 0;
-          transition: 250ms cubic-bezier(0.1, 1, 0.15, 1);
+          transition: var(--simple-fade);
         }
 
           .list-content a:hover::after {
-            /*transition-delay: 100ms;*/
-            opacity: 1;
+            color: var(--meta-color);
           }
 }
-
-
-@media (--w-800) {
-  .list-content li {
-    position: relative;
-    counter-increment: i;
-  }
-
-    .list-content li::before {
-      color: transparent;
-      font-size: 0.8em;
-      line-height: 1;
-      content: counter(i, decimal-leading-zero);
-      text-align: right;
-      position: absolute;
-      right: 100%;
-      transform: rotateZ(-90deg);
-      transform-origin: 100% 0 0;
-      margin-right: 1.2em;
-      transition: ease-in-out 100ms;
-      transition-delay: 50ms;
-      z-index: -10;
-    }
-
-      .list-content li:hover::before {
-        color: var(--meta-color);
-      }
-}
-
-
-/*@media (--w-800) {
-  .content-shell {
-    position: relative;
-    padding-top: calc(var(--target-area) * 2);
-  }
-
-  .list-title-shell {
-    color: var(--meta-color);
-    text-align: right;
-    position: absolute;
-    right: 100%;
-    transform: rotateZ(-90deg);
-    transform-origin: 100% 0 0;
-    margin-right: 1.5em;
-  }
-}*/
-
-
-
-
-.top-frag {
-  width:  2em;
-  height: 2em;
-  display: table;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  margin-bottom: -2em;
-  transition: var(--hover-on);
-}
-
-/* ADDED VIA JS */
-.showing-frag {
-  margin-left: var(--gutter);
-  /* leave room for footer */
-  margin-bottom: calc(var(--gutter) * 4);
-  transition: var(--hover-off);
-}
-
-  .top-frag a {
-    color: var(--meta-color);
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
-    border-radius: 50%;
-    transition: ease-in-out 100ms;
-  }
-
-    .top-frag a:hover {
-      color: var(--text-color);
-      background-color: var(--spot-color);
-      /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);*/
-    }

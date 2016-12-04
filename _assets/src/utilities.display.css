@@ -15,23 +15,14 @@
   }
 }
 
-
 @media (--w-l-800) {
   .desktop {
-    display: none;
-  }
-
-  .hiding_list .list-title::after {
-    transform: rotateZ(0deg);
-  }
-
-  .hiding_list .list-content {
     display: none;
   }
 }
 
 @media (--w-800) {
-  .under-800, .mobile {
+  .mobile {
     display: none;
   }
 }

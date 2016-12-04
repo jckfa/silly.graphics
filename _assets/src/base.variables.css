@@ -1,16 +1,17 @@
 
 :root {
-  --text-color:     #333;
+  --text-color:     rgba(0, 0, 0, 0.7);
   --meta-color:     rgba(0, 0, 0, 0.3);
   --spot-color:     white;
   --bg-color:       #eee;
-  --bg2-color:      rgb(225, 225, 225);
+  --bg2-color:      rgba(0, 0, 0, 0.05);
 
   --gutter:         1rem;
   --target-area:    0.8em;
 
   --hover-off:      250ms cubic-bezier(0.1, 1.05, 0.15, 1.1);
   --hover-on:       250ms cubic-bezier(0.85, -0.1, 0.9, -0.05);
+  --simple-fade:    100ms ease-in-out;
 
   --body-fs:        2.2rem;
   --body-lh:        2.2rem;

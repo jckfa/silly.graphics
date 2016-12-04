@@ -27,7 +27,7 @@ permalink: /
       {% for list in lists %}
       {% assign list-items = list[1].list-items | uniq | sort: "name" %}
       <li class="nav-item">
-        <a href='#{{ list[1].heading | downcase }}'>
+        <a href='#{{ list[1].heading | downcase | replace: " ", "-" }}'>
           {{ list[1].heading }}
         </a>
       </li>
@@ -39,34 +39,34 @@ permalink: /
   {% assign list-items = list[1].list-items | uniq | sort: "name" %}
   <section class="list flex-x flex-jus">
 
-    <ul class="w50-desktop">
-    </ul>
+    <ul class="w50-desktop"></ul>
 
     <div class="w50-desktop content-shell"
          id='{{ list[1].heading | downcase | replace: " ", "-" }}'>
 
-      <div class="list-title-shell meta">
-        <a href='#{{ list[1].heading | downcase }}'
-           class="list-title btn"
-           onclick='toggle_list({{ forloop.index0 }})'
-           data-size='{{ list-items | size }}'>
-          {{ list[1].heading }}—{{ list-items | size }}
-        </a>
+
+      <div class="list-title meta no-wrap"
+           onclick='toggle_list({{ forloop.index0 }})'>
+        <div class="shell">
+          {{ list[1].heading }}<span
+          class="list-size">—{{ list-items | size }}</span>
+        </div>
       </div>
 
+
       <ul class="list-content no-wrap">
-
-
         {% for item in list-items %}
         <li>
           <a href="{{ item.href }}" target="_blank">
-            {{ item.name | downcase }}
+            <div class="shell">
+              {{ item.name | downcase }}
+            </div>
           </a>
         </li>
         {% endfor %}
-
-
       </ul>
+
+
     </div>
   </section>
   {% endfor %}

@@ -40,10 +40,10 @@ function smart_nav() {
 
   // fix nav
   if (scroll_pos >= nav_pos) {
-    nav.classList.add("fix");
+    nav.classList.add("fixed-nav");
     top_frag.classList.add("showing-frag");
   } else {
-    nav.classList.remove("fix");
+    nav.classList.remove("fixed-nav");
     top_frag.classList.remove("showing-frag");
   }
 

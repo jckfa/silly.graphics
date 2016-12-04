@@ -5,6 +5,7 @@
   border:  0;
   outline: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 input, button, textarea {
@@ -60,11 +61,11 @@ html {
 
 /* can't do ::-moz-selection, ::selection {...} for some stupid reason */
 ::-moz-selection {
-  color:            var(--bg-color);
-  background-color: var(--text-color);
+  color:            var(--text-color);
+  background-color: var(--meta-color);
 }
 
 ::selection {
-  color:            var(--bg-color);
-  background-color: var(--text-color);
+  color:            var(--text-color);
+  background-color: var(--meta-color);
 }
