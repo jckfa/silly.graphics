@@ -8,8 +8,6 @@
 }
 
 .site__nav {
-  font-family: var(--sans);
-  letter-spacing: 0.05em;
   position: absolute;
   z-index: 1;
   padding-left: var(--gutter);
@@ -44,6 +42,7 @@
   margin-left: var(--gutter);
   margin-bottom: -2em;
   transition: margin-bottom var(--hover-on);
+  transition: margin-bottom var(--hover-on-2);
   z-index: 1;
 }
 
@@ -51,6 +50,7 @@
 .showing-frag {
   margin-bottom: calc(var(--gutter) * 4);
   transition: margin-bottom var(--hover-off);
+  transition: margin-bottom var(--hover-off-2);
 }
 
   .top-frag a {

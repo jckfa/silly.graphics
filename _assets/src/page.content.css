@@ -48,7 +48,7 @@
 
   /* ADDED VIA JS */
   .selected .list-content {
-    background-color: var(--bg2-color);
+    background-color: var(--bg3-color);
   }
 
   /* ADDED VIA JS */
@@ -71,8 +71,6 @@
 
     .list-title {
       color: var(--meta-color);
-      font-family: var(--sans);
-      letter-spacing: 0.05em;
       padding-top: calc(var(--gutter) * 4);
       margin-bottom: 1em;
     }
@@ -90,9 +88,8 @@
 
       .list-content li:hover {
         background-color: var(--spot-color);
-        background-color: var(--bg2-color);
+        background-color: var(--bg3-color);
         border-radius: 2px;
-        /*box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);*/
       }
 
       .list-content li::before {
@@ -152,6 +149,7 @@
         /* list-item urls */
         .list-content a::after {
           color: transparent;
+          text-transform: lowercase;
           content: attr(href);
           font-size: 0.6em;
           line-height: 1;

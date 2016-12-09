@@ -1,26 +1,25 @@
 
 .site__header {
   color: var(--text-color);
-  background-color: var(--bg2-color);
+  background-color: var(--bg-color);
 }
 
+  .header-bar, .other-content {
+    border-bottom: 1px solid var(--bg2-color);
+  }
+
   .header-bar {
-    /*border-bottom: 2px solid var(--bg-color);*/
-    background-color: var(--bg2-color);
     padding-top:    var(--gutter);
     padding-bottom: var(--gutter);
   }
 
-
   .other-content {
-    color: var(--text-color);
+    color: var(--bg-color);
     padding-top:    2em;
     padding-bottom: 2em;
   }
 
     .other-content p {
-      font-family: var(--sans);
-      letter-spacing: 0.05em;
       font-size: 1.5em;
       line-height: 1;
     }

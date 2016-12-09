@@ -49,14 +49,13 @@ html, body {
 /* sets font-size to 10px, line-height to 10px */
 /* ( 62.5% of 16 = 10 ) */
 html {
-  font: 62.5%/1 var(--mono);
+  font: 62.5%/1 var(--sans);
   color:        var(--text-color);
   background:   var(--bg-color);
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  font-feature-settings: "liga", "hist";
 }
 
 /* can't do ::-moz-selection, ::selection {...} for some stupid reason */
