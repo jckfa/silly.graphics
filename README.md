@@ -2,7 +2,6 @@
 
 ### WHAT
 - a public display of a hoarding problem
-- not a brand, just an open journal
 - heavy swiss interests
 - lists aren't meant to be exhaustive
 - includes experimental features
@@ -17,6 +16,7 @@
 - styled with [cssnext][4]
 - running on [Nginx][5] ([see configuration][6])
 - hosted on [Digital Ocean][7] [referral link]
+- domain registered with [iwantmyname][17]
 - encrypted with [Let's Encrypt][9] ([A+ SSL Labs score][8])
 - [see PageSpeed score][10]
 
@@ -48,3 +48,4 @@ unless you're running some old browser, everything should render fine.
 [14]: http://caniuse.com/#search=woff
 [15]: http://caniuse.com/#search=woff2
 [16]: https://github.com/jckfa/nginx-config/blob/master/conf.d/directive-only/tls.conf
+[17]: https://iwantmyname.com
