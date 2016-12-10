@@ -1,4 +1,16 @@
 
+.list {
+  color: var(--meta-color);
+}
+
+.list-title .shell {
+  position: relative;
+}
+
+  .list-title span::after {
+    content: "—" attr(data-size);
+  }
+
 .list-content a {
   display: block;
 }
@@ -6,13 +18,6 @@
   .shell {
     position: relative;
   }
-
-    /* new tab arrow */
-    .list-content .shell::before {
-      content: "↗";
-      position: absolute;
-      right:  0;
-    }
 
 @media (--w-l-800) {
   .list {
@@ -29,31 +34,67 @@
       cursor: pointer;
     }
 
+      .list-title .shell::before,
       .list-title .shell::after {
-        content: "+";
+        content: "";
         position: absolute;
-        right: 0;
-        transform: rotateZ(-45deg);
+        bottom: 0;
+        background-color: currentColor;
+        transform: rotateZ(45deg);
         transition: transform var(--simple-fade);
+        transition: transform var(--hover-off);
+      }
+
+      /* y */
+      .list-title .shell::before {
+        height: 1em;
+        width: 2px;
+        top: 0;
+        right: calc(0.5em - 1px);
+      }
+
+      /* x */
+      .list-title .shell::after {
+        height: 2px;
+        width: 1em;
+        top: calc(0.5em - 1px);
+        right: 0;
       }
 
       /* ADDED VIA JS */
+      .hiding_list .shell::before,
       .hiding_list .shell::after {
         transform: rotateZ(0);
       }
 
-      .list-size {
-        color: var(--meta-color);
-      }
-
-  /* ADDED VIA JS */
-  .selected .list-content {
-    background-color: var(--bg3-color);
-  }
-
   /* ADDED VIA JS */
   .hiding_list .list-content {
     display: none;
+  }
+
+  .selected .list-title,
+  .selected .list-content {
+    color: var(--list-color-1);
+  }
+
+  .selected:nth-of-type(5n+2) .list-title,
+  .selected:nth-of-type(5n+2) .list-content {
+    color: var(--list-color-2);
+  }
+
+  .selected:nth-of-type(5n+3) .list-title,
+  .selected:nth-of-type(5n+3) .list-content {
+    color: var(--list-color-3);
+  }
+
+  .selected:nth-of-type(5n+4) .list-title,
+  .selected:nth-of-type(5n+4) .list-content {
+    color: var(--list-color-4);
+  }
+
+  .selected:nth-of-type(5n+5) .list-title,
+  .selected:nth-of-type(5n+5) .list-content {
+    color: var(--list-color-5);
   }
 }
 
@@ -70,29 +111,39 @@
   }
 
     .list-title {
-      color: var(--meta-color);
+      font-family: var(--mono);
       padding-top: calc(var(--gutter) * 4);
       margin-bottom: 1em;
     }
 
-    .list + .list .list-title .shell {
-      border-top: 0.1em solid var(--meta-color);
+      .list-title span::after {
+        content: attr(data-size);
+        position: absolute;
+        right: 0;
+      }
+
+    /*.list + .list .list-title .shell {
+      border-top: 0.1em solid var(--bg2-color);
       padding-top: calc(var(--gutter) * 1);
-    }
+    }*/
 
     .list-content li {
+      border-top: 2px solid var(--bg2-color);
+    }
+
+    /*.list-content li {
       position: relative;
       transition: background-color var(--simple-fade);
       counter-increment: i;
-    }
+    }*/
 
-      .list-content li:hover {
+      /*.list-content li:hover {
         background-color: var(--spot-color);
         background-color: var(--bg3-color);
         border-radius: 2px;
-      }
+      }*/
 
-      .list-content li::before {
+      /*.list-content li::before {
         color: transparent;
         font-size: 0.8em;
         line-height: 1;
@@ -110,45 +161,46 @@
 
         .list-content li:hover::before {
           color: var(--meta-color);
-        }
+        }*/
 
       /* fix chrome issue */
-      .list-content li::after {
+      /*.list-content li::after {
         animation: initial;
-      }
+      }*/
 
-      .list-content li:hover a {
+      /*.list-content li:hover a {
         overflow-x: hidden;
-      }
+      }*/
 
         .list-content a {
+          color: var(--meta-color);
           padding-top:    calc(var(--target-area) / 2);
           padding-bottom: calc(var(--target-area) / 2);
-          transition: padding-left var(--hover-off);
+          transition: color var(--simple-fade);
           position: relative;
         }
 
         .list-content a:hover {
-          padding-left: 0.4em;
+          color: var(--text-color);
         }
 
           /* new tab arrow */
-          .list-content .shell::before {
+          /*.list-content .shell::before {
             color: var(--meta-color);
             transition: color         var(--hover-off),
                         padding-right var(--hover-off);
-          }
+          }*/
 
           /* animate ↗ on hover */
-          .list-content a:hover .shell::before {
-            color: var(--text-color);
-            padding-right: 0.4em;
+          /*.list-content a:hover .shell::before {
+            color: currentColor;
             animation: on-off 1s linear infinite;
-          }
+          }*/
 
         /* list-item urls */
         .list-content a::after {
           color: transparent;
+          /*font-family: var(--mono);*/
           text-transform: lowercase;
           content: attr(href);
           font-size: 0.6em;
@@ -156,9 +208,31 @@
           padding-top: calc(var(--target-area) / 4);
           display: block;
           transition: color var(--simple-fade);
+          word-break: break-all;
         }
 
+          .list-content a:hover,
           .list-content a:hover::after {
-            color: var(--meta-color);
+            color: var(--list-color-1);
+          }
+
+          .list:nth-of-type(5n+2) .list-content a:hover,
+          .list:nth-of-type(5n+2) .list-content a:hover::after {
+            color: var(--list-color-2);
+          }
+
+          .list:nth-of-type(5n+3) .list-content a:hover,
+          .list:nth-of-type(5n+3) .list-content a:hover::after {
+            color: var(--list-color-3);
+          }
+
+          .list:nth-of-type(5n+4) .list-content a:hover,
+          .list:nth-of-type(5n+4) .list-content a:hover::after {
+            color: var(--list-color-4);
+          }
+
+          .list:nth-of-type(5n+5) .list-content a:hover,
+          .list:nth-of-type(5n+5) .list-content a:hover::after {
+            color: var(--list-color-5);
           }
 }

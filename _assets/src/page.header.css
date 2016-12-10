@@ -1,11 +1,11 @@
 
 .site__header {
-  color: var(--text-color);
+  color: var(--meta-color);
   background-color: var(--bg-color);
 }
 
   .header-bar, .other-content {
-    border-bottom: 1px solid var(--bg2-color);
+    border-bottom: 2px solid var(--bg2-color);
   }
 
   .header-bar {
@@ -13,8 +13,11 @@
     padding-bottom: var(--gutter);
   }
 
+    .site__name {
+      color: var(--text-color);
+    }
+
   .other-content {
-    color: var(--bg-color);
     padding-top:    2em;
     padding-bottom: 2em;
   }

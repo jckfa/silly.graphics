@@ -1,11 +1,7 @@
 
 .site__footer {
   color: var(--meta-color);
-  padding-bottom: 0.25em;
-}
-
-.site__footer a::after {
-  content: "↗";
+  padding-bottom: var(--target-area);
 }
 
 @media (--w-l-800) {
@@ -33,20 +29,9 @@
       transition: color var(--simple-fade);
     }
 
-    .site__footer a::after {
-      position: absolute;
-      top:    -1em;
-      bottom: 0;
-      right:  0;
-    }
-
       .site__footer a:hover {
         color: var(--text-color);
       }
-
-        .site__footer a:hover::after {
-          animation: on-off 1s linear infinite;
-        }
 }
 
 @media (--w-1120) {

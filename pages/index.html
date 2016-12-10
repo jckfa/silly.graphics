@@ -37,13 +37,14 @@ permalink: /
       <div class="list-title meta no-wrap"
            onclick='toggle_list({{ forloop.index0 }})'>
         <div class="shell">
-          {{ list[1].heading }}<span
-          class="list-size">—{{ list-items | size }}</span>
+          <span data-size='{{ list-items | size }}'>
+            {{ list[1].heading }}
+          </span>
         </div>
       </div>
 
 
-      <ul class="list-content uppercase no-wrap">
+      <ul class="list-content uppercase">
         {% for item in list-items %}
         <li>
           <a href='{{ item.href }}' target="_blank">
