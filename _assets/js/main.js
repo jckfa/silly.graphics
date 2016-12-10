@@ -1,7 +1,7 @@
 
 var list        = document.getElementsByClassName("list"),
     container   = document.getElementsByClassName('list-container')[0],
-    nav         = document.getElementsByClassName('site__nav')[0],
+    list_nav    = document.getElementsByClassName('list__nav')[0],
     nav_item    = document.getElementsByClassName('nav-item'),
     list_title  = document.getElementsByClassName('content-shell'),
     top_frag    = document.getElementsByClassName('top-frag')[0],
@@ -38,12 +38,12 @@ function smart_nav() {
       nav_pos    = container.offsetTop;
   lime.innerHTML = nav_pos + " " + scroll_pos;
 
-  // fix nav
+  // fix list-nav
   if (scroll_pos >= nav_pos) {
-    nav.classList.add("fixed-nav");
+    list_nav.classList.add("fixed-nav");
     top_frag.classList.add("showing-frag");
   } else {
-    nav.classList.remove("fixed-nav");
+    list_nav.classList.remove("fixed-nav");
     top_frag.classList.remove("showing-frag");
   }
 

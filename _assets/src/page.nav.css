@@ -3,11 +3,11 @@
   position: relative;
 }
 
-.site__nav, .fixed-nav {
+.list__nav, .fixed-nav {
   padding-top: calc(var(--gutter) * 4);
 }
 
-.site__nav {
+.list__nav {
   position: absolute;
   z-index: 1;
   padding-left: var(--gutter);

@@ -1,5 +1,5 @@
 
-<nav class="site__nav w50 desktop">
+<nav class="list__nav w50 desktop">
   <ul>
     {% for list in lists %}
     {% assign list-items = list[1].list-items | uniq | sort: "name" %}
