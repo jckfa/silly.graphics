@@ -1,19 +1,19 @@
 @charset "utf-8";
 
-@import "base.variables.css";
-@import "base.resets.css";
-@import "base.base.css";
+@import "base/variables.css";
+@import "base/resets.css";
+@import "base/base.css";
 
-@import "page.header.css";
-@import "page.nav.css";
-@import "page.content.css";
-@import "page.footer.css";
+@import "page/header.css";
+@import "page/list-nav.css";
+@import "page/content.css";
+@import "page/footer.css";
 
-@import "utilities.flex.css";
-@import "utilities.position.css";
-@import "utilities.wrap.css";
-@import "utilities.display.css";
-@import "utilities.spacing.css";
-@import "utilities.text.css";
-@import "utilities.animation.css";
-@import "utilities.rotation.css";
+@import "utilities/flex.css";
+@import "utilities/position.css";
+@import "utilities/wrap.css";
+@import "utilities/display.css";
+@import "utilities/spacing.css";
+@import "utilities/text.css";
+@import "utilities/animation.css";
+@import "utilities/rotation.css";
