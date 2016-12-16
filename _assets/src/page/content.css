@@ -8,7 +8,10 @@
 }
 
   .list-title span::after {
-    content: "—" attr(data-size);
+    font-family: var(--mono);
+    content: attr(data-size);
+    position: absolute;
+    right: 2em;
   }
 
 .list-content a {
@@ -30,7 +33,6 @@
     }
 
     .list-title {
-      text-transform: uppercase;
       cursor: pointer;
     }
 
@@ -113,126 +115,78 @@
     .list-title {
       font-family: var(--mono);
       padding-top: calc(var(--gutter) * 4);
-      margin-bottom: 1em;
+      margin-bottom: var(--target-area);
     }
 
       .list-title span::after {
-        content: attr(data-size);
-        position: absolute;
         right: 0;
       }
 
-    /*.list + .list .list-title .shell {
-      border-top: 0.1em solid var(--bg2-color);
-      padding-top: calc(var(--gutter) * 1);
-    }*/
-
-    .list-content li {
-      border-top: 2px solid var(--bg2-color);
-    }
-
-    /*.list-content li {
-      position: relative;
-      transition: background-color var(--simple-fade);
-      counter-increment: i;
-    }*/
-
-      /*.list-content li:hover {
-        background-color: var(--spot-color);
-        background-color: var(--bg3-color);
-        border-radius: 2px;
-      }*/
-
-      /*.list-content li::before {
-        color: transparent;
-        font-size: 0.8em;
-        line-height: 1;
-        content: counter(i, decimal-leading-zero);
-        text-align: right;
-        position: absolute;
-        right: 100%;
-        transform: rotateZ(-90deg);
-        transform-origin: 100% 0 0;
-        margin-right: 1.2em;
+      .list-content a {
+        color: var(--meta-color);
+        border-top: 2px solid var(--bg2-color);
+        padding-top:    calc(var(--target-area) / 2);
+        padding-bottom: calc(var(--target-area) / 2);
         transition: color var(--simple-fade);
-        transition-delay: 50ms;
-        z-index: -10;
+        position: relative;
       }
 
-        .list-content li:hover::before {
-          color: var(--meta-color);
-        }*/
+      .list-content a:hover {
+        color: var(--text-color);
+      }
 
-      /* fix chrome issue */
-      /*.list-content li::after {
-        animation: initial;
-      }*/
+      .list-content a::before {
+        width: 0;
+        height: 2px;
+        background-color: var(--list-color-1);
+        background-color: currentColor;
+        content: "";
+        position: absolute;
+        top:   -2px;
+        left:  0;
+        right: 0;
+        transition: width 1000ms cubic-bezier(0.1, 1, 0.15, 1);
+      }
 
-      /*.list-content li:hover a {
-        overflow-x: hidden;
-      }*/
-
-        .list-content a {
-          color: var(--meta-color);
-          padding-top:    calc(var(--target-area) / 2);
-          padding-bottom: calc(var(--target-area) / 2);
-          transition: color var(--simple-fade);
-          position: relative;
+        .list-content a:hover::before {
+          width: 100%;
         }
 
-        .list-content a:hover {
-          color: var(--text-color);
+      /* list-item urls */
+      .list-content a::after {
+        color: transparent;
+        text-transform: lowercase;
+        content: attr(href);
+        font-size: 0.6em;
+        line-height: 1;
+        padding-top: calc(var(--target-area) / 4);
+        display: block;
+        transition: color var(--simple-fade);
+        word-break: break-all;
+      }
+
+        .list-content a:hover,
+        .list-content a:hover::after {
+          color: var(--list-color-1);
         }
 
-          /* new tab arrow */
-          /*.list-content .shell::before {
-            color: var(--meta-color);
-            transition: color         var(--hover-off),
-                        padding-right var(--hover-off);
-          }*/
-
-          /* animate ↗ on hover */
-          /*.list-content a:hover .shell::before {
-            color: currentColor;
-            animation: on-off 1s linear infinite;
-          }*/
-
-        /* list-item urls */
-        .list-content a::after {
-          color: transparent;
-          /*font-family: var(--mono);*/
-          text-transform: lowercase;
-          content: attr(href);
-          font-size: 0.6em;
-          line-height: 1;
-          padding-top: calc(var(--target-area) / 4);
-          display: block;
-          transition: color var(--simple-fade);
-          word-break: break-all;
+        .list:nth-of-type(5n+2) .list-content a:hover,
+        .list:nth-of-type(5n+2) .list-content a:hover::after {
+          color: var(--list-color-2);
         }
 
-          .list-content a:hover,
-          .list-content a:hover::after {
-            color: var(--list-color-1);
-          }
+        .list:nth-of-type(5n+3) .list-content a:hover,
+        .list:nth-of-type(5n+3) .list-content a:hover::after {
+          color: var(--list-color-3);
+        }
 
-          .list:nth-of-type(5n+2) .list-content a:hover,
-          .list:nth-of-type(5n+2) .list-content a:hover::after {
-            color: var(--list-color-2);
-          }
+        .list:nth-of-type(5n+4) .list-content a:hover,
+        .list:nth-of-type(5n+4) .list-content a:hover::after {
+          color: var(--list-color-4);
+        }
 
-          .list:nth-of-type(5n+3) .list-content a:hover,
-          .list:nth-of-type(5n+3) .list-content a:hover::after {
-            color: var(--list-color-3);
-          }
-
-          .list:nth-of-type(5n+4) .list-content a:hover,
-          .list:nth-of-type(5n+4) .list-content a:hover::after {
-            color: var(--list-color-4);
-          }
-
-          .list:nth-of-type(5n+5) .list-content a:hover,
-          .list:nth-of-type(5n+5) .list-content a:hover::after {
-            color: var(--list-color-5);
-          }
+        .list:nth-of-type(5n+5) .list-content a:hover,
+        .list:nth-of-type(5n+5) .list-content a:hover::after {
+          color: var(--list-color-5);
+        }
 }
