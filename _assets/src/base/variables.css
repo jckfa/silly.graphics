@@ -11,7 +11,7 @@
   --list-color-2:   rgb(170, 110, 70); /* orange */
   --list-color-3:   rgb(140, 120, 80); /* brown */
   --list-color-4:   rgb(100, 120, 80); /* olive */
-  --list-color-5:   rgb(90, 90, 90); /* black */
+  --list-color-5:   rgb(90, 90, 90);   /* black */
 
   --gutter:         1rem;
   --target-area:    0.8em;
@@ -25,16 +25,7 @@
   --simple-fade:    100ms ease-in-out;
 
   --body-fs:        2.2rem;
-  --body-lh:        2.2rem;
-
-  --mono-fallback:  "input mono",
-                    "roboto mono",
-                    "source code pro",
-                    Menlo,
-                    monospace;
-
-  --mono:           "menoe_grotesque_std_regularRg",
-                    var(--mono-fallback);
+  --body-lh:        2.6rem;
 
   --sans-fallback:  BlinkMacSystemFont,
                     -apple-system,

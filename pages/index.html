@@ -1,28 +1,15 @@
 ---
-layout: default
+layout: front
+title: Index
 permalink: /
+order: 0
 ---
 
 
 {% assign lists = site.data.lists %}
-<!--
-{% for list in lists %}
-  {% assign list-items = list[1].list-items | uniq | sort: "name" %}
-  {% increment lists_total %}
-  {% for item in list-items %}
-    {% increment list_items_total %}
-  {% endfor %}
-{% endfor %}
--->
-<!-- <ul class="flex-x flex-jus meta totals center">
-  <li class="w50-desktop">{{ lists_total }}</li>
-  <li class="w50-desktop">{{ list_items_total }}</li>
-</ul> -->
-
-
 <div class="list-container">
 
-  {% include nav.html %}
+  {% include front/nav.html %}
 
   {% for list in lists %}
   {% assign list-items = list[1].list-items | uniq | sort: "name" %}

@@ -1,0 +1,95 @@
+---
+layout: page
+title: Info
+permalink: info/
+order: 1
+---
+
+<div class="about">
+  <div class="p-wrap" markdown="1">
+    {% markdown description.md %}
+  </div>
+</div>
+
+
+<div class="flex-x joo">
+
+  <div class="col">
+    <section>
+      <h6>Version</h6>
+      <p class="tabular">
+        ↑{{ site.time | date: "%b %-d %-I:%M%p %Y %Z" }}
+        <br>
+        v{{ site.version }}
+      </p>
+    </section>
+
+    <section class="contact">
+      <h6>Contact</h6>
+      <ul>
+        <li data-method="E">
+          <a href="mailto:buttface@jackf.me" target="_blank">
+            buttface@jackf.me
+          </a>
+          <br>
+          <a href="/static/key.asc" target="_blank">
+            PGP Public Key
+          </a>
+        </li>
+
+        <li data-method="T">
+          <a href="https://twitter.com/jckfa" target="_blank">
+            @jckfa
+          </a>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="col">
+    <section>
+      <h6>Colophon</h6>
+      <ul>
+        <li>
+          First published in August 2016
+        </li>
+
+        <li>
+          Typeset in
+          <a href="https://www.grillitype.com/typefaces/gt-walsheim" target="_blank">
+            GT Walsheim
+          </a>
+        </li>
+
+        <li>
+          Built with
+          <a href="https://jekyllrb.com/" target="_blank">
+            Jekyll
+          </a>
+
+          <br>
+
+          Hosted on
+          <a href="https://m.do.co/c/b09c1fce4b40" target="_blank">
+            Digital Ocean
+          </a>
+
+          <br>
+
+          See
+          <a href="https://github.com/jckfa/silly.graphics" target="_blank">
+            source code
+          </a>
+        </li>
+
+        <li>
+          Maintained by
+          <a href="https://jackf.me" target="_blank">
+            this kid
+          </a>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+</div>

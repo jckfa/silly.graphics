@@ -1,0 +1,19 @@
+
+info:
+  - key:  buttface@jackf.me
+    href: mailto:buttface@jackf.me
+
+  - key:  PGP Public Key
+    href: /static/key.asc
+
+  - key:  '@jckfa'
+    href: https://twitter.com/jckfa
+
+  # - key:  Source Code
+  #   href: https://github.com/jckfa/silly.graphics
+
+  # - key:  Typeset in GT Walsheim
+  #   href: https://www.grillitype.com/typefaces/gt-walsheim
+
+  # - key:  ISC License
+  #   href: https://en.wikipedia.org/wiki/ISC_license

@@ -7,6 +7,7 @@
 @import "page/header.css";
 @import "page/list-nav.css";
 @import "page/content.css";
+@import "page/front.css";
 @import "page/footer.css";
 
 @import "utilities/flex.css";

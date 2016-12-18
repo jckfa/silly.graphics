@@ -36,7 +36,7 @@ function smart_nav() {
 
   var scroll_pos = document.body.scrollTop,
       nav_pos    = container.offsetTop;
-  lime.innerHTML = nav_pos + " " + scroll_pos;
+  // lime.innerHTML = nav_pos + " " + scroll_pos;
 
   // fix list-nav
   if (scroll_pos >= nav_pos) {

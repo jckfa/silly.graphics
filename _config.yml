@@ -1,5 +1,7 @@
 
-name:        Silly Graphics
+name:
+  long:      Silly Graphics
+  short:     sg
 email:       buttface@jackf.me
 description: A little collection of links
 url:         https://silly.graphics
@@ -14,6 +16,8 @@ exclude:
   - package.json
   - README.md
   - Gemfile
+  - LICENSE.txt
+  - .gitignore
 
 assets:
   digest: true

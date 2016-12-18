@@ -4,31 +4,81 @@
   background-color: var(--bg-color);
 }
 
-  .header-bar, .other-content {
+  .main__nav, .other-content {
     border-bottom: 2px solid var(--bg2-color);
   }
 
-  .header-bar {
-    padding-top:    var(--gutter);
-    padding-bottom: var(--gutter);
-  }
-
-    .site__name {
-      color: var(--text-color);
+    .main__nav li {
+      width: 100%;
     }
 
-  .other-content {
-    padding-top:    2em;
-    padding-bottom: 2em;
-  }
+      .active {
+        color: var(--text-color);
+      }
 
-    .other-content p {
-      font-size: 1.5em;
-      line-height: 1;
-    }
+      .main__nav a {
+        display: block;
+        padding-top:    var(--target-area);
+        padding-bottom: var(--target-area);
+        position: relative;
+        transition: color var(--simple-fade);
+      }
 
-@media (--w-800) {
-  .other-content p {
-    font-size: 2em;
-  }
+        .main__nav a::after {
+          width: 0;
+          height: 2px;
+          background-color: currentColor;
+          content: "";
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          right: 0;
+          transition: width 1000ms cubic-bezier(0.1, 1, 0.15, 1);
+        }
+
+        .main__nav a.active::after {
+          width: 100%;
+        }
+
+        @media (--w-800) {
+          .main__nav li {
+            max-width: 25%;
+          }
+
+          .main__nav a:hover {
+            color: var(--text-color);
+          }
+
+            .main__nav a::after {
+              background: linear-gradient(
+                to right,
+                transparent  0%,
+                currentColor 100%
+              );
+            }
+
+            .main__nav a:hover::after {
+              animation: goo2 1000ms ease-in-out infinite;
+            }
+
+            .main__nav a.active:hover::after {
+              animation: none;
+            }
+        }
+
+
+.other-content {
+  padding-top:    2em;
+  padding-bottom: 2em;
 }
+
+  .other-content p {
+    font-size: 1.5em;
+    line-height: 1;
+  }
+
+    @media (--w-800) {
+      .other-content p {
+        font-size: 2em;
+      }
+    }

@@ -1,12 +1,10 @@
 
 <head>
   <title>
-    {% if page.error %}
-      {{ page.title | upcase }}
-    {% elsif page.title %}
-      {{ site.name | downcase }} | {{ page.title | downcase }}
+    {% if page.title %}
+      {{ page.title }}
     {% else %}
-      {{ site.name | downcase }}
+      {{ site.name.long }}
     {% endif %}
   </title>
   <meta charset="utf-8">

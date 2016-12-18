@@ -1,0 +1,24 @@
+
+<!--
+{% for list in site.data.lists %}
+  {% assign list-items = list[1].list-items | uniq | sort: "name" %}
+  {% increment lists_total %}
+  {% for item in list-items %}
+    {% increment list_items_total %}
+  {% endfor %}
+{% endfor %}
+-->
+
+<footer class="site__footer meta gutters" id="bottom">
+
+  <ul class="flex-x">
+    <li>
+      {{ lists_total }} lists
+    </li>
+
+    <li>
+      {{ list_items_total }} links
+    </li>
+  </ul>
+
+</footer>

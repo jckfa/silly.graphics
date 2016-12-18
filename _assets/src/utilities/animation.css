@@ -1,9 +1,9 @@
 
 @keyframes on-off {
-   0%  {opacity: 1;}
-  49%  {opacity: 1;}
-  50%  {opacity: 0;}
-  99%  {opacity: 0;}
+    0% {opacity: 1;}
+   49% {opacity: 1;}
+   50% {opacity: 0;}
+  100% {opacity: 0;}
 }
 
 .on-off {
@@ -13,5 +13,32 @@
 @media (--w-800) {
   .on-off:hover {
     animation: initial;
+  }
+}
+
+
+@keyframes goo2 {
+  0% {
+    width: 0;
+    right: initial;
+    left: 0;
+  }
+
+  49% {
+    width: 100%;
+    right: initial;
+    left: 0;
+  }
+
+  50% {
+    width: 100%;
+    right: 0;
+    left: initial;
+  }
+
+  100% {
+    width: 0;
+    right: 0;
+    left: initial;
   }
 }

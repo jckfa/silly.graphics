@@ -16,8 +16,8 @@
   background-color: var(--text-color);
 }
 
-.transparent {
-  color: transparent;
+.tabular {
+  font-variant-numeric: tabular-nums;
 }
 
 .diamond-btn {

@@ -1,36 +1,24 @@
 
 <header class="site__header meta gutters" id="top">
 
-  <div class="header-bar flex-x">
-    <ul class="w50">
-      <li class="uppercase site__name">
-        <!-- <span class="desktop">
-          ↑{{ site.time | date: "%b %-d %-I:%M%p %Y %Z" }}
-        </span>
-
-        <span class="mobile">
-          ↑{{ site.time | date: "%-m/%-d/%y" }}
-        </span> -->
-
-        <span class="lowercase">
-          {{ site.name }}
-        </span>
+  <nav class="main__nav">
+    <ul class="flex-x">
+      {% assign pages = site.pages | sort: "order" %}
+      {% for p in pages %}
+      {% if p.order %}
+      <li>
+        <a href='{{ p.url }}'
+        {% if page.url == p.url %} class="active" {% endif %}>
+          {{ p.title }}
+        </a>
       </li>
-
-      <!-- <li>
-        v{{ site.version }}
-      </li> -->
+      {% endif %}
+      {% endfor %}
     </ul>
+  </nav>
 
-    <ul class="w50">
-      <li class="wrap-26">
-        {{ site.description }}
-      </li>
-    </ul>
-  </div>
-
-  <div class="other-content gutters center">
-    <p class="lime">Submissions: @jckfa</p>
-  </div>
+  <!-- <div class="other-content gutters center">
+    <p class="lime">balls</p>
+  </div> -->
 
 </header>
