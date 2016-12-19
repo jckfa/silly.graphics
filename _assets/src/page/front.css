@@ -30,6 +30,8 @@
     .list-title,
     .list-content a {
       padding: var(--target-area) calc(var(--gutter) / 2);
+      /* animate .selected */
+      transition: color var(--simple-fade);
     }
 
     .list-title {
@@ -74,7 +76,13 @@
     display: none;
   }
 
+  /* mobile */
   .selected .list-title,
+  .selected .list-content {
+    color: var(--text-color);
+  }
+
+  /*.selected .list-title,
   .selected .list-content {
     color: var(--list-color-1);
   }
@@ -97,7 +105,7 @@
   .selected:nth-of-type(5n+5) .list-title,
   .selected:nth-of-type(5n+5) .list-content {
     color: var(--list-color-5);
-  }
+  }*/
 }
 
 @media (--w-800) {
@@ -169,6 +177,11 @@
 
         .list-content a:hover,
         .list-content a:hover::after {
+          color: var(--text-color);
+        }
+
+        /*.list-content a:hover,
+        .list-content a:hover::after {
           color: var(--list-color-1);
         }
 
@@ -190,5 +203,5 @@
         .list:nth-of-type(5n+5) .list-content a:hover,
         .list:nth-of-type(5n+5) .list-content a:hover::after {
           color: var(--list-color-5);
-        }
+        }*/
 }
