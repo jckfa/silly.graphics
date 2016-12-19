@@ -4,14 +4,12 @@
   padding-bottom: var(--target-area);
 }
 
-  @media (--w-l-800) {
-    .site__footer ul {
-      justify-content: space-around;
-    }
-  }
+.site__footer li {
+  width: 100%;
+}
 
-  @media (--w-800) {
-    .site__footer li {
-      width: 100%;
+  @media (--w-l-800) {
+    .stats {
+      flex-direction: column;
     }
   }

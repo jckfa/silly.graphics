@@ -9,15 +9,20 @@
 {% endfor %}
 -->
 
-<footer class="site__footer meta gutters" id="bottom">
+<footer class="site__footer meta gutters">
 
   <ul class="flex-x">
     <li>
-      {{ lists_total }} lists
+      <a href="https://en.wikipedia.org/wiki/ISC_license" target="_blank">
+        ISC License
+      </a>
     </li>
 
     <li>
-      {{ list_items_total }} links
+      <ul class="stats flex-x tabular">
+        <li>{{ lists_total }} lists</li>
+        <li>{{ list_items_total }} links</li>
+      </ul>
     </li>
   </ul>
 
