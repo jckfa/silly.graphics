@@ -1,0 +1,30 @@
+
+{% if page.title == "Index" %}
+<footer class="site__footer fixed-footer meta gutters">
+{% else %}
+<footer class="site__footer meta gutters">
+{% endif %}
+
+  <ul class="flex-x">
+    <li>
+      v{{ site.version }}
+    </li>
+
+    <li>
+      ↑{{ site.time | date: "%b %-d %Y" }}
+    </li>
+  </ul>
+
+</footer>
+
+
+
+<!-- {% for list in site.data.lists %}
+  {% assign list-items = list[1].list-items | uniq | sort: "name" %}
+  {% increment lists_total %}
+  {% for item in list-items %}
+    {% increment list_items_total %}
+  {% endfor %}
+{% endfor %}
+
+{{ list_items_total }} links -->

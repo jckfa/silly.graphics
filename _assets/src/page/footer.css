@@ -1,5 +1,6 @@
 
 .site__footer {
+  width: 100%;
   color: var(--meta-color);
   padding-bottom: var(--target-area);
 }
@@ -11,5 +12,18 @@
   @media (--w-l-800) {
     .stats {
       flex-direction: column;
+    }
+  }
+
+  @media (--w-800) {
+    .site__footer {
+      width: 50%;
+    }
+
+    .fixed-footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      z-index: 2;
     }
   }

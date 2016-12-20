@@ -45,8 +45,7 @@
         bottom: 0;
         background-color: currentColor;
         transform: rotateZ(45deg);
-        transition: transform var(--simple-fade);
-        transition: transform var(--hover-off);
+        transition: transform 500ms cubic-bezier(0.1, 1, 0.15, 1);
       }
 
       /* y */
