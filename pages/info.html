@@ -6,7 +6,7 @@ order: 1
 ---
 
 <div class="about">
-  <div class="p-wrap" markdown="1">
+  <div class="p-wrap">
     {% markdown description.md %}
   </div>
 </div>
@@ -15,15 +15,6 @@ order: 1
 <div class="flex-x joo">
 
   <div class="col">
-    <section>
-      <h6>Version</h6>
-      <p class="tabular">
-        ↑{{ site.time | date: "%b %-d %-I:%M%p %Y %Z" }}
-        <br>
-        v{{ site.version }}
-      </p>
-    </section>
-
     <section class="contact">
       <h6>Contact</h6>
       <ul>

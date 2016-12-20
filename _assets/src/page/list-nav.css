@@ -44,16 +44,16 @@
   position: fixed;
   bottom: 0;
   left: 0;
-  margin-left: var(--gutter);
-  margin-bottom: -2em;
-  transition: margin-bottom var(--hover-on);
+  margin-left: -2em;
+  margin-bottom: calc(var(--gutter) * 8);
+  transition: margin-left var(--hover-on);
   z-index: 1;
 }
 
 /* ADDED VIA JS */
 .showing-frag {
-  margin-bottom: calc(var(--gutter) * 8);
-  transition: margin-bottom var(--hover-off);
+  margin-left: var(--gutter);
+  transition: margin-left var(--hover-off);
 }
 
   .top-frag a {

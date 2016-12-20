@@ -2,7 +2,7 @@
 .about {
   font-size: 1.2em;
   line-height: 1.1;
-  margin-top: 1em;
+  padding-top: calc(var(--gutter) * 4);
 }
 
   .about a,
@@ -27,18 +27,6 @@
       z-index: -1;
     }
 
-    /*.about a::after,
-    .joo   a::after {
-      width:  0;
-      background: linear-gradient(
-        to right,
-        var(--bg2-color) 0%,
-        currentColor     100%
-      );
-      animation: initial;
-      transition: background-color var(--simple-fade);
-    }*/
-
     .about a::after,
     .joo   a::after {
       animation: initial;
@@ -55,8 +43,10 @@
   }
 
     .joo h6 {
-      text-transform: uppercase;
       color: var(--meta-color);
+      border-bottom: 2px solid var(--bg2-color);
+      padding-bottom: calc(var(--target-area) / 2);
+      margin-bottom: var(--target-area);
     }
 
     .joo section p + p {
@@ -105,7 +95,6 @@
       .joo   a:hover::after {
         background-color: currentColor;
         animation: on-off 1000ms linear infinite;
-        /*animation: goo2 1000ms ease-in-out infinite;*/
       }
   }
 

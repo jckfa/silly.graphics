@@ -28,6 +28,11 @@
           width: 0;
           height: 2px;
           background-color: currentColor;
+          background: linear-gradient(
+            to right,
+            red     0%,
+            #aa00ff 100%
+          );
           content: "";
           position: absolute;
           bottom: -2px;
@@ -49,7 +54,7 @@
             color: var(--text-color);
           }
 
-            .main__nav a::after {
+            .main__nav a:hover::after {
               background: linear-gradient(
                 to right,
                 transparent  0%,
@@ -62,6 +67,11 @@
             }
 
             .main__nav a.active:hover::after {
+              background: linear-gradient(
+                to right,
+                red     0%,
+                #aa00ff 100%
+              );
               animation: none;
             }
         }
