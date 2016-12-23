@@ -1,7 +1,7 @@
-# heading: talks
 # heading: rhetoric
 # heading: sermons
-heading: Rants
+# heading: Rants
+heading: Talks
 list-items:
   - name: elana schlenker
     href: http://vimeo.com/147862776
