@@ -41,44 +41,18 @@ order: 1
     <section>
       <h6>Colophon</h6>
       <ul>
+        {% for item in site.data.colophon.items %}
         <li>
-          First published in August 2016
+          {% if item.href %}
+          {{ item.plaintext | append: " " }}
+          <a href='{{ item.href }}' target="_blank">
+            {{ item.linktext }}
+          </a>
+          {% else %}
+          {{ item.plaintext }}
+          {% endif %}
         </li>
-
-        <li>
-          Typeset in
-          <a href="https://www.grillitype.com/typefaces/gt-walsheim" target="_blank">
-            GT Walsheim
-          </a>
-        </li>
-
-        <li>
-          Built with
-          <a href="https://jekyllrb.com/" target="_blank">
-            Jekyll
-          </a>
-
-          <br>
-
-          Hosted on
-          <a href="https://m.do.co/c/b09c1fce4b40" target="_blank">
-            Digital Ocean
-          </a>
-
-          <br>
-
-          See
-          <a href="https://github.com/jckfa/silly.graphics" target="_blank">
-            source code
-          </a>
-        </li>
-
-        <li>
-          Maintained by
-          <a href="https://jackf.me" target="_blank">
-            this kid
-          </a>
-        </li>
+        {% endfor %}
       </ul>
     </section>
   </div>

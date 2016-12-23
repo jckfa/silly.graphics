@@ -53,10 +53,6 @@
       margin-top: 1em;
     }
 
-    .joo section li + li {
-      margin-top: 0.5em;
-    }
-
     .contact li {
       position: relative;
       padding-left: 1.5em;
@@ -70,6 +66,10 @@
       }
 
   @media (--w-l-800) {
+    .joo section li + li {
+      margin-top: 0.5em;
+    }
+
     .joo {
       flex-direction: column;
     }
@@ -98,7 +98,7 @@
       }
   }
 
-  @media (--w-1280) {
+  @media (--w-1120) {
     .about {
       font-size: 2.0em;
     }
