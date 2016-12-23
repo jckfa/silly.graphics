@@ -31,8 +31,11 @@
           background: linear-gradient(
             to right,
             red     0%,
-            #aa00ff 100%
+            #aa00ff 50%,
+            red     100%
           );
+          background-size: 200% 100%;
+          animation: shift-gradient 10s linear infinite;
           content: "";
           position: absolute;
           bottom: -2px;
@@ -54,25 +57,13 @@
             color: var(--text-color);
           }
 
-            .main__nav a:hover::after {
+            .main__nav a:not(.active):hover::after {
               background: linear-gradient(
                 to right,
                 transparent  0%,
                 currentColor 100%
               );
-            }
-
-            .main__nav a:hover::after {
               animation: goo2 1000ms ease-in-out infinite;
-            }
-
-            .main__nav a.active:hover::after {
-              background: linear-gradient(
-                to right,
-                red     0%,
-                #aa00ff 100%
-              );
-              animation: none;
             }
         }
 
