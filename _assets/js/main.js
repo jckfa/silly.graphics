@@ -27,8 +27,6 @@ function toggle_list(index) {
 }
 
 
-var lime = document.getElementsByClassName('lime')[0];
-
 window.addEventListener("resize", smart_nav);
 window.addEventListener("scroll", smart_nav);
 
@@ -36,7 +34,6 @@ function smart_nav() {
 
   var scroll_pos = document.body.scrollTop,
       nav_pos    = container.offsetTop;
-  lime.innerHTML = nav_pos + " " + scroll_pos;
 
   // fix list-nav
   if (scroll_pos >= nav_pos) {
