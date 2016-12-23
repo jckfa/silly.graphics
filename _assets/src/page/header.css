@@ -30,9 +30,9 @@
           background-color: currentColor;
           background: linear-gradient(
             to right,
-            red     0%,
-            #aa00ff 50%,
-            red     100%
+            #aa00ff 0%,
+            red     50%,
+            #aa00ff 100%
           );
           background-size: 200% 100%;
           animation: shift-gradient 10s linear infinite;
