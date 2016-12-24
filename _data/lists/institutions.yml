@@ -1,7 +1,7 @@
-# heading: education
-# heading: Cults
-heading: Institutions
-list-items:
+# title: education
+# title: Cults
+title: Institutions
+items:
   - name: strelka
     href: http://strelka.com
 

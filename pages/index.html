@@ -5,49 +5,37 @@ permalink: /
 order: 0
 ---
 
-
 {% assign lists = site.data.lists %}
-<div class="list-container">
+{% include front/nav.html %}
 
-  {% include front/nav.html %}
+{% for list in lists %}
+{% assign items = list[1].items | uniq | sort: "name" %}
+<section class="list">
 
-  {% for list in lists %}
-  {% assign list-items = list[1].list-items | uniq | sort: "name" %}
-  <section class="list flex-x flex-jus">
-
-    <ul class="w50-desktop"></ul>
-
-    <div class="w50-desktop content-shell"
-         id='{{ list[1].heading | downcase | replace: " ", "-" }}'>
-
-
-      <div class="list-title meta no-wrap"
-           onclick='toggle_list({{ forloop.index0 }})'>
-        <div class="shell">
-          <span data-size='{{ list-items | size }}'>
-            {{ list[1].heading }}
-          </span>
-        </div>
-      </div>
-
-
-      <ul class="list-content uppercase">
-        {% for item in list-items %}
-        <li>
-          <a href='{{ item.href }}' target="_blank">
-            <div class="shell">
-              {{ item.name | downcase }}
-            </div>
-          </a>
-        </li>
-        {% endfor %}
-      </ul>
-
-
+  <h6 class="list-title no-wrap"
+       onclick='toggle_list({{ forloop.index0 }})'
+       id='{{ list[1].title | downcase | replace: " ", "-" }}'>
+    <div class="shell">
+      <span data-size='{{ items | size }}'>
+        {{ list[1].title }}
+      </span>
     </div>
-  </section>
-  {% endfor %}
-</div>
+  </h6>
+
+  <ul class="list-items uppercase">
+    {% for item in items %}
+    <li>
+      <a href='{{ item.href }}' target="_blank">
+        <div class="shell">
+          {{ item.name | downcase }}
+        </div>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+
+</section>
+{% endfor %}
 
 
 <div class="top-frag desktop">

@@ -13,15 +13,3 @@
 .fix-bottom {
   bottom: 0;
 }
-
-.center-y-parent {
-  display: table;
-  width: 100vw;
-  height: 100vh;
-}
-
-.center-y-child {
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-}

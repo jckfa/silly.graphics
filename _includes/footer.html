@@ -20,9 +20,9 @@
 
 
 <!-- {% for list in site.data.lists %}
-  {% assign list-items = list[1].list-items | uniq | sort: "name" %}
+  {% assign items = list[1].items | uniq | sort: "name" %}
   {% increment lists_total %}
-  {% for item in list-items %}
+  {% for item in items %}
     {% increment list_items_total %}
   {% endfor %}
 {% endfor %}

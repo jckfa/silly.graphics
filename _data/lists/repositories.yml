@@ -1,6 +1,6 @@
-# heading: boards
-heading: Repositories
-list-items:
+# title: boards
+title: Repositories
+items:
   - name: haw-lin
     href: http://haw-lin.com
 
