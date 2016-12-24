@@ -1,32 +1,45 @@
 
 var main        = document.getElementsByTagName("main")[0],
     list        = document.getElementsByClassName("list"),
+    list_items  = document.getElementsByClassName("list-items"),
+    items_shell = document.getElementsByClassName("list-items-shell"),
     list_nav    = document.getElementsByClassName("list__nav")[0],
     nav_item    = document.getElementsByClassName("nav-item"),
     top_frag    = document.getElementsByClassName("top-frag")[0],
-    closed_list = "closed_list",
     selected    = "selected";
 
-// close all lists, remove selected class
+// close all lists
 function close_lists() {
   for (i = 0; i < list.length; i++) {
-    list[i].classList.add(closed_list);
+    items_shell[i].style.height = "0";
     list[i].classList.remove(selected);
   }
 }
 
+window.addEventListener("resize", set_list_height);
+
+function set_list_height() {
+  for (i = 0; i < list.length; i++) {
+    if (list[i].classList.contains(selected)) {
+      items_shell[i].style.height = list_items[i].offsetHeight + "px";
+    }
+  }
+}
+
 // toggle selected list
-function toggle_list(index) {
-  // if list is closed
-  if (list[index].classList.contains(closed_list)) {
-    close_lists();
-    // open list, add selected class
-    list[index].classList.remove(closed_list);
-    list[index].classList.add(selected);
-  } else {
-    // close list, remove selected class
-    list[index].classList.add(closed_list);
-    list[index].classList.remove(selected);
+function toggle_list(i) {
+  if (window.innerWidth < 800) {
+    // if list is closed
+    if (!list[i].classList.contains(selected)) {
+      close_lists();
+      // open list
+      list[i].classList.add(selected);
+      set_list_height();
+    } else {
+      // close list
+      items_shell[i].style.height = "0";
+      list[i].classList.remove(selected);
+    }
   }
 }
 

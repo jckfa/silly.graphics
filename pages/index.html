@@ -13,8 +13,8 @@ order: 0
 <section class="list">
 
   <h6 class="list-title no-wrap"
-       onclick='toggle_list({{ forloop.index0 }})'
-       id='{{ list[1].title | downcase | replace: " ", "-" }}'>
+      onclick='toggle_list({{ forloop.index0 }})'
+      id='{{ list[1].title | downcase | replace: " ", "-" }}'>
     <div class="shell">
       <span data-size='{{ items | size }}'>
         {{ list[1].title }}
@@ -22,17 +22,19 @@ order: 0
     </div>
   </h6>
 
-  <ul class="list-items uppercase">
-    {% for item in items %}
-    <li>
-      <a href='{{ item.href }}' target="_blank">
-        <div class="shell">
-          {{ item.name | downcase }}
-        </div>
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
+  <div class="list-items-shell">
+    <ul class="list-items uppercase">
+      {% for item in items %}
+      <li>
+        <a href='{{ item.href }}' target="_blank">
+          <div class="shell">
+            {{ item.name | downcase }}
+          </div>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
 
 </section>
 {% endfor %}
