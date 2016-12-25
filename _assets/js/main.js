@@ -16,8 +16,10 @@ function close_lists() {
   }
 }
 
+// adjust height on font-size, padding change
 window.addEventListener("resize", set_list_height);
 
+// open list
 function set_list_height() {
   for (i = 0; i < list.length; i++) {
     if (list[i].classList.contains(selected)) {
@@ -26,23 +28,40 @@ function set_list_height() {
   }
 }
 
+// return true if any lists are open
+function is_any_list_open() {
+  for (i = 0; i < list.length; i++) {
+    if (list[i].classList.contains(selected)) {
+      return true;
+    }
+  }
+}
+
 // toggle selected list
 function toggle_list(i) {
+  // if mobile
   if (window.innerWidth < 800) {
-    // if list is closed
-    if (!list[i].classList.contains(selected)) {
+    // if selected list is closed & another list is open
+    if (!list[i].classList.contains(selected) && is_any_list_open()) {
       close_lists();
-      // open list
+      // wait for other list to close, then open selected list
+      setTimeout(function() {
+        list[i].classList.add(selected);
+        set_list_height();
+      }, 250);
+    // if selected list is closed
+    } else if (!list[i].classList.contains(selected)) {
+      close_lists();
+      // open selected list
       list[i].classList.add(selected);
       set_list_height();
     } else {
-      // close list
+      // close selected list
       items_shell[i].style.height = "0";
       list[i].classList.remove(selected);
     }
   }
 }
-
 
 window.addEventListener("resize", smart_nav);
 window.addEventListener("scroll", smart_nav);
