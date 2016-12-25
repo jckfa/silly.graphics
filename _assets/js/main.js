@@ -6,13 +6,24 @@ var main        = document.getElementsByTagName("main")[0],
     list_nav    = document.getElementsByClassName("list__nav")[0],
     nav_item    = document.getElementsByClassName("nav-item"),
     top_frag    = document.getElementsByClassName("top-frag")[0],
-    selected    = "selected";
+    selected    = "selected",
+    list_anim   = 250;
+
 
 // close all lists
 function close_lists() {
   for (i = 0; i < list.length; i++) {
     items_shell[i].style.height = "0";
     list[i].classList.remove(selected);
+  }
+}
+
+// return true if any lists are open
+function is_any_list_open() {
+  for (i = 0; i < list.length; i++) {
+    if (list[i].classList.contains(selected)) {
+      return true;
+    }
   }
 }
 
@@ -28,13 +39,13 @@ function set_list_height() {
   }
 }
 
-// return true if any lists are open
-function is_any_list_open() {
-  for (i = 0; i < list.length; i++) {
-    if (list[i].classList.contains(selected)) {
-      return true;
-    }
-  }
+// scroll to selected list
+function scroll_to_list(i) {
+  setTimeout(function() {
+    // get list y-position
+    var elem_pos = items_shell[i].offsetTop;
+    window.scrollTo(0, elem_pos);
+  }, list_anim);
 }
 
 // toggle selected list
@@ -48,13 +59,17 @@ function toggle_list(i) {
       setTimeout(function() {
         list[i].classList.add(selected);
         set_list_height();
-      }, 250);
+        // scroll to selected list
+        scroll_to_list(i);
+      }, list_anim);
     // if selected list is closed
     } else if (!list[i].classList.contains(selected)) {
       close_lists();
       // open selected list
       list[i].classList.add(selected);
       set_list_height();
+      // scroll to selected list
+      scroll_to_list(i);
     } else {
       // close selected list
       items_shell[i].style.height = "0";
