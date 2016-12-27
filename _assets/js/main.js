@@ -27,9 +27,6 @@ function is_any_list_open() {
   }
 }
 
-// adjust height on font-size, padding change
-window.addEventListener("resize", set_list_height);
-
 // open list
 function set_list_height() {
   for (i = 0; i < list.length; i++) {
@@ -78,9 +75,6 @@ function toggle_list(i) {
   }
 }
 
-window.addEventListener("resize", smart_nav);
-window.addEventListener("scroll", smart_nav);
-
 function smart_nav() {
   var scroll_pos = document.body.scrollTop,
       nav_pos    = main.offsetTop;
@@ -108,3 +102,8 @@ function smart_nav() {
     }
   }
 }
+
+// adjust height on font-size/padding change
+window.addEventListener("resize", set_list_height);
+window.addEventListener("resize", smart_nav);
+window.addEventListener("scroll", smart_nav);
