@@ -27,3 +27,29 @@
       z-index: 2;
     }
   }
+
+
+
+
+.screensaver {
+  color: var(--text-color);
+  font-size: 2em;
+  line-height: 1;
+  word-break: break-all;
+  width: 100%;
+  height: 100%;
+  /*background-color: var(--bg-color);*/
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: var(--gutter) calc(var(--gutter) / 2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+  .screensaver-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
