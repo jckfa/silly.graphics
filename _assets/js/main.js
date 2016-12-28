@@ -1,14 +1,8 @@
 
-var main        = document.getElementsByTagName("main")[0],
-    list        = document.getElementsByClassName("list"),
-    list_items  = document.getElementsByClassName("list-items"),
+var list        = document.getElementsByClassName("list"),
     items_shell = document.getElementsByClassName("list-items-shell"),
-    list_nav    = document.getElementsByClassName("list__nav")[0],
-    nav_item    = document.getElementsByClassName("nav-item"),
-    top_frag    = document.getElementsByClassName("top-frag")[0],
     selected    = "selected",
     list_anim   = 250;
-
 
 // close all lists
 function close_lists() {
@@ -29,6 +23,8 @@ function is_any_list_open() {
 
 // open list
 function set_list_height() {
+  var list_items = document.getElementsByClassName("list-items");
+
   for (i = 0; i < list.length; i++) {
     if (list[i].classList.contains(selected)) {
       items_shell[i].style.height = list_items[i].offsetHeight + "px";
@@ -76,7 +72,10 @@ function toggle_list(i) {
 }
 
 function smart_nav() {
-  var scroll_pos = document.body.scrollTop,
+  var main       = document.getElementsByTagName("main")[0],
+      list_nav   = document.getElementsByClassName("list__nav")[0],
+      top_frag   = document.getElementsByClassName("top-frag")[0],
+      scroll_pos = document.body.scrollTop,
       nav_pos    = main.offsetTop;
 
   // fix list-nav if scrolled to/past it
@@ -92,7 +91,8 @@ function smart_nav() {
 
   // highlight nav item when scrolled to/past respective list
   for (i = 0; i < list.length; i++ ) {
-    var list_pos = list[i].offsetTop;
+    var nav_item = document.getElementsByClassName("nav-item"),
+        list_pos = list[i].offsetTop;
 
     // -1 compensates for frag rounding bug
     if (scroll_pos >= nav_pos + list_pos - 1) {
