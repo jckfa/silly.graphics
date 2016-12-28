@@ -12,12 +12,21 @@
   margin-bottom: calc(var(--gutter) * 8);
 }
 
-@media (--w-800) {
+@media (--w-480) {
   .gutters {
     padding-left:  var(--gutter);
     padding-right: var(--gutter);
   }
+}
 
+@media (--w-640) {
+  .gutters {
+    padding-left:  calc(var(--gutter) * 2);
+    padding-right: calc(var(--gutter) * 2);
+  }
+}
+
+@media (--w-800) {
   /* adjust for less vertical space on mobile */
   .pt8-16 {
     padding-top: calc(var(--gutter) * 16);

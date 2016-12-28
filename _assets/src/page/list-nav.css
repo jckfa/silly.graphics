@@ -9,10 +9,9 @@ main {
 }
 
 .list__nav {
+  line-height: 1.1em;
   position: absolute;
   z-index: 1;
-  padding-left: var(--gutter);
-  line-height: 1.1em;
 }
 
 /* ADDED VIA JS */
@@ -53,7 +52,7 @@ main {
 
 /* ADDED VIA JS */
 .showing-frag {
-  margin-left: var(--gutter);
+  margin-left: calc(var(--gutter) * 2);
   transition: margin-left var(--hover-off);
 }
 
