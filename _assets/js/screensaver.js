@@ -38,15 +38,17 @@ function start_timer() {
   }, wait_time);
 }
 
-function reset_timer() {
+function stop_timer() {
   // hide screensaver content
   screensaver.classList.add("hidden");
 
   // clear timers
   clearTimeout(t);
   clearInterval(i);
+}
 
-  // restart timer
+function reset_timer() {
+  stop_timer();
   start_timer();
 }
 
