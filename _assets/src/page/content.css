@@ -6,15 +6,15 @@
 }
 
   .about a,
-  .joo a {
+  .col-shell a {
     display: inline-block;
     position: relative;
   }
 
     .about a::before,
     .about a::after,
-    .joo   a::before,
-    .joo   a::after {
+    .col-shell a::before,
+    .col-shell a::after {
       content: "";
       width: 100%;
       height: 5%;
@@ -28,13 +28,13 @@
     }
 
     .about a::after,
-    .joo   a::after {
+    .col-shell a::after {
       animation: initial;
       transition: background-color var(--simple-fade);
     }
 
-.joo,
-.joo section + section {
+.col-shell,
+.col-shell section + section {
   margin-top: 1em;
 }
 
@@ -42,14 +42,14 @@
     width: 100%;
   }
 
-    .joo h6 {
+    .col-shell h6 {
       color: var(--meta-color);
       border-bottom: 2px solid var(--bg2-color);
       padding-bottom: calc(var(--target-area) / 2);
       margin-bottom: var(--target-area);
     }
 
-    .joo section p + p {
+    .col-shell section p + p {
       margin-top: 1em;
     }
 
@@ -66,11 +66,11 @@
       }
 
   @media (--w-l-800) {
-    .joo section li + li {
+    .col-shell section li + li {
       margin-top: 0.5em;
     }
 
-    .joo {
+    .col-shell {
       flex-direction: column;
     }
 
@@ -78,7 +78,7 @@
         margin-top: 1em;
       }
 
-      .joo a,
+      .col-shell a,
       .contact li::before {
         padding-top:    calc(var(--target-area) / 4);
         padding-bottom: calc(var(--target-area) / 4);
@@ -92,9 +92,8 @@
     }
 
       .about a:hover::after,
-      .joo   a:hover::after {
+      .col-shell a:hover::after {
         background-color: currentColor;
-        animation: on-off 1000ms linear infinite;
       }
   }
 

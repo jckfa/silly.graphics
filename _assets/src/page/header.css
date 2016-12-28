@@ -63,7 +63,7 @@
                 transparent  0%,
                 currentColor 100%
               );
-              animation: goo2 1000ms ease-in-out infinite;
+              animation: shooting-star 1000ms ease-in-out infinite;
             }
         }
 
