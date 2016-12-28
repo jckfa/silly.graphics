@@ -95,11 +95,11 @@ function smart_nav() {
         list_pos = list[i].offsetTop;
 
     // -1 compensates for frag rounding bug
-    if (scroll_pos >= nav_pos + list_pos - 1) {
-      nav_item[i].classList.add("current");
-    } else {
-      nav_item[i].classList.remove("current");
-    }
+    scroll_pos >= nav_pos + list_pos - 1 ?
+      nav_item[i].classList.add("current")
+      :
+      nav_item[i].classList.remove("current")
+    ;
   }
 }
 
