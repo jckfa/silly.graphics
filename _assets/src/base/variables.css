@@ -2,16 +2,25 @@
 :root {
   --text-color:     rgb(90, 90, 90);
   --meta-color:     rgb(200, 200, 200);
-  --spot-color:     blueViolet;
   --bg-color:       white;
   --bg2-color:      rgba(0, 0, 0, 0.1);
   --bg3-color:      rgba(0, 0, 0, 0.03);
 
-  --list-color-1:   rgb(160, 90, 110); /* pink */
-  --list-color-2:   rgb(170, 110, 70); /* orange */
-  --list-color-3:   rgb(140, 120, 80); /* brown */
-  --list-color-4:   rgb(100, 120, 80); /* olive */
-  --list-color-5:   rgb(90, 90, 90);   /* black */
+  /* yellow, red */
+  /*--gradient-a:     #ffee00;*/
+  /*--gradient-b:     red;*/
+
+  /* red, violet */
+  --gradient-a:     red;
+  --gradient-b:     #aa00ff;
+
+  /* violet, cyan */
+  /*--gradient-a:     #aa00ff;*/
+  /*--gradient-b:     #00ffff;*/
+
+  /* cyan, yellow */
+  /*--gradient-a:     #00ffff;*/
+  /*--gradient-b:     #ffee00;*/
 
   --gutter:         1rem;
   --target-area:    0.8em;
