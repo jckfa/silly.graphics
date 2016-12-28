@@ -1,7 +1,7 @@
 var screensaver = document.getElementsByClassName("screensaver")[0],
     t,
     i,
-    wait_time   = 30000; // 30 sec
+    wait_time   = 60000; // 1 min
 
 // prefix single-digit numbers with zero
 function zero_pad(n) {
