@@ -8,10 +8,6 @@
   vertical-align: top;
 }
 
-.hidden {
-  display: none;
-}
-
 @media (--w-l-800) {
   .desktop {
     display: none;
