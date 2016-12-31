@@ -18,6 +18,7 @@ exclude:
   - Gemfile
   - LICENSE.txt
   - .gitignore
+  - arrow.psd
 
 assets:
   digest: true

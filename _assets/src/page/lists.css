@@ -111,10 +111,6 @@
         position: relative;
       }
 
-      .list-items a:hover {
-        color: var(--text-color);
-      }
-
       .list-items a::before {
         width: 0;
         height: 2px;
@@ -151,5 +147,9 @@
         .list-items a:hover,
         .list-items a:hover::after {
           color: var(--text-color);
+          cursor:
+            url(/static/cursors/arrow1x.png), alias;
+          cursor:
+            -webkit-image-set(url(/static/cursors/arrow2x.png) 2x), alias;
         }
 }
