@@ -1,13 +1,13 @@
 title: Publications
 items:
-  - name: ligature.ch
-    href: http://ligature.ch
+  - n: ligature.ch
+    h: http://ligature.ch
 
-  - name: slanted
-    href: https://www.slanted.de
+  - n: slanted
+    h: https://www.slanted.de
 
-  # - name: print program
-    # href: http://print-program.ch
+  # - n: print program
+    # h: http://print-program.ch
 
-  - name: it's nice that
-    href: http://www.itsnicethat.com
+  - n: it's nice that
+    h: http://www.itsnicethat.com

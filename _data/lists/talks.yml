@@ -3,11 +3,11 @@
 # title: Rants
 title: Talks
 items:
-  - name: elana schlenker
-    href: http://vimeo.com/147862776
+  - n: elana schlenker
+    h: http://vimeo.com/147862776
 
-  - name: metahaven
-    href: http://vimeo.com/search?q=metahaven
+  - n: metahaven
+    h: http://vimeo.com/search?q=metahaven
 
-  - name: eike koenig
-    href: http://youtube.com/watch?v=00_mYV7Ugjs
+  - n: eike koenig
+    h: http://youtube.com/watch?v=00_mYV7Ugjs

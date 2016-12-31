@@ -2,41 +2,41 @@
 # title: Gadgets
 title: Utilities
 items:
-  - name: fontforge
-    href: http://fontforge.github.io
+  - n: fontforge
+    h: http://fontforge.github.io
 
-  - name: glyphs
-    href: http://glyphsapp.com
+  - n: glyphs
+    h: http://glyphsapp.com
 
-  - name: robofont
-    href: http://robofont.com
+  - n: robofont
+    h: http://robofont.com
 
-  - name: prototypo
-    href: http://prototypo.io
+  - n: prototypo
+    h: http://prototypo.io
 
-  - name: figma
-    href: http://figma.com
+  - n: figma
+    h: http://figma.com
 
-  - name: fontstand
-    href: http://fontstand.com
+  - n: fontstand
+    h: http://fontstand.com
 
-  - name: drawbot
-    href: http://www.drawbot.com
+  - n: drawbot
+    h: http://www.drawbot.com
 
-  - name: noun project
-    href: http://thenounproject.com
+  - n: noun project
+    h: http://thenounproject.com
 
-  - name: sketch
-    href: http://sketchapp.com
+  - n: sketch
+    h: http://sketchapp.com
 
-  - name: ofont
-    href: http://ofont.net
+  - n: ofont
+    h: http://ofont.net
 
-  - name: coolors
-    href: https://coolors.co
+  - n: coolors
+    h: https://coolors.co
 
-  - name: metaflop
-    href: http://www.metaflop.com/modulator
+  - n: metaflop
+    h: http://www.metaflop.com/modulator
 
-  - name: typecooker
-    href: http://typecooker.com/
+  - n: typecooker
+    h: http://typecooker.com/

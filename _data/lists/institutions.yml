@@ -2,29 +2,29 @@
 # title: Cults
 title: Institutions
 items:
-  - name: strelka
-    href: http://strelka.com
+  - n: strelka
+    h: http://strelka.com
 
-  - name: yale
-    href: http://art.yale.edu
+  - n: yale
+    h: http://art.yale.edu
 
-  - name: ecal
-    href: http://ecal.ch
+  - n: ecal
+    h: http://ecal.ch
 
-  - name: kabk
-    href: http://www.kabk.nl/
+  - n: kabk
+    h: http://www.kabk.nl/
 
-  - name: the cooper union
-    href: http://cooper.edu/
+  - n: the cooper union
+    h: http://cooper.edu/
 
-  - name: risd
-    href: http://www.risd.edu/
+  - n: risd
+    h: http://www.risd.edu/
 
-  - name: harvard
-    href: http://www.gsd.harvard.edu/
+  - n: harvard
+    h: http://www.gsd.harvard.edu/
 
-  - name: goldsmiths
-    href: http://gold.ac.uk
+  - n: goldsmiths
+    h: http://gold.ac.uk
 
-  - name: gerrit rietveld academie
-    href: http://www.gerritrietveldacademie.nl/
+  - n: gerrit rietveld academie
+    h: http://www.gerritrietveldacademie.nl/

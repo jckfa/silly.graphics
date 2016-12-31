@@ -1,59 +1,59 @@
 # title: Pages
 title: Books
 items:
-  - name: punch
-    href: http://p-u-n-c-h.ro
+  - n: punch
+    h: http://p-u-n-c-h.ro
 
-  - name: group object
-    href: http://groupobject.com
+  - n: group object
+    h: http://groupobject.com
 
-  - name: counter-print
-    href: http://counter-print.co.uk
+  - n: counter-print
+    h: http://counter-print.co.uk
 
-  - name: soda books
-    href: http://sodabooks.com
+  - n: soda books
+    h: http://sodabooks.com
 
-  - name: edition patrick frey
-    href: http://editionpatrickfrey.com
+  - n: edition patrick frey
+    h: http://editionpatrickfrey.com
 
-  - name: draw down
-    href: http://draw-down.com
+  - n: draw down
+    h: http://draw-down.com
 
-  - name: unit editions
-    href: http://uniteditions.com/shop
+  - n: unit editions
+    h: http://uniteditions.com/shop
 
-  - name: standards manual
-    href: http://standardsmanual.com
+  - n: standards manual
+    h: http://standardsmanual.com
 
-  - name: antenne books
-    href: http://antennebooks.com
+  - n: antenne books
+    h: http://antennebooks.com
 
-  - name: kiosk
-    href: http://shop.k-i-o-s-k.com
+  - n: kiosk
+    h: http://shop.k-i-o-s-k.com
 
-  - name: art paper editions
-    href: http://www.artpapereditions.org/
+  - n: art paper editions
+    h: http://www.artpapereditions.org/
 
-  - name: riot
-    href: http://riot-ghent.org/
+  - n: riot
+    h: http://riot-ghent.org/
 
-  - name: slanted
-    href: https://www.slanted.de/shop
+  - n: slanted
+    h: https://www.slanted.de/shop
 
-  - name: txtbooks
-    href: http://www.txtbooks.us/
+  - n: txtbooks
+    h: http://www.txtbooks.us/
 
-  - name: nonporous
-    href: http://shop.non-poro.us/
+  - n: nonporous
+    h: http://shop.non-poro.us/
 
-  - name: actual source
-    href: http://actualsource.org/collections
+  - n: actual source
+    h: http://actualsource.org/collections
 
-  - name: strelka
-    href: http://strelka.com/en/press/books
+  - n: strelka
+    h: http://strelka.com/en/press/books
 
-  - name: yard press
-    href: http://www.yardpress.it/
+  - n: yard press
+    h: http://www.yardpress.it/
 
-  - name: mottobooks
-    href: http://www.mottodistribution.com/shop/
+  - n: mottobooks
+    h: http://www.mottodistribution.com/shop/
