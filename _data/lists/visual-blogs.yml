@@ -1,5 +1,6 @@
 # title: boards
-title: Repositories
+# title: Repositories
+title: Visual Blogs
 items:
   - name: haw-lin
     href: http://haw-lin.com
@@ -36,3 +37,6 @@ items:
 
   - name: sometimes i wish i was normal
     href: http://hahahardcore.tumblr.com/
+
+  - name: researchhh
+    href: http://researchhh.uk/
