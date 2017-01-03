@@ -1,11 +1,25 @@
+
 var screensaver = document.getElementsByClassName("screensaver")[0],
     t,
     i,
     wait_time   = 60000; // 1 min
 
-// prefix single-digit numbers with zero
-function zero_pad(n) {
-  return (n < 10) ? "0" + n : n;
+
+window.addEventListener("load", start_timer);
+
+// print screensaver content
+function start_timer() {
+  // wait before showing screensaver
+  t = setTimeout( function() {
+    // show screensaver
+    screensaver.classList.remove("hidden");
+    // run clock immediately after wait_time
+    clock();
+    // refresh clock every second
+    i = setInterval(function() {
+      clock();
+    }, 1000);
+  }, wait_time);
 }
 
 // create clock
@@ -23,19 +37,18 @@ function clock() {
   content.innerHTML = format;
 }
 
-// print screensaver content
-function start_timer() {
-  // wait before showing screensaver
-  t = setTimeout( function() {
-    // show screensaver
-    screensaver.classList.remove("hidden");
-    // run clock immediately after wait_time
-    clock();
-    // refresh clock every second
-    i = setInterval(function() {
-      clock();
-    }, 1000);
-  }, wait_time);
+// prefix single-digit numbers with zero
+function zero_pad(n) {
+  return (n < 10) ? "0" + n : n;
+}
+
+window.addEventListener("mousemove", reset_timer);
+window.addEventListener("scroll",    reset_timer);
+window.addEventListener("resize",    reset_timer);
+
+function reset_timer() {
+  stop_timer();
+  start_timer();
 }
 
 function stop_timer() {
@@ -46,13 +59,3 @@ function stop_timer() {
   clearTimeout(t);
   clearInterval(i);
 }
-
-function reset_timer() {
-  stop_timer();
-  start_timer();
-}
-
-window.addEventListener("load",      start_timer);
-window.addEventListener("mousemove", reset_timer);
-window.addEventListener("scroll",    reset_timer);
-window.addEventListener("resize",    reset_timer);
