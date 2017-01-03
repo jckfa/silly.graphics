@@ -19,6 +19,7 @@ exclude:
   - LICENSE.txt
   - .gitignore
   - arrow.psd
+  - icon.psd
 
 assets:
   digest: true
