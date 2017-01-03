@@ -4,8 +4,6 @@ var list        = document.getElementsByClassName("list"),
     selected    = "selected",
     list_anim   = 250;
 
-// adjust height on font-size/padding change
-window.addEventListener("resize", set_list_height);
 window.addEventListener("resize", smart_nav);
 window.addEventListener("scroll", smart_nav);
 
@@ -44,7 +42,7 @@ function smart_nav() {
   }
 }
 
-// toggle selected list
+// toggle selected list (i)
 function toggle_list(i) {
   // if mobile
   if (window.innerWidth < 800) {
@@ -89,13 +87,16 @@ function close_lists() {
 function open_list(i) {
   // add class for animating open/close icon and list color
   list[i].classList.add(selected);
-  // open list (set height so opening can be animated)
+  // open list
   set_list_height();
   // scroll to selected list
   scroll_to_list(i);
 }
 
-// open list
+// adjust height on font-size/padding change
+window.addEventListener("resize", set_list_height);
+
+// open list (set height so opening can be animated)
 function set_list_height() {
   var list_items = document.getElementsByClassName("list-items");
 
