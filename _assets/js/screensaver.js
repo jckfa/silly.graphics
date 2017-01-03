@@ -16,7 +16,7 @@ function start_timer() {
     // run clock immediately after wait_time
     clock();
     // refresh clock every second
-    i = setInterval(clock(), 1000);
+    i = setInterval(clock, 1000);
   }, wait_time);
 }
 
