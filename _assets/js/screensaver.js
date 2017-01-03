@@ -10,15 +10,13 @@ window.addEventListener("load", start_timer);
 // print screensaver content
 function start_timer() {
   // wait before showing screensaver
-  t = setTimeout( function() {
+  t = setTimeout(function() {
     // show screensaver
     screensaver.classList.remove("hidden");
     // run clock immediately after wait_time
     clock();
     // refresh clock every second
-    i = setInterval(function() {
-      clock();
-    }, 1000);
+    i = setInterval(clock, 1000);
   }, wait_time);
 }
 
