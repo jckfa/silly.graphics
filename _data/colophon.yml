@@ -13,10 +13,10 @@ items:
     linktext:  Digital Ocean
     href:      https://m.do.co/c/b09c1fce4b40
 
+  - plaintext: Open sourced on
+    linktext:  GitHub
+    href:      https://github.com/jckfa/silly.graphics
+
   - plaintext: Maintained by
     linktext:  this kid
     href:      https://jackf.me
-
-  - plaintext: See
-    linktext:  source code
-    href:      https://github.com/jckfa/silly.graphics
