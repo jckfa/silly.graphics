@@ -12,7 +12,7 @@ function zero_pad(n) {
 function clock() {
   var d       = new Date(),
       h24     = d.getHours(),
-      h12     = (h24 + 24) % 12 || 12,
+      h12     = (h24 + 24) % 12 || 12, // default to 12 when h24 = 0 or 12
       h       = zero_pad(h12),
       m       = zero_pad(d.getMinutes()),
       s       = zero_pad(d.getSeconds()),
