@@ -5,6 +5,10 @@
   padding-top: calc(var(--gutter) * 4);
 }
 
+  .about p + p {
+    padding-top: 1em;
+  }
+
   .about a,
   .col-shell a {
     display: inline-block;
