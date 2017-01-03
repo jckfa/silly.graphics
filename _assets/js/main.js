@@ -34,11 +34,23 @@ function set_list_height() {
 
 // scroll to selected list
 function scroll_to_list(i) {
+  // wait for list to open
   setTimeout(function() {
-    // get list y-position
+    // get list top position
     var elem_pos = items_shell[i].offsetTop;
+    // scroll to top of list/to list title
     window.scrollTo(0, elem_pos);
   }, list_anim);
+}
+
+// open selected list
+function open_list(i) {
+  // add class for animating open/close icon and list color
+  list[i].classList.add(selected);
+  // open list (set height so opening can be animated)
+  set_list_height();
+  // scroll to selected list
+  scroll_to_list(i);
 }
 
 // toggle selected list
@@ -47,22 +59,16 @@ function toggle_list(i) {
   if (window.innerWidth < 800) {
     // if selected list is closed & another list is open
     if (!list[i].classList.contains(selected) && is_any_list_open()) {
+      // close that other list
       close_lists();
-      // wait for other list to close, then open selected list
+      // wait for other list to close
       setTimeout(function() {
-        list[i].classList.add(selected);
-        set_list_height();
-        // scroll to selected list
-        scroll_to_list(i);
+        open_list(i)
       }, list_anim);
-    // if selected list is closed
+    // if selected list is closed (and all other lists are closed)
     } else if (!list[i].classList.contains(selected)) {
-      close_lists();
-      // open selected list
-      list[i].classList.add(selected);
-      set_list_height();
-      // scroll to selected list
-      scroll_to_list(i);
+      open_list(i)
+    // if selected list is open
     } else {
       // close selected list
       items_shell[i].style.height = "0";
