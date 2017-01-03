@@ -1,9 +1,7 @@
 
-name:
-  long:      Silly Graphics
-  short:     sg
+name:        Silly Graphics
 email:       buttface@jackf.me
-description: A little collection of links
+description: Silly Graphics is directory of hyperlinks generally related to graphic design.
 url:         https://silly.graphics
 version:     2.7.00
 
