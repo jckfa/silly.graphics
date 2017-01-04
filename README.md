@@ -12,7 +12,37 @@ a glorified list of hyperlinks
 - speed-tested with [pagespeed][10]
 
 ### INSTALLATION
-will add soon
+
+#### pros
+1. `git clone`
+2. `bundle install`
+3. `npm install`
+4. `gulp`
+
+#### joes
+1. install [homebrew][19]
+`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+
+2. install [git][20]
+`brew install git`
+
+3. clone repo
+`git clone https://github.com/jckfa/silly.graphics.git`
+
+4. install [bundler][21]
+`gem install bundler`
+
+5. install gems
+`bundle install`
+
+6. install [node][22]
+`brew install node`
+
+7. install dependencies
+`npm install`
+
+8. serve site
+`gulp`
 
 ### DEPLOYING
 - i use a simple [post-receive hook][18] to deploy from `_site` to my remote server
@@ -44,3 +74,7 @@ unless you're running some old browser, everything should render fine
 [16]: https://github.com/jckfa/nginx-config/blob/master/conf.d/directive-only/tls.conf
 [17]: https://iwantmyname.com
 [18]: https://www.digitalocean.com/community/tutorials/how-to-set-up-automatic-deployment-with-git-with-a-vps
+[19]: http://brew.sh/
+[20]: https://git-scm.com/
+[21]: https://bundler.io/
+[22]: https://nodejs.org/en/
