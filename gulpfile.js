@@ -53,10 +53,12 @@ gulp.task('default', ['serve'], shell.task(
   'JEKYLL_ENV=development bundle exec jekyll build --watch'
 ));
 
-// PRODUCTION TASKS / PRODUCTION TASKS / PRODUCTION TASKS / PRODUCTION TASKS /
-// TASKS / PRODUCTION TASKS / PRODUCTION TASKS / PRODUCTION TASKS / PRODUCTION
-// PRODUCTION TASKS / PRODUCTION TASKS / PRODUCTION TASKS / PRODUCTION TASKS /
-// TASKS / PRODUCTION TASKS / PRODUCTION TASKS / PRODUCTION TASKS / PRODUCTION
+
+//     DDDDD    EEEEEE  PPPPP   LL      OOO   YY   YY
+//     DD   DD  EE      PP   PP LL    OO   OO  YY YY
+//     DD   DD  EEEEE   PPPPP   LL    OO   OO   YYY
+//     DD   DD  EE      PP      LL    OO   OO   YY
+//     DDDDDD   EEEEEE  PP      LLLLLL  OOO    YY
 
 
 var path = '_site';

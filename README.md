@@ -1,29 +1,30 @@
 # Silly Graphics
-A glorified list of hyperlinks.
-
-- heavy swiss interests
-- lists aren't meant to be exhaustive
+a glorified list of hyperlinks
 
 ### SUMMARY
-- built with [Jekyll][1]
-- automated with [Gulp][2] ([see gulpfile][3])
+- built with [jekyll][1]
 - styled with [cssnext][4]
-- running on [Nginx][5] ([see configuration][6])
-- hosted on [Digital Ocean][7] [referral link]
-- domain registered with [iwantmyname][17]
-- encrypted with [Let's Encrypt][9] ([A+ SSL Labs score][8])
-- built for speed, mobile ([see PageSpeed score][10])
+- automated with [gulp][2] ([see gulpfile][3])
+- served with [nginx][5] ([see configuration][6])
+- hosted with [digital ocean][7]
+- registered with [iwantmyname][17]
+- encrypted with [let's encrypt][9] ([see a+ ssl labs score][8])
+- speed-tested with [pagespeed][10]
+
+### INSTALLATION
+will add soon
 
 ### DEPLOYING
-Instead of pushing source files to my server and building there, I build on my development machine and push from `_site`. And I have a gulp task, `deploy`, to automate this.
+- i use a simple [post-receive hook][18] to deploy from `_site` to my remote server
+- automated with the `deploy` gulp task ([see bottom of gulpfile][3])
 
 ### BROWSER SUPPORT
 - js uses [classList][11]
 - [flexbox][13]
 - only uses [woff][14] and [woff2][15] for webfonts
-- exclusively [TLSv1.2][16] (>IE10, Android 4.3)
+- exclusively [tls v1.2][16] (>ie10, android 4.3)
 
-unless you're running some old browser, everything should render fine.
+unless you're running some old browser, everything should render fine
 
 
 [1]: https://jekyllrb.com
@@ -42,3 +43,4 @@ unless you're running some old browser, everything should render fine.
 [15]: http://caniuse.com/#search=woff2
 [16]: https://github.com/jckfa/nginx-config/blob/master/conf.d/directive-only/tls.conf
 [17]: https://iwantmyname.com
+[18]: https://www.digitalocean.com/community/tutorials/how-to-set-up-automatic-deployment-with-git-with-a-vps
