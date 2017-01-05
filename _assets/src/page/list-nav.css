@@ -4,21 +4,30 @@ main {
   position: relative;
 }
 
-.list__nav, .fixed-nav {
+/*.list__nav, .fixed-nav {
   padding-top: calc(var(--gutter) * 4);
-}
+}*/
 
 .list__nav {
-  line-height: 1.1em;
-  position: absolute;
+  /*position: absolute;*/
+  position: fixed;
+  /* make room for main nav */
+  /* see margin-top in base.css */
+  top: calc( 2px + 2 * var(--target-area) );
   z-index: 1;
+  padding-top: calc(var(--gutter) * 4);
+  /*background-color: #edfaff;*/
 }
 
+  .list__nav .body-size {
+    line-height: 1.1;
+  }
+
 /* ADDED VIA JS */
-.fixed-nav {
+/*.fixed-nav {
   position: fixed;
   top: 0;
-}
+}*/
 
   .nav-item {
     color: var(--meta-color);

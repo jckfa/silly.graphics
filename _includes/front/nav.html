@@ -1,6 +1,5 @@
-
-<nav class="list__nav desktop">
-  <ul>
+<nav class="list__nav desktop meta">
+  <ul class="body-size">
     {% for list in lists %}
     <li class="nav-item">
       <a href='#{{ list[1].title | downcase | replace: " ", "-" }}'
