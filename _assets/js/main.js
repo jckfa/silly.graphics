@@ -16,13 +16,11 @@ function smart_nav() {
         scroll_pos = document.body.scrollTop,
         nav_pos    = main.offsetTop;
 
-    // fix list-nav if scrolled to/past it
+    // fix list-nav on scroll to/past, show frag
     if (scroll_pos >= nav_pos) {
-      // fix nav, show top frag
       // list_nav.classList.add("fixed-nav");
       top_frag.classList.add("showing-frag");
     } else {
-      // unfix nav, hide top frag
       // list_nav.classList.remove("fixed-nav");
       top_frag.classList.remove("showing-frag");
     }
