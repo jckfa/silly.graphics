@@ -3,7 +3,8 @@
   <ul>
     {% for list in lists %}
     <li class="nav-item">
-      <a href='#{{ list[1].title | downcase | replace: " ", "-" }}'>
+      <a href='#{{ list[1].title | downcase | replace: " ", "-" }}'
+         data-scroll>
         {{ list[1].title }}
       </a>
     </li>

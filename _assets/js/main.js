@@ -111,9 +111,9 @@ function set_list_height() {
 function scroll_to_list(i) {
   // wait for list to open
   setTimeout(function() {
-    // get list top position
+    // get list's top-position
     var elem_pos = items_shell[i].offsetTop;
     // scroll to top of list/to list title
-    window.scrollTo(0, elem_pos);
+    smoothScroll.animateScroll(elem_pos);
   }, list_anim);
 }
