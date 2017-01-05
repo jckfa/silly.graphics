@@ -11,7 +11,7 @@ function smart_nav() {
   // if desktop
   if (window.innerWidth >= 800) {
     var main       = document.getElementsByTagName("main")[0],
-        list_nav   = document.getElementsByClassName("list__nav")[0],
+        // list_nav   = document.getElementsByClassName("list__nav")[0],
         top_frag   = document.getElementsByClassName("top-frag")[0],
         scroll_pos = document.body.scrollTop,
         nav_pos    = main.offsetTop;
@@ -19,11 +19,11 @@ function smart_nav() {
     // fix list-nav if scrolled to/past it
     if (scroll_pos >= nav_pos) {
       // fix nav, show top frag
-      list_nav.classList.add("fixed-nav");
+      // list_nav.classList.add("fixed-nav");
       top_frag.classList.add("showing-frag");
     } else {
       // unfix nav, hide top frag
-      list_nav.classList.remove("fixed-nav");
+      // list_nav.classList.remove("fixed-nav");
       top_frag.classList.remove("showing-frag");
     }
 
