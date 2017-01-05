@@ -129,6 +129,7 @@
 
         .list-items a:hover::before {
           width: 100%;
+          /*animation: shooting-star 1000ms ease-in-out infinite;*/
         }
 
       /* list-item urls */

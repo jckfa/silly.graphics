@@ -44,9 +44,11 @@
           transition: width 1000ms cubic-bezier(0.1, 1, 0.15, 1);
         }
 
-        .main__nav a.active::after {
-          width: 100%;
-        }
+    @media (--w-l-800) {
+      .main__nav a.active::after {
+        width: 100%;
+      }
+    }
 
     @media (--w-800) {
       .main__nav li {
@@ -57,12 +59,16 @@
         color: var(--text-color);
       }
 
-        .main__nav a:not(.active):hover::after {
+      .main__nav a:hover::after {
+        width: 100%;
+      }
+
+        /*.main__nav a:not(.active):hover::after {
           background: linear-gradient(
             to right,
             transparent  0%,
             currentColor 100%
           );
           animation: shooting-star 1000ms ease-in-out infinite;
-        }
+        }*/
     }

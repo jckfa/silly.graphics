@@ -17,7 +17,7 @@
 }
 
 
-@keyframes shooting-star {
+/*@keyframes shooting-star {
   0% {
     width: 0;
     right: initial;
@@ -41,7 +41,7 @@
     right: 0;
     left: initial;
   }
-}
+}*/
 
 
 @keyframes shift-gradient {
