@@ -2,13 +2,16 @@
 .site__header {
   color: var(--meta-color);
   background-color: var(--bg-color);
+  /* place over list-nav */
+  position: relative;
+  z-index: 2;
 }
 
-  .main__nav, .other-content {
+  .primary__nav, .other-content {
     border-bottom: 2px solid var(--bg2-color);
   }
 
-    .main__nav li {
+    .primary__nav li {
       width: 100%;
     }
 
@@ -16,7 +19,7 @@
         color: var(--text-color);
       }
 
-      .main__nav a {
+      .primary__nav a {
         display: block;
         padding-top:    var(--target-area);
         padding-bottom: var(--target-area);
@@ -24,7 +27,7 @@
         transition: color var(--simple-fade);
       }
 
-        .main__nav a::after {
+        .primary__nav a::after {
           width: 0;
           height: 2px;
           background-color: currentColor;
@@ -45,30 +48,21 @@
         }
 
     @media (--w-l-800) {
-      .main__nav a.active::after {
+      .primary__nav a.active::after {
         width: 100%;
       }
     }
 
     @media (--w-800) {
-      .main__nav li {
+      .primary__nav li {
         max-width: 25%;
       }
 
-      .main__nav a:hover {
+      .primary__nav a:hover {
         color: var(--text-color);
       }
 
-      .main__nav a:hover::after {
+      .primary__nav a:hover::after {
         width: 100%;
       }
-
-        /*.main__nav a:not(.active):hover::after {
-          background: linear-gradient(
-            to right,
-            transparent  0%,
-            currentColor 100%
-          );
-          animation: shooting-star 1000ms ease-in-out infinite;
-        }*/
     }

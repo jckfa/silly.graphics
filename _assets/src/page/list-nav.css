@@ -4,80 +4,53 @@ main {
   position: relative;
 }
 
-/*.list__nav, .fixed-nav {
-  padding-top: calc(var(--gutter) * 4);
-}*/
-
-.list__nav {
-  /*position: absolute;*/
-  position: fixed;
-  /* make room for main nav */
-  /* see margin-top in base.css */
-  top: calc( 2px + 2 * var(--target-area) );
-  z-index: 1;
-  padding-top: calc(var(--gutter) * 4);
-  /*background-color: #edfaff;*/
-}
-
-  .list__nav .body-size {
-    line-height: 1.1;
+  .secondary__nav {
+    width: 100%;
+    /*background-color: #edfaff;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
   }
 
-/* ADDED VIA JS */
-/*.fixed-nav {
-  position: fixed;
-  top: 0;
-}*/
+  .list-nav {
+    width: 50%;
+    line-height: 1.4;
+    padding-top: calc(var(--gutter) * 4);
 
-  .nav-item {
-    color: var(--meta-color);
-    transition: ease-in-out 100ms;
+    /*background-color: #eee;*/
   }
 
-    .nav-item a {
-      display: inline-block;
+    @media (--w-1120) {
+      .list-nav {
+        line-height: 1.1;
+      }
     }
 
-  /* ADDED VIA JS */
-  .current {
-    color: var(--text-color);
-  }
+    .nav-item {
+      color: var(--meta-color);
+      transition: color var(--simple-fade);
+    }
 
+      .nav-item a {
+        display: inline-block;
+      }
 
-
-
-.top-frag {
-  width:  2em;
-  height: 2em;
-  display: table;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  margin-left: -2em;
-  margin-bottom: calc(var(--gutter) * 8);
-  transition: margin-left var(--hover-on);
-  z-index: 1;
-}
-
-/* ADDED VIA JS */
-.showing-frag {
-  margin-left: calc(var(--gutter) * 2);
-  transition: margin-left var(--hover-off);
-}
-
-  .top-frag a {
-    color: var(--meta-color);
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
-    background-color: var(--bg-color);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 50%;
-    transition: box-shadow var(--simple-fade),
-                color      var(--simple-fade);
-  }
-
-    .top-frag a:hover {
+    /* ADDED VIA JS */
+    .current {
       color: var(--text-color);
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     }
+
+    .to-top {
+      width: 25%;
+      color: var(--meta-color);
+      border-bottom: 2px solid var(--bg2-color);
+      padding-top:    var(--target-area);
+      padding-bottom: var(--target-area);
+      display: inline-block;
+      transition: color var(--simple-fade);
+    }
+
+      .to-top:hover {
+        color: var(--text-color);
+      }

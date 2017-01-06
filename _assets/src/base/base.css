@@ -1,22 +1,22 @@
 
-body, .body-size, h6, .meta {
+body, h6, .meta {
   font-size:   var(--body-fs);
   line-height: var(--body-lh);
 }
 
-  .meta {
-    /*color: var(--meta-color);*/
-  }
+  /*.meta {
+    color: var(--meta-color);
+  }*/
 
   @media (--w-480) {
-    body, .body-size {
+    body {
       font-size:   calc(var(--body-fs) + 0.2rem);
       line-height: calc(var(--body-lh) + 0.2rem);
     }
   }
 
   @media (--w-640) {
-    body, .body-size {
+    body {
       font-size:   calc(var(--body-fs) + 0.4rem);
       line-height: calc(var(--body-lh) + 0.4rem);
     }
@@ -25,21 +25,17 @@ body, .body-size, h6, .meta {
       font-size:   calc(var(--body-fs) + 0.2rem);
       line-height: calc(var(--body-lh) + 0.2rem);
     }
-
-    .list__nav {
-      margin-top:  calc(var(--body-lh) + 0.2rem);
-    }
   }
 
   @media (--w-800) {
-    body, .body-size {
+    body {
       font-size:   calc(var(--body-fs) + 0.6rem);
       line-height: calc(var(--body-lh) + 0.6rem);
     }
   }
 
   @media (--w-960) {
-    body, .body-size {
+    body {
       font-size:   calc(var(--body-fs) + 0.8rem);
       line-height: calc(var(--body-lh) + 0.8rem);
     }
@@ -48,21 +44,17 @@ body, .body-size, h6, .meta {
       font-size:   calc(var(--body-fs) + 0.4rem);
       line-height: calc(var(--body-lh) + 0.4rem);
     }
-
-    .list__nav {
-      margin-top:  calc(var(--body-lh) + 0.4rem);
-    }
   }
 
   @media (--w-1120) {
-    body, .body-size {
+    body {
       font-size:   calc(var(--body-fs) + 1.0rem);
       line-height: calc(var(--body-lh) + 1.0rem);
     }
   }
 
   @media (--w-1280) {
-    body, .body-size {
+    body {
       font-size:   calc(var(--body-fs) + 1.2rem);
       line-height: calc(var(--body-lh) + 1.2rem);
     }
@@ -71,21 +63,17 @@ body, .body-size, h6, .meta {
       font-size:   calc(var(--body-fs) + 0.6rem);
       line-height: calc(var(--body-lh) + 0.6rem);
     }
-
-    .list__nav {
-      margin-top:  calc(var(--body-lh) + 0.6rem);
-    }
   }
 
   @media (--w-1440) {
-    body, .body-size {
+    body {
       font-size:   calc(var(--body-fs) + 1.4rem);
       line-height: calc(var(--body-lh) + 1.4rem);
     }
   }
 
   @media (--w-1600) {
-    body, .body-size {
+    body {
       font-size:   calc(var(--body-fs) + 1.6rem);
       line-height: calc(var(--body-lh) + 1.6rem);
     }
@@ -93,9 +81,5 @@ body, .body-size, h6, .meta {
     h6, .meta {
       font-size:   calc(var(--body-fs) + 0.8rem);
       line-height: calc(var(--body-lh) + 0.8rem);
-    }
-
-    .list__nav {
-      margin-top:  calc(var(--body-lh) + 0.8rem);
     }
   }

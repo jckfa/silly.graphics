@@ -11,19 +11,8 @@ function smart_nav() {
   // if desktop
   if (window.innerWidth >= 800) {
     var main       = document.getElementsByTagName("main")[0],
-        // list_nav   = document.getElementsByClassName("list__nav")[0],
-        top_frag   = document.getElementsByClassName("top-frag")[0],
         scroll_pos = document.body.scrollTop,
         nav_pos    = main.offsetTop;
-
-    // fix list-nav on scroll to/past, show frag
-    if (scroll_pos >= nav_pos) {
-      // list_nav.classList.add("fixed-nav");
-      top_frag.classList.add("showing-frag");
-    } else {
-      // list_nav.classList.remove("fixed-nav");
-      top_frag.classList.remove("showing-frag");
-    }
 
     // highlight nav item when scrolled to/past respective list
     for (i = 0; i < list.length; i++ ) {

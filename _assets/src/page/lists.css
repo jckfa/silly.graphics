@@ -1,6 +1,8 @@
 
 .list {
   color: var(--meta-color);
+  /* place over list-nav */
+  z-index: 2;
 }
 
   .shell {
