@@ -1,16 +1,16 @@
 
-var list        = document.querySelectorAll(".list"),
-    items_shell = document.querySelectorAll(".list-items-shell"),
-    selected    = "selected",
+var list        = document.querySelectorAll('.list'),
+    items_shell = document.querySelectorAll('.list-items-shell'),
+    selected    = 'selected',
     list_anim   = 250;
 
-window.addEventListener("resize", smart_nav);
-window.addEventListener("scroll", smart_nav);
+window.addEventListener('resize', smart_nav);
+window.addEventListener('scroll', smart_nav);
 
 function smart_nav() {
   // if desktop
   if (window.innerWidth >= 800) {
-    var main       = document.querySelector("main"),
+    var main       = document.querySelector('main'),
         scroll_pos = window.pageYOffset
                      || document.documentElement.scrollTop
                      || document.body.scrollTop,
@@ -18,13 +18,13 @@ function smart_nav() {
 
     // highlight nav item when scrolled to/past respective list
     for (var i = 0; i < list.length; i++ ) {
-      var nav_item = document.querySelectorAll(".nav-item"),
+      var nav_item = document.querySelectorAll('.nav-item'),
           list_pos = list[i].offsetTop;
 
       // -1 compensates for frag rounding bug
       scroll_pos >= nav_pos + list_pos - 1
-        ? nav_item[i].classList.add("current")
-        : nav_item[i].classList.remove("current")
+        ? nav_item[i].classList.add   ('current')
+        : nav_item[i].classList.remove('current')
       ;
     }
   }
@@ -48,7 +48,7 @@ function toggle_list(i) {
     // if selected list is open
     } else {
       // close selected list
-      items_shell[i].style.height = "0";
+      items_shell[i].style.height = '0';
       list[i].classList.remove(selected);
     }
   }
@@ -66,7 +66,7 @@ function is_any_list_open() {
 // close all lists
 function close_lists() {
   for (var i = 0; i < list.length; i++) {
-    items_shell[i].style.height = "0";
+    items_shell[i].style.height = '0';
     list[i].classList.remove(selected);
   }
 }
@@ -82,15 +82,15 @@ function open_list(i) {
 }
 
 // adjust height on font-size/padding change
-window.addEventListener("resize", set_list_height);
+window.addEventListener('resize', set_list_height);
 
 // open list (set height so opening can be animated)
 function set_list_height() {
-  var list_items = document.querySelectorAll(".list-items");
+  var list_items = document.querySelectorAll('.list-items');
 
   for (var i = 0; i < list.length; i++) {
     if (list[i].classList.contains(selected)) {
-      items_shell[i].style.height = list_items[i].offsetHeight + "px";
+      items_shell[i].style.height = list_items[i].offsetHeight + 'px';
     }
   }
 }
