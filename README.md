@@ -49,7 +49,7 @@ a glorified list of hyperlinks
 - automated with the `deploy` gulp task ([see bottom of gulpfile][3])
 
 ### BROWSER SUPPORT
-- js uses [classList][11]
+- js uses [classList][11] without polyfill
 - [flexbox][13]
 - only uses [woff][14] and [woff2][15] for webfonts
 - exclusively [tls v1.2][16] (>ie10, android 4.3)
