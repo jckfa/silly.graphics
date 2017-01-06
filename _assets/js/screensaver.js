@@ -1,5 +1,5 @@
 
-var screensaver = document.getElementsByClassName("screensaver")[0],
+var screensaver = document.querySelector(".screensaver"),
     t,
     i,
     wait_time   = 60000; // 1 min
@@ -30,7 +30,7 @@ function clock() {
       s       = zero_pad(d.getSeconds()),
       ampm    = (h24 < 12) ? "am" : "pm",
       format  = h + ":" + m + ":" + s + " " + ampm,
-      content = document.getElementsByClassName("screensaver-content")[0];
+      content = document.querySelector(".screensaver-content");
 
   content.innerHTML = format;
 }

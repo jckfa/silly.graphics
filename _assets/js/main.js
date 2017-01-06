@@ -1,6 +1,6 @@
 
-var list        = document.getElementsByClassName("list"),
-    items_shell = document.getElementsByClassName("list-items-shell"),
+var list        = document.querySelectorAll(".list"),
+    items_shell = document.querySelectorAll(".list-items-shell"),
     selected    = "selected",
     list_anim   = 250;
 
@@ -10,13 +10,13 @@ window.addEventListener("scroll", smart_nav);
 function smart_nav() {
   // if desktop
   if (window.innerWidth >= 800) {
-    var main       = document.getElementsByTagName("main")[0],
+    var main       = document.querySelector("main"),
         scroll_pos = document.body.scrollTop,
         nav_pos    = main.offsetTop;
 
     // highlight nav item when scrolled to/past respective list
     for (i = 0; i < list.length; i++ ) {
-      var nav_item = document.getElementsByClassName("nav-item"),
+      var nav_item = document.querySelectorAll(".nav-item"),
           list_pos = list[i].offsetTop;
 
       // -1 compensates for frag rounding bug
@@ -85,7 +85,7 @@ window.addEventListener("resize", set_list_height);
 
 // open list (set height so opening can be animated)
 function set_list_height() {
-  var list_items = document.getElementsByClassName("list-items");
+  var list_items = document.querySelectorAll(".list-items");
 
   for (i = 0; i < list.length; i++) {
     if (list[i].classList.contains(selected)) {
