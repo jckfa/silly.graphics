@@ -15,7 +15,7 @@ order: 0
   <h6 class="list-title no-wrap"
       onclick='toggle_list({{ forloop.index0 }})'
       id='{{ list[1].title | downcase | replace: " ", "-" }}'>
-    <div class="shell">
+    <div class="shell tabular">
       <span data-size='{{ items | size }}'>
         {{ list[1].title }}
       </span>
@@ -40,15 +40,4 @@ order: 0
 {% endfor %}
 
 
-<!--
-{% for list in lists %}
-  {% assign items = list[1].items | uniq %}
-  {% for item in items %}
-    {% increment count %}
-  {% endfor %}
-{% endfor %}
--->
-
-<div class="count meta desktop uppercase tabular">
-  {{ count }}
-</div>
+{% include front/count.html %}
