@@ -11,19 +11,20 @@ function smart_nav() {
   // if desktop
   if (window.innerWidth >= 800) {
     var main       = document.querySelector("main"),
-        scroll_pos = document.body.scrollTop,
+        scroll_pos = window.pageYOffset
+                     || document.documentElement.scrollTop
+                     || document.body.scrollTop,
         nav_pos    = main.offsetTop;
 
     // highlight nav item when scrolled to/past respective list
-    for (i = 0; i < list.length; i++ ) {
+    for (var i = 0; i < list.length; i++ ) {
       var nav_item = document.querySelectorAll(".nav-item"),
           list_pos = list[i].offsetTop;
 
       // -1 compensates for frag rounding bug
-      scroll_pos >= nav_pos + list_pos - 1 ?
-        nav_item[i].classList.add("current")
-        :
-        nav_item[i].classList.remove("current")
+      scroll_pos >= nav_pos + list_pos - 1
+        ? nav_item[i].classList.add("current")
+        : nav_item[i].classList.remove("current")
       ;
     }
   }
@@ -55,7 +56,7 @@ function toggle_list(i) {
 
 // return true if any lists are open
 function is_any_list_open() {
-  for (i = 0; i < list.length; i++) {
+  for (var i = 0; i < list.length; i++) {
     if (list[i].classList.contains(selected)) {
       return true;
     }
@@ -64,7 +65,7 @@ function is_any_list_open() {
 
 // close all lists
 function close_lists() {
-  for (i = 0; i < list.length; i++) {
+  for (var i = 0; i < list.length; i++) {
     items_shell[i].style.height = "0";
     list[i].classList.remove(selected);
   }
@@ -87,7 +88,7 @@ window.addEventListener("resize", set_list_height);
 function set_list_height() {
   var list_items = document.querySelectorAll(".list-items");
 
-  for (i = 0; i < list.length; i++) {
+  for (var i = 0; i < list.length; i++) {
     if (list[i].classList.contains(selected)) {
       items_shell[i].style.height = list_items[i].offsetHeight + "px";
     }
