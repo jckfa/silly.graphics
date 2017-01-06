@@ -2,20 +2,14 @@
 {% include footer.html %}
 
 <script type="text/javascript">
-  {% asset 'main.js' %}
-</script>
 
-<script type="text/javascript">
+  {% asset 'main.js' %}
   {% asset "vendor/smooth-scroll.js" %}
   smoothScroll.init();
-</script>
-
-<script type="text/javascript">
   {% asset "screensaver.js" %}
-</script>
 
-{% if jekyll.environment == "production" %}
-<script type="text/javascript">
-  {% asset "vendor/analytics.js" %}
+  {% if jekyll.environment == "production" %}
+    {% asset "vendor/analytics.js" %}
+  {% endif %}
+
 </script>
-{% endif %}
