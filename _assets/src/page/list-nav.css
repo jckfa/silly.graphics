@@ -29,7 +29,7 @@ main {
 
     .nav-item {
       color: var(--meta-color);
-      transition: color var(--simple-fade);
+      transition: color 100ms var(--simple-fade);
     }
 
       .nav-item a {
@@ -48,7 +48,7 @@ main {
       padding-top:    var(--target-area);
       padding-bottom: var(--target-area);
       display: inline-block;
-      transition: color var(--simple-fade);
+      transition: color 100ms var(--simple-fade);
     }
 
       .to-top:hover {

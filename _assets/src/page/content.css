@@ -34,7 +34,7 @@
     .about a::after,
     .col-shell a::after {
       animation: initial;
-      transition: background-color var(--simple-fade);
+      transition: background-color 100ms var(--simple-fade);
     }
 
 .col-shell,

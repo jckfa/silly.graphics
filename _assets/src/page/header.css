@@ -24,7 +24,7 @@
         padding-top:    var(--target-area);
         padding-bottom: var(--target-area);
         position: relative;
-        transition: color var(--simple-fade);
+        transition: color 100ms var(--simple-fade);
       }
 
         .primary__nav a::after {
@@ -44,7 +44,7 @@
           bottom: -2px;
           left: 0;
           right: 0;
-          transition: width 1000ms cubic-bezier(0.1, 1, 0.15, 1);
+          transition: width 1000ms var(--hover-off);
         }
 
     @media (--w-l-800) {

@@ -44,8 +44,8 @@
   top: 0;
   left: 0;
   z-index: 10;
-  transition: color            var(--simple-fade),
-              background-color var(--simple-fade);
+  transition: color            100ms var(--simple-fade),
+              background-color 100ms var(--simple-fade);
 }
 
   .screensaver-content {
