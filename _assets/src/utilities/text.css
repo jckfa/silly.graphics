@@ -19,22 +19,3 @@
 .tabular {
   font-variant-numeric: tabular-nums;
 }
-
-.diamond-btn {
-  text-align: center;
-  line-height: 5.6rem;
-  width:  6.0rem;
-  height: 6.0rem;
-  border: 0.15rem solid currentColor;
-  margin: 0 auto;
-}
-
-  .diamond-btn:hover {
-    animation: initial;
-  }
-
-  @media (--w-l-800) {
-    .diamond-button {
-      font-size: 3.0rem;
-    }
-  }

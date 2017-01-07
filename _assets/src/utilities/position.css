@@ -1,5 +1,5 @@
 
-.fix-top, .fix-bottom {
+/*.fix-top, .fix-bottom {
   position: fixed;
   left:  0;
   right: 0;
@@ -12,4 +12,4 @@
 
 .fix-bottom {
   bottom: 0;
-}
+}*/
