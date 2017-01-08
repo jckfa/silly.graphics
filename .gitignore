@@ -6,4 +6,5 @@ Gemfile.lock
 .DS_Store
 node_modules
 _assets/css
+static/img
 LICENSE.txt

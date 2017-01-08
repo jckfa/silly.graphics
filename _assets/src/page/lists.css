@@ -151,9 +151,9 @@
         .list-items a:hover::after {
           color: var(--text-color);
           cursor:
-                              url(/static/images/arrow1x.png), alias;
+                              url(/static/img/arrow1x.png), alias;
           cursor:
-            -webkit-image-set(url(/static/images/arrow2x.png) 2x), alias;
+            -webkit-image-set(url(/static/img/arrow2x.png) 2x), alias;
         }
 
   .count {

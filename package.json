@@ -21,6 +21,7 @@
     "gulp-gzip": "*",
     "gulp-html-minifier": "*",
     "gulp-htmlmin": "*",
+    "gulp-image": "*",
     "gulp-postcss": "*",
     "gulp-shell": "*",
     "postcss-cssnext": "*",

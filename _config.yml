@@ -17,9 +17,10 @@ exclude:
   - LICENSE.txt
   - .gitignore
   - graphics
+  - static/src
 
 assets:
-  digest: true
+  # digest: true
   cache: false
   sources:
     - "_assets/css"

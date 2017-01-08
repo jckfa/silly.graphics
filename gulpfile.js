@@ -7,6 +7,7 @@ var gulp         = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     htmlmin      = require('gulp-htmlmin'),
     gzip         = require('gulp-gzip'),
+    image        = require('gulp-image'),
     browserSync  = require('browser-sync').create(),
     reload       = browserSync.reload;
 
@@ -35,8 +36,15 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('_assets/css'));
 });
 
-// styles > serve
-gulp.task('serve', ['styles'], function() {
+// styles > images
+gulp.task('images', ['styles'], function () {
+  gulp.src('static/src/**/*')
+    .pipe(image())
+    .pipe(gulp.dest('static/img'));
+});
+
+// styles > images > serve
+gulp.task('serve', ['images'], function() {
   browserSync.init({
     server: {
       baseDir: '_site/'
@@ -48,7 +56,7 @@ gulp.task('serve', ['styles'], function() {
   gulp.watch('_site/**/*.*').on('change', reload);
 });
 
-// styles > serve > default(buildWatch)
+// styles > images > serve > default(buildWatch)
 gulp.task('default', ['serve'], shell.task(
   'JEKYLL_ENV=development bundle exec jekyll build --watch'
 ));
@@ -63,13 +71,13 @@ gulp.task('default', ['serve'], shell.task(
 
 var path = '_site';
 
-// styles > build
-gulp.task('build', ['styles'], shell.task(
+// styles > images > build
+gulp.task('build', ['images'], shell.task(
   // 'bundle exec jekyll build --destination ' + path
   'JEKYLL_ENV=production bundle exec jekyll build'
 ));
 
-// styles > build > minify
+// styles > images > build > minify
 gulp.task('minify', ['build'], function() {
   return gulp.src(path + '/**/*.html')
     .pipe(htmlmin({
@@ -80,14 +88,14 @@ gulp.task('minify', ['build'], function() {
     .pipe(gulp.dest(path));
 });
 
-// styles > build > minify > compress
+// styles > images > build > minify > compress
 gulp.task('compress', ['minify'], function () {
   return gulp.src(path + '/**/*.html')
     .pipe(gzip())
     .pipe(gulp.dest(path));
 });
 
-// styles > build > minify > compress > deploy
+// styles > images > build > minify > compress > deploy
 gulp.task('deploy', ['compress'], shell.task(
   'cd _site; rm -rf assets; git add -A; git commit -S -m "Deploy"; git push live master'
 ));
