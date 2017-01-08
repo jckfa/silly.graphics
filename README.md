@@ -20,28 +20,28 @@ a glorified list of hyperlinks
 4. `gulp`
 
 #### joes
-1. install [homebrew][19]
+1. install [homebrew][19] <br>
 `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
-2. install [git][20]
+2. install [git][20] <br>
 `brew install git`
 
-3. clone repo
+3. clone repo <br>
 `git clone https://github.com/jckfa/silly.graphics.git`
 
-4. install [bundler][21]
+4. install [bundler][21] <br>
 `gem install bundler`
 
-5. install gems
+5. install gems <br>
 `bundle install`
 
-6. install [node][22]
+6. install [node][22] <br>
 `brew install node`
 
-7. install dependencies
+7. install dependencies <br>
 `npm install`
 
-8. serve site
+8. serve site <br>
 `gulp`
 
 ### DEPLOYING
