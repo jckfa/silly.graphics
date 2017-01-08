@@ -1,5 +1,5 @@
 
-@keyframes on-off {
+/*@keyframes on-off {
     0% {opacity: 1;}
    49% {opacity: 1;}
    50% {opacity: 0;}
@@ -10,11 +10,11 @@
   animation: on-off 1s linear infinite;
 }
 
-@media (--w-800) {
+@media (--w-50) {
   .on-off:hover {
     animation: initial;
   }
-}
+}*/
 
 
 /*@keyframes shooting-star {

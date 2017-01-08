@@ -1,38 +1,19 @@
 
-.gutters {
-  padding-left:  calc(var(--gutter) / 2);
-  padding-right: calc(var(--gutter) / 2);
-}
-
 .pt8-16 {
-  padding-top: calc(var(--gutter) * 8);
+  padding-top: 2em;
 }
 
 .mb8-16 {
-  margin-bottom: calc(var(--gutter) * 8);
+  margin-bottom: 2em;
 }
 
-@media (--w-480) {
-  .gutters {
-    padding-left:  var(--gutter);
-    padding-right: var(--gutter);
-  }
-}
-
-@media (--w-640) {
-  .gutters {
-    padding-left:  calc(var(--gutter) * 2);
-    padding-right: calc(var(--gutter) * 2);
-  }
-}
-
-@media (--w-800) {
+@media (--w-50) {
   /* adjust for less vertical space on mobile */
   .pt8-16 {
-    padding-top: calc(var(--gutter) * 16);
+    padding-top: 4em;
   }
 
   .mb8-16 {
-    margin-bottom: calc(var(--gutter) * 16);
+    margin-bottom: 4em;
   }
 }

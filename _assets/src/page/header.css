@@ -47,13 +47,13 @@
           transition: width 1000ms var(--hover-off);
         }
 
-    @media (--w-l-800) {
+    @media (--w-l-50) {
       .primary__nav a.active::after {
         width: 100%;
       }
     }
 
-    @media (--w-800) {
+    @media (--w-50) {
       .primary__nav li {
         max-width: 25%;
       }

@@ -15,17 +15,8 @@ main {
 
   .list-nav {
     width: 50%;
-    line-height: 1.4;
-    padding-top: calc(var(--gutter) * 4);
-
     /*background-color: #eee;*/
   }
-
-    @media (--w-1120) {
-      .list-nav {
-        line-height: 1.1;
-      }
-    }
 
     .nav-item {
       color: var(--meta-color);
@@ -47,6 +38,7 @@ main {
       border-bottom: 2px solid var(--bg2-color);
       padding-top:    var(--target-area);
       padding-bottom: var(--target-area);
+      margin-bottom: calc(var(--gutter) * 4);
       display: inline-block;
       transition: color 100ms var(--simple-fade);
     }

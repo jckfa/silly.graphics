@@ -9,13 +9,7 @@
   width: 100%;
 }
 
-  @media (--w-l-800) {
-    .stats {
-      flex-direction: column;
-    }
-  }
-
-  @media (--w-800) {
+  @media (--w-50) {
     .site__footer {
       width: 50%;
     }
@@ -32,14 +26,10 @@
 
 
 .screensaver {
-  color: var(--text-color);
-  font-size: 2em;
-  line-height: 1;
-  word-break: break-all;
   width: 100%;
   height: 100%;
+  color: var(--text-color);
   background-color: rgba(255, 255, 255, 0.85);
-  padding: var(--gutter) calc(var(--gutter) / 2);
   position: fixed;
   top: 0;
   left: 0;
@@ -49,7 +39,8 @@
 }
 
   .screensaver-content {
-    position: fixed;
+    font-size: 2em;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);

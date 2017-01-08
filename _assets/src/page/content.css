@@ -1,10 +1,9 @@
 
 .about {
-  font-size: 1.2em;
-  line-height: 1.1;
   padding-top: calc(var(--gutter) * 4);
 }
 
+  .about h1 + h1,
   .about p + p {
     padding-top: 1em;
   }
@@ -21,7 +20,7 @@
     .col-shell a::after {
       content: "";
       width: 100%;
-      height: 5%;
+      height: 0.075em;
       min-height: 2px;
       background-color: var(--bg2-color);
       position: absolute;
@@ -69,7 +68,7 @@
         left: 0;
       }
 
-  @media (--w-l-800) {
+  @media (--w-l-50) {
     .col-shell section li + li {
       margin-top: 0.5em;
     }
@@ -89,20 +88,9 @@
       }
   }
 
-  @media (--w-800) {
-    .about {
-      font-size: 1.6em;
-      line-height: 1.1;
-    }
-
-      .about a:hover::after,
-      .col-shell a:hover::after {
-        background-color: currentColor;
-      }
-  }
-
-  @media (--w-1120) {
-    .about {
-      font-size: 2.0em;
+  @media (--w-50) {
+    .about a:hover::after,
+    .col-shell a:hover::after {
+      background-color: currentColor;
     }
   }

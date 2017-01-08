@@ -1,85 +1,59 @@
 
 body, h6, .meta {
-  font-size:   var(--body-fs);
-  line-height: var(--body-lh);
+  font-size:   var(--fs);
+  line-height: var(--lh);
 }
 
-  /*.meta {
-    color: var(--meta-color);
-  }*/
+h1 {
+  font-size:   calc( var(--fs) + 0.625rem ); /* 32px */
+  line-height: calc( var(--lh) + 0.625rem ); /* 36px */
+}
 
-  @media (--w-480) {
-    body {
-      font-size:   calc(var(--body-fs) + 0.2rem);
-      line-height: calc(var(--body-lh) + 0.2rem);
-    }
+.gutters {
+  padding-left:  var(--gutter);
+  padding-right: var(--gutter);
+}
+
+@media (--w-20) {
+  body {
+    font-size:   calc(var(--fs) + 1 * ((100vw - 20rem) / 80));
+    line-height: calc(var(--lh) + 1 * ((100vw - 20rem) / 80));
   }
 
-  @media (--w-640) {
-    body {
-      font-size:   calc(var(--body-fs) + 0.4rem);
-      line-height: calc(var(--body-lh) + 0.4rem);
-    }
-
-    h6, .meta {
-      font-size:   calc(var(--body-fs) + 0.2rem);
-      line-height: calc(var(--body-lh) + 0.2rem);
-    }
+  h1 {
+    font-size:   calc( var(--fs) + 0.625rem + 2 * ((100vw - 20rem) / 80));
+    line-height: calc( var(--lh) + 0.625rem + 2 * ((100vw - 20rem) / 80));
   }
 
-  @media (--w-800) {
-    body {
-      font-size:   calc(var(--body-fs) + 0.6rem);
-      line-height: calc(var(--body-lh) + 0.6rem);
-    }
+  h6, .meta {
+    font-size:   calc(var(--fs) + 0.5 * ((100vw - 20rem) / 80));
+    line-height: calc(var(--lh) + 0.5 * ((100vw - 20rem) / 80));
   }
 
-  @media (--w-960) {
-    body {
-      font-size:   calc(var(--body-fs) + 0.8rem);
-      line-height: calc(var(--body-lh) + 0.8rem);
-    }
+  .gutters {
+    padding-left:  calc(var(--gutter) + 1 * ((100vw - 20rem) / 80));
+    padding-right: calc(var(--gutter) + 1 * ((100vw - 20rem) / 80));
+  }
+}
 
-    h6, .meta {
-      font-size:   calc(var(--body-fs) + 0.4rem);
-      line-height: calc(var(--body-lh) + 0.4rem);
-    }
+@media (--w-100) {
+  body {
+    font-size:   calc( var(--fs) + 1rem ); /* 38px */
+    line-height: calc( var(--lh) + 1rem ); /* 42px */
   }
 
-  @media (--w-1120) {
-    body {
-      font-size:   calc(var(--body-fs) + 1.0rem);
-      line-height: calc(var(--body-lh) + 1.0rem);
-    }
+  h1 {
+    font-size:   calc( var(--fs) + 2.625rem ); /* 64px */
+    line-height: calc( var(--lh) + 2.625rem ); /* 68px */
   }
 
-  @media (--w-1280) {
-    body {
-      font-size:   calc(var(--body-fs) + 1.2rem);
-      line-height: calc(var(--body-lh) + 1.2rem);
-    }
-
-    h6, .meta {
-      font-size:   calc(var(--body-fs) + 0.6rem);
-      line-height: calc(var(--body-lh) + 0.6rem);
-    }
+  h6, .meta {
+    font-size:   calc( var(--fs) + 0.5rem ); /* 30px */
+    line-height: calc( var(--lh) + 0.5rem ); /* 34px */
   }
 
-  @media (--w-1440) {
-    body {
-      font-size:   calc(var(--body-fs) + 1.4rem);
-      line-height: calc(var(--body-lh) + 1.4rem);
-    }
+  .gutters {
+    padding-left:  calc( var(--gutter) + 1em );
+    padding-right: calc( var(--gutter) + 1em );
   }
-
-  @media (--w-1600) {
-    body {
-      font-size:   calc(var(--body-fs) + 1.6rem);
-      line-height: calc(var(--body-lh) + 1.6rem);
-    }
-
-    h6, .meta {
-      font-size:   calc(var(--body-fs) + 0.8rem);
-      line-height: calc(var(--body-lh) + 0.8rem);
-    }
-  }
+}

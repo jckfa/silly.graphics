@@ -16,10 +16,10 @@
   --hover-on:       cubic-bezier(0.85, 0, 0.9, 0);
   --simple-fade:    ease-in-out;
 
-  --body-fs:        2.2rem;
-  --body-lh:        2.6rem;
+  --fs:             1.375rem; /* 22px */
+  --lh:             1.625rem; /* 26px */
 
-  --gutter:         1rem;
+  --gutter:         0.25em;
   --target-area:    0.8em;
 
   --sans-fallback:  BlinkMacSystemFont,
@@ -32,14 +32,8 @@
                     var(--sans-fallback);
 }
 
-@custom-media --w-320  screen and (width >= 320px);
-@custom-media --w-480  screen and (width >= 480px);
-@custom-media --w-640  screen and (width >= 640px);
-@custom-media --w-800  screen and (width >= 800px);
-@custom-media --w-960  screen and (width >= 960px);
-@custom-media --w-1120 screen and (width >= 1120px);
-@custom-media --w-1280 screen and (width >= 1280px);
-@custom-media --w-1440 screen and (width >= 1440px);
-@custom-media --w-1600 screen and (width >= 1600px);
+@custom-media --w-20  screen and (width >= 20rem);
+@custom-media --w-50  screen and (width >= 50rem);
+@custom-media --w-100 screen and (width >= 100rem);
 
-@custom-media --w-l-800 screen and (width < 800px);
+@custom-media --w-l-50 screen and (width < 50rem);
