@@ -1,22 +1,17 @@
 items:
-  - plaintext: First published in August 2016
+  - text: First published in August 2016.
 
-  - plaintext: Typeset in
-    linktext:  GT Walsheim
-    href:      https://www.grillitype.com/typefaces/gt-walsheim
+  - text: Typeset in GT Walsheim.
+    href: https://www.grillitype.com/typefaces/gt-walsheim
 
-  - plaintext: Built with
-    linktext:  Jekyll
-    href:      https://jekyllrb.com
+  - text: Built with Jekyll.
+    href: https://jekyllrb.com
 
-  - plaintext: Hosted on
-    linktext:  Digital Ocean
-    href:      https://m.do.co/c/b09c1fce4b40
+  - text: Hosted on Digital Ocean.
+    href: https://m.do.co/c/b09c1fce4b40
 
-  - plaintext: Open sourced on
-    linktext:  GitHub
-    href:      https://github.com/jckfa/silly.graphics
+  - text: Open sourced on GitHub.
+    href: https://github.com/jckfa/silly.graphics
 
-  - plaintext: Maintained by
-    linktext:  this kid
-    href:      https://jackf.me
+  - text: Maintained by this kid.
+    href: https://jackf.me
