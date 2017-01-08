@@ -21,8 +21,8 @@ h1 {
   }
 
   h1 {
-    font-size:   calc( var(--fs) + 0.625rem + 2 * ((100vw - 20rem) / 80));
-    line-height: calc( var(--lh) + 0.625rem + 2 * ((100vw - 20rem) / 80));
+    font-size:   calc( var(--fs) + 0.625rem + 3 * ((100vw - 20rem) / 80));
+    line-height: calc( var(--lh) + 0.625rem + 3 * ((100vw - 20rem) / 80));
   }
 
   h6, .meta {
@@ -43,8 +43,8 @@ h1 {
   }
 
   h1 {
-    font-size:   calc( var(--fs) + 2.625rem ); /* 64px */
-    line-height: calc( var(--lh) + 2.625rem ); /* 68px */
+    font-size:   calc( var(--fs) + 3.625rem ); /* 80px */
+    line-height: calc( var(--lh) + 3.625rem ); /* 84px */
   }
 
   h6, .meta {
