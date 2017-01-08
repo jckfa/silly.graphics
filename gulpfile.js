@@ -36,15 +36,8 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('_assets/css'));
 });
 
-// styles > images
-gulp.task('images', ['styles'], function () {
-  gulp.src('static/src/**/*')
-    .pipe(image())
-    .pipe(gulp.dest('static/img'));
-});
-
-// styles > images > serve
-gulp.task('serve', ['images'], function() {
+// serve < styles
+gulp.task('serve', ['styles'], function() {
   browserSync.init({
     server: {
       baseDir: '_site/'
@@ -56,7 +49,7 @@ gulp.task('serve', ['images'], function() {
   gulp.watch('_site/**/*.*').on('change', reload);
 });
 
-// styles > images > serve > default(buildWatch)
+// default (buildWatch) < serve < styles
 gulp.task('default', ['serve'], shell.task(
   'JEKYLL_ENV=development bundle exec jekyll build --watch'
 ));
@@ -71,14 +64,21 @@ gulp.task('default', ['serve'], shell.task(
 
 var path = '_site';
 
-// styles > images > build
-gulp.task('build', ['images'], shell.task(
+// build < styles
+gulp.task('build', ['styles'], shell.task(
   // 'bundle exec jekyll build --destination ' + path
   'JEKYLL_ENV=production bundle exec jekyll build'
 ));
 
-// styles > images > build > minify
-gulp.task('minify', ['build'], function() {
+// images < build < styles
+gulp.task('images', ['build'], function () {
+  gulp.src('static/img/**/*')
+    .pipe(image())
+    .pipe(gulp.dest(path + '/static/img'));
+});
+
+// minify < images < build < styles
+gulp.task('minify', ['images'], function() {
   return gulp.src(path + '/**/*.html')
     .pipe(htmlmin({
       collapseWhitespace: true,
@@ -88,14 +88,14 @@ gulp.task('minify', ['build'], function() {
     .pipe(gulp.dest(path));
 });
 
-// styles > images > build > minify > compress
+// compress < minify < images < build < styles
 gulp.task('compress', ['minify'], function () {
   return gulp.src(path + '/**/*.html')
     .pipe(gzip())
     .pipe(gulp.dest(path));
 });
 
-// styles > images > build > minify > compress > deploy
+// deploy < compress < minify < images < build < styles
 gulp.task('deploy', ['compress'], shell.task(
   'cd _site; rm -rf assets; git add -A; git commit -S -m "Deploy"; git push live master'
 ));
