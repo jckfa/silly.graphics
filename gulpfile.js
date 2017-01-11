@@ -70,14 +70,20 @@ gulp.task('build', ['styles'], shell.task(
   'JEKYLL_ENV=production bundle exec jekyll build'
 ));
 
-// images < build < styles
-gulp.task('images', ['build'], function () {
+// rm-img < build < styles
+// overwrite img dir with optimized images
+gulp.task('rm-img', ['build'], shell.task(
+  'cd _site; rm -rf static/img'
+));
+
+// images < rm-img < build < styles
+gulp.task('images', ['rm-img'], function () {
   gulp.src('static/img/**/*')
     .pipe(image())
     .pipe(gulp.dest(path + '/static/img'));
 });
 
-// minify < images < build < styles
+// minify < images < rm-img < build < styles
 gulp.task('minify', ['images'], function() {
   return gulp.src(path + '/**/*.html')
     .pipe(htmlmin({
@@ -88,14 +94,14 @@ gulp.task('minify', ['images'], function() {
     .pipe(gulp.dest(path));
 });
 
-// compress < minify < images < build < styles
+// compress < minify < images < rm-img < build < styles
 gulp.task('compress', ['minify'], function () {
   return gulp.src(path + '/**/*.html')
     .pipe(gzip())
     .pipe(gulp.dest(path));
 });
 
-// deploy < compress < minify < images < build < styles
+// deploy < compress < minify < images < rm-img < build < styles
 gulp.task('deploy', ['compress'], shell.task(
   'cd _site; rm -rf assets; git add -A; git commit -S -m "Deploy"; git push live master'
 ));

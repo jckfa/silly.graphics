@@ -17,7 +17,6 @@ exclude:
   - LICENSE.txt
   - .gitignore
   - graphics
-  - static/img
 
 assets:
   # digest: true
