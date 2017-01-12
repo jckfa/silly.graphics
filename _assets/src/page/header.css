@@ -7,7 +7,7 @@
   z-index: 2;
 }
 
-  .primary__nav, .other-content {
+  .primary__nav {
     border-bottom: 2px solid var(--bg2-color);
   }
 

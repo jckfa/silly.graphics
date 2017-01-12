@@ -3,8 +3,6 @@
   // once cached, the css file is stored on the client forever unless
   // the URL below is changed. Any change will invalidate the cache
 
-  // note to self: change the file name if you add/remove webfonts
-  // so that the cache will reset
   var css_href = '/static/webfonts/fonts.css';
   // a simple event handler wrapper
   function on(el, ev, callback) {
