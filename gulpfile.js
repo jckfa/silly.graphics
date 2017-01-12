@@ -72,19 +72,19 @@ gulp.task('build', ['styles'], shell.task(
 
 // rm-img < build < styles
 // overwrite img dir with optimized images
-gulp.task('rm-img', ['build'], shell.task(
-  'cd _site; rm -rf static/img'
-));
+// gulp.task('rm-img', ['build'], shell.task(
+//   'cd _site; rm -rf static/img'
+// ));
 
 // images < rm-img < build < styles
-gulp.task('images', ['rm-img'], function () {
-  gulp.src('static/img/**/*')
-    .pipe(image())
-    .pipe(gulp.dest(path + '/static/img'));
-});
+// gulp.task('images', ['rm-img'], function () {
+//   gulp.src('static/img/**/*')
+//     .pipe(image())
+//     .pipe(gulp.dest(path + '/static/img'));
+// });
 
 // minify < images < rm-img < build < styles
-gulp.task('minify', ['images'], function() {
+gulp.task('minify', ['build'], function() {
   return gulp.src(path + '/**/*.html')
     .pipe(htmlmin({
       collapseWhitespace: true,
