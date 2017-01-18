@@ -158,6 +158,7 @@
 
   .count {
     color: var(--meta-color);
+    cursor: vertical-text;
     /*background-color: #defcff;*/
     position: fixed;
     top:   50%;
