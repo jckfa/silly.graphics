@@ -20,11 +20,13 @@ a glorified list of hyperlinks
 4. `gulp`
 
 #### joes
-1. install [homebrew][19] <br>
+1. install [homebrew][19] (if on os x) <br>
 `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
 2. install [git][20] <br>
-`brew install git`
+`brew install git` (os x) <br>
+or <br>
+`sudo apt-get install git` (ubuntu)
 
 3. clone repo <br>
 `git clone https://github.com/jckfa/silly.graphics.git`
@@ -36,7 +38,9 @@ a glorified list of hyperlinks
 `bundle install`
 
 6. install [node][22] <br>
-`brew install node`
+`brew install node` <br>
+or <br>
+`sudo apt-get install nodejs`
 
 7. install dependencies <br>
 `npm install`
