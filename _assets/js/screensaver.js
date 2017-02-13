@@ -1,26 +1,15 @@
 
 var screensaver = document.querySelector(".screensaver"),
     t,
-    i,
-    wait_time   = 60000; // 1 min
+    wait_time   = 60000;
 
-window.addEventListener("load", start_timer);
-
-// wait for inactivity
-function start_timer() {
-  t = setTimeout(inactive, wait_time);
+// prefix singlular digits with zero
+function zero_pad(n) {
+  return n < 10 ? "0" + n : n;
 }
 
-// show screensaver
-function inactive() {
-  screensaver.classList.remove("hidden");
-  clock();
-  // refresh clock every second
-  i = setInterval(clock, 1000);
-}
-
-// create clock
-function clock() {
+// construct clock and print to page
+function tick() {
   var d       = new Date(),
       h24     = d.getHours(),
       h12     = (h24 + 24) % 12 || 12, // default to 12 when h24 = 0 or 12
@@ -34,23 +23,26 @@ function clock() {
   content.innerHTML = format;
 }
 
-// prefix singlular digits with zero
-function zero_pad(n) {
-  return n < 10 ? "0" + n : n;
+// user is inactive, enable screensaver
+function start_screensaver() {
+  tick();
+  setInterval(tick, 1000);
+  screensaver.classList.remove("hidden");
 }
 
-window.addEventListener("mousemove", reset_timer);
-window.addEventListener("scroll",    reset_timer);
-window.addEventListener("resize",    reset_timer);
+// wait for inactivity
+function start_countdown() {
+  t = setTimeout(start_screensaver, wait_time)
+}
 
-function reset_timer() {
-  // hide screensaver content
-  screensaver.classList.add("hidden");
+window.addEventListener("load", start_countdown);
 
-  // clear timers
+function reset_screensaver() {
   clearTimeout(t);
-  clearInterval(i);
-
-  // restart timer
-  start_timer();
+  screensaver.classList.add("hidden");
+  start_countdown();
 }
+
+window.addEventListener("mousemove", reset_screensaver);
+window.addEventListener("scroll",    reset_screensaver);
+window.addEventListener("resize",    reset_screensaver);
