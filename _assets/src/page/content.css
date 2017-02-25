@@ -3,20 +3,16 @@
   padding-top: calc(var(--gutter) * 4);
 }
 
-  .about h1 + h1,
-  .about p + p {
-    padding-top: 1em;
-  }
+.col-shell {
+  color: var(--meta-color);
+}
 
-  .about a,
   .col-shell a {
     display: inline-block;
     position: relative;
+    transition: color 100ms var(--simple-fade);
   }
 
-    .about a::before,
-    .about a::after,
-    .col-shell a::before,
     .col-shell a::after {
       content: "";
       width: 100%;
@@ -30,12 +26,6 @@
       z-index: -1;
     }
 
-    .about a::after,
-    .col-shell a::after {
-      animation: initial;
-      transition: background-color 100ms var(--simple-fade);
-    }
-
 .col-shell,
 .col-shell section + section {
   margin-top: 1em;
@@ -46,7 +36,6 @@
   }
 
     .col-shell h6 {
-      color: var(--meta-color);
       border-bottom: 2px solid var(--bg2-color);
       padding-bottom: calc(var(--target-area) / 2);
       margin-bottom: var(--target-area);
@@ -89,8 +78,11 @@
   }
 
   @media (--w-50) {
-    .about a:hover::after,
-    .col-shell a:hover::after {
-      background-color: currentColor;
+    .col-shell a:hover {
+      color: var(--text-color);
     }
+
+      .col-shell a:hover::after {
+        background-color: currentColor;
+      }
   }

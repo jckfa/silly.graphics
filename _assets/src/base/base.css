@@ -16,8 +16,8 @@ h1 {
 
 @media (--w-20) {
   body {
-    font-size:   calc(var(--fs) + 1 * ((100vw - 20rem) / 80));
-    line-height: calc(var(--lh) + 1 * ((100vw - 20rem) / 80));
+    font-size:   calc( var(--fs) + 1 * ((100vw - 20rem) / 80) );
+    line-height: calc( var(--lh) + 1 * ((100vw - 20rem) / 80) );
   }
 
   h1 {
@@ -26,13 +26,13 @@ h1 {
   }
 
   h6, .meta {
-    font-size:   calc(var(--fs) + 0.5 * ((100vw - 20rem) / 80));
-    line-height: calc(var(--lh) + 0.5 * ((100vw - 20rem) / 80));
+    font-size:   calc( var(--fs) + 0.5 * ((100vw - 20rem) / 80) );
+    line-height: calc( var(--lh) + 0.5 * ((100vw - 20rem) / 80) );
   }
 
   .gutters {
-    padding-left:  calc(var(--gutter) + 1 * ((100vw - 20rem) / 80));
-    padding-right: calc(var(--gutter) + 1 * ((100vw - 20rem) / 80));
+    padding-left:  calc( var(--gutter) + 1 * ((100vw - 20rem) / 80) );
+    padding-right: calc( var(--gutter) + 1 * ((100vw - 20rem) / 80) );
   }
 }
 
