@@ -11,27 +11,10 @@ var gulp         = require('gulp'),
     browserSync  = require('browser-sync').create(),
     reload       = browserSync.reload;
 
-var processors = [
-  atImport(),
-  cssnext({
-    'browsers': ['last 2 versions'],
-    'features': {
-      'customProperties': {
-        preserve: true,
-        appendVariables: true
-      },
-      'colorFunction': true,
-      'customSelectors': true,
-      'sourcemap': true,
-      'rem': false
-    }
-  })
-];
-
 // styles
 gulp.task('styles', function() {
   return gulp.src('_assets/src/style.css')
-    .pipe(postcss(processors))
+    .pipe(postcss([atImport(), cssnext()]))
     .pipe(cssnano({discardComments: {removeAll: true}}))
     .pipe(gulp.dest('_assets/css'));
 });

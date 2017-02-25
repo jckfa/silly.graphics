@@ -26,5 +26,9 @@
     "gulp-shell": "*",
     "postcss-cssnext": "*",
     "postcss-import": "*"
-  }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
 }
