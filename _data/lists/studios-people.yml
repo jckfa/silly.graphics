@@ -72,9 +72,6 @@ items:
   - n: public-library
     h: http://public-library.org
 
-  - n: weareinternetexplorers
-    h: http://weareinternetexplorers.com
-
   - n: number04
     h: http://number04.com
 
@@ -375,3 +372,9 @@ items:
 
   - n: alessio d’ellena
     h: http://alessiodellena.com/
+
+  - n: benjamin gaupset
+    h: http://benjamingaupset.com/
+
+  - n: corners
+    h: http://corners.kr/studio/works/
