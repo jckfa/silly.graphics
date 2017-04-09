@@ -423,3 +423,10 @@ items:
 
   - n: tim head
     h: http://www.timhead.com/
+
+  - n: baenziger hug
+  # - n: bänziger hug
+    h: http://www.baenziger-hug.com/
+
+  - n: shuka
+    h: https://shuka.design/
