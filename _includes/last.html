@@ -1,6 +1,10 @@
 
 {% include footer.html %}
 
+{% if page.url == "/" %}
+  {% include front/contribute.html %}
+{% endif %}
+
 <script>
 
   {% asset 'main.js' %}

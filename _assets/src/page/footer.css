@@ -51,3 +51,36 @@
   background-color: transparent;
   z-index: -10;
 }
+
+
+.contribute {
+  margin-bottom: 0.5em;
+}
+
+  .contribute a {
+    color: var(--meta-color);
+    border: 2px solid var(--bg2-color);
+    display: block;
+    padding: calc(var(--target-area) / 2) var(--target-area);
+  }
+
+  @media (--w-50) {
+    .contribute {
+      position: fixed;
+      bottom: var(--target-area);
+      right: 0;
+      z-index: 2;
+      margin-bottom: 0;
+    }
+
+      .contribute a {
+        display: inline-block;
+        background-color: transparent;
+        transition: background-color 100ms var(--simple-fade);
+      }
+
+        .contribute a:hover {
+          color: var(--text-color);
+          background-color: var(--bg-color);
+        }
+  }
