@@ -113,6 +113,11 @@
         position: relative;
       }
 
+      .list-items a:visited {
+        color: #e8e8e8;
+        border-color: #eee;
+      }
+
       .list-items a::before {
         width: 0;
         height: 2px;
