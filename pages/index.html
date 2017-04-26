@@ -17,7 +17,7 @@ order: 0
       id='{{ list[1].title | downcase | replace: " ", "-" }}'>
     <div class="shell tabular">
       <span data-size='{{ items | size }}'>
-        {{ list[1].title }}
+        {{ list[1].title | downcase }}
       </span>
     </div>
   </h6>
