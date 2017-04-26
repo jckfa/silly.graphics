@@ -31,14 +31,14 @@
           width: 0;
           height: 2px;
           background-color: currentColor;
-          background: linear-gradient(
+          /*background: linear-gradient(
             to right,
             var(--gradient-a) 0%,
             var(--gradient-b) 50%,
             var(--gradient-a) 100%
           );
           background-size: 200% 100%;
-          animation: shift-gradient 10s linear infinite;
+          animation: shift-gradient 10s linear infinite;*/
           content: "";
           position: absolute;
           bottom: -2px;

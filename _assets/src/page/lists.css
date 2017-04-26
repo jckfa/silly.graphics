@@ -121,11 +121,12 @@
       .list-items a::before {
         width: 0;
         height: 2px;
-        background: linear-gradient(
+        /*background: linear-gradient(
           to right,
           transparent  0%,
           currentColor 100%
-        );
+        );*/
+        background-color: currentColor;
         content: "";
         position: absolute;
         top:   -2px;
