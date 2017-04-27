@@ -1,3 +1,5 @@
+![://](./static/img/icon.png)
+
 # Silly Graphics
 a glorified list of hyperlinks
 
