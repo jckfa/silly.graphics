@@ -66,3 +66,21 @@
         width: 100%;
       }
     }
+
+.subdomain {
+  position: relative;
+}
+
+  .subdomain::before {
+    content: "NEW";
+    font-size: 0.75rem;
+    line-height: 1;
+    color: white;
+    background-color: red;
+    padding: 0.25em 0.275em 0.2em 0.3em;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    animation: new-tag 3s var(--simple-fade) infinite;
+  }

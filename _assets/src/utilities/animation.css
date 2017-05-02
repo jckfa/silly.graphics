@@ -44,11 +44,17 @@
 }*/
 
 
-@keyframes shift-gradient {
+/*@keyframes shift-gradient {
   0% {
     background-position: -100% 0;
   }
   100% {
     background-position: 100% 0;
   }
+}*/
+
+@keyframes new-tag {
+    0% {color: rgba(255, 255, 255, 0.5);}
+   50% {color: white;}
+  100% {color: rgba(255, 255, 255, 0.5);}
 }
