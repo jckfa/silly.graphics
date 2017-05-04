@@ -72,9 +72,6 @@ items:
   - n: public-library
     h: http://public-library.org
 
-  - n: number04
-    h: http://number04.com
-
   - n: jan novák
     h: http://jannovak.net
 
@@ -445,3 +442,27 @@ items:
 
   - n: studio noi
     h: http://studio-noi.ch/
+
+  - n: desmond wong
+    h: http://desmondwong.com/
+
+  - n: hubert & fischer
+    h: http://hubertfischer.com/
+
+  - n: moby digg
+    h: http://www.mobydigg.de/
+
+  - n: bureau borsche
+    h: http://bureauborsche.com/
+
+  - n: tom van keer
+    h: http://tomvankeer.be/
+
+  - n: actual source
+    h: http://actualsource.work/
+
+  - n: fabian fohrer
+    h: http://fabianfohrer.com/
+
+  - n: clase
+    h: https://clasebcn.com
