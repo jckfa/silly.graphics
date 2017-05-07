@@ -61,3 +61,12 @@ items:
 
   - n: pexels
     h: https://www.pexels.com/
+
+  - n: metafont modulator
+    h: http://188.166.187.116:8080/
+
+  - n: webfont generator
+    h: https://www.fontsquirrel.com/tools/webfont-generator
+
+  - n: dunked
+    h: https://dunked.com/
