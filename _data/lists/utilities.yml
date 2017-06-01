@@ -73,3 +73,6 @@ items:
 
   - n: nodebox
     h: https://www.nodebox.net/
+
+  - n: blender
+    h: https://www.blender.org/
