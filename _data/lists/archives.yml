@@ -48,3 +48,6 @@ items:
 
   - n: flags of the world
     h: http://www.crwflags.com/fotw/flags/
+
+  - n: libre foundries
+    h: https://gitlab.com/raphaelbastide/libre-foundries
