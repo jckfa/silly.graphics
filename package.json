@@ -14,18 +14,18 @@
   },
   "homepage": "https://github.com/jckfa/silly.graphics#readme",
   "devDependencies": {
-    "browser-sync": "*",
+    "browser-sync": "^2.18.12",
     "gulp": "*",
-    "gulp-autoprefixer": "*",
+    "gulp-autoprefixer": "^4.0.0",
     "gulp-cssnano": "*",
     "gulp-gzip": "*",
     "gulp-html-minifier": "*",
     "gulp-htmlmin": "*",
-    "gulp-image": "*",
-    "gulp-postcss": "*",
-    "gulp-shell": "*",
-    "postcss-cssnext": "*",
-    "postcss-import": "*"
+    "gulp-image": "^2.9.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-shell": "^0.6.3",
+    "postcss-cssnext": "^2.11.0",
+    "postcss-import": "^10.0.0"
   },
   "browserslist": [
     "> 1%",
