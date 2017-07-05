@@ -2,13 +2,13 @@
   <a href="#top" id="top" class="to-top meta" data-scroll>↑</a>
 
   <ul class="list-nav">
-    {% for list in lists %}
+    {%- for list in lists -%}
     <li class="nav-item">
       <a href='#{{ list[1].title | downcase | replace: " ", "-" }}'
          data-scroll>
         {{ list[1].title | downcase }}
       </a>
     </li>
-    {% endfor %}
+    {%- endfor -%}
   </ul>
 </nav>

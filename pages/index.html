@@ -5,11 +5,11 @@ permalink: /
 order: 0
 ---
 
-{% assign lists = site.data.lists %}
+{%- assign lists = site.data.lists -%}
 {% include front/nav.html %}
 
-{% for list in lists %}
-{% assign items = list[1].items | uniq | sort: "n" %}
+{%- for list in lists -%}
+{%- assign items = list[1].items | uniq | sort: "n" -%}
 <section class="list">
 
   <h6 class="list-title no-wrap"
@@ -24,7 +24,7 @@ order: 0
 
   <div class="list-items-shell">
     <ul class="list-items uppercase">
-      {% for item in items %}
+      {%- for item in items -%}
       <li>
         <a href='{{ item.h }}' target="_blank">
           <div class="shell">
@@ -32,12 +32,12 @@ order: 0
           </div>
         </a>
       </li>
-      {% endfor %}
+      {%- endfor -%}
     </ul>
   </div>
 
 </section>
-{% endfor %}
+{%- endfor -%}
 
 
 {% include front/count.html %}

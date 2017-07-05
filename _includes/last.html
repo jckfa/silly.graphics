@@ -1,9 +1,9 @@
 
 {% include footer.html %}
 
-{% if page.url == "/" %}
+{%- if page.url == "/" -%}
   {% include front/submit.html %}
-{% endif %}
+{%- endif -%}
 
 <script>
 
@@ -12,8 +12,8 @@
   smoothScroll.init();
   {% asset "screensaver.js" %}
 
-  {% if jekyll.environment == "production" %}
+  {%- if jekyll.environment == "production" -%}
     {% asset "vendor/analytics.js" %}
-  {% endif %}
+  {%- endif -%}
 
 </script>

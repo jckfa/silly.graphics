@@ -1,11 +1,11 @@
 
 <!--
-{% for list in lists %}
-  {% assign items = list[1].items | uniq %}
-  {% for item in items %}
-    {% increment count %}
-  {% endfor %}
-{% endfor %}
+{%- for list in lists -%}
+  {%- assign items = list[1].items | uniq -%}
+  {%- for item in items -%}
+    {%- increment count -%}
+  {%- endfor -%}
+{%- endfor -%}
 -->
 
 <div class="count meta desktop uppercase tabular">

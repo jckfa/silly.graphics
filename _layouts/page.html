@@ -3,11 +3,11 @@
 
   {% include head.html %}
 
-  {% if page.url == "/" %}
-  <body onload="close_lists(); smart_nav()" id="top">
-  {% else %}
-  <body>
-  {% endif %}
+  <body
+    {%- if page.url == "/" -%}
+    onload="close_lists(); smart_nav()" id="top"
+    {%-endif -%}
+  >
 
     {% include header.html %}
 
@@ -18,5 +18,4 @@
     {% include last.html %}
 
   </body>
-
 </html>

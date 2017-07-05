@@ -3,17 +3,17 @@
 
   <nav class="primary__nav meta">
     <ul class="flex-x">
-      {% assign pages = site.pages | sort: "order" %}
-      {% for p in pages %}
-      {% if p.order %}
+      {%- assign pages = site.pages | sort: "order" -%}
+      {%- for p in pages -%}
+      {%- if p.order -%}
       <li>
         <a href='{{ p.url }}'
-        {% if page.url == p.url %} class="active" {% endif %}>
+        {%- if page.url == p.url -%} class="active" {%- endif -%}>
           {{ p.title }}
         </a>
       </li>
-      {% endif %}
-      {% endfor %}
+      {%- endif -%}
+      {%- endfor -%}
 
       <li>
         <a href="https://img.silly.graphics" target="_blank">

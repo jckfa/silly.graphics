@@ -41,17 +41,17 @@ order: 1
     <section>
       <h6 class="uppercase">Colophon</h6>
       <ul>
-        {% for item in site.data.colophon.items %}
+        {%- for item in site.data.colophon.items -%}
         <li>
-          {% if item.href %}
+          {%- if item.href -%}
           <a href='{{ item.href }}' target="_blank">
             {{ item.text }}
           </a>
-          {% else %}
+          {%- else -%}
           {{ item.text }}
-          {% endif %}
+          {%- endif -%}
         </li>
-        {% endfor %}
+        {%- endfor -%}
       </ul>
     </section>
   </div>

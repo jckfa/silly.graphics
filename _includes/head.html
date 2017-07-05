@@ -1,11 +1,11 @@
 
 <head>
   <title>
-    {% if page.title %}
+    {%- if page.title -%}
       {{ page.title }}
-    {% else %}
+    {%- else -%}
       {{ site.name }}
-    {% endif %}
+    {%- endif -%}
   </title>
   <meta charset="utf-8">
 
@@ -18,18 +18,18 @@
   </script>
 
   <meta property="og:title"
-        content='{{ page.title }}' />
+        content='{{ page.title }}'>
   <meta property="og:type"
-        content="website" />
+        content="website">
   <meta property="og:url"
         content='{{ page.url | replace:"index.html", ""
-                             | prepend: site.url }}' />
+                             | prepend: site.url }}'>
   <meta property="og:image"
-        content='{{ site.url }}/static/images/icon.png' />
+        content='{{ site.url }}/static/images/icon.png'>
   <meta property="og:site_name"
-        content='{{ site.name }}' />
+        content='{{ site.name }}'>
   <meta property="og:description"
-        content='{{ site.description }}' />
+        content='{{ site.description }}'>
 
   <meta http-equiv="X-UA-Compatible"
         content="IE=edge">
