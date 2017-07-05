@@ -67,7 +67,7 @@
       }
     }
 
-.subdomain {
+/*.subdomain {
   position: relative;
 }
 
@@ -83,4 +83,4 @@
     top: 0;
     left: 100%;
     animation: new-tag 3s var(--simple-fade) infinite;
-  }
+  }*/
