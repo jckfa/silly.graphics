@@ -3,11 +3,11 @@
 
   {% include head.html %}
 
-  <body
     {%- if page.url == "/" -%}
-    onload="close_lists(); smart_nav()" id="top"
-    {%-endif -%}
-  >
+    <body onload="close_lists(); smart_nav()" id="top">
+    {%- else -%}
+    <body>
+    {%- endif -%}
 
     {% include header.html %}
 
