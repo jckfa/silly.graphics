@@ -22,7 +22,6 @@ exclude:
 
 assets:
   # digest: true
-  cache: false
   sources:
     - "_assets/css"
     - "_assets/js"
