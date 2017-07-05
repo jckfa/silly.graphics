@@ -14,6 +14,7 @@ exclude:
   - node_modules
   - gulpfile.js
   - package.json
+  - package-lock.json
   - README.md
   - Gemfile
   - LICENSE.txt
@@ -22,6 +23,9 @@ exclude:
 
 assets:
   # digest: true
+
+  # currently bugged
+  # cache: false
   sources:
     - "_assets/css"
     - "_assets/js"
