@@ -40,3 +40,9 @@ items:
 
   - n: sandberg instituut
     h: http://sandberg.nl/
+
+  # - n: hfbk
+    # h: http://www.hfbk-hamburg.de/en/
+
+  - n: hse
+    h: http://design.hse.ru/en/#
