@@ -119,25 +119,17 @@
       }
 
       .list-items a::before {
-        width: 0;
         height: 2px;
-        /*background: linear-gradient(
-          to right,
-          transparent  0%,
-          currentColor 100%
-        );*/
-        background-color: currentColor;
+        background-color: transparent;
         content: "";
         position: absolute;
         top:   -2px;
         left:  0;
         right: 0;
-        transition: width 1000ms var(--hover-off);
       }
 
         .list-items a:hover::before {
-          width: 100%;
-          /*animation: shooting-star 1000ms var(--simple-fade) infinite;*/
+          background-color: currentColor;
         }
 
       /* list-item urls */

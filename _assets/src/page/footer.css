@@ -76,7 +76,8 @@
       .submit a {
         display: inline-block;
         background-color: transparent;
-        transition: background-color 100ms var(--simple-fade);
+        transition: color            100ms var(--simple-fade),
+                    background-color 100ms var(--simple-fade);
       }
 
         .submit a:hover {
