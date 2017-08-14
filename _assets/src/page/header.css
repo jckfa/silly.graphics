@@ -33,6 +33,10 @@
           right: 0;
         }
 
+        .primary__nav a.active {
+          color: var(--text-color);
+        }
+
     @media (--w-l-50) {
       .primary__nav a.active::after {
         background-color: var(--text-color);

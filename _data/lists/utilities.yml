@@ -29,9 +29,6 @@ items:
   - n: sketch
     h: http://sketchapp.com
 
-  - n: ofont
-    h: http://ofont.net
-
   - n: coolors
     h: https://coolors.co
 
@@ -58,9 +55,6 @@ items:
 
   - n: unsplash
     h: https://unsplash.com
-
-  - n: pexels
-    h: https://www.pexels.com/
 
   - n: metafont modulator
     h: http://188.166.187.116:8080/
@@ -100,3 +94,6 @@ items:
 
   - n: indexhibit
     h: https://www.indexhibit.org
+
+  - n: cargo collective
+    h: https://2.cargocollective.com
