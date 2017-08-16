@@ -9,7 +9,7 @@ order: 0
 {% include front/nav.html %}
 
 {%- for list in lists -%}
-{%- assign items = list[1].items | uniq | sort: "n" -%}
+{%- assign items = list[1].items | uniq | sort_natural: "n" -%}
 <section class="list">
 
   <h6 class="list-title no-wrap"
