@@ -58,7 +58,7 @@ items:
     h: http://radimpesko.com
 
   - n: benoît bodhuin
-    h: http://bb-bureau.fr
+    h: https://www.myfonts.com/person/Beno%C3%AEt_Bodhuin/
 
   - n: ecal typefaces
     h: http://ecal-typefaces.ch
@@ -245,3 +245,12 @@ items:
 
   - n: fontstore
     h: https://www.fontstore.com
+
+  - n: osp foundry
+    h: http://ospublish.constantvzw.org/foundry/
+
+  - n: typearture
+    h: https://www.typearture.com
+
+  - n: think work observe
+    h: http://t-wo.it/typography/
