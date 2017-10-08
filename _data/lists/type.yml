@@ -39,9 +39,6 @@ items:
   - n: briefcase type foundry
     h: http://briefcasetype.com
 
-  - n: medium extra bold
-    h: http://mediumextrabold.com
-
   - n: milieu grotesque
     h: http://milieugrotesque.com
 
@@ -254,3 +251,6 @@ items:
 
   - n: think work observe
     h: http://t-wo.it/typography/
+
+  - n: future fonts
+    h: https://www.futurefonts.xyz/
