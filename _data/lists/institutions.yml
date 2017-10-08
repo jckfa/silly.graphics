@@ -3,46 +3,46 @@
 title: Institutions
 items:
   - n: strelka
-    h: http://strelka.com
+    w: http://strelka.com
 
   - n: yale
-    h: http://art.yale.edu
+    w: http://art.yale.edu
 
   - n: ecal
-    h: http://ecal.ch
+    w: http://ecal.ch
 
   - n: kabk
-    h: http://www.kabk.nl/
+    w: http://www.kabk.nl/
 
   - n: the cooper union
-    h: http://cooper.edu/
+    w: http://cooper.edu/
 
   - n: risd
-    h: http://www.risd.edu/
+    w: http://www.risd.edu/
 
   - n: harvard
-    h: http://www.gsd.harvard.edu/
+    w: http://www.gsd.harvard.edu/
 
   - n: goldsmiths
-    h: http://gold.ac.uk
+    w: http://gold.ac.uk
 
   - n: gerrit rietveld academie
-    h: http://www.gerritrietveldacademie.nl/
+    w: http://www.gerritrietveldacademie.nl/
 
   - n: ensaama
-    h: ensaama.net
+    w: ensaama.net
 
   - n: mica
-    h: https://www.mica.edu/
+    w: https://www.mica.edu/
 
   - n: luca
-    h: http://www.grafischontwerpgent.be/
+    w: http://www.grafischontwerpgent.be/
 
   - n: sandberg instituut
-    h: http://sandberg.nl/
+    w: http://sandberg.nl/
 
   # - n: hfbk
-    # h: http://www.hfbk-hamburg.de/en/
+    # w: http://www.hfbk-hamburg.de/en/
 
   - n: hse
-    h: http://design.hse.ru/en/#
+    w: http://design.hse.ru/en/#
