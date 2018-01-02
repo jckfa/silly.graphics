@@ -43,23 +43,11 @@ items:
   - n: vintage logos
     w: https://www.flickr.com/photos/mr_carl/sets/72157604144345854
 
-  - n: ex.eu
-    w: https://www.instagram.com/ex.eu/
-
   - n: flags of the world
     w: http://www.crwflags.com/fotw/flags/
 
   - n: libre foundries
     w: https://gitlab.com/raphaelbastide/libre-foundries
-
-  - n: danktype
-    w: https://www.instagram.com/danktype/
-
-  - n: vrints kolsteren
-    w: http://vrints-kolsteren.com/
-
-  - n: rita matos
-    w: http://www.ritamatos.com/
 
   - n: klikkenthéke
     w: http://klikkentheke.com/
@@ -82,5 +70,5 @@ items:
   - n: the responsive
     w: http://the-responsive.com/
 
-  - n: collect graphics
-    w: https://www.instagram.com/collectgraphics/
+  - n: informational affairs
+    w: http://informationalaffairs.com/
