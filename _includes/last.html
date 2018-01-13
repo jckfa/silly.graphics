@@ -5,15 +5,12 @@
   {% include front/submit.html %}
 {%- endif -%}
 
-<script>
 
-  {% asset 'main.js' %}
-  {% asset "vendor/smooth-scroll.js" %}
-  smoothScroll.init();
-  {% asset "screensaver.js" %}
+  {% asset 'main.js' @inline %}
+  {% asset "vendor/smooth-scroll.js" @inline %}
+  <script>smoothScroll.init();</script>
+  {% asset "screensaver.js" @inline %}
 
-  {%- if jekyll.environment == "production" -%}
-    {% asset "vendor/analytics.js" %}
+  {%- if jekyll.environment == "production" @inline -%}
+    {% asset "vendor/analytics.js" @inline %}
   {%- endif -%}
-
-</script>

@@ -22,10 +22,9 @@ exclude:
   - graphics
 
 assets:
-  # digest: true
-
-  # currently bugged
-  # cache: false
+  # digest: false
+  compression: false
+  source_maps: false
   sources:
     - "_assets/css"
     - "_assets/js"

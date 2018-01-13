@@ -5,7 +5,7 @@ permalink: /
 order: 0
 ---
 
-{%- assign lists = site.data.lists -%}
+{%- assign lists = site.data.lists | sort -%}
 {% include front/nav.html %}
 
 {%- for list in lists -%}
