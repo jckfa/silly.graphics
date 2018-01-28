@@ -11,6 +11,10 @@
   text-transform: lowercase;
 }
 
+.case {
+  font-feature-settings: "case" 1;
+}
+
 .invert {
   color: var(--bg-color);
   background-color: var(--text-color);

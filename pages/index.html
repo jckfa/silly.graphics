@@ -10,7 +10,7 @@ order: 0
 
 {%- for list in lists -%}
 {%- assign items = list[1].items | uniq | sort_natural: "n" -%}
-<section class="list">
+<section class="list case">
 
   <h6 class="list-title no-wrap"
       onclick='toggle_list({{ forloop.index0 }})'
