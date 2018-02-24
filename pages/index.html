@@ -26,7 +26,7 @@ order: 0
     <ul class="list-items uppercase">
       {%- for item in items -%}
       <li>
-        <a href='{{ item.w | default: "/" }}' target="_blank">
+        <a href='{% unless item.w contains "http" %}http://{% endunless %}{{ item.w | default: "/" }}' target="_blank">
           <div class="shell">
             {{ item.n | downcase }}
           </div>
