@@ -1,12 +1,12 @@
 
 :root {
   --text-color:     rgb(90, 90, 90);
+  --text-color:     #ff7ca7;
   --meta-color:     rgb(200, 200, 200);
   --bg-color:       white;
   --bg2-color:      #e0e0e0;
   --bg3-color:      rgba(0, 0, 0, 0.03);
 
-  /* red, violet */
   --gradient-a:     red;
   --gradient-b:     #aa00ff;
 
