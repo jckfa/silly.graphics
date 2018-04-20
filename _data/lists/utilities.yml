@@ -2,9 +2,12 @@
 # title: Gadgets
 title: Utilities
 items:
+  - n: landscape
+    w: https://sproutsocial.com/landscape/
+
   - n: binder
     w: http://thisisourwork.net/binder/
-    
+
   - n: variable fonts
     w: https://v-fonts.com/
 
