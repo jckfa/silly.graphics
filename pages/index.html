@@ -10,7 +10,7 @@ order: 0
 
 {%- for list in lists -%}
 {%- assign items = list[1].items | uniq | sort_natural: "n" -%}
-<section class="list case">
+<section class="list">
 
   <h6 class="list-title no-wrap"
       onclick='toggle_list({{ forloop.index0 }})'
@@ -27,7 +27,7 @@ order: 0
       {%- for item in items -%}
       <li>
         <a href='{% unless item.w contains "http" %}http://{% endunless %}{{ item.w | default: "/" }}' target="_blank">
-          <div class="shell">
+          <div class="shell case">
             {{ item.n | downcase }}
           </div>
         </a>
