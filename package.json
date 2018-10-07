@@ -1,7 +1,7 @@
 {
   "name": "silly-graphics",
   "version": "3.0.0",
-  "description": "Silly Graphics is directory of hyperlinks generally related to graphic design.",
+  "description": "Silly Graphics is a growing collection of resources generally pertaining to graphic design.",
   "main": "gulpfile.js",
   "repository": {
     "type": "git",

@@ -1,7 +1,7 @@
 ![://](./static/img/icon.png)
 
 # Silly Graphics
-a glorified list of hyperlinks
+A collection of resources generally pertaining to graphic design.
 
 ### SUMMARY
 - built with [jekyll][1]
