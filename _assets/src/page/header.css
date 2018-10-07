@@ -1,6 +1,7 @@
 
 .site__header {
-  color: var(--meta-color);
+  color: var(--level1);
+  /* cover to-top button */
   background-color: var(--bg-color);
   /* place over list-nav */
   position: relative;
@@ -8,7 +9,7 @@
 }
 
   .primary__nav {
-    border-bottom: 2px solid var(--bg2-color);
+    border-bottom: 2px solid currentColor;
   }
 
     .primary__nav li {
@@ -34,14 +35,12 @@
         }
 
         .primary__nav a.active {
-          color: var(--text-color);
+          color: var(--accent);
         }
 
-    @media (--w-l-50) {
-      .primary__nav a.active::after {
-        background-color: var(--text-color);
-      }
-    }
+          .primary__nav a.active::after {
+            background-color: currentColor;
+          }
 
     @media (--w-50) {
       .primary__nav li {
@@ -49,7 +48,7 @@
       }
 
       .primary__nav a:hover {
-        color: var(--text-color);
+        color: var(--accent);
       }
 
       .primary__nav a:hover::after {

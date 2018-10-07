@@ -52,7 +52,7 @@ html, body {
 
 html {
   font: 100%/1 var(--sans);
-  color:       var(--text-color);
+  color:       var(--accent);
   background:  var(--bg-color);
 
   -webkit-font-smoothing: antialiased;
@@ -62,10 +62,10 @@ html {
 
 ::-moz-selection {
   color:            var(--bg-color);
-  background-color: var(--text-color);
+  background-color: var(--accent);
 }
 
 ::selection {
   color:            var(--bg-color);
-  background-color: var(--text-color);
+  background-color: var(--accent);
 }

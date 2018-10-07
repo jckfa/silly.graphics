@@ -4,7 +4,7 @@
 }
 
 .col-shell {
-  color: var(--meta-color);
+  color: var(--level1);
 }
 
   .col-shell a {
@@ -18,7 +18,8 @@
       width: 100%;
       height: 0.075em;
       min-height: 2px;
-      background-color: var(--bg2-color);
+      background-color: currentColor;
+      /* background-color: var(--level2); */
       position: absolute;
       right: 0;
       bottom: 0;
@@ -36,7 +37,7 @@
   }
 
     .col-shell h6 {
-      border-bottom: 2px solid var(--bg2-color);
+      border-bottom: 2px solid currentColor;
       padding-bottom: calc(var(--target-area) / 2);
       margin-bottom: var(--target-area);
     }
@@ -79,7 +80,7 @@
 
   @media (--w-50) {
     .col-shell a:hover {
-      color: var(--text-color);
+      color: var(--accent);
     }
 
       .col-shell a:hover::after {

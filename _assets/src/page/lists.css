@@ -1,6 +1,6 @@
 
 .list {
-  color: var(--meta-color);
+  color: var(--level1);
   /* place over list-nav */
   z-index: 2;
   /*background-color: #eee;*/
@@ -68,7 +68,7 @@
     /* ADDED VIA JS // MOBILE */
     .selected .list-title,
     .selected .list-items {
-      color: var(--text-color);
+      color: var(--accent);
     }
 
     /* ADDED VIA JS */
@@ -105,8 +105,8 @@
       }
 
       .list-items a {
-        color: var(--meta-color);
-        border-top: 2px solid var(--bg2-color);
+        color: var(--level1);
+        border-top: 2px solid currentColor;
         padding-top:    calc(var(--target-area) / 2);
         padding-bottom: calc(var(--target-area) / 2);
         transition: color 100ms var(--simple-fade);
@@ -114,8 +114,8 @@
       }
 
       .list-items a:visited {
-        color: #e8e8e8;
-        border-color: #eee;
+        color: var(--level2);
+        border-color: currentColor;
       }
 
       .list-items a::before {
@@ -147,7 +147,7 @@
 
         .list-items a:hover,
         .list-items a:hover::after {
-          color: var(--text-color);
+          color: var(--accent);
           cursor:
                               url(/static/img/arrow1x.png), alias;
           cursor:
@@ -155,9 +155,8 @@
         }
 
   .count {
-    color: var(--meta-color);
+    color: var(--level1);
     cursor: vertical-text;
-    /*background-color: #defcff;*/
     position: fixed;
     top:   50%;
     left:  calc( 50% - 1em );
