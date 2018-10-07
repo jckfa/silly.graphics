@@ -3,7 +3,8 @@
   --text-color:     rgb(90, 90, 90);
   --text-color:     green;
   --meta-color:     rgb(200, 200, 200);
-  --bg-color:       white;
+  /* --bg-color:       white; */
+  --bg-color:       rgb(224, 228, 224);
   --bg2-color:      #e0e0e0;
   --bg3-color:      rgba(0, 0, 0, 0.03);
 
