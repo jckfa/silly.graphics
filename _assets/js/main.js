@@ -16,13 +16,16 @@ function smart_nav() {
                      || document.body.scrollTop,
         nav_pos    = main.offsetTop;
 
-    // highlight nav item when scrolled to/past respective list
+    // highlight nav item when scrolled within respective list
     for (var i = 0; i < list.length; i++ ) {
       var nav_item = document.querySelectorAll('.nav-item'),
-          list_pos = list[i].offsetTop;
+          // -1 compensates for frag rounding bug
+          list_pos = list[i].offsetTop - 1;
+          list_bottom = list_pos + list[i].offsetHeight
 
-      // -1 compensates for frag rounding bug
-      scroll_pos >= nav_pos + list_pos - 1
+      // if scroll position is somewhere between beginning & end of list, highlight nav item
+      scroll_pos >= nav_pos + list_pos &&
+      scroll_pos <= nav_pos + list_bottom
         ? nav_item[i].classList.add   ('current')
         : nav_item[i].classList.remove('current')
       ;
