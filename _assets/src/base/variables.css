@@ -1,6 +1,6 @@
 
 :root {
-  --accent:         green;
+  --accent:         #75726d;
   --bg-color:       white;
   --level1:         #c2bcb3;           /* reg links */
   --level2:         hsl(36, 10%, 90%); /* visited links */
