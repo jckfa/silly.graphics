@@ -2,6 +2,15 @@
 # title: Gadgets
 title: Utilities
 items:
+  - n: hyphenator
+    w: http://www.juiciobrennan.com/syllables/
+
+  - n: isbn barcode generator
+    w: https://barcode.tec-it.com/en/ISBN13
+
+  - n: readymag
+    w: https://readymag.com/
+
   - n: xhbtr
     w: http://xhbtr.com/
 
