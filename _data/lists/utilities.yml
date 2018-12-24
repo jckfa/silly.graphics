@@ -2,6 +2,12 @@
 # title: Gadgets
 title: Utilities
 items:
+  - n: riso print simulator
+    w: https://www.risottostudio.com/print-simulator-simple/
+
+  - n: format
+    w: https://www.format.com
+
   - n: hyphenator
     w: http://www.juiciobrennan.com/syllables/
 

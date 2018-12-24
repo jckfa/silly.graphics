@@ -1,5 +1,14 @@
 title: Events
 items:
+  - n: it’s a book
+    w: http://itsabook.de
+
+  - n: Faceforward
+    w: https://faceforward.typography.ie/
+
+  - n: bits
+    w: http://bitscon.asia/
+
   - n: typographics
     w: http://typographics.com/
 
