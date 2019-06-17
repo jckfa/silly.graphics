@@ -1,13 +1,18 @@
 
 <footer class="site__footer meta gutters fixed-footer">
 
-  <ul class="flex-x uppercase tabular">
+  <ul class="flex-x tabular">
     <li>
-      {{ site.version }}
+      <span class="uppercase">{{ site.version }}</span>
     </li>
 
     <li>
-      ↑{{ "now" | date: "%-d %b %Y" }}
+      <div>Sponsored by</div>
+      <div class="sponsor_msg">
+        <a href="mailto:buttface@jackf.me?subject=silly.graphics—Sponsoring&body=Hi, I am interested in sponsoring the site and would like more details.">Your Name Here!</a>
+      </div>
+
+      <div class="updated uppercase">↑{{ "now" | date: "%-d %b %Y" }}</div>
     </li>
   </ul>
 

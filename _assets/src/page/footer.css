@@ -5,13 +5,27 @@
   padding-bottom: var(--target-area);
 }
 
+.site__footer ul {
+  align-items: flex-end;
+}
+
 .site__footer li {
   width: 100%;
 }
 
+  .sponsor_msg {
+    animation: on-off 1s linear infinite;
+    display: inline-block;
+    margin-bottom: 1em;
+  }
+
   @media (--w-50) {
     .site__footer {
       width: 50%;
+    }
+
+    .sponsor_msg:hover {
+      animation: initial;
     }
 
     .fixed-footer {
