@@ -3,8 +3,6 @@ name: Silly Graphics
 email: buttface@jackf.me
 url: https://silly.graphics
 version: 3.5.0
-description: >
-  Silly Graphics is a growing collection of resources generally pertaining to graphic design.
 
 markdown: kramdown
 permalink: pretty
